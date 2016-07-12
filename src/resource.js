@@ -213,7 +213,11 @@ var g_scratchGame = [
 var g_sortMapGame = [
     res.gameScene8_json,
     res.gameScene8_plist,
-    res.gameScene8_png
+    res.gameScene8_png,
+    res.shader_public,
+    res.shader_fullColor,
+    res.shader_blur,
+    res.clue_bg
 ]
 //放大镜找线索
 var g_findSomethingGame = [

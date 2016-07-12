@@ -36,7 +36,7 @@ shaderHelper.createShaderBirghtEffect = function(source)
 //------------------------------------
 //@param node cc.Node 要设置的对象
 //@param color cc.vec3 颜色值
-shaderHelper.createShaderFullColorEffect = function (node,color) {
+shaderHelper.createShaderFullColorEffect = function (source,color) {
     shaderHelper.shaderBeforeCache.push({n: source.getName(), gs: source.getShaderProgram()})
     var shader = new cc.GLProgram(res.shader_public, res.shader_celShading);
     if ('opengl' in cc.sys.capabilities) {
@@ -51,7 +51,7 @@ shaderHelper.createShaderFullColorEffect = function (node,color) {
             shader.link();
             shader.updateUniforms();
             shader.use();
-            shader.setUniformLocationWith3f(shader.getUniformLocationForName("fullColor"), color);
+            shader.setUniformLocationWith3f(shader.getUniformLocationForName("fullColor"), 1,1,0);
         }
         if (cc.sys.isNative) {
             var program = cc.GLProgramState.getOrCreateWithGLProgram(shader)
@@ -76,4 +76,41 @@ shaderHelper.removeShaderEffect = function(source){
             }
         })
     }
+}
+shaderHelper.createShaderBlurEffect_2 = function(source){
+
+}
+shaderHelper.adjustShaderBlur = function(){
+
+}
+shaderHelper.setSurroundingAreaLight = function(spt,color){
+    var classType =  spt._className
+    var sptclone = null
+    var filterNode = null
+    if (classType == "Sprite") {
+        sptclone = new cc.Sprite(spt.getTexture())
+        sptclone.setAnchorPoint(0, 0)
+        filterNode = sptclone
+    }else if (classType == "ImageView") {
+        sptclone = spt.clone()
+        filterNode = sptclone.getVirtualRenderer()
+        filterNode.setAnchorPoint(0, 0)
+    }
+    shaderHelper.createShaderFullColorEffect(filterNode,color)
+    var bgTxtr = new cc.RenderTexture(filterNode.width,filterNode.height,cc.Texture2D.PIXEL_FORMAT_BGRA8888)
+    bgTxtr.begin()
+    filterNode.visit()
+    bgTxtr.end()
+    var tx = bgTxtr.getSprite().getTexture()
+    var _maskSpt  = new cc.Sprite(tx)
+    var SCALE_X = 1.1
+    var SCALE_Y = 1.1
+    _maskSpt.setScaleY(SCALE_Y)
+    _maskSpt.setPosition(spt.getPosition())
+    _maskSpt.setRotation(spt.getRotation()+180)
+    _maskSpt.setScaleX(-SCALE_X)
+    shaderHelper.createShaderBlurEffect_2(_maskSpt)
+    shaderHelper.adjustShaderBlur(_maskSpt,false,7,10)
+    _maskSpt.setName("_maskSpt")
+    return _maskSpt
 }

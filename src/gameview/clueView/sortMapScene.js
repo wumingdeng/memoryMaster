@@ -1,13 +1,6 @@
 /**
  * Created by Fizzo on 16/7/8.
  */
-
-var _sceneId = null;
-var _gameId = 0;
-var _isOutline = false;
-var _curMaskLight = null;
-var _curLightTable = null;
-
 var sortMapLayer = cc.Layer.extend({
     sprite:null,
     _node:null,
@@ -18,6 +11,11 @@ var sortMapLayer = cc.Layer.extend({
     _curPiece:null,
     _clueCount:0,
     _allClueCount:0,
+    _curMaskLight:[],
+    _curLightTable:[],
+    _isOutline:false,
+    _gameId:0,
+    _sceneId:0,
     ctor:function () {
         this._super();
         this._checkPos = [{x:530.21,y:400.30,r:2},{x:234.03,y:511.39,r:2},{x:117.82,y:321.84,r:1},{x:433.78,y:516.38,r:2},{x:176.91,y:176.04,r:3},{x:439.94,y:267.28,r:3}];
@@ -26,6 +24,9 @@ var sortMapLayer = cc.Layer.extend({
         for (var i = 1; i <= this._checkPos.length; i++) {
             var image = sortMap.getChildByName("Image_" + i);
             image.addTouchEventListener(this.onTouchFun,this)
+            this._curLightTable[i-1] = shaderHelper.setSurroundingAreaLight(image,cc.math.vec3(1,1,0))
+            this._curLightTable[i-1].setVisible(false)
+            this._node.addChild(this._curLightTable[i-1])
         }
         return true;
     },
@@ -48,13 +49,13 @@ var sortMapLayer = cc.Layer.extend({
                     movePos = cc.pAdd(movePos, this.innerPos)
                     sender.setPosition(movePos)
                 }
-                //if (this.checkPiecePlace() ) {
+                // if (this.checkPiecePlace() ) {
                 //    _curLightTable[sender.getTag()].setPosition(movePos)
                 //    _curLightTable[sender.getTag()].setVisible(true)
-                //}
-                //else{
+                // }
+                // else{
                 //    _curLightTable[sender.getTag()].setVisible(false)
-                //}
+                // }
             }
         } else if (type == ccui.Widget.TOUCH_ENDED) {
             if (this.largerDistance <= 5) {
@@ -78,6 +79,9 @@ var sortMapLayer = cc.Layer.extend({
             }
             this.largerDistance = 0
             sender.setLocalZOrder(0)
+            this._curPiece = null
+        }else if(type == ccui.Widget.TOUCH_CANCELED){
+            this.largerDistance = 0
             this._curPiece = null
         }
     },
@@ -117,10 +121,8 @@ var sortMapLayer = cc.Layer.extend({
         if (dins > 50)
             return false
         else {
-            if (rotationIdx == this.getCurrentPieceRotation())
-                return true
-            else
-                return false
+            var trueRt = rotationIdx == this.getCurrentPieceRotation()
+            return trueRt
         }
     }
 });

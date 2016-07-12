@@ -215,7 +215,7 @@ var findSomethingLayer = cc.Layer.extend({
                     loadEndFun()
                 }
             }
-            timerHelper.createTimer(onReadLoading,this,0.02,gc.TIMER_KEY_GAMESCENE7_loadingTimer)
+            timerHelper.createTimer(onReadLoading,this,0,gc.TIMER_KEY_GAMESCENE7_loadingTimer)
         } else if (self._progress == -1) {
             if (self._loadingbarTimer.isVisible()) {
                 timerHelper.removeTimer(gc.TIMER_KEY_GAMESCENE7_loadingTimer)
