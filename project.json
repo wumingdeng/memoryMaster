@@ -1,0 +1,58 @@
+{
+    "project_type": "javascript",
+
+    "debugMode" : 1,
+    "showFPS" : false,
+    "frameRate" : 60,
+    "noCache" : false,
+    "id" : "gameCanvas",
+    "renderMode" : 0,
+    "engineDir":"frameworks/cocos2d-html5",
+    "modules" : ["cocos2d", "extensions","external"],
+
+    "jsList" : [
+        "src/customFunction.js",
+        "src/gameFunctions.js",
+        "src/globalConst.js",
+        "src/SysMenu.js",
+        "src/Utils.js",
+        "src/globalVar.js",
+        "src/resource.js",
+        "src/app.js",
+                
+        "src/helper/loadResourceHelper.js",
+        "src/helper/audioHelper.js",
+        "src/helper/timerHelper.js",
+        "src/helper/taskTraceHelper.js",
+        "src/helper/ActionHelper.js",
+        "src/helper/shaderHelper.js",
+        "src/helper/alertHelper.js",
+
+        "src/until/extraFunc.js",
+        "src/until/crypto.js",
+        "src/until/cryptoExtra.js",
+
+        "src/staticdata/task.js",
+        "src/staticdata/textSimplifiedStyle.js",
+        "src/staticdata/scene.js",
+
+        "src/scene/loadingProgressScene.js",
+        "src/scene/loginScene.js",
+
+        "src/gameview/scratchScene.js",
+        "src/gameview/gameTopLayer.js",
+        "src/gameview/searchBottomLayer.js",
+        "src/gameview/searchItemLayer.js",
+        "src/gameview/searchScene.js",
+        "src/gameview/PauseLayer.js",
+        "src/gameview/Tip.js",
+        "src/gameview/clueView/findSomethingScene.js",
+        "src/gameview/clueView/sortMapScene.js",
+
+        "src/network/httpRequest.js",
+                
+        "src/config/GameConfig.js",
+        "src/config/item/item1.js"
+
+    ]
+}

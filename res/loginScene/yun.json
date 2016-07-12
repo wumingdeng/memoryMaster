@@ -1,0 +1,297 @@
+{
+  "ID": "44e16a3a-568c-406e-986a-787bc985f626",
+  "Version": "2.3.4",
+  "Name": "yun",
+  "Content": {
+    "Content": {
+      "Animation": {
+        "Duration": 1685,
+        "Speed": 1.0,
+        "Timelines": [
+          {
+            "ActionTag": 754567036,
+            "FrameType": "PositionFrame",
+            "Property": "Position",
+            "Frames": [
+              {
+                "X": -600.0,
+                "Y": 0.0,
+                "FrameIndex": 0,
+                "ctype": "PointFrameData"
+              },
+              {
+                "X": 699.999,
+                "Y": 0.0,
+                "FrameIndex": 1645,
+                "ctype": "PointFrameData"
+              }
+            ],
+            "ctype": "TimelineData"
+          },
+          {
+            "ActionTag": 754567036,
+            "FrameType": "ScaleFrame",
+            "Property": "Scale",
+            "Frames": [
+              {
+                "X": 1.0,
+                "Y": 1.0,
+                "FrameIndex": 0,
+                "ctype": "PointFrameData"
+              },
+              {
+                "X": 1.0,
+                "Y": 1.0,
+                "FrameIndex": 1645,
+                "ctype": "PointFrameData"
+              }
+            ],
+            "ctype": "TimelineData"
+          },
+          {
+            "ActionTag": 754567036,
+            "FrameType": "RotationSkewFrame",
+            "Property": "RotationSkew",
+            "Frames": [
+              {
+                "X": 0.0,
+                "Y": 0.0,
+                "FrameIndex": 0,
+                "ctype": "PointFrameData"
+              },
+              {
+                "X": 0.0,
+                "Y": 0.0,
+                "FrameIndex": 1645,
+                "ctype": "PointFrameData"
+              }
+            ],
+            "ctype": "TimelineData"
+          },
+          {
+            "ActionTag": 1564578633,
+            "FrameType": "PositionFrame",
+            "Property": "Position",
+            "Frames": [
+              {
+                "X": 941.168,
+                "Y": 120.6685,
+                "FrameIndex": 60,
+                "ctype": "PointFrameData"
+              },
+              {
+                "X": -700.0,
+                "Y": 120.6685,
+                "FrameIndex": 1685,
+                "ctype": "PointFrameData"
+              }
+            ],
+            "ctype": "TimelineData"
+          },
+          {
+            "ActionTag": 1061131555,
+            "FrameType": "PositionFrame",
+            "Property": "Position",
+            "Frames": [
+              {
+                "X": 642.36,
+                "Y": 258.0,
+                "FrameIndex": 25,
+                "ctype": "PointFrameData"
+              },
+              {
+                "X": -700.0,
+                "Y": 258.0,
+                "FrameIndex": 1610,
+                "ctype": "PointFrameData"
+              }
+            ],
+            "ctype": "TimelineData"
+          },
+          {
+            "ActionTag": 1061131555,
+            "FrameType": "ScaleFrame",
+            "Property": "Scale",
+            "Frames": [
+              {
+                "X": 1.0,
+                "Y": 1.0,
+                "FrameIndex": 25,
+                "ctype": "PointFrameData"
+              },
+              {
+                "X": 1.0,
+                "Y": 1.0,
+                "FrameIndex": 1610,
+                "ctype": "PointFrameData"
+              }
+            ],
+            "ctype": "TimelineData"
+          },
+          {
+            "ActionTag": 1061131555,
+            "FrameType": "RotationSkewFrame",
+            "Property": "RotationSkew",
+            "Frames": [
+              {
+                "X": 0.0,
+                "Y": 0.0,
+                "FrameIndex": 25,
+                "ctype": "PointFrameData"
+              },
+              {
+                "X": 0.0,
+                "Y": 0.0,
+                "FrameIndex": 1610,
+                "ctype": "PointFrameData"
+              }
+            ],
+            "ctype": "TimelineData"
+          }
+        ],
+        "ctype": "TimelineActionData"
+      },
+      "AnimationList": [],
+      "ObjectData": {
+        "Tag": 12,
+        "Children": [
+          {
+            "FileData": {
+              "Type": "PlistSubImage",
+              "Path": "qidong_yun1.png",
+              "Plist": "qidongdonghua.plist"
+            },
+            "BlendFunc": {
+              "Src": 1,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 699.999,
+              "Y": 0.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "PreSize": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "Tag": 13,
+            "ActionTag": 754567036,
+            "Size": {
+              "X": 121.0,
+              "Y": 63.0
+            },
+            "Name": "qidong_yun1",
+            "ctype": "SpriteObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "PlistSubImage",
+              "Path": "qidong_yun2.png",
+              "Plist": "qidongdonghua.plist"
+            },
+            "BlendFunc": {
+              "Src": 1,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": -659.6019,
+              "Y": 120.6685
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "PreSize": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "Tag": 14,
+            "ActionTag": 1564578633,
+            "Size": {
+              "X": 169.0,
+              "Y": 97.0
+            },
+            "Name": "qidong_yun2",
+            "ctype": "SpriteObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "PlistSubImage",
+              "Path": "qidong_yun3.png",
+              "Plist": "qidongdonghua.plist"
+            },
+            "BlendFunc": {
+              "Src": 1,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": -700.0,
+              "Y": 258.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "PreSize": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "Tag": 15,
+            "ActionTag": 1061131555,
+            "Size": {
+              "X": 62.0,
+              "Y": 28.0
+            },
+            "Name": "qidong_yun3",
+            "ctype": "SpriteObjectData"
+          }
+        ],
+        "Size": {
+          "X": 0.0,
+          "Y": 0.0
+        },
+        "Name": "Node",
+        "ctype": "SingleNodeObjectData"
+      },
+      "UsedResources": [
+        "qidongdonghua.plist",
+        "qidongdonghua.png"
+      ],
+      "ctype": "GameFileData"
+    }
+  },
+  "Type": "Node"
+}

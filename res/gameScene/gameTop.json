@@ -1,0 +1,849 @@
+{
+  "ID": "93b0aa9b-6132-4a95-93da-4f5d78acc6db",
+  "Version": "3.10.0.0",
+  "Name": "gameTop",
+  "Content": {
+    "Content": {
+      "Animation": {
+        "Duration": 0,
+        "Speed": 1.0,
+        "Timelines": [],
+        "ctype": "TimelineActionData"
+      },
+      "AnimationList": [],
+      "ObjectData": {
+        "Tag": 753,
+        "Children": [
+          {
+            "ClipAble": false,
+            "BackColorAlpha": 0,
+            "ComboBoxIndex": 1,
+            "SingleColor": {
+              "R": 150,
+              "G": 200
+            },
+            "FirstColor": {},
+            "EndColor": {
+              "R": 150,
+              "G": 200
+            },
+            "ColorVector": {
+              "ScaleY": -1.0
+            },
+            "Scale9Width": 1,
+            "Scale9Height": 1,
+            "AnchorPoint": {},
+            "Position": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "PreSize": {
+              "X": 1.0,
+              "Y": 1.0
+            },
+            "Tag": 1,
+            "Children": [
+              {
+                "ClipAble": false,
+                "BackColorAlpha": 100,
+                "SingleColor": {
+                  "R": 84,
+                  "G": 88,
+                  "B": 92
+                },
+                "FirstColor": {},
+                "EndColor": {
+                  "R": 150,
+                  "G": 200
+                },
+                "ColorVector": {
+                  "ScaleY": -1.0
+                },
+                "Scale9Width": 1,
+                "Scale9Height": 1,
+                "AnchorPoint": {},
+                "Position": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "PreSize": {
+                  "X": 1.0,
+                  "Y": 1.0
+                },
+                "Children": [
+                  {
+                    "ClipAble": false,
+                    "BackColorAlpha": 100,
+                    "SingleColor": {
+                      "R": 150,
+                      "G": 200
+                    },
+                    "FirstColor": {},
+                    "EndColor": {
+                      "R": 150,
+                      "G": 200
+                    },
+                    "ColorVector": {
+                      "ScaleY": -1.0
+                    },
+                    "Scale9Width": 1,
+                    "Scale9Height": 1,
+                    "TouchEnable": true,
+                    "AnchorPoint": {},
+                    "Position": {
+                      "X": 331.0,
+                      "Y": 3.0
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.2914,
+                      "Y": 0.0395
+                    },
+                    "PreSize": {
+                      "X": 0.4173,
+                      "Y": 0.9605
+                    },
+                    "LeftMargin": 331.0,
+                    "RightMargin": 331.0,
+                    "BottomMargin": 3.0,
+                    "Tag": 1001160,
+                    "Children": [
+                      {
+                        "FileData": {
+                          "Type": "PlistSubImage",
+                          "Path": "gameTop_lianjikuang.png",
+                          "Plist": "gameSceneUI.plist"
+                        },
+                        "Scale9Width": 478,
+                        "Scale9Height": 73,
+                        "AnchorPoint": {},
+                        "Position": {
+                          "X": 0.0,
+                          "Y": 0.0
+                        },
+                        "Scale": {
+                          "ScaleX": 1.0,
+                          "ScaleY": 1.0
+                        },
+                        "CColor": {},
+                        "IconVisible": false,
+                        "PrePosition": {
+                          "X": 0.0,
+                          "Y": 0.0
+                        },
+                        "PreSize": {
+                          "X": 1.0084,
+                          "Y": 1.0
+                        },
+                        "RightMargin": -4.0,
+                        "Tag": 1001151,
+                        "ActionTag": 20928995,
+                        "Size": {
+                          "X": 478.0,
+                          "Y": 73.0
+                        },
+                        "Name": "imgTopCenter",
+                        "ctype": "ImageViewObjectData"
+                      },
+                      {
+                        "FileData": {
+                          "Type": "PlistSubImage",
+                          "Path": "gameTop_lianjidi.png",
+                          "Plist": "gameSceneUI.plist"
+                        },
+                        "Scale9Width": 360,
+                        "Scale9Height": 44,
+                        "AnchorPoint": {},
+                        "Position": {
+                          "X": 52.0,
+                          "Y": 26.0
+                        },
+                        "Scale": {
+                          "ScaleX": 1.0,
+                          "ScaleY": 1.0
+                        },
+                        "CColor": {},
+                        "IconVisible": false,
+                        "PrePosition": {
+                          "X": 0.1097,
+                          "Y": 0.3562
+                        },
+                        "PreSize": {
+                          "X": 0.7827,
+                          "Y": 0.6849
+                        },
+                        "LeftMargin": 52.0,
+                        "RightMargin": 51.0,
+                        "TopMargin": -3.0,
+                        "BottomMargin": 26.0,
+                        "Tag": 1004081,
+                        "ActionTag": 6267093,
+                        "ZOrder": 3,
+                        "Size": {
+                          "X": 371.0,
+                          "Y": 50.0
+                        },
+                        "Name": "imgDi",
+                        "ctype": "ImageViewObjectData"
+                      },
+                      {
+                        "ClipAble": true,
+                        "BackColorAlpha": 100,
+                        "SingleColor": {
+                          "R": 150,
+                          "G": 200
+                        },
+                        "FirstColor": {},
+                        "EndColor": {
+                          "R": 150,
+                          "G": 200
+                        },
+                        "ColorVector": {
+                          "ScaleY": -1.0
+                        },
+                        "Scale9Width": 1,
+                        "Scale9Height": 1,
+                        "AnchorPoint": {},
+                        "Position": {
+                          "X": 56.0,
+                          "Y": 40.0
+                        },
+                        "Scale": {
+                          "ScaleX": 1.0,
+                          "ScaleY": 1.0
+                        },
+                        "CColor": {},
+                        "IconVisible": false,
+                        "PrePosition": {
+                          "X": 0.1181,
+                          "Y": 0.5479
+                        },
+                        "PreSize": {
+                          "X": 0.7785,
+                          "Y": 0.3425
+                        },
+                        "LeftMargin": 56.0,
+                        "RightMargin": 49.0,
+                        "TopMargin": 8.0,
+                        "BottomMargin": 40.0,
+                        "Tag": 1004082,
+                        "ActionTag": 24145802,
+                        "ZOrder": 5,
+                        "Size": {
+                          "X": 369.0,
+                          "Y": 25.0
+                        },
+                        "Name": "pnlDi",
+                        "ctype": "PanelObjectData"
+                      },
+                      {
+                        "FileData": {
+                          "Type": "PlistSubImage",
+                          "Path": "gameTop_lianjifenxian.png",
+                          "Plist": "gameSceneUI.plist"
+                        },
+                        "Scale9Width": 360,
+                        "Scale9Height": 44,
+                        "AnchorPoint": {
+                          "ScaleX": 0.5,
+                          "ScaleY": 0.5
+                        },
+                        "Position": {
+                          "X": 231.0,
+                          "Y": 51.0
+                        },
+                        "Scale": {
+                          "ScaleX": 1.0,
+                          "ScaleY": 1.0
+                        },
+                        "CColor": {},
+                        "IconVisible": false,
+                        "PrePosition": {
+                          "X": 0.4873,
+                          "Y": 0.6986
+                        },
+                        "PreSize": {
+                          "X": 0.7595,
+                          "Y": 0.6027
+                        },
+                        "LeftMargin": 51.0,
+                        "RightMargin": 63.0,
+                        "BottomMargin": 29.0,
+                        "Tag": 1004061,
+                        "ActionTag": 4513520,
+                        "ZOrder": 5,
+                        "Size": {
+                          "X": 360.0,
+                          "Y": 44.0
+                        },
+                        "Name": "maskline",
+                        "ctype": "ImageViewObjectData"
+                      },
+                      {
+                        "LabelText": "5000",
+                        "LabelBMFontFile_CNB": {
+                          "Type": "Normal",
+                          "Path": "gameScene/fonts/defen.fnt",
+                          "Plist": ""
+                        },
+                        "AnchorPoint": {
+                          "ScaleX": 0.5,
+                          "ScaleY": 0.5
+                        },
+                        "Position": {
+                          "X": 215.0,
+                          "Y": 33.0
+                        },
+                        "Scale": {
+                          "ScaleX": 0.3,
+                          "ScaleY": 0.3
+                        },
+                        "CColor": {},
+                        "IconVisible": false,
+                        "PrePosition": {
+                          "X": 0.4536,
+                          "Y": 0.4521
+                        },
+                        "PreSize": {
+                          "X": 0.5886,
+                          "Y": 0.4384
+                        },
+                        "LeftMargin": 75.5,
+                        "RightMargin": 119.5,
+                        "TopMargin": 24.0,
+                        "BottomMargin": 17.0,
+                        "Tag": 1004095,
+                        "ActionTag": 22026219,
+                        "Size": {
+                          "X": 279.0,
+                          "Y": 32.0
+                        },
+                        "Name": "lblScore",
+                        "ctype": "TextBMFontObjectData"
+                      },
+                      {
+                        "LabelText": "+2",
+                        "LabelBMFontFile_CNB": {
+                          "Type": "Normal",
+                          "Path": "gameScene/fonts/jcdf.fnt",
+                          "Plist": ""
+                        },
+                        "AnchorPoint": {
+                          "ScaleX": 0.5,
+                          "ScaleY": 0.5
+                        },
+                        "Position": {
+                          "X": 98.0,
+                          "Y": 59.0
+                        },
+                        "Scale": {
+                          "ScaleX": 0.5,
+                          "ScaleY": 0.5
+                        },
+                        "CColor": {},
+                        "IconVisible": false,
+                        "PrePosition": {
+                          "X": 0.2068,
+                          "Y": 0.8082
+                        },
+                        "PreSize": {
+                          "X": 0.173,
+                          "Y": 0.4384
+                        },
+                        "LeftMargin": 57.0,
+                        "RightMargin": 335.0,
+                        "TopMargin": -2.0,
+                        "BottomMargin": 43.0,
+                        "Tag": 1004096,
+                        "ActionTag": 50207826,
+                        "ZOrder": 10,
+                        "Size": {
+                          "X": 82.0,
+                          "Y": 32.0
+                        },
+                        "VisibleForFrame": false,
+                        "Name": "img_2",
+                        "ctype": "TextBMFontObjectData"
+                      },
+                      {
+                        "LabelText": "+3",
+                        "LabelBMFontFile_CNB": {
+                          "Type": "Normal",
+                          "Path": "gameScene/fonts/jcdf.fnt",
+                          "Plist": ""
+                        },
+                        "AnchorPoint": {
+                          "ScaleX": 0.5,
+                          "ScaleY": 0.5
+                        },
+                        "Position": {
+                          "X": 161.0,
+                          "Y": 59.0
+                        },
+                        "Scale": {
+                          "ScaleX": 0.5,
+                          "ScaleY": 0.5
+                        },
+                        "CColor": {},
+                        "IconVisible": false,
+                        "PrePosition": {
+                          "X": 0.3397,
+                          "Y": 0.8082
+                        },
+                        "PreSize": {
+                          "X": 0.1667,
+                          "Y": 0.4384
+                        },
+                        "LeftMargin": 121.5,
+                        "RightMargin": 273.5,
+                        "TopMargin": -2.0,
+                        "BottomMargin": 43.0,
+                        "Tag": 1004098,
+                        "ActionTag": 46198550,
+                        "ZOrder": 10,
+                        "Size": {
+                          "X": 79.0,
+                          "Y": 32.0
+                        },
+                        "VisibleForFrame": false,
+                        "Name": "img_3",
+                        "ctype": "TextBMFontObjectData"
+                      },
+                      {
+                        "LabelText": "+4",
+                        "LabelBMFontFile_CNB": {
+                          "Type": "Normal",
+                          "Path": "gameScene/fonts/jcdf.fnt",
+                          "Plist": ""
+                        },
+                        "AnchorPoint": {
+                          "ScaleX": 0.5,
+                          "ScaleY": 0.5
+                        },
+                        "Position": {
+                          "X": 227.0,
+                          "Y": 57.0
+                        },
+                        "Scale": {
+                          "ScaleX": 0.5,
+                          "ScaleY": 0.5
+                        },
+                        "CColor": {},
+                        "IconVisible": false,
+                        "PrePosition": {
+                          "X": 0.4789,
+                          "Y": 0.7808
+                        },
+                        "PreSize": {
+                          "X": 0.1688,
+                          "Y": 0.4384
+                        },
+                        "LeftMargin": 187.0,
+                        "RightMargin": 207.0,
+                        "BottomMargin": 41.0,
+                        "Tag": 1004099,
+                        "ActionTag": 10893,
+                        "ZOrder": 10,
+                        "Size": {
+                          "X": 80.0,
+                          "Y": 32.0
+                        },
+                        "VisibleForFrame": false,
+                        "Name": "img_4",
+                        "ctype": "TextBMFontObjectData"
+                      },
+                      {
+                        "LabelText": "+5",
+                        "LabelBMFontFile_CNB": {
+                          "Type": "Normal",
+                          "Path": "gameScene/fonts/jcdf.fnt",
+                          "Plist": ""
+                        },
+                        "AnchorPoint": {
+                          "ScaleX": 0.5,
+                          "ScaleY": 0.5
+                        },
+                        "Position": {
+                          "X": 295.0,
+                          "Y": 57.0
+                        },
+                        "Scale": {
+                          "ScaleX": 0.5,
+                          "ScaleY": 0.5
+                        },
+                        "CColor": {},
+                        "IconVisible": false,
+                        "PrePosition": {
+                          "X": 0.6224,
+                          "Y": 0.7808
+                        },
+                        "PreSize": {
+                          "X": 0.1688,
+                          "Y": 0.4384
+                        },
+                        "LeftMargin": 255.0,
+                        "RightMargin": 139.0,
+                        "BottomMargin": 41.0,
+                        "Tag": 1004100,
+                        "ActionTag": 12306480,
+                        "ZOrder": 10,
+                        "Size": {
+                          "X": 80.0,
+                          "Y": 32.0
+                        },
+                        "VisibleForFrame": false,
+                        "Name": "img_5",
+                        "ctype": "TextBMFontObjectData"
+                      },
+                      {
+                        "LabelText": "+6",
+                        "LabelBMFontFile_CNB": {
+                          "Type": "Normal",
+                          "Path": "gameScene/fonts/jcdf.fnt",
+                          "Plist": ""
+                        },
+                        "AnchorPoint": {
+                          "ScaleX": 0.5,
+                          "ScaleY": 0.5
+                        },
+                        "Position": {
+                          "X": 364.0,
+                          "Y": 58.0
+                        },
+                        "Scale": {
+                          "ScaleX": 0.5,
+                          "ScaleY": 0.5
+                        },
+                        "CColor": {},
+                        "IconVisible": false,
+                        "PrePosition": {
+                          "X": 0.7679,
+                          "Y": 0.7945
+                        },
+                        "PreSize": {
+                          "X": 0.1667,
+                          "Y": 0.4384
+                        },
+                        "LeftMargin": 324.5,
+                        "RightMargin": 70.5,
+                        "TopMargin": -1.0,
+                        "BottomMargin": 42.0,
+                        "Tag": 1004101,
+                        "ActionTag": 55262997,
+                        "ZOrder": 10,
+                        "Size": {
+                          "X": 79.0,
+                          "Y": 32.0
+                        },
+                        "VisibleForFrame": false,
+                        "Name": "img_6",
+                        "ctype": "TextBMFontObjectData"
+                      }
+                    ],
+                    "ActionTag": 12792695,
+                    "Size": {
+                      "X": 474.0,
+                      "Y": 73.0
+                    },
+                    "Name": "panelCenter",
+                    "ctype": "PanelObjectData"
+                  },
+                  {
+                    "ClipAble": false,
+                    "BackColorAlpha": 100,
+                    "SingleColor": {
+                      "R": 150,
+                      "G": 200
+                    },
+                    "FirstColor": {},
+                    "EndColor": {
+                      "R": 150,
+                      "G": 200
+                    },
+                    "ColorVector": {
+                      "ScaleY": -1.0
+                    },
+                    "Scale9Width": 1,
+                    "Scale9Height": 1,
+                    "AnchorPoint": {},
+                    "Position": {
+                      "X": 1047.0,
+                      "Y": -13.0
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.9217,
+                      "Y": -0.1711
+                    },
+                    "PreSize": {
+                      "X": 0.0783,
+                      "Y": 1.1711
+                    },
+                    "LeftMargin": 1047.0,
+                    "BottomMargin": -13.0,
+                    "Tag": 1001161,
+                    "Children": [
+                      {
+                        "FileData": {
+                          "Type": "PlistSubImage",
+                          "Path": "gameTop_jishiqi.png",
+                          "Plist": "gameSceneUI.plist"
+                        },
+                        "Scale9Width": 207,
+                        "Scale9Height": 82,
+                        "TouchEnable": true,
+                        "AnchorPoint": {
+                          "ScaleX": 0.5,
+                          "ScaleY": 0.5
+                        },
+                        "Position": {
+                          "X": -14.5,
+                          "Y": 48.0
+                        },
+                        "Scale": {
+                          "ScaleX": 1.0,
+                          "ScaleY": 1.0
+                        },
+                        "CColor": {},
+                        "IconVisible": false,
+                        "PrePosition": {
+                          "X": -0.1629,
+                          "Y": 0.5393
+                        },
+                        "PreSize": {
+                          "X": 2.3258,
+                          "Y": 0.9213
+                        },
+                        "LeftMargin": -118.0,
+                        "BottomMargin": 7.0,
+                        "Tag": 1001148,
+                        "ActionTag": 50556027,
+                        "Size": {
+                          "X": 207.0,
+                          "Y": 82.0
+                        },
+                        "Name": "imgTopRight",
+                        "ctype": "ImageViewObjectData"
+                      },
+                      {
+                        "LabelText": "00:00",
+                        "LabelBMFontFile_CNB": {
+                          "Type": "Normal",
+                          "Path": "gameScene/fonts/jcdf.fnt",
+                          "Plist": ""
+                        },
+                        "AnchorPoint": {},
+                        "Position": {
+                          "X": -70.0,
+                          "Y": 46.0
+                        },
+                        "Scale": {
+                          "ScaleX": 0.6,
+                          "ScaleY": 0.6
+                        },
+                        "CColor": {},
+                        "IconVisible": false,
+                        "PrePosition": {
+                          "X": -0.7865,
+                          "Y": 0.5169
+                        },
+                        "PreSize": {
+                          "X": 2.0112,
+                          "Y": 0.3596
+                        },
+                        "LeftMargin": -70.0,
+                        "RightMargin": -20.0,
+                        "TopMargin": 11.0,
+                        "BottomMargin": 46.0,
+                        "Tag": 1001150,
+                        "ActionTag": 44671593,
+                        "Size": {
+                          "X": 179.0,
+                          "Y": 32.0
+                        },
+                        "Name": "lblTime",
+                        "ctype": "TextBMFontObjectData"
+                      }
+                    ],
+                    "ActionTag": 52408306,
+                    "Size": {
+                      "X": 89.0,
+                      "Y": 89.0
+                    },
+                    "Name": "panelRight",
+                    "ctype": "PanelObjectData"
+                  },
+                  {
+                    "ClipAble": false,
+                    "BackColorAlpha": 100,
+                    "SingleColor": {
+                      "R": 150,
+                      "G": 200
+                    },
+                    "FirstColor": {},
+                    "EndColor": {
+                      "R": 150,
+                      "G": 200
+                    },
+                    "ColorVector": {
+                      "ScaleY": -1.0
+                    },
+                    "Scale9Width": 1,
+                    "Scale9Height": 1,
+                    "AnchorPoint": {},
+                    "Position": {
+                      "X": 0.0,
+                      "Y": 0.0
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.0,
+                      "Y": 0.0
+                    },
+                    "PreSize": {
+                      "X": 0.0783,
+                      "Y": 1.0
+                    },
+                    "RightMargin": 1047.0,
+                    "Tag": 1001162,
+                    "Children": [
+                      {
+                        "FontSize": 14,
+                        "ButtonText": "",
+                        "TextColor": {},
+                        "NormalFileData": {
+                          "Type": "PlistSubImage",
+                          "Path": "gameTop_zanting.png",
+                          "Plist": "gameSceneUI.plist"
+                        },
+                        "Scale9Width": 115,
+                        "Scale9Height": 118,
+                        "OutlineColor": {
+                          "R": 0,
+                          "G": 0,
+                          "B": 0
+                        },
+                        "ShadowColor": {
+                          "R": 0,
+                          "G": 0,
+                          "B": 0
+                        },
+                        "ShadowOffsetX": 2.0,
+                        "ShadowOffsetY": -2.0,
+                        "TouchEnable": true,
+                        "AnchorPoint": {
+                          "ScaleX": 0.5,
+                          "ScaleY": 0.5
+                        },
+                        "Position": {
+                          "X": 57.5,
+                          "Y": 17.0
+                        },
+                        "Scale": {
+                          "ScaleX": 1.0,
+                          "ScaleY": 1.0
+                        },
+                        "CColor": {},
+                        "IconVisible": false,
+                        "PrePosition": {
+                          "X": 0.6461,
+                          "Y": 0.2237
+                        },
+                        "PreSize": {
+                          "X": 1.2921,
+                          "Y": 1.5526
+                        },
+                        "RightMargin": -26.0,
+                        "BottomMargin": -42.0,
+                        "Tag": 1004060,
+                        "ActionTag": 63292653,
+                        "Size": {
+                          "X": 115.0,
+                          "Y": 118.0
+                        },
+                        "Name": "btnPause",
+                        "ctype": "ButtonObjectData"
+                      }
+                    ],
+                    "ActionTag": 1246058,
+                    "Size": {
+                      "X": 89.0,
+                      "Y": 76.0
+                    },
+                    "Name": "panelLeft",
+                    "ctype": "PanelObjectData"
+                  }
+                ],
+                "ActionTag": 64363694,
+                "Size": {
+                  "X": 1136.0,
+                  "Y": 76.0
+                },
+                "Name": "topBar",
+                "ctype": "PanelObjectData"
+              }
+            ],
+            "ActionTag": -1,
+            "Size": {
+              "X": 1136.0,
+              "Y": 76.0
+            },
+            "Name": "topUI",
+            "ctype": "PanelObjectData"
+          }
+        ],
+        "Size": {
+          "X": 1136.0,
+          "Y": 76.0
+        },
+        "Name": "UiEntity84335021",
+        "ctype": "LayerObjectData"
+      },
+      "UsedResources": [
+        "../gameSceneUI.plist",
+        "../gameSceneUI.png",
+        "fonts/defen.fnt",
+        "fonts/defen.png",
+        "fonts/jcdf.fnt",
+        "fonts/jcdf.png"
+      ],
+      "ctype": "GameFileData"
+    }
+  },
+  "Type": "Layer"
+}
