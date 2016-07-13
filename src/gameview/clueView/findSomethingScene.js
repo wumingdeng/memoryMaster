@@ -111,14 +111,6 @@ var findSomethingLayer = cc.Layer.extend({
             onTouchCancelled: this.TouchCancelled.bind(this)
         }, this);
     },
-    getInnerPos:function(sprite,worldPos){
-        var innerPos = {}
-        var rect = sprite.getTextureRect()
-        innerPos.x = worldPos.x - rect.x
-        innerPos.y = worldPos.y - rect.y
-
-        return innerPos
-    },
     TouchBegan: function (event) {
         var location = event.getLocation()
         var innerPos = this._maskSpt.convertToNodeSpace(location)
@@ -181,6 +173,7 @@ var findSomethingLayer = cc.Layer.extend({
         this._progress = -1
         this.updateClue(pos)
     },
+    /*做检查线索的检测状态*/
     updateClue: function (positon) {
         self = this;
         if (self._progress == 0) {

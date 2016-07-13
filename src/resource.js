@@ -179,6 +179,11 @@ var res = {
     gameScene7_png:"res/gameScene/gameScene_7/gameScene7_1.png",
     gameScene7_plist:"res/gameScene/gameScene_7/gameScene7_1.plist",
 
+    //线索玩法 4
+    gameScene4_json:"res/gameScene/gameScene_4/gameScene4_1.json",
+    gameScene4_png:"res/gameScene/gameScene_4/gameScene4_1.png",
+    gameScene4_plist:"res/gameScene/gameScene_4/gameScene4_1.plist",
+
     //shader source
     shader_blur:"res/shader/example_Blur.fsh",
     shader_celShading:"res/shader/example_celShading.fsh",
@@ -211,6 +216,14 @@ var g_scratchGame = [
 
 //拼图
 var g_sortMapGame = [
+    res.gameScene4_json,
+    res.gameScene4_plist,
+    res.gameScene4_png,
+    res.clue_bg
+]
+
+//碎纸条拼图玩法
+var g_jigsawGame = [
     res.gameScene8_json,
     res.gameScene8_plist,
     res.gameScene8_png,

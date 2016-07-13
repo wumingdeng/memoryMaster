@@ -18,15 +18,19 @@ var sortMapLayer = cc.Layer.extend({
     _sceneId:0,
     ctor:function () {
         this._super();
-        this._checkPos = [{x:530.21,y:400.30,r:2},{x:234.03,y:511.39,r:2},{x:117.82,y:321.84,r:1},{x:433.78,y:516.38,r:2},{x:176.91,y:176.04,r:3},{x:439.94,y:267.28,r:3}];
+        this._checkPos = [{x:529.21,y:401.30,r:2},{x:229.03,y:512.39,r:2},{x:118.82,y:322.84,r:1},{x:433.78,y:517.38,r:2},{x:180.44,y:177.04,r:3},{x:439.94,y:267.28,r:2}];
         var sortMap = ccs.load(res.gameScene8_json).node;
         this.addChild(sortMap);
         for (var i = 1; i <= this._checkPos.length; i++) {
             var image = sortMap.getChildByName("Image_" + i);
+            var txtName = image.getChildByName("txtName")
             image.addTouchEventListener(this.onTouchFun,this)
-            this._curLightTable[i-1] = shaderHelper.setSurroundingAreaLight(image,cc.math.vec3(1,1,0))
-            this._curLightTable[i-1].setVisible(false)
-            this._node.addChild(this._curLightTable[i-1])
+            var maskSpt = shaderHelper.setSurroundingAreaLight(image,cc.math.vec3(1,1,0))
+            maskSpt.setVisible(false)
+            this._curLightTable[i-1] = maskSpt
+            sortMap.addChild(maskSpt)
+            image.setRotation(0)
+            txtName.setRotation(0)
         }
         return true;
     },
@@ -49,15 +53,17 @@ var sortMapLayer = cc.Layer.extend({
                     movePos = cc.pAdd(movePos, this.innerPos)
                     sender.setPosition(movePos)
                 }
-                // if (this.checkPiecePlace() ) {
-                //    _curLightTable[sender.getTag()].setPosition(movePos)
-                //    _curLightTable[sender.getTag()].setVisible(true)
-                // }
-                // else{
-                //    _curLightTable[sender.getTag()].setVisible(false)
-                // }
+                /*检测到在目标区域范围里，该对象的光晕效果打开否则关闭*/
+                 if (this.checkPiecePlace() ) {
+                    this._curLightTable[sender.getTag()-1].setPosition(movePos)
+                     this._curLightTable[sender.getTag()-1].setVisible(true)
+                 }
+                 else{
+                     this._curLightTable[sender.getTag()-1].setVisible(false)
+                 }
             }
         } else if (type == ccui.Widget.TOUCH_ENDED) {
+            /*在移动范围不超过 5像素做单击处理*/
             if (this.largerDistance <= 5) {
                 var txtName = sender.getChildByName("txtName")
                 txtName.setRotation(txtName.getRotation() - 90)
@@ -75,7 +81,7 @@ var sortMapLayer = cc.Layer.extend({
                     }
                 }
                 sender.runAction(cc.sequence(moveTo, cc.callFunc(checkIsSuccess,this)))
-                //_curLightTable[sender.getTag()].setVisible(false)
+                this._curLightTable[sender.getTag()-1].setVisible(false)
             }
             this.largerDistance = 0
             sender.setLocalZOrder(0)
