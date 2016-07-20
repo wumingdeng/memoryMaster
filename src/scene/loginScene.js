@@ -337,10 +337,10 @@ var loginLayer = cc.Layer.extend({
     }
 })
 
-var loginScene = cc.Scene.extend({
+var loginScene_ii = cc.Scene.extend({
+// var loginScene = cc.Scene.extend({
     layer: null,
     onEnter: function () {
-        console.log("onEnter")
         this._super();
         this.layer = new loginLayer();
         this.addChild(this.layer);

@@ -1,31 +1,65 @@
 /**
- * Created by Fizzo on 16/7/8.
+ * Created by chenzhaowen on 16-6-17.
  */
-var SD_SCENE = {}
-SD_SCENE.ID = 0
-SD_SCENE.NAME = 1
-SD_SCENE.GAMEID = 2
-SD_SCENE.GAME_CONFIGURE = 3
-SD_SCENE.GAME_FILENAME = 4
-SD_SCENE.VALID_RECT = 5
-SD_SCENE.LEVEL_SCORE = 6
-SD_SCENE.LEVEL_ITEMCOUNT = 7  //--"需要寻找的物品个数"
-SD_SCENE.UNLOCK_CONDITION = 8
-SD_SCENE.BASEPRIZETYPENAMOUNT1 = 9
-SD_SCENE.BASEPRIZETYPENAMOUNT2 = 10
-SD_SCENE.NEEDENERGY = 11
-SD_SCENE.ITEMFILEID = 12  //--在线索玩法到拼图场景中，同时也是指向拼图之间的相邻数据的索引
-SD_SCENE.GAME_TYPE = 13//-- "0`0" 游戏模式`是否倒计时 0倒计时，
-SD_SCENE.CLUE_POINTS = 14 //--线索玩法5，中需要寻找的点 "x`y_x`y"
-SD_SCENE.ACTION_ITEM = 15  //--场景需要的特殊物品
-SD_SCENE.data = [
-    [1001, "寝宫", 1, "gameScene_1", "gameScene_1", "0`0`300`200", "400`600`2000`8000`10000", "6`8`10`12`14`16", "", 1000086, 20001, "30`20", 1, "0`1", "", "29"],
-    [1002, "寝宫", 7, "gameScene_7", "gameScene7_1", "115`13`900`485", "600`1500`3000`8000`10000", "6`8`10`12`14`16", "", 3000030, 0, "30`20", 1, "0`0", "813`395`1_303`400`1_354`155`1_645`260`1_558`436`0_521`274`0_825`177`0"],
-    [1003, "掖庭", 1, "gameScene_2", "gameScene_2", "0`0`100`150", "600`1500`3000`8000`10000", "6`8`10`12`14`16", "", 3100105, 0, "30`20", 2, "1`1", ""],
-    [1004, "拼字条", 4, "gameScene_4", "gameScene4_1", "0`0`150`100", "", "", "", 3000030, 0, "30`20", 1, "", ""],
-    [1005, "花园", 1, "gameScene_3", "gameScene_3", "0`0`150`100", "600`3000`5000`8000`10000", "6`8`10`12`14`16", "", 3000030, 0, "30`20", 3, "", "", ""],
-    [1006, "花园", 3, "gameScene_3", "gameScene_3", "0`0`150`100", "600`3000`5000`8000`10000", "6`8`10`12`14`16", "", 3000030, 0, "30`20", 3, "0`1", ""],
-    [1007, "勘验手帕", 6, "gameScene_6", "scratch1", "0`0`150`100", "", "", "", 3000030, 0, "30`20", 1, "", ""],
-    [1008, "掖庭", 2, "gameScene_2", "gameScene_2", "0`0`150`100", "300`3000`5000`8000`10000", "3`4`5`6`7`8", "", 3000030, 0, "30`20", 2, "1`1", ""],
-    [1009, "寝宫", 8, "gameScene_8", "gameScene_8", "0`0`150`100", "600`1500`3000`8000`10000", "6`8`10`12`14`16", "", 3000030, 0, "30`20", 1, "0`0", "530.21`400.30`2_234.03`511.39`2_117.82`321.84`1_433.78`516.38`2_176.91`176.04`3_439.94`267.28`2"],
-]
+
+
+var SCENE_Type = {
+    full:1,     //全屏
+    embed:2,     //嵌入
+    game:3      //玩法场景
+};
+var SCENE_CONFIG = {
+
+};
+/**格式样例
+ {
+    name:"寝宫",
+    type: SCENE_Type.full,  //场景类型
+    gameId:1                //当场景是个小游戏时配置 对应的game.js文件中配置玩法的详细信息
+    item: [1, 2, 3, 4, 5],   //场景中可点击的物品
+    ui: "res/hotel/entrance.json", //场景对应的UI
+    animation:"res/animation/begin.json",   //开场动画
+    back:1          //点击下面区域要返回的场景  如果多选 配成数组
+},*/
+
+SCENE_CONFIG.data = {
+    "s1": {
+        name:"寝宫",
+        type: SCENE_Type.full,  //场景类型
+        item: [101, 102, 103, 104, 105, 106, 107, 108],   //场景中可点击的物品
+        ui: "res/gameScene/qingong/qingong.json", //场景对应的UI
+    },
+    "s2": {
+        name:"桌面",
+        type: SCENE_Type.embed,  //场景类型
+        item: [201, 202, 203],   //场景中可点击的物品
+        ui: "res/gameScene/qingong/desktop/desktop.json", //场景对应的UI
+    },
+    "s3":{
+        name:"掖庭",
+        type: SCENE_Type.full,  //场景类型
+        item: [301, 302],   //场景中可点击的物品
+        ui: "res/gameScene/yeting/yeting.json", //场景对应的UI
+        back:1          //返回哪个场景
+    },
+    "s4":{
+        name:"纸团拼图",
+        type: SCENE_Type.game,  //小游戏场景
+        gameId:1,               //对应玩法的详细配置
+        item: [],   //玩法中可以加入各种可以交互的主玩法物品 只跟玩法本身有关的物品不用配置进来
+        back:1
+    },
+    "s5":{
+        name:"花园",
+        type: SCENE_Type.full,  //场景类型
+        item: [501, 502],   //场景中可点击的物品
+        ui: "res/gameScene/huayuan/huayuan.json", //场景对应的UI
+        back:1
+    }
+};
+
+//存在服务端的场景状态
+SCENE_STATE = {
+
+};
+

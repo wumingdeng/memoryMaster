@@ -1,7 +1,8 @@
 /**
  * Created by Fizzo on 16/4/29.
  */
-
+var TRACE_LEVEL = 0;
+var vsize = cc.director.getVisibleSize();
 vSize = cc.director.getVisibleSize()
 vSizeOrg = cc.director.getVisibleOrigin()
 if (cc.sys.isNative){

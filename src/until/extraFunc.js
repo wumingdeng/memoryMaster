@@ -188,3 +188,27 @@ table.removeItem = function(t, item, removeAll) {
         }
     }
 };
+
+/*判断是否点击在透明区域里*/
+extraFunc.getOriginalAlphaPoint=function(source,p)
+{
+    return false //TODO
+    if(source.getDescription() == "ImageView"){
+        source = source.getVirtualRenderer().getSprite()
+    }
+    var texture = source.texture;
+    var originalPoint = source.convertToNodeSpace(p)  //点击点在物体上的坐标
+    var rect = source.getTextureRect();
+    var isRotated = source.isTextureRectRotated();
+    originalPoint.y = rect.height - originalPoint.y
+    if (isRotated) {
+        originalPoint = cc.p(rect.height - originalPoint.y, originalPoint.x)
+    }
+    var alphaX = originalPoint.x + rect.x
+    var alphaY = rect.y + originalPoint.y
+    if (alphaX < 0 || alphaY < 0) {
+        return false;
+    }
+    var ret = texture.getAlpha(alphaX,alphaY)
+    return ret
+}

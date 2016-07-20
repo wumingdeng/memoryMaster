@@ -207,6 +207,7 @@ var assetManagerLayer = cc.Layer.extend({
         cc.sys.localStorage.setItem("originalVersion", this.g_usre_info.game_version)
     }
     ,
+    //先加载新更新的js文件，然后再加载资源
     onLoadJsFiles: function () {
         cc.loader.loadJs(jsFiles, function () {
             cc.LoaderScene.preload(g_resources, function () {

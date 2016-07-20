@@ -21,6 +21,7 @@ for (var i in baseRes) {
 
 var loginSceneRes = {
     loginScene_json : "res/loginScene/LoginScene.json",
+
     logindonghuaxiaoguo_json : "res/loginScene/logodonghuaxiaoguo.json",
     qidong_baimaguanyinzhangdonghua_json : "res/loginScene/qidong_baimaguanyinzhangdonghua.json",
     niao_json : "res/loginScene/niao.json",
@@ -180,9 +181,15 @@ var res = {
     gameScene7_plist:"res/gameScene/gameScene_7/gameScene7_1.plist",
 
     //线索玩法 4
+    //线索玩法 4
     gameScene4_json:"res/gameScene/gameScene_4/gameScene4_1.json",
     gameScene4_png:"res/gameScene/gameScene_4/gameScene4_1.png",
     gameScene4_plist:"res/gameScene/gameScene_4/gameScene4_1.plist",
+
+    //线索玩法 5
+    gameScene5_json:"res/gameScene/gameScene_5/gameScene5_1.json",
+    gameScene5_png:"res/gameScene/gameScene_5/gameScene5_1.png",
+    gameScene5_plist:"res/gameScene/gameScene_5/gameScene5_1.plist",
 
     //shader source
     shader_blur:"res/shader/example_Blur.fsh",
@@ -193,6 +200,22 @@ var res = {
     shader_gray:"res/shader/gray.fsh",
     shader_outLine:"res/shader/outLine.fsh",
     shader_public:"res/shader/public.vsh",
+
+    gameBar_json:"res/gameScene/gameBar/gameBar.json",
+    loginScene_json :"res/loginScene.json",
+    //寝宫场景
+    qingong_json: "res/gameScene/qingong/qingong.json",
+    leftDujuan_json:"res/gameScene/qingong/leftDujuan.json",
+    rightDuJuan_json:"res/gameScene/qingong/rightDujuan.json",
+    qingong_desktop_json:"res/gameScene/qingong/desktop/desktop.json",
+
+    //掖庭
+    yeting_json:"res/gameScene/yeting/yeting.json",
+    foXiang_json:"res/gameScene/yeting/foXiang.json",
+
+    //花园
+    huayuan_json:"res/gameScene/huayuan/huayuan.json",
+    door_json:"res/gameScene/huayuan/door.json",
 };
 
 var g_resources = [];
@@ -215,7 +238,7 @@ var g_scratchGame = [
 ];
 
 //拼图
-var g_sortMapGame = [
+var g_jigsawGame = [
     res.gameScene4_json,
     res.gameScene4_plist,
     res.gameScene4_png,
@@ -223,7 +246,7 @@ var g_sortMapGame = [
 ]
 
 //碎纸条拼图玩法
-var g_jigsawGame = [
+var g_sortMapGame = [
     res.gameScene8_json,
     res.gameScene8_plist,
     res.gameScene8_png,
@@ -240,6 +263,27 @@ var g_findSomethingGame = [
     res.shader_public,
     res.shader_celShading
 ]
+
+//杂物中找线索
+var g_findTargetGame = [
+    res.gameScene5_json,
+    res.gameScene5_plist,
+    res.gameScene5_png
+]
+
+var scene_resources = [
+    res.gameBar_json,
+    res.loginScene_json,
+    res.qingong_json,
+    res.leftDujuan_json,
+    res.rightDuJuan_json,
+    res.qingong_desktop_json,
+    res.yeting_json,
+    res.foXiang_json,
+    res.huayuan_json,
+    res.door_json
+];
+
 
 var g_searchGame = [
     [   //

@@ -32,12 +32,24 @@
         "src/until/crypto.js",
         "src/until/cryptoExtra.js",
 
+        "src/staticdata/item.js",
         "src/staticdata/task.js",
         "src/staticdata/textSimplifiedStyle.js",
         "src/staticdata/scene.js",
+        "src/staticdata/scene_1.js",
+        "src/staticdata/adjacent.js",
+        "src/staticdata/game.js",
+        "src/staticdata/globalitem.js",
+        "src/staticdata/hint.js",
+        "src/staticdata/talk.js",
 
+        "src/scene/sceneBase.js",
         "src/scene/loadingProgressScene.js",
         "src/scene/loginScene.js",
+        "src/scene/embedScene.js",
+        "src/scene/fullScene.js",
+        "src/scene/selectScene.js",
+        "src/scene/sceneManager.js",
 
         "src/gameview/scratchScene.js",
         "src/gameview/gameTopLayer.js",
@@ -48,11 +60,26 @@
         "src/gameview/Tip.js",
         "src/gameview/clueView/findSomethingScene.js",
         "src/gameview/clueView/sortMapScene.js",
+        "src/gameview/clueView/jigsawScene.js",
+        "src/gameview/clueView/findTargetScene.js",
+
+        "src/playerStateManger.js",
+        "src/login/loginScene.js",
+        "src/gameTool/gameBar.js",
+
+        "src/Object/globalObject.js",
+        "src/Object/ItemBase.js",
+        "src/Object/itemManager.js",
+        "src/Object/items/item102.js",
+        "src/task/taskManager.js",
+        "src/hint/hintLayer.js",
+        "src/dialogue/dialogueLayer.js",
 
         "src/network/httpRequest.js",
                 
         "src/config/GameConfig.js",
         "src/config/item/item1.js"
+
 
     ]
 }

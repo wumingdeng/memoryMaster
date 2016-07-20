@@ -1,7 +1,24 @@
 /**;
  * Created by chenzhaowen on 16/4/21.;
  */;
-var cfun = {};
+
+cfun = {};
+
+var trace = function() {
+    cc.log(Array.prototype.join.call(arguments,","))
+};
+
+var trace1 = function(){
+    if (TRACE_LEVEL >= 1) {
+        cc.log(Array.prototype.join.call(arguments,","))
+    }
+};
+
+var trace2 = function(){
+    if (TRACE_LEVEL >= 1) {
+        cc.log(Array.prototype.join.call(arguments,","))
+    }
+};
 
 
 
@@ -27,22 +44,41 @@ cfun.eventListener = function(eventName,handler){
 };
 
 cfun.addEventListener = function(target,began,moved,ended,cancelled) {
-    var listener = {
-        event: cc.EventListener.TOUCH_ONE_BY_ONE
-    };
-    if (began) {
-        listener.onTouchBegan = began;
+    if ('mouse' in cc.sys.capabilities) {
+        var listener = {
+            event: cc.EventListener.MOUSE
+        };
+        if (began) {
+            listener.onMouseDown = began.bind(target);
+        }
+        if (moved) {
+            listener.onMouseMove = moved.bind(target);
+        }
+        if (ended) {
+            listener.onMouseUp = ended.bind(target);
+        }
+        if (cancelled) {
+
+        }
+        cc.eventManager.addListener(listener,target);
+    } else if ('touches' in cc.sys.capabilities) {
+        var listener = {
+            event: cc.EventListener.TOUCH_ONE_BY_ONE
+        };
+        if (began) {
+            listener.onTouchBegan = began.bind(target);
+        }
+        if (moved) {
+            listener.onTouchMoved = moved.bind(target);
+        }
+        if (ended) {
+            listener.onTouchEnded = ended.bind(target);
+        }
+        if (cancelled) {
+            listener.onTouchCancelled = cancelled.bind(target);
+        }
+        cc.eventManager.addListener(listener,target);
     }
-    if (moved) {
-        listener.onTouchMoved = moved;
-    }
-    if (ended) {
-        listener.onTouchEnded = ended;
-    }
-    if (cancelled) {
-        listener.onTouchCancelled = cancelled;
-    }
-    cc.eventManager.addListener(listener,target);
 };
 
 cfun.setButtonFun = function(source,beginFun,moveFun,endFun,canceleFun,target,sound) {
@@ -91,7 +127,7 @@ cfun.setButtonFun = function(source,beginFun,moveFun,endFun,canceleFun,target,so
                         cc.audioEngine.playEffect(sound);
                     }
                 } else {
-                    cc.audioEngine.playEffect(res.common_click_mp3)
+                    //cc.audioEngine.playEffect(res.common_click_mp3)
                 }
             }
         } else if (type == ccui.Widget.TOUCH_CANCELED) {
@@ -111,6 +147,17 @@ cfun.setButtonFun = function(source,beginFun,moveFun,endFun,canceleFun,target,so
             cfun.removeFullScreen("button");
         }
     };
+    //if (!source.nodeEvent) {
+    //    function onNodeEvent(event) {
+    //        if (event == "exit") {
+    //            if (source.isTouch) {
+    //                cfun.removeFullScreen("button")
+    //            }
+    //        }
+    //    }
+    //    source.nodeEvent = true;
+    //    source.registerScriptHandler(onNodeEvent);
+    //}
 };
 
 
@@ -146,12 +193,12 @@ cfun.addFullScreen = function(name,listener,isPropagate) {
 //            parclose.setSwallowTouches(true)
             parclose.addTouchEventListener(listener);
         }
-        cc.log("添加全屏遮挡:" + name);
+        trace1("添加全屏遮挡:" + name);
     }
 };
 
 
-        //-取消全屏屏蔽
+//-取消全屏屏蔽
 //@param name 传入遮挡的名称 保证不同遮挡间不干扰
 cfun.removeFullScreen = function(name) {
     name = name || "fullScreen"; //默认用名为"fullScreen"的遮挡
@@ -159,9 +206,44 @@ cfun.removeFullScreen = function(name) {
     var screen = cc.director.getRunningScene().getChildByName(name)
     if (screen) {
         cc.director.getRunningScene().removeChild(screen);
-        cc.log("移除全屏遮挡:" + name);
+        trace1("移除全屏遮挡:" + name);
     }
-}
+};
+
+//给某一层或物品屏蔽点击
+cfun.addTouchParclose = function(target){
+
+    function isInTarget(pos) {
+        if (target instanceof cc.Layer){
+            return true;     //如果没有传入目标就默认都挡住
+        } else {
+            return cc.rectContainsPoint(target.getBoundingBox(),pos)
+        }
+    }
+
+
+
+    function onBegan(touch){
+        var pos = touch.getLocation();
+        if (isInTarget(pos)){
+            touch.stopPropagation()
+        }
+    }
+    function onMoved(touch){
+        var pos = touch.getLocation();
+        if (isInTarget(pos)){
+            touch.stopPropagation()
+        }
+    }
+    function onEnded(touch){
+        var pos = touch.getLocation();
+        if (isInTarget(pos)){
+            touch.stopPropagation()
+        }
+    }
+
+    cfun.addEventListener(target,onBegan,onMoved,onEnded,onEnded)
+};
 
 cfun.getTimeNumberWithoutHourConvertString = function(num) {    //不带小时
     var minutes;
@@ -240,4 +322,18 @@ cfun.isNeedAlphaData = function(png){
         }
     }
     return false;
+};
+
+cfun.getNum = function(arr) {
+    if (!cc.isArray(arr)) {
+        cc.log("无法获取长度")
+        return 0;
+    }
+    var len = 0;
+    cc.each(arr,function(value,key){
+        if (!cc.isUndefined(value) && value != null){
+            len++;
+        }
+    });
+    return len;
 };

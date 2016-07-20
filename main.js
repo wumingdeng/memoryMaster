@@ -67,10 +67,14 @@ cc.game.onStart = function(){
     // The game will be resized when browser size change
     cc.view.resizeWithBrowserSize(true);
     //load resources
-    cc.LoaderScene.preload(g_findSomethingGame, function () {
+    //cc.LoaderScene.preload(g_jigsawGame, function () {
+    cc.LoaderScene.preload(scene_resources, function () { 
         //var targetScene = searchScene.scene(0,1,1001,1,false)
-        var targetScene = new findSomethingScene(1002,1)
-        //var targetScene = new loginScene()
+        //var targetScene = new findTargetScene()
+        //var targetScene = new jigsawScene()
+        //var targetScene = new sortMapScene()
+        //var targetScene = new findSomethingScene(1002,1)
+        var targetScene = new loginScene()
         //var targetScene = new HelloWorldScene()
         cc.director.runScene(targetScene);
     }, this);

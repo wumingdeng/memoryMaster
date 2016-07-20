@@ -40,6 +40,7 @@ var findSomethingLayer = cc.Layer.extend({
     },
     initScene: function () {
         this.initGameData()
+        jsb.fileUtils.addSearchPath("res")
         this._node = ccs.load(res.gameScene7_json).node
         this.drawWidget()
         this._node.getChildByName("imgSource").setVisible(false)
@@ -52,6 +53,7 @@ var findSomethingLayer = cc.Layer.extend({
         this._clueCountText.setString("0/" + this._allClueCount)
         this.addChild(this._node)
 
+        /*放大镜的遮罩效果*/
         var holesClipper = new cc.ClippingNode() //--剪裁节点
         holesClipper.setInverted(true)
         holesClipper.addChild(this._maskSpt)
@@ -99,7 +101,6 @@ var findSomethingLayer = cc.Layer.extend({
         this._loadingbarTimerText.setPosition(this._pt.getPosition())
         this._loadingbarTimer.addChild(this._loadingbarTimerText)
         this._loadingbarTimer.setVisible(false)
-
 
         cc.eventManager.addListener({
             prevTouchId: -1,
@@ -199,6 +200,7 @@ var findSomethingLayer = cc.Layer.extend({
             self._loadingbarTimerText.setString("0%")
             var tempPecent = 0
             this._pt.setPercentage(tempPecent)
+            /*检测线索过程中的读条效果*/
             function onReadLoading() {
                 if (tempPecent < 100) {
                     this._pt.setPercentage(tempPecent)
@@ -216,7 +218,9 @@ var findSomethingLayer = cc.Layer.extend({
             }
 
             if (self._curTag != 0) {
-
+                /*当前检测对象为第一次检测到
+                * 被检测后的对象不在显示在界面上
+                * */
                 if (self._checkPos[self._curTag-1] != "") {
                     self._node.getChildByTag(self._curTag).setVisible(false)
                 }
@@ -242,9 +246,11 @@ var findSomethingLayer = cc.Layer.extend({
             pos.y < maskH
         return result
     }
-    ,
+    ,/*渲染寻找线索的区域
+     * 遮挡线索物品
+     * */
     drawWidget: function () {
-        var bgTxtr = new cc.RenderTexture(1136, 640, cc.Texture2D.PIXEL_FORMAT_RGBA8888)
+        var bgTxtr = new cc.RenderTexture(cc.winSize.width, cc.winSize.height, cc.Texture2D.PIXEL_FORMAT_RGBA8888)
         bgTxtr.begin()
         this._node.visit()
         bgTxtr.end()
