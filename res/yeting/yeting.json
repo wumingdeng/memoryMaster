@@ -1,0 +1,256 @@
+{
+  "ID": "03573060-114b-430d-952a-019cd5680b22",
+  "Version": "2.3.4",
+  "Name": "yeting",
+  "Content": {
+    "Content": {
+      "Animation": {
+        "Duration": 0,
+        "Speed": 1.0,
+        "Timelines": [],
+        "ctype": "TimelineActionData"
+      },
+      "AnimationList": [],
+      "ObjectData": {
+        "Tag": 11,
+        "Children": [
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "yeting/images_2/gameScene_2.jpg",
+              "Plist": ""
+            },
+            "BlendFunc": {
+              "Src": 770,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 285.0,
+              "Y": 320.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.2509,
+              "Y": 0.5
+            },
+            "PreSize": {
+              "X": 0.5009,
+              "Y": 1.0
+            },
+            "LeftMargin": 0.5,
+            "RightMargin": 566.5,
+            "Tag": 57,
+            "ActionTag": -1721742249,
+            "Size": {
+              "X": 569.0,
+              "Y": 640.0
+            },
+            "Name": "gameScene_2_1",
+            "ctype": "SpriteObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "yeting/images_2/gameScene_2_02.jpg",
+              "Plist": ""
+            },
+            "BlendFunc": {
+              "Src": 770,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 853.0,
+              "Y": 320.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.7509,
+              "Y": 0.5
+            },
+            "PreSize": {
+              "X": 0.5,
+              "Y": 1.0
+            },
+            "LeftMargin": 569.0,
+            "RightMargin": -1.0,
+            "Tag": 58,
+            "ActionTag": 1427650402,
+            "Size": {
+              "X": 568.0,
+              "Y": 640.0
+            },
+            "Name": "gameScene_2_02_2",
+            "ctype": "SpriteObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "yeting/foXiang.json",
+              "Plist": ""
+            },
+            "StretchWidthEnable": false,
+            "StretchHeightEnable": false,
+            "InnerActionSpeed": 1.0,
+            "AnchorPoint": {},
+            "Position": {
+              "X": 945.0397,
+              "Y": 249.415
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": true,
+            "PrePosition": {
+              "X": 0.8319,
+              "Y": 0.3897
+            },
+            "PreSize": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "LeftMargin": 945.0397,
+            "RightMargin": 190.9603,
+            "TopMargin": 390.585,
+            "BottomMargin": 249.415,
+            "Tag": 302,
+            "ActionTag": -1733990606,
+            "Size": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "Name": "foXiang",
+            "ctype": "ProjectNodeObjectData"
+          },
+          {
+            "FontSize": 48,
+            "LabelText": "掖庭",
+            "OutlineColor": {
+              "G": 0,
+              "B": 0
+            },
+            "ShadowColor": {
+              "R": 110,
+              "G": 110,
+              "B": 110
+            },
+            "ShadowOffsetX": 2.0,
+            "ShadowOffsetY": -2.0,
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 558.0,
+              "Y": 569.1249
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.4912,
+              "Y": 0.8893
+            },
+            "PreSize": {
+              "X": 0.0845,
+              "Y": 0.075
+            },
+            "LeftMargin": 510.0,
+            "RightMargin": 530.0,
+            "TopMargin": 46.8751,
+            "BottomMargin": 545.1249,
+            "Tag": 25,
+            "ActionTag": -653289005,
+            "Size": {
+              "X": 96.0,
+              "Y": 48.0
+            },
+            "Name": "Text_3",
+            "ctype": "TextObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "yeting/images_2/02_feizhituan.png",
+              "Plist": ""
+            },
+            "BlendFunc": {
+              "Src": 1,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 236.7866,
+              "Y": 100.7631
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.2084,
+              "Y": 0.1574
+            },
+            "PreSize": {
+              "X": 0.0405,
+              "Y": 0.0625
+            },
+            "LeftMargin": 213.7866,
+            "RightMargin": 876.2134,
+            "TopMargin": 519.2369,
+            "BottomMargin": 80.7631,
+            "Tag": 301,
+            "ActionTag": -958654252,
+            "Size": {
+              "X": 46.0,
+              "Y": 40.0
+            },
+            "Name": "Sprite_3",
+            "ctype": "SpriteObjectData"
+          }
+        ],
+        "Size": {
+          "X": 1136.0,
+          "Y": 640.0
+        },
+        "Name": "Scene",
+        "ctype": "SingleNodeObjectData"
+      },
+      "UsedResources": [
+        "foXiang.json",
+        "images_2/02_feizhituan.png",
+        "images_2/gameScene_2.jpg",
+        "images_2/gameScene_2_02.jpg"
+      ],
+      "ctype": "GameFileData"
+    }
+  },
+  "Type": "Scene"
+}

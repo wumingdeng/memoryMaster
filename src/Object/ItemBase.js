@@ -42,7 +42,6 @@ var itemBase = cc.Class.extend({
             this._source.runAction(this._action);
             //让有默认动画的物品开始播放默认动画
             if (this._action.getAnimationInfo("base")) {
-                console.log("fuck....")
                 this._action.play("base",true);
             } else {
                 this._action.gotoFrameAndPause(0);
@@ -56,7 +55,6 @@ var itemBase = cc.Class.extend({
     },
 
     onEnter:function(){
-        console.log("fuck")
         //如果是进场景就自动播放的物品
         cc.Node.prototype.onEnter.call(this._source)
         if (this.haveBehavior(ITEM_BEHAVIOR.autoAction)){

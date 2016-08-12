@@ -23,7 +23,15 @@ var gameBar = cc.Layer.extend({
 
         this._mainBar = ccui.helper.seekWidgetByName(this._ui,"mainBar");
 
+        //function onRejection(sender,type){
+        //    trace("....")
+        //
+        //}
+        //mainBar.setSwallowTouches(true);
+        //mainBar.setTouchEnabled(true);
+        //mainBar.addTouchEventListener(onRejection);
 
+        //cfun.addEventListener(this,this.touchBegan,null)
         cfun.addTouchParclose(this._mainBar);
 
         //显示已有的全局物品
@@ -38,6 +46,18 @@ var gameBar = cc.Layer.extend({
             item.index = this._items.length;
 
         }
+
+        //提示功能
+        var hintBtn = ccui.helper.seekWidgetByName(this._ui,"hintBtn");
+        hintFun.init(hintBtn);
+        function onHint(sender,type){
+            if (type != ccui.Widget.TOUCH_ENDED) return;
+            hintFun.beginHint()
+
+        }
+
+        hintBtn.addTouchEventListener(onHint)
+
     },
 
     touchBegan:function(touch,event){

@@ -1,0 +1,256 @@
+{
+  "ID": "1f4b570e-5369-4b44-97d3-868de9abdf5a",
+  "Version": "2.3.4",
+  "Name": "huayuan",
+  "Content": {
+    "Content": {
+      "Animation": {
+        "Duration": 0,
+        "Speed": 1.0,
+        "Timelines": [],
+        "ctype": "TimelineActionData"
+      },
+      "AnimationList": [],
+      "ObjectData": {
+        "Tag": 22,
+        "Children": [
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "huayuan/images_3/gameScene_3_02.jpg",
+              "Plist": ""
+            },
+            "BlendFunc": {
+              "Src": 770,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 854.0,
+              "Y": 320.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.7518,
+              "Y": 0.5
+            },
+            "PreSize": {
+              "X": 0.5009,
+              "Y": 1.0
+            },
+            "LeftMargin": 569.5,
+            "RightMargin": -2.5,
+            "Tag": 21,
+            "ActionTag": -2013939718,
+            "Size": {
+              "X": 569.0,
+              "Y": 640.0
+            },
+            "Name": "gameScene_3_02_2",
+            "ctype": "SpriteObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "huayuan/images_3/gameScene_3.jpg",
+              "Plist": ""
+            },
+            "BlendFunc": {
+              "Src": 770,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 285.0,
+              "Y": 320.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.2509,
+              "Y": 0.5
+            },
+            "PreSize": {
+              "X": 0.5009,
+              "Y": 1.0
+            },
+            "LeftMargin": 0.5,
+            "RightMargin": 566.5,
+            "Tag": 20,
+            "ActionTag": -1261639529,
+            "Size": {
+              "X": 569.0,
+              "Y": 640.0
+            },
+            "Name": "gameScene_3_1",
+            "ctype": "SpriteObjectData"
+          },
+          {
+            "FontSize": 36,
+            "LabelText": "花园",
+            "OutlineColor": {
+              "G": 0,
+              "B": 0
+            },
+            "ShadowColor": {
+              "R": 110,
+              "G": 110,
+              "B": 110
+            },
+            "ShadowOffsetX": 2.0,
+            "ShadowOffsetY": -2.0,
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 573.0,
+              "Y": 549.0833
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.5044,
+              "Y": 0.8579
+            },
+            "PreSize": {
+              "X": 0.0634,
+              "Y": 0.0562
+            },
+            "LeftMargin": 537.0,
+            "RightMargin": 527.0,
+            "TopMargin": 72.9167,
+            "BottomMargin": 531.0833,
+            "Tag": 23,
+            "ActionTag": -2016852603,
+            "Size": {
+              "X": 72.0,
+              "Y": 36.0
+            },
+            "Name": "Text_1",
+            "ctype": "TextObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "huayuan/door.json",
+              "Plist": ""
+            },
+            "StretchWidthEnable": false,
+            "StretchHeightEnable": false,
+            "InnerActionSpeed": 1.0,
+            "AnchorPoint": {},
+            "Position": {
+              "X": 234.464,
+              "Y": 364.363
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": true,
+            "PrePosition": {
+              "X": 0.2064,
+              "Y": 0.5693
+            },
+            "PreSize": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "LeftMargin": 234.464,
+            "RightMargin": 901.536,
+            "TopMargin": 275.637,
+            "BottomMargin": 364.363,
+            "Tag": 501,
+            "ActionTag": -585488071,
+            "Size": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "Name": "door",
+            "ctype": "ProjectNodeObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "huayuan/images_3/huayuan_men2.png",
+              "Plist": ""
+            },
+            "BlendFunc": {
+              "Src": 1,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 235.9992,
+              "Y": 364.5378
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.2077,
+              "Y": 0.5696
+            },
+            "PreSize": {
+              "X": 0.1109,
+              "Y": 0.2516
+            },
+            "LeftMargin": 172.9992,
+            "RightMargin": 837.0008,
+            "TopMargin": 194.9622,
+            "BottomMargin": 284.0378,
+            "Tag": 502,
+            "ActionTag": 1322495047,
+            "Size": {
+              "X": 126.0,
+              "Y": 161.0
+            },
+            "Name": "openDoor",
+            "ctype": "SpriteObjectData"
+          }
+        ],
+        "Size": {
+          "X": 1136.0,
+          "Y": 640.0
+        },
+        "Name": "Scene",
+        "ctype": "SingleNodeObjectData"
+      },
+      "UsedResources": [
+        "door.json",
+        "images_3/gameScene_3.jpg",
+        "images_3/gameScene_3_02.jpg",
+        "images_3/huayuan_men2.png"
+      ],
+      "ctype": "GameFileData"
+    }
+  },
+  "Type": "Scene"
+}

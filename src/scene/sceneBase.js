@@ -20,17 +20,22 @@ var sceneBase = cc.Layer.extend({
     },
 
     init:function(){
-        this._super()
-        var json = ccs.load(this._info.ui,"res/")
-        this._ui = json.node;
-        var action = json.action;
-        //action.gotoFrameAndPlay(-1,true)
-        //this._ui.runAction(action)
-        this.addChild(this._ui);
+        if (this._info.ui){
+            var json = ccs.load(this._info.ui,"res/")
+            this._ui = json.node;
+            var action = json.action;
+            //action.gotoFrameAndPlay(-1,true)
+            //this._ui.runAction(action)
+            this.addChild(this._ui);
+            this._path = cc.path.dirname(this._info.ui); //保存路径
+        }
         cfun.addEventListener(this,this.onTouchBegan,this.onTouchMoved,this.onTouchEnded,this.onTouchCancelled)
-        this._path = cc.path.dirname(this._info.ui); //保存路径
+
         this._initSceneItem();
+
+
     },
+
     //初始化场景中可交互的物品
     _initSceneItem:function(){
         var items = this._info.item;
@@ -93,7 +98,6 @@ var sceneBase = cc.Layer.extend({
     },
 
     onExit:function(){
-        this._super()
         this._destroyScene();
     },
 

@@ -104,7 +104,8 @@ taskManager.completeTask = function(tid){
     info.isFinish = true;
     this.setTaskState(tid,info);
 
-
+    //重置提示功能
+    hintFun.refresh();
 
     //根据配置 改变状态
     var taskInfo = taskManager.getTaskInfoById(tid);
@@ -194,5 +195,15 @@ taskManager.completeTask = function(tid){
     //    return;
     //}
 };
+
+//完成游戏场景的任务
+taskManager.finishGameTask = function(){
+    var tasks = this.getSceneTask(PLAYER_STATE.scene);
+    for (var id in tasks) {
+        if (tasks[id].type == TASK_TYPE.game) {
+            this.completeTask(id);
+        }
+    }
+}
 
 taskManager.initTask();

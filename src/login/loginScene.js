@@ -9,15 +9,20 @@ var loginScene = cc.Scene.extend({
         this.init();
     },
     init:function(){
-        this._super()
-        var scene = ccs.load(res.loginScene_json,"res/").node;
+
+        var json = ccs.load(res.loginScene_json,"res/");
+        var scene = this._scene = json.node;
         this.addChild(scene);
         var startBtn = ccui.helper.seekWidgetByName(scene,"startBtn");
         cfun.setButtonFun(startBtn,null,null,this.onStartGame);
+        //startBtn.addTouchEventListener(this.onStartGame,this)
     },
+
+
 
     onStartGame:function(event){
         trace("开始游戏");
+        //sceneManager.getSceneInfo(PLAYER_STATE.scene);
         sceneManager.createScene(PLAYER_STATE.mainScene);
     }
 });

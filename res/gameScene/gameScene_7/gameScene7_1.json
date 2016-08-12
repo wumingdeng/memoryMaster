@@ -17,7 +17,7 @@
           {
             "FileData": {
               "Type": "Normal",
-              "Path": "background/ClueUI_bg.jpg",
+              "Path": "background/SceneUI_bg.jpg",
               "Plist": ""
             },
             "BlendFunc": {
@@ -104,13 +104,13 @@
             "FileData": {
               "Type": "PlistSubImage",
               "Path": "fugaiqu.png",
-              "Plist": "gameScene7_1.plist"
+              "Plist": "gameScene/gameScene_7/gameScene7_1.plist"
             },
             "Scale9Enable": true,
-            "Scale9OriginX": 20,
-            "Scale9OriginY": 20,
-            "Scale9Width": 60,
-            "Scale9Height": 60,
+            "Scale9OriginX": 15,
+            "Scale9OriginY": 15,
+            "Scale9Width": 70,
+            "Scale9Height": 70,
             "AnchorPoint": {
               "ScaleX": 0.5,
               "ScaleY": 0.5
@@ -133,6 +133,10 @@
               "X": 0.7835,
               "Y": 0.75
             },
+            "LeftMargin": 123.0,
+            "RightMargin": 123.0,
+            "TopMargin": 142.7906,
+            "BottomMargin": 17.2094,
             "Tag": 111,
             "ActionTag": -1372654483,
             "Size": {
@@ -146,7 +150,7 @@
             "FileData": {
               "Type": "PlistSubImage",
               "Path": "shangheng_zhong.png",
-              "Plist": "gameScene7_1.plist"
+              "Plist": "gameScene/gameScene_7/gameScene7_1.plist"
             },
             "BlendFunc": {
               "Src": 1,
@@ -187,7 +191,7 @@
             "FileData": {
               "Type": "PlistSubImage",
               "Path": "toufa1.png",
-              "Plist": "gameScene7_1.plist"
+              "Plist": "gameScene/gameScene_7/gameScene7_1.plist"
             },
             "BlendFunc": {
               "Src": 1,
@@ -229,7 +233,7 @@
             "FileData": {
               "Type": "PlistSubImage",
               "Path": "toufa2.png",
-              "Plist": "gameScene7_1.plist"
+              "Plist": "gameScene/gameScene_7/gameScene7_1.plist"
             },
             "BlendFunc": {
               "Src": 1,
@@ -271,7 +275,7 @@
             "FileData": {
               "Type": "PlistSubImage",
               "Path": "toufa3.png",
-              "Plist": "gameScene7_1.plist"
+              "Plist": "gameScene/gameScene_7/gameScene7_1.plist"
             },
             "BlendFunc": {
               "Src": 1,
@@ -313,7 +317,7 @@
             "FileData": {
               "Type": "PlistSubImage",
               "Path": "toufa4.png",
-              "Plist": "gameScene7_1.plist"
+              "Plist": "gameScene/gameScene_7/gameScene7_1.plist"
             },
             "BlendFunc": {
               "Src": 1,
@@ -355,7 +359,7 @@
             "FileData": {
               "Type": "PlistSubImage",
               "Path": "qita01.png",
-              "Plist": "gameScene7_1.plist"
+              "Plist": "gameScene/gameScene_7/gameScene7_1.plist"
             },
             "BlendFunc": {
               "Src": 1,
@@ -397,7 +401,7 @@
             "FileData": {
               "Type": "PlistSubImage",
               "Path": "qita02.png",
-              "Plist": "gameScene7_1.plist"
+              "Plist": "gameScene/gameScene_7/gameScene7_1.plist"
             },
             "BlendFunc": {
               "Src": 1,
@@ -439,7 +443,7 @@
             "FileData": {
               "Type": "PlistSubImage",
               "Path": "qita03.png",
-              "Plist": "gameScene7_1.plist"
+              "Plist": "gameScene/gameScene_7/gameScene7_1.plist"
             },
             "BlendFunc": {
               "Src": 1,
@@ -480,14 +484,17 @@
           {
             "FontSize": 36,
             "LabelText": "按住并移动来收集线索",
+            "FontResource": {
+              "Type": "Normal",
+              "Path": "fonts/customFont.ttf",
+              "Plist": ""
+            },
             "OutlineColor": {
-              "A": 0,
               "R": 0,
               "G": 0,
               "B": 0
             },
             "ShadowColor": {
-              "A": 0,
               "R": 0,
               "G": 0,
               "B": 0
@@ -517,20 +524,20 @@
               "Y": 0.835
             },
             "PreSize": {
-              "X": 0.0,
-              "Y": 0.0
+              "X": 0.3169,
+              "Y": 0.0641
             },
             "HorizontalEdge": "BothEdge",
             "VerticalEdge": "BothEdge",
-            "LeftMargin": 568.0,
-            "RightMargin": 568.0,
-            "TopMargin": 105.6,
-            "BottomMargin": 534.4,
+            "LeftMargin": 388.0,
+            "RightMargin": 388.0,
+            "TopMargin": 85.1,
+            "BottomMargin": 513.9,
             "Tag": 116,
             "ActionTag": -493020727,
             "Size": {
               "X": 360.0,
-              "Y": 42.0
+              "Y": 41.0
             },
             "Name": "txtTitle",
             "ctype": "TextObjectData"
@@ -539,7 +546,7 @@
             "FileData": {
               "Type": "PlistSubImage",
               "Path": "shangheng_zuo.png",
-              "Plist": "gameScene7_1.plist"
+              "Plist": "gameScene/gameScene_7/gameScene7_1.plist"
             },
             "BlendFunc": {
               "Src": 1,
@@ -580,7 +587,7 @@
             "FileData": {
               "Type": "PlistSubImage",
               "Path": "shangheng_zuo.png",
-              "Plist": "gameScene7_1.plist"
+              "Plist": "gameScene/gameScene_7/gameScene7_1.plist"
             },
             "BlendFunc": {
               "Src": 1,
@@ -622,7 +629,7 @@
             "FileData": {
               "Type": "PlistSubImage",
               "Path": "di.png",
-              "Plist": "gameScene7_1.plist"
+              "Plist": "gameScene/gameScene_7/gameScene7_1.plist"
             },
             "BlendFunc": {
               "Src": 1,
@@ -663,13 +670,11 @@
             "FontSize": 36,
             "LabelText": "3/3",
             "OutlineColor": {
-              "A": 0,
               "R": 0,
               "G": 0,
               "B": 0
             },
             "ShadowColor": {
-              "A": 0,
               "R": 0,
               "G": 0,
               "B": 0
@@ -711,7 +716,7 @@
             "FileData": {
               "Type": "PlistSubImage",
               "Path": "evidence.png",
-              "Plist": "gameScene7_1.plist"
+              "Plist": "gameScene/gameScene_7/gameScene7_1.plist"
             },
             "BlendFunc": {
               "Src": 1,
@@ -753,7 +758,7 @@
             "FileData": {
               "Type": "PlistSubImage",
               "Path": "guaijiao.png",
-              "Plist": "gameScene7_1.plist"
+              "Plist": "gameScene/gameScene_7/gameScene7_1.plist"
             },
             "BlendFunc": {
               "Src": 1,
@@ -794,7 +799,7 @@
             "FileData": {
               "Type": "PlistSubImage",
               "Path": "guaijiao.png",
-              "Plist": "gameScene7_1.plist"
+              "Plist": "gameScene/gameScene_7/gameScene7_1.plist"
             },
             "BlendFunc": {
               "Src": 1,
@@ -840,7 +845,7 @@
             "FileData": {
               "Type": "PlistSubImage",
               "Path": "hengbian.png",
-              "Plist": "gameScene7_1.plist"
+              "Plist": "gameScene/gameScene_7/gameScene7_1.plist"
             },
             "BlendFunc": {
               "Src": 1,
@@ -881,7 +886,7 @@
             "FileData": {
               "Type": "PlistSubImage",
               "Path": "shubian.png",
-              "Plist": "gameScene7_1.plist"
+              "Plist": "gameScene/gameScene_7/gameScene7_1.plist"
             },
             "BlendFunc": {
               "Src": 1,
@@ -922,7 +927,7 @@
             "FileData": {
               "Type": "PlistSubImage",
               "Path": "shubian.png",
-              "Plist": "gameScene7_1.plist"
+              "Plist": "gameScene/gameScene_7/gameScene7_1.plist"
             },
             "BlendFunc": {
               "Src": 1,
@@ -968,8 +973,9 @@
         "ctype": "SingleNodeObjectData"
       },
       "UsedResources": [
-        "background/ClueUI_bg.jpg",
-        "background/shoupa.png",
+        "../../background/ClueUI_bg.jpg",
+        "../../background/shoupa.png",
+        "../../font/customFont.ttf",
         "gameScene7_1.plist",
         "gameScene7_1.png"
       ],

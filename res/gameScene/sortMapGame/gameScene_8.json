@@ -59,7 +59,7 @@
             "FileData": {
               "Type": "PlistSubImage",
               "Path": "daditu.png",
-              "Plist": "gameScene_8.plist"
+              "Plist": "gameScene/sortMapGame/gameScene_8.plist"
             },
             "BlendFunc": {
               "Src": 1,
@@ -100,7 +100,7 @@
             "FileData": {
               "Type": "PlistSubImage",
               "Path": "chanfang.png",
-              "Plist": "gameScene_8.plist"
+              "Plist": "gameScene/sortMapGame/gameScene_8.plist"
             },
             "Scale9Width": 153,
             "Scale9Height": 115,
@@ -140,7 +140,7 @@
                 "LabelText": "侧殿",
                 "FontResource": {
                   "Type": "Normal",
-                  "Path": "customFont.ttf",
+                  "Path": "fonts/customFont.ttf",
                   "Plist": ""
                 },
                 "OutlineColor": {
@@ -207,7 +207,7 @@
             "FileData": {
               "Type": "PlistSubImage",
               "Path": "kefang.png",
-              "Plist": "gameScene_8.plist"
+              "Plist": "gameScene/sortMapGame/gameScene_8.plist"
             },
             "Scale9Width": 159,
             "Scale9Height": 115,
@@ -247,7 +247,7 @@
                 "LabelText": "客房",
                 "FontResource": {
                   "Type": "Normal",
-                  "Path": "customFont.ttf",
+                  "Path": "fonts/customFont.ttf",
                   "Plist": ""
                 },
                 "OutlineColor": {
@@ -314,7 +314,7 @@
             "FileData": {
               "Type": "PlistSubImage",
               "Path": "zhaifang.png",
-              "Plist": "gameScene_8.plist"
+              "Plist": "gameScene/sortMapGame/gameScene_8.plist"
             },
             "Scale9Width": 140,
             "Scale9Height": 116,
@@ -354,7 +354,7 @@
                 "LabelText": "斋房",
                 "FontResource": {
                   "Type": "Normal",
-                  "Path": "customFont.ttf",
+                  "Path": "fonts/customFont.ttf",
                   "Plist": ""
                 },
                 "OutlineColor": {
@@ -421,7 +421,7 @@
             "FileData": {
               "Type": "PlistSubImage",
               "Path": "cangjingge.png",
-              "Plist": "gameScene_8.plist"
+              "Plist": "gameScene/sortMapGame/gameScene_8.plist"
             },
             "Scale9Width": 151,
             "Scale9Height": 103,
@@ -461,7 +461,7 @@
                 "LabelText": "禅房",
                 "FontResource": {
                   "Type": "Normal",
-                  "Path": "customFont.ttf",
+                  "Path": "fonts/customFont.ttf",
                   "Plist": ""
                 },
                 "OutlineColor": {
@@ -528,7 +528,7 @@
             "FileData": {
               "Type": "PlistSubImage",
               "Path": "zhonglou.png",
-              "Plist": "gameScene_8.plist"
+              "Plist": "gameScene/sortMapGame/gameScene_8.plist"
             },
             "Scale9Width": 134,
             "Scale9Height": 114,
@@ -568,7 +568,7 @@
                 "LabelText": "钟楼",
                 "FontResource": {
                   "Type": "Normal",
-                  "Path": "customFont.ttf",
+                  "Path": "fonts/customFont.ttf",
                   "Plist": ""
                 },
                 "OutlineColor": {
@@ -635,7 +635,7 @@
             "FileData": {
               "Type": "PlistSubImage",
               "Path": "zhengdian.png",
-              "Plist": "gameScene_8.plist"
+              "Plist": "gameScene/sortMapGame/gameScene_8.plist"
             },
             "Scale9Width": 154,
             "Scale9Height": 118,
@@ -675,7 +675,7 @@
                 "LabelText": "正殿",
                 "FontResource": {
                   "Type": "Normal",
-                  "Path": "customFont.ttf",
+                  "Path": "fonts/customFont.ttf",
                   "Plist": ""
                 },
                 "OutlineColor": {
@@ -747,8 +747,8 @@
         "ctype": "SingleNodeObjectData"
       },
       "UsedResources": [
-        "background/ClueUI_bg.jpg",
-        "customFont.ttf",
+        "../../background/SceneUI_bg.jpg",
+        "../../font/customFont.ttf",
         "gameScene_8.plist",
         "gameScene_8.png"
       ],

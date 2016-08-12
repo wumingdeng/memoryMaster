@@ -3,7 +3,8 @@
  * 全屏场景
  */
 var fullScene = sceneBase.extend({
-
+    _isReadyBack:false,
+    _arrow:null,    //场景切换箭头
     ctor:function(id,info){
         this._super(id,info);
         //cc.director.getRunningScene().addChild(this)
@@ -37,6 +38,9 @@ var fullScene = sceneBase.extend({
             var location = touch.getLocation();
             if (location.y < 200) {
                 this.backTo()
+            } else if (this._isReadyBack) {
+                this._isReadyBack = false;
+                this._arrow.removeFromParent()
             }
         }
     },
@@ -44,9 +48,26 @@ var fullScene = sceneBase.extend({
     //点底下区域 可以返回上一个场景
     backTo:function(){
         var sid = this._info.back;
-        if (sid) {
+        if (!sid) {
+            return;
+        }
+        if (this._isReadyBack) {
             trace('返回上一个场景:' + sid);
             sceneManager.createScene(sid);
+        } else {
+            this._isReadyBack = true;
+            this._arrow = new cc.Sprite("res/common/jiantou.png");
+            var sname = sceneManager.getSceneInfo(sid).name;
+            var nameText = new ccui.Text(sname,"customFont",30);
+            nameText.x = 37;
+            nameText.y = 80;
+            this._arrow.addChild(nameText);
+            this.addChild(this._arrow);
+            this._arrow.x = vsize.width/2;
+            this._arrow.y = 100;
+            var jump = cc.jumpBy(3, cc.p(0, 0), 30, 3);
+            jump = cc.repeatForever(jump);
+            this._arrow.runAction(jump);
         }
     }
 
