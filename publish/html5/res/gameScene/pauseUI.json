@@ -1,0 +1,320 @@
+{
+  "ID": "4a7e79d6-bf09-4905-a8a0-bbb9089b8a75",
+  "Version": "3.10.0.0",
+  "Name": "pauseUI",
+  "Content": {
+    "Content": {
+      "Animation": {
+        "Duration": 0,
+        "Speed": 1.0,
+        "Timelines": [],
+        "ctype": "TimelineActionData"
+      },
+      "AnimationList": [],
+      "ObjectData": {
+        "Tag": 36,
+        "Children": [
+          {
+            "ClipAble": false,
+            "ComboBoxIndex": 1,
+            "SingleColor": {
+              "R": 0,
+              "G": 0,
+              "B": 0
+            },
+            "FirstColor": {
+              "R": 0,
+              "G": 0,
+              "B": 0
+            },
+            "EndColor": {},
+            "ColorVector": {
+              "ScaleY": 1.0
+            },
+            "TouchEnable": true,
+            "AnchorPoint": {},
+            "Position": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "PercentWidthEnable": true,
+            "PercentHeightEnable": true,
+            "PercentWidthEnabled": true,
+            "PercentHeightEnabled": true,
+            "PreSize": {
+              "X": 1.0,
+              "Y": 1.0
+            },
+            "Tag": 43,
+            "ActionTag": -1038445144,
+            "Size": {
+              "X": 1136.0,
+              "Y": 640.0
+            },
+            "Alpha": 0,
+            "Name": "black",
+            "ctype": "PanelObjectData"
+          },
+          {
+            "FontSize": 14,
+            "ButtonText": "",
+            "TextColor": {
+              "R": 65,
+              "G": 65,
+              "B": 70
+            },
+            "DisabledFileData": {
+              "Type": "PlistSubImage",
+              "Path": "gameUI_tuic.png",
+              "Plist": "gameSceneUI.plist"
+            },
+            "PressedFileData": {
+              "Type": "PlistSubImage",
+              "Path": "gameUI_tuic.png",
+              "Plist": "gameSceneUI.plist"
+            },
+            "NormalFileData": {
+              "Type": "PlistSubImage",
+              "Path": "gameUI_tuic.png",
+              "Plist": "gameSceneUI.plist"
+            },
+            "Scale9Width": 182,
+            "Scale9Height": 214,
+            "ShadowOffsetX": 2.0,
+            "ShadowOffsetY": -2.0,
+            "TouchEnable": true,
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 288.0001,
+              "Y": 388.7849
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.2535,
+              "Y": 0.6075
+            },
+            "PreSize": {
+              "X": 0.2606,
+              "Y": 0.4656
+            },
+            "Tag": 37,
+            "ActionTag": -1415940323,
+            "Size": {
+              "X": 182.0,
+              "Y": 214.0
+            },
+            "Name": "btnQuit",
+            "ctype": "ButtonObjectData"
+          },
+          {
+            "FontSize": 14,
+            "ButtonText": "",
+            "TextColor": {
+              "R": 65,
+              "G": 65,
+              "B": 70
+            },
+            "DisabledFileData": {
+              "Type": "PlistSubImage",
+              "Path": "gameUI__chonglai.png",
+              "Plist": "gameSceneUI.plist"
+            },
+            "PressedFileData": {
+              "Type": "PlistSubImage",
+              "Path": "gameUI__chonglai.png",
+              "Plist": "gameSceneUI.plist"
+            },
+            "NormalFileData": {
+              "Type": "PlistSubImage",
+              "Path": "gameUI__chonglai.png",
+              "Plist": "gameSceneUI.plist"
+            },
+            "Scale9Width": 182,
+            "Scale9Height": 214,
+            "ShadowOffsetX": 2.0,
+            "ShadowOffsetY": -2.0,
+            "TouchEnable": true,
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 567.9998,
+              "Y": 387.7851
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.5,
+              "Y": 0.6059
+            },
+            "PreSize": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "Tag": 39,
+            "ActionTag": -780632891,
+            "Size": {
+              "X": 182.0,
+              "Y": 214.0
+            },
+            "Name": "btnAgain",
+            "ctype": "ButtonObjectData"
+          },
+          {
+            "FontSize": 14,
+            "ButtonText": "",
+            "TextColor": {
+              "R": 65,
+              "G": 65,
+              "B": 70
+            },
+            "DisabledFileData": {
+              "Type": "PlistSubImage",
+              "Path": "gameUI_shezhi.png",
+              "Plist": "gameSceneUI.plist"
+            },
+            "PressedFileData": {
+              "Type": "PlistSubImage",
+              "Path": "gameUI_shezhi.png",
+              "Plist": "gameSceneUI.plist"
+            },
+            "NormalFileData": {
+              "Type": "PlistSubImage",
+              "Path": "gameUI_shezhi.png",
+              "Plist": "gameSceneUI.plist"
+            },
+            "Scale9Width": 182,
+            "Scale9Height": 214,
+            "ShadowOffsetX": 2.0,
+            "ShadowOffsetY": -2.0,
+            "TouchEnable": true,
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 848.0,
+              "Y": 387.7851
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.7465,
+              "Y": 0.6059
+            },
+            "PreSize": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "Tag": 40,
+            "ActionTag": -433809714,
+            "Size": {
+              "X": 182.0,
+              "Y": 214.0
+            },
+            "Name": "btnSet",
+            "ctype": "ButtonObjectData"
+          },
+          {
+            "FontSize": 14,
+            "ButtonText": "",
+            "TextColor": {
+              "R": 65,
+              "G": 65,
+              "B": 70
+            },
+            "DisabledFileData": {
+              "Type": "PlistSubImage",
+              "Path": "gameUI_jixu.png",
+              "Plist": "gameSceneUI.plist"
+            },
+            "PressedFileData": {
+              "Type": "PlistSubImage",
+              "Path": "gameUI_jixu.png",
+              "Plist": "gameSceneUI.plist"
+            },
+            "NormalFileData": {
+              "Type": "PlistSubImage",
+              "Path": "gameUI_jixu.png",
+              "Plist": "gameSceneUI.plist"
+            },
+            "Scale9Width": 454,
+            "Scale9Height": 142,
+            "ShadowOffsetX": 2.0,
+            "ShadowOffsetY": -2.0,
+            "TouchEnable": true,
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 568.0,
+              "Y": 133.4047
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.5,
+              "Y": 0.2084
+            },
+            "PreSize": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "Tag": 41,
+            "ActionTag": -357367052,
+            "Size": {
+              "X": 454.0,
+              "Y": 142.0
+            },
+            "Name": "btnContinue",
+            "ctype": "ButtonObjectData"
+          }
+        ],
+        "Size": {
+          "X": 1136.0,
+          "Y": 640.0
+        },
+        "Name": "Scene",
+        "ctype": "SingleNodeObjectData"
+      },
+      "UsedResources": [
+        "../gameSceneUI.plist",
+        "../gameSceneUI.png"
+      ],
+      "ctype": "GameFileData"
+    }
+  },
+  "Type": "Scene"
+}

@@ -18,15 +18,15 @@ TASK_CONFIG = {
 
 TASK_CONFIG.data = {
     1001:{
-        description: "杜鹃移动",
+        description: "窗帘打开",
         scene:1,
-        type:TASK_TYPE.auto,
-        target:101,
+        type:TASK_TYPE.click,
+        target:103,
         nextTask:1002,
         isOpen:true,
         result:{
-            i101:1,
-            i102:1
+            i103:1,
+            i104:1
         }
 
     },
@@ -119,52 +119,116 @@ TASK_CONFIG.data = {
     },
 
     2001:{
-        description:"点击化妆盒提示",
+        description:"拨开娃娃",
         scene:2,    //桌面场景的任务
         type:TASK_TYPE.click,
         target:201,
         nextTask:null,
         isOpen:true,
-        completeTask:[1004,2004],
+        completeTask:[2008],
         result:{
-            //没有改变状态 但会影响10004任务
+            i201:1,
+            i211:1
         }
     },
     2002:{
-        description:"把化妆盒打开",
-        scene:2,
+        description:"拨开小狗",
+        scene:2,    //桌面场景的任务
         type:TASK_TYPE.click,
-        target:201,
-        nextTask:[2003],
-        completeTask:2004,
+        target:202,
+        nextTask:null,
+        isOpen:true,
+        completeTask:[],
         result:{
-            i201:2,
             i202:1,
-            i203:1
+            i212:1
         }
     },
     2003:{
-        description:"收集钥匙",
-        scene:2,
+        description:"拨开鼠标",
+        scene:2,    //桌面场景的任务
         type:TASK_TYPE.click,
-        target:202,
-        nextTask:[5001],
-        completeTask:2004,
+        target:203,
+        nextTask:null,
+        isOpen:true,
+        completeTask:[2008],
         result:{
-            //global:3,
-            i106:2,
-            i202:2
+            i203:1,
+            i213:1
         }
     },
     2004:{
-        description:"完成桌面场景的所有交互",
+        description:"拨开钉书机",
+        scene:2,    //桌面场景的任务
+        type:TASK_TYPE.click,
+        target:204,
+        nextTask:null,
+        isOpen:true,
+        completeTask:[2008],
+        result:{
+            i204:1,
+            i214:1
+        }
+    },
+    2005:{
+        description:"拨开本子",
+        scene:2,    //桌面场景的任务
+        type:TASK_TYPE.click,
+        target:205,
+        nextTask:null,
+        isOpen:true,
+        completeTask:[2008],
+        result:{
+            i205:1,
+            i215:1
+        }
+    },
+    2006:{
+        description:"拨开纸1",
+        scene:2,    //桌面场景的任务
+        type:TASK_TYPE.click,
+        target:206,
+        nextTask:null,
+        isOpen:true,
+        completeTask:[2008],
+        result:{
+            i206:1,
+            i216:1
+        }
+    },
+    2007:{
+        description:"拨开纸2",
+        scene:2,    //桌面场景的任务
+        type:TASK_TYPE.click,
+        target:207,
+        nextTask:null,
+        isOpen:true,
+        completeTask:[2008],
+        result:{
+            i207:1,
+            i217:1
+        }
+    },
+    2008:{
+        description:"拨开所有杂物",
         scene:2,
         type:TASK_TYPE.multi,
-        target:[2001,2002,2003],
+        target:[2001,2003,2004,2005,2006,2007],
+        nextTask:2009,
+        isOpen:true,
+        result:{
+            i208:1
+        }
+    },
+    2009:{
+        description:"找到手机",
+        scene:2,
+        type:TASK_TYPE.click,
+        target:208,
         nextTask:null,
         isOpen:true,
         result:{
-            i105:2
+            i208:2
         }
     },
 

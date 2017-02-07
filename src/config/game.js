@@ -6,6 +6,8 @@
 GAME_TYPE = {
     puzzle:1,
     findSomething:2,
+    findObject:3,
+    phone:4
 };
 
 GAME_CONFIG = {
@@ -22,6 +24,14 @@ GAME_CONFIG = {
         description:"找线索",
         type:GAME_TYPE.findSomething,
         checkPos:"813`395`1_303`400`1_354`155`1_645`260`1_558`436`0_521`274`0_825`177`0",
+        validRect:"0`0`150`100",
+        index:0
+    },
+    "g3":{
+        description:"手机",
+        type:GAME_TYPE.phone,
+        checkPos:"813`395`1_303`400`1_354`155`1_645`260`1_558`436`0_521`274`0_825`177`0",
+        validRect:"0`0`150`100",
         index:0
     }
 };

@@ -1,6 +1,6 @@
 {
   "ID": "390f6ac8-4c2b-4506-b803-569311865832",
-  "Version": "2.3.4",
+  "Version": "3.10.0.0",
   "Name": "foXiang",
   "Content": {
     "Content": {
@@ -118,12 +118,7 @@
         "Children": [
           {
             "ClipAble": false,
-            "BackColorAlpha": 0,
-            "FileData": {
-              "Type": "Normal",
-              "Path": "yeting/images_2/C-_Users_Administrator.png",
-              "Plist": ""
-            },
+            "BackColorAlpha": 102,
             "ComboBoxIndex": 1,
             "SingleColor": {
               "R": 150,
@@ -137,10 +132,6 @@
             "ColorVector": {
               "ScaleY": 1.0
             },
-            "Scale9OriginX": 56,
-            "Scale9OriginY": 46,
-            "Scale9Width": 60,
-            "Scale9Height": 50,
             "TouchEnable": true,
             "AnchorPoint": {},
             "Position": {
@@ -166,6 +157,57 @@
             "TopMargin": -100.0,
             "BottomMargin": -100.0,
             "Tag": 15,
+            "Children": [
+              {
+                "FontSize": 20,
+                "LabelText": "佛像",
+                "OutlineColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "ShadowColor": {
+                  "R": 110,
+                  "G": 110,
+                  "B": 110
+                },
+                "ShadowOffsetX": 2.0,
+                "ShadowOffsetY": -2.0,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 50.0,
+                  "Y": 98.0
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.5,
+                  "Y": 0.49
+                },
+                "PreSize": {
+                  "X": 0.4,
+                  "Y": 0.115
+                },
+                "LeftMargin": 30.0,
+                "RightMargin": 30.0,
+                "TopMargin": 90.5,
+                "BottomMargin": 86.5,
+                "Tag": 16,
+                "ActionTag": -1102761228,
+                "Size": {
+                  "X": 40.0,
+                  "Y": 23.0
+                },
+                "Name": "Text_1",
+                "ctype": "TextObjectData"
+              }
+            ],
             "ActionTag": 1460681527,
             "Size": {
               "X": 100.0,
@@ -189,17 +231,15 @@
             "ColorVector": {
               "ScaleY": 1.0
             },
-            "Scale9Width": 1,
-            "Scale9Height": 1,
             "TouchEnable": true,
             "AnchorPoint": {},
             "Position": {
-              "X": -92.3193,
-              "Y": -82.1064
+              "X": -51.0,
+              "Y": -101.0
             },
             "Scale": {
-              "ScaleX": 1.7497,
-              "ScaleY": 0.8513
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
             },
             "CColor": {},
             "IconVisible": false,
@@ -211,10 +251,10 @@
               "X": 0.0,
               "Y": 0.0
             },
-            "LeftMargin": -92.3193,
-            "RightMargin": -7.6807,
-            "TopMargin": -117.8936,
-            "BottomMargin": -82.1064,
+            "LeftMargin": -51.0,
+            "RightMargin": -49.0,
+            "TopMargin": -99.0,
+            "BottomMargin": -101.0,
             "Tag": 17,
             "ActionTag": 1978437825,
             "Size": {
@@ -265,9 +305,7 @@
         "Name": "Node",
         "ctype": "SingleNodeObjectData"
       },
-      "UsedResources": [
-        "images_2/C-_Users_Administrator.png"
-      ],
+      "UsedResources": [],
       "ctype": "GameFileData"
     }
   },

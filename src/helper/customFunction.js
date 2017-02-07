@@ -142,22 +142,11 @@ cfun.setButtonFun = function(source,beginFun,moveFun,endFun,canceleFun,target,so
     }
     source.addTouchEventListener(onTouchFun,target);
     source.onExit = function() {
-        //source._super();
+        cc.Node.prototype.onExit.call(source)
         if (source.isTouch) {
             cfun.removeFullScreen("button");
         }
     };
-    //if (!source.nodeEvent) {
-    //    function onNodeEvent(event) {
-    //        if (event == "exit") {
-    //            if (source.isTouch) {
-    //                cfun.removeFullScreen("button")
-    //            }
-    //        }
-    //    }
-    //    source.nodeEvent = true;
-    //    source.registerScriptHandler(onNodeEvent);
-    //}
 };
 
 
@@ -183,6 +172,8 @@ cfun.addFullScreen = function(name,listener,isPropagate) {
         parclose.setContentSize(vsize);
         parclose.setTouchEnabled(true);
         parclose.setName(name);
+        //parclose.setBackGroundColorType(2)
+        //parclose.setBackGroundColor(cc.color(0,0,0));
 //      parclose.setGlobalZOrder(100)
 //      parclose:addTouchEventListener(onClickFullScreen)
 //      调整遮挡层位置
@@ -292,7 +283,7 @@ cfun.getOriginalAlphaPoint = function(source,p) {
     if (!cc.sys.isNative && !g_imageData){
         return false;
     }
-    if(source.getDescription() == "ImageView"){
+    if(source._className == "ImageView"){
         source = source.getVirtualRenderer().getSprite()
     }
     var texture = source.texture;

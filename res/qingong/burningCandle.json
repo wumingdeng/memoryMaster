@@ -1,37 +1,21 @@
 {
   "ID": "995498b9-93d8-48f3-86cf-0fdd16be2ccf",
-  "Version": "2.3.4",
+  "Version": "3.10.0.0",
   "Name": "burningCandle",
   "Content": {
     "Content": {
       "Animation": {
         "Duration": 95,
         "Speed": 1.0,
-        "ActivedAnimationName": "base",
+        "ActivedAnimationName": "doAction",
         "Timelines": [
           {
-            "ActionTag": -1332982179,
+            "ActionTag": 2040229947,
             "Property": "Position",
             "Frames": [
               {
-                "X": -53.4795,
-                "Y": -39.8081,
-                "FrameIndex": 0,
-                "EasingData": {
-                  "Type": 0
-                },
-                "ctype": "PointFrameData"
-              }
-            ],
-            "ctype": "TimelineData"
-          },
-          {
-            "ActionTag": 1078507591,
-            "Property": "Position",
-            "Frames": [
-              {
-                "X": -1.0931,
-                "Y": 23.7206,
+                "X": 0.0,
+                "Y": 0.0,
                 "FrameIndex": 0,
                 "EasingData": {
                   "Type": 0
@@ -39,154 +23,19 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": -1.0931,
-                "Y": 23.7206,
-                "FrameIndex": 5,
-                "EasingData": {
-                  "Type": 0
-                },
-                "ctype": "PointFrameData"
-              },
-              {
-                "X": -1.0931,
-                "Y": 23.7206,
-                "FrameIndex": 10,
-                "EasingData": {
-                  "Type": 0
-                },
-                "ctype": "PointFrameData"
-              },
-              {
-                "X": -1.0931,
-                "Y": 23.7206,
-                "FrameIndex": 15,
-                "EasingData": {
-                  "Type": 0
-                },
-                "ctype": "PointFrameData"
-              },
-              {
-                "X": -1.0931,
-                "Y": 23.7206,
-                "FrameIndex": 20,
-                "EasingData": {
-                  "Type": 0
-                },
-                "ctype": "PointFrameData"
-              },
-              {
-                "X": -1.0931,
-                "Y": 23.7206,
-                "FrameIndex": 25,
-                "EasingData": {
-                  "Type": 0
-                },
-                "ctype": "PointFrameData"
-              },
-              {
-                "X": -1.0931,
-                "Y": 23.7206,
-                "FrameIndex": 30,
-                "EasingData": {
-                  "Type": 0
-                },
-                "ctype": "PointFrameData"
-              },
-              {
-                "X": -1.0931,
-                "Y": 23.7206,
-                "FrameIndex": 35,
-                "EasingData": {
-                  "Type": 0
-                },
-                "ctype": "PointFrameData"
-              },
-              {
-                "X": -1.0931,
-                "Y": 23.7206,
-                "FrameIndex": 40,
-                "EasingData": {
-                  "Type": 0
-                },
-                "ctype": "PointFrameData"
-              },
-              {
-                "X": -1.0931,
-                "Y": 23.7206,
-                "FrameIndex": 45,
-                "EasingData": {
-                  "Type": 0
-                },
-                "ctype": "PointFrameData"
-              },
-              {
-                "X": -1.0931,
-                "Y": 23.7206,
-                "FrameIndex": 50,
-                "EasingData": {
-                  "Type": 0
-                },
-                "ctype": "PointFrameData"
-              },
-              {
-                "X": -1.0931,
-                "Y": 23.7206,
-                "FrameIndex": 55,
-                "EasingData": {
-                  "Type": 0
-                },
-                "ctype": "PointFrameData"
-              },
-              {
-                "X": -1.0931,
-                "Y": 23.7206,
+                "X": 0.0,
+                "Y": 0.0,
                 "FrameIndex": 59,
                 "EasingData": {
                   "Type": 0
                 },
                 "ctype": "PointFrameData"
-              },
-              {
-                "X": -1.0931,
-                "Y": 23.7206,
-                "FrameIndex": 60,
-                "EasingData": {
-                  "Type": 0
-                },
-                "ctype": "PointFrameData"
-              },
-              {
-                "X": -1.0931,
-                "Y": 23.7206,
-                "FrameIndex": 70,
-                "EasingData": {
-                  "Type": 0
-                },
-                "ctype": "PointFrameData"
-              },
-              {
-                "X": -1.0931,
-                "Y": 23.7206,
-                "FrameIndex": 80,
-                "EasingData": {
-                  "Type": 0
-                },
-                "ctype": "PointFrameData"
-              },
-              {
-                "X": -1.0931,
-                "Y": 23.7206,
-                "FrameIndex": 95,
-                "EasingData": {
-                  "Type": 0
-                },
-                "ctype": "PointFrameData"
               }
             ],
             "ctype": "TimelineData"
           },
           {
-            "ActionTag": 1078507591,
+            "ActionTag": 2040229947,
             "Property": "Scale",
             "Frames": [
               {
@@ -199,53 +48,8 @@
                 "ctype": "ScaleValueFrameData"
               },
               {
-                "X": 1.0,
-                "Y": 1.0,
-                "FrameIndex": 5,
-                "EasingData": {
-                  "Type": 0
-                },
-                "ctype": "ScaleValueFrameData"
-              },
-              {
-                "X": 1.0,
-                "Y": 1.0,
-                "FrameIndex": 10,
-                "EasingData": {
-                  "Type": 0
-                },
-                "ctype": "ScaleValueFrameData"
-              },
-              {
-                "X": 1.0,
-                "Y": 1.0,
-                "FrameIndex": 15,
-                "EasingData": {
-                  "Type": 0
-                },
-                "ctype": "ScaleValueFrameData"
-              },
-              {
-                "X": 1.0,
-                "Y": 1.0,
-                "FrameIndex": 20,
-                "EasingData": {
-                  "Type": 0
-                },
-                "ctype": "ScaleValueFrameData"
-              },
-              {
-                "X": 1.0,
-                "Y": 1.0,
-                "FrameIndex": 25,
-                "EasingData": {
-                  "Type": 0
-                },
-                "ctype": "ScaleValueFrameData"
-              },
-              {
-                "X": 1.0,
-                "Y": 1.0,
+                "X": 1.3,
+                "Y": 1.3,
                 "FrameIndex": 30,
                 "EasingData": {
                   "Type": 0
@@ -253,53 +57,8 @@
                 "ctype": "ScaleValueFrameData"
               },
               {
-                "X": 1.0,
-                "Y": 1.0,
-                "FrameIndex": 35,
-                "EasingData": {
-                  "Type": 0
-                },
-                "ctype": "ScaleValueFrameData"
-              },
-              {
-                "X": 1.0,
-                "Y": 1.0,
-                "FrameIndex": 40,
-                "EasingData": {
-                  "Type": 0
-                },
-                "ctype": "ScaleValueFrameData"
-              },
-              {
-                "X": 1.0,
-                "Y": 1.0,
-                "FrameIndex": 45,
-                "EasingData": {
-                  "Type": 0
-                },
-                "ctype": "ScaleValueFrameData"
-              },
-              {
-                "X": 1.0,
-                "Y": 1.0,
-                "FrameIndex": 50,
-                "EasingData": {
-                  "Type": 0
-                },
-                "ctype": "ScaleValueFrameData"
-              },
-              {
-                "X": 1.0,
-                "Y": 1.0,
-                "FrameIndex": 55,
-                "EasingData": {
-                  "Type": 0
-                },
-                "ctype": "ScaleValueFrameData"
-              },
-              {
-                "X": 1.0,
-                "Y": 1.0,
+                "X": 1.01,
+                "Y": 1.01,
                 "FrameIndex": 59,
                 "EasingData": {
                   "Type": 0
@@ -314,39 +73,12 @@
                   "Type": 0
                 },
                 "ctype": "ScaleValueFrameData"
-              },
-              {
-                "X": 1.0,
-                "Y": 1.3617,
-                "FrameIndex": 70,
-                "EasingData": {
-                  "Type": 0
-                },
-                "ctype": "ScaleValueFrameData"
-              },
-              {
-                "X": 1.0,
-                "Y": 0.9196,
-                "FrameIndex": 80,
-                "EasingData": {
-                  "Type": 0
-                },
-                "ctype": "ScaleValueFrameData"
-              },
-              {
-                "X": 1.0,
-                "Y": 0.9397,
-                "FrameIndex": 95,
-                "EasingData": {
-                  "Type": 0
-                },
-                "ctype": "ScaleValueFrameData"
               }
             ],
             "ctype": "TimelineData"
           },
           {
-            "ActionTag": 1078507591,
+            "ActionTag": 2040229947,
             "Property": "RotationSkew",
             "Frames": [
               {
@@ -361,105 +93,6 @@
               {
                 "X": 0.0,
                 "Y": 0.0,
-                "FrameIndex": 5,
-                "EasingData": {
-                  "Type": 0
-                },
-                "ctype": "ScaleValueFrameData"
-              },
-              {
-                "X": 0.0,
-                "Y": 0.0,
-                "FrameIndex": 10,
-                "EasingData": {
-                  "Type": 0
-                },
-                "ctype": "ScaleValueFrameData"
-              },
-              {
-                "X": 0.0,
-                "Y": 0.0,
-                "FrameIndex": 15,
-                "EasingData": {
-                  "Type": 0
-                },
-                "ctype": "ScaleValueFrameData"
-              },
-              {
-                "X": 0.0,
-                "Y": 0.0,
-                "FrameIndex": 20,
-                "EasingData": {
-                  "Type": 0
-                },
-                "ctype": "ScaleValueFrameData"
-              },
-              {
-                "X": 0.0,
-                "Y": 0.0,
-                "FrameIndex": 25,
-                "EasingData": {
-                  "Type": 0
-                },
-                "ctype": "ScaleValueFrameData"
-              },
-              {
-                "X": 0.0,
-                "Y": 0.0,
-                "FrameIndex": 30,
-                "EasingData": {
-                  "Type": 0
-                },
-                "ctype": "ScaleValueFrameData"
-              },
-              {
-                "X": 0.0,
-                "Y": 0.0,
-                "FrameIndex": 35,
-                "EasingData": {
-                  "Type": 0
-                },
-                "ctype": "ScaleValueFrameData"
-              },
-              {
-                "X": 0.0,
-                "Y": 0.0,
-                "FrameIndex": 40,
-                "EasingData": {
-                  "Type": 0
-                },
-                "ctype": "ScaleValueFrameData"
-              },
-              {
-                "X": 0.0,
-                "Y": 0.0,
-                "FrameIndex": 45,
-                "EasingData": {
-                  "Type": 0
-                },
-                "ctype": "ScaleValueFrameData"
-              },
-              {
-                "X": 0.0,
-                "Y": 0.0,
-                "FrameIndex": 50,
-                "EasingData": {
-                  "Type": 0
-                },
-                "ctype": "ScaleValueFrameData"
-              },
-              {
-                "X": 0.0,
-                "Y": 0.0,
-                "FrameIndex": 55,
-                "EasingData": {
-                  "Type": 0
-                },
-                "ctype": "ScaleValueFrameData"
-              },
-              {
-                "X": 0.0,
-                "Y": 0.0,
                 "FrameIndex": 59,
                 "EasingData": {
                   "Type": 0
@@ -467,35 +100,8 @@
                 "ctype": "ScaleValueFrameData"
               },
               {
-                "X": 0.0,
-                "Y": 0.0,
-                "FrameIndex": 60,
-                "EasingData": {
-                  "Type": 0
-                },
-                "ctype": "ScaleValueFrameData"
-              },
-              {
-                "X": 0.0,
-                "Y": 0.0,
-                "FrameIndex": 70,
-                "EasingData": {
-                  "Type": 0
-                },
-                "ctype": "ScaleValueFrameData"
-              },
-              {
-                "X": 0.0,
-                "Y": 0.0,
-                "FrameIndex": 80,
-                "EasingData": {
-                  "Type": 0
-                },
-                "ctype": "ScaleValueFrameData"
-              },
-              {
-                "X": 0.0,
-                "Y": 0.0,
+                "X": 44.041,
+                "Y": 44.0408,
                 "FrameIndex": 95,
                 "EasingData": {
                   "Type": 0
@@ -506,327 +112,17 @@
             "ctype": "TimelineData"
           },
           {
-            "ActionTag": 1078507591,
-            "Property": "FileData",
+            "ActionTag": -1332982179,
+            "Property": "Position",
             "Frames": [
               {
-                "TextureFile": {
-                  "Type": "Normal",
-                  "Path": "qingong/images/concat_01.png",
-                  "Plist": ""
-                },
+                "X": -53.4795,
+                "Y": -49.9305,
                 "FrameIndex": 0,
-                "Tween": false,
-                "ctype": "TextureFrameData"
-              },
-              {
-                "TextureFile": {
-                  "Type": "Normal",
-                  "Path": "qingong/images/concat_02.png",
-                  "Plist": ""
-                },
-                "FrameIndex": 5,
-                "Tween": false,
-                "ctype": "TextureFrameData"
-              },
-              {
-                "TextureFile": {
-                  "Type": "Normal",
-                  "Path": "qingong/images/concat_03.png",
-                  "Plist": ""
-                },
-                "FrameIndex": 10,
-                "Tween": false,
-                "ctype": "TextureFrameData"
-              },
-              {
-                "TextureFile": {
-                  "Type": "Normal",
-                  "Path": "qingong/images/concat_04.png",
-                  "Plist": ""
-                },
-                "FrameIndex": 15,
-                "Tween": false,
-                "ctype": "TextureFrameData"
-              },
-              {
-                "TextureFile": {
-                  "Type": "Normal",
-                  "Path": "qingong/images/concat_05.png",
-                  "Plist": ""
-                },
-                "FrameIndex": 20,
-                "Tween": false,
-                "ctype": "TextureFrameData"
-              },
-              {
-                "TextureFile": {
-                  "Type": "Normal",
-                  "Path": "qingong/images/concat_06.png",
-                  "Plist": ""
-                },
-                "FrameIndex": 25,
-                "Tween": false,
-                "ctype": "TextureFrameData"
-              },
-              {
-                "TextureFile": {
-                  "Type": "Normal",
-                  "Path": "qingong/images/concat_07.png",
-                  "Plist": ""
-                },
-                "FrameIndex": 30,
-                "Tween": false,
-                "ctype": "TextureFrameData"
-              },
-              {
-                "TextureFile": {
-                  "Type": "Normal",
-                  "Path": "qingong/images/concat_08.png",
-                  "Plist": ""
-                },
-                "FrameIndex": 35,
-                "Tween": false,
-                "ctype": "TextureFrameData"
-              },
-              {
-                "TextureFile": {
-                  "Type": "Normal",
-                  "Path": "qingong/images/concat_09.png",
-                  "Plist": ""
-                },
-                "FrameIndex": 40,
-                "Tween": false,
-                "ctype": "TextureFrameData"
-              },
-              {
-                "TextureFile": {
-                  "Type": "Normal",
-                  "Path": "qingong/images/concat_10.png",
-                  "Plist": ""
-                },
-                "FrameIndex": 45,
-                "Tween": false,
-                "ctype": "TextureFrameData"
-              },
-              {
-                "TextureFile": {
-                  "Type": "Normal",
-                  "Path": "qingong/images/concat_11.png",
-                  "Plist": ""
-                },
-                "FrameIndex": 50,
-                "Tween": false,
-                "ctype": "TextureFrameData"
-              },
-              {
-                "TextureFile": {
-                  "Type": "Normal",
-                  "Path": "qingong/images/concat_12.png",
-                  "Plist": ""
-                },
-                "FrameIndex": 55,
-                "Tween": false,
-                "ctype": "TextureFrameData"
-              },
-              {
-                "TextureFile": {
-                  "Type": "Normal",
-                  "Path": "qingong/images/concat_12.png",
-                  "Plist": ""
-                },
-                "FrameIndex": 59,
-                "Tween": false,
-                "ctype": "TextureFrameData"
-              },
-              {
-                "TextureFile": {
-                  "Type": "Normal",
-                  "Path": "qingong/images/concat_12.png",
-                  "Plist": ""
-                },
-                "FrameIndex": 60,
-                "Tween": false,
-                "ctype": "TextureFrameData"
-              },
-              {
-                "TextureFile": {
-                  "Type": "Normal",
-                  "Path": "qingong/images/concat_12.png",
-                  "Plist": ""
-                },
-                "FrameIndex": 70,
-                "Tween": false,
-                "ctype": "TextureFrameData"
-              },
-              {
-                "TextureFile": {
-                  "Type": "Normal",
-                  "Path": "qingong/images/concat_12.png",
-                  "Plist": ""
-                },
-                "FrameIndex": 80,
-                "Tween": false,
-                "ctype": "TextureFrameData"
-              },
-              {
-                "TextureFile": {
-                  "Type": "Normal",
-                  "Path": "qingong/images/concat_12.png",
-                  "Plist": ""
-                },
-                "FrameIndex": 95,
-                "Tween": false,
-                "ctype": "TextureFrameData"
-              }
-            ],
-            "ctype": "TimelineData"
-          },
-          {
-            "ActionTag": 1078507591,
-            "Property": "BlendFunc",
-            "Frames": [
-              {
-                "Src": 1,
-                "Dst": 771,
-                "FrameIndex": 0,
-                "Tween": false,
-                "ctype": "BlendFuncFrameData"
-              },
-              {
-                "Src": 1,
-                "Dst": 771,
-                "FrameIndex": 5,
-                "Tween": false,
-                "ctype": "BlendFuncFrameData"
-              },
-              {
-                "Src": 1,
-                "Dst": 771,
-                "FrameIndex": 10,
-                "Tween": false,
-                "ctype": "BlendFuncFrameData"
-              },
-              {
-                "Src": 1,
-                "Dst": 771,
-                "FrameIndex": 15,
-                "Tween": false,
-                "ctype": "BlendFuncFrameData"
-              },
-              {
-                "Src": 1,
-                "Dst": 771,
-                "FrameIndex": 20,
-                "Tween": false,
-                "ctype": "BlendFuncFrameData"
-              },
-              {
-                "Src": 1,
-                "Dst": 771,
-                "FrameIndex": 25,
-                "Tween": false,
-                "ctype": "BlendFuncFrameData"
-              },
-              {
-                "Src": 1,
-                "Dst": 771,
-                "FrameIndex": 30,
-                "Tween": false,
-                "ctype": "BlendFuncFrameData"
-              },
-              {
-                "Src": 1,
-                "Dst": 771,
-                "FrameIndex": 35,
-                "Tween": false,
-                "ctype": "BlendFuncFrameData"
-              },
-              {
-                "Src": 1,
-                "Dst": 771,
-                "FrameIndex": 40,
-                "Tween": false,
-                "ctype": "BlendFuncFrameData"
-              },
-              {
-                "Src": 1,
-                "Dst": 771,
-                "FrameIndex": 45,
-                "Tween": false,
-                "ctype": "BlendFuncFrameData"
-              },
-              {
-                "Src": 1,
-                "Dst": 771,
-                "FrameIndex": 50,
-                "Tween": false,
-                "ctype": "BlendFuncFrameData"
-              },
-              {
-                "Src": 1,
-                "Dst": 771,
-                "FrameIndex": 55,
-                "Tween": false,
-                "ctype": "BlendFuncFrameData"
-              },
-              {
-                "Src": 1,
-                "Dst": 771,
-                "FrameIndex": 59,
-                "Tween": false,
-                "ctype": "BlendFuncFrameData"
-              },
-              {
-                "Src": 1,
-                "Dst": 771,
-                "FrameIndex": 60,
-                "Tween": false,
-                "ctype": "BlendFuncFrameData"
-              },
-              {
-                "Src": 1,
-                "Dst": 771,
-                "FrameIndex": 70,
-                "Tween": false,
-                "ctype": "BlendFuncFrameData"
-              },
-              {
-                "Src": 1,
-                "Dst": 771,
-                "FrameIndex": 80,
-                "Tween": false,
-                "ctype": "BlendFuncFrameData"
-              },
-              {
-                "Src": 1,
-                "Dst": 771,
-                "FrameIndex": 95,
-                "Tween": false,
-                "ctype": "BlendFuncFrameData"
-              }
-            ],
-            "ctype": "TimelineData"
-          },
-          {
-            "ActionTag": 1078507591,
-            "Property": "Alpha",
-            "Frames": [
-              {
-                "Value": 200,
-                "FrameIndex": 80,
                 "EasingData": {
                   "Type": 0
                 },
-                "ctype": "IntFrameData"
-              },
-              {
-                "Value": 0,
-                "FrameIndex": 95,
-                "EasingData": {
-                  "Type": 0
-                },
-                "ctype": "IntFrameData"
+                "ctype": "PointFrameData"
               }
             ],
             "ctype": "TimelineData"
@@ -867,6 +163,110 @@
           {
             "ClipAble": false,
             "BackColorAlpha": 102,
+            "ComboBoxIndex": 1,
+            "SingleColor": {
+              "G": 0,
+              "B": 0
+            },
+            "FirstColor": {
+              "R": 150,
+              "G": 200
+            },
+            "EndColor": {},
+            "ColorVector": {
+              "ScaleY": 1.0
+            },
+            "Scale9Width": 1,
+            "Scale9Height": 1,
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "RotationSkewX": 44.041,
+            "RotationSkewY": 44.0408,
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "PreSize": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "LeftMargin": -50.0,
+            "RightMargin": -50.0,
+            "TopMargin": -50.0,
+            "BottomMargin": -50.0,
+            "Tag": 32,
+            "ActionTag": 2040229947,
+            "Size": {
+              "X": 100.0,
+              "Y": 100.0
+            },
+            "Name": "Panel_1",
+            "ctype": "PanelObjectData"
+          },
+          {
+            "FontSize": 20,
+            "LabelText": "燃烧的蜡烛",
+            "OutlineColor": {
+              "G": 0,
+              "B": 0
+            },
+            "ShadowColor": {
+              "R": 110,
+              "G": 110,
+              "B": 110
+            },
+            "ShadowOffsetX": 2.0,
+            "ShadowOffsetY": -2.0,
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": -1.29,
+              "Y": -1.2907
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "PreSize": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "LeftMargin": -51.29,
+            "RightMargin": -48.71,
+            "TopMargin": -10.2093,
+            "BottomMargin": -12.7907,
+            "Tag": 33,
+            "ActionTag": 2142457622,
+            "Size": {
+              "X": 100.0,
+              "Y": 23.0
+            },
+            "Name": "Text_1",
+            "ctype": "TextObjectData"
+          },
+          {
+            "ClipAble": false,
+            "BackColorAlpha": 102,
             "SingleColor": {
               "R": 150,
               "G": 200
@@ -885,7 +285,7 @@
             "AnchorPoint": {},
             "Position": {
               "X": -53.4795,
-              "Y": -39.8081
+              "Y": -49.9305
             },
             "Scale": {
               "ScaleX": 1.0,
@@ -903,8 +303,8 @@
             },
             "LeftMargin": -53.4795,
             "RightMargin": -46.5205,
-            "TopMargin": -60.1919,
-            "BottomMargin": -39.8081,
+            "TopMargin": -50.0695,
+            "BottomMargin": -49.9305,
             "CallBackType": "Click",
             "Tag": 33,
             "ActionTag": -1332982179,
@@ -914,52 +314,6 @@
             },
             "Name": "click",
             "ctype": "PanelObjectData"
-          },
-          {
-            "FileData": {
-              "Type": "Normal",
-              "Path": "qingong/images/concat_01.png",
-              "Plist": ""
-            },
-            "BlendFunc": {
-              "Src": 1,
-              "Dst": 771
-            },
-            "AnchorPoint": {
-              "ScaleX": 0.5,
-              "ScaleY": 0.5
-            },
-            "Position": {
-              "X": -1.0931,
-              "Y": 23.7206
-            },
-            "Scale": {
-              "ScaleX": 1.0,
-              "ScaleY": 1.0
-            },
-            "CColor": {},
-            "IconVisible": false,
-            "PrePosition": {
-              "X": 0.0,
-              "Y": 0.0
-            },
-            "PreSize": {
-              "X": 0.0,
-              "Y": 0.0
-            },
-            "LeftMargin": -9.0931,
-            "RightMargin": -6.9069,
-            "TopMargin": -42.7206,
-            "BottomMargin": 4.7206,
-            "Tag": 62,
-            "ActionTag": 1078507591,
-            "Size": {
-              "X": 16.0,
-              "Y": 38.0
-            },
-            "Alpha": 200,
-            "Name": "Panel_1",
-            "ctype": "SpriteObjectData"
           },
           {
             "AnchorPoint": {},
@@ -986,6 +340,7 @@
             "TopMargin": 84.0,
             "BottomMargin": -84.0,
             "Tag": 49,
+            "FrameEvent": "end",
             "ActionTag": -34104934,
             "Size": {
               "X": 0.0,
@@ -993,51 +348,6 @@
             },
             "Name": "endEvent",
             "ctype": "SingleNodeObjectData"
-          },
-          {
-            "FileData": {
-              "Type": "Normal",
-              "Path": "qingong/images/concat_06_3.png",
-              "Plist": ""
-            },
-            "BlendFunc": {
-              "Src": 1,
-              "Dst": 771
-            },
-            "AnchorPoint": {
-              "ScaleX": 0.5,
-              "ScaleY": 0.5
-            },
-            "Position": {
-              "X": 0.0,
-              "Y": 0.0
-            },
-            "Scale": {
-              "ScaleX": 1.0,
-              "ScaleY": 1.0
-            },
-            "CColor": {},
-            "IconVisible": false,
-            "PrePosition": {
-              "X": 0.0,
-              "Y": 0.0
-            },
-            "PreSize": {
-              "X": 0.0,
-              "Y": 0.0
-            },
-            "LeftMargin": -8.0,
-            "RightMargin": -8.0,
-            "TopMargin": -16.5,
-            "BottomMargin": -16.5,
-            "Tag": 61,
-            "ActionTag": 1141706082,
-            "Size": {
-              "X": 16.0,
-              "Y": 33.0
-            },
-            "Name": "concat_06_3_1",
-            "ctype": "SpriteObjectData"
           }
         ],
         "Size": {
@@ -1047,21 +357,7 @@
         "Name": "Node",
         "ctype": "SingleNodeObjectData"
       },
-      "UsedResources": [
-        "images/concat_01.png",
-        "images/concat_02.png",
-        "images/concat_03.png",
-        "images/concat_04.png",
-        "images/concat_05.png",
-        "images/concat_06.png",
-        "images/concat_06_3.png",
-        "images/concat_07.png",
-        "images/concat_08.png",
-        "images/concat_09.png",
-        "images/concat_10.png",
-        "images/concat_11.png",
-        "images/concat_12.png"
-      ],
+      "UsedResources": [],
       "ctype": "GameFileData"
     }
   },

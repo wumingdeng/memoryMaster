@@ -44,8 +44,6 @@ var jigsawGame = cc.Layer.extend({
         this._node.setLocalZOrder(2)
 
 
-        this._zNum = this._pieceCount //初始的z坐标设置为碎片的最大个数
-
         var _listener = cc.EventListener.create({
             swallowTouches:true,
             event: cc.EventListener.TOUCH_ONE_BY_ONE,
@@ -69,6 +67,8 @@ var jigsawGame = cc.Layer.extend({
             this._pieceCount++
         }
         this.initAdjacentInfo()
+
+        this._zNum = this._pieceCount //初始的z坐标设置为碎片的最大个数
     },
     initAdjacentInfo:function(){
         var spts = this._node.getChildren()
@@ -147,6 +147,7 @@ var jigsawGame = cc.Layer.extend({
         if (this._isGameEnd) return false
         var sender = event.getCurrentTarget()
         var p = sender.getParent().convertTouchToNodeSpace(touch)
+        
         if (cc.rectContainsPoint(sender.getBoundingBox(),p))
         {
             if (!cfun.getOriginalAlphaPoint(sender,touch.getLocation())) {

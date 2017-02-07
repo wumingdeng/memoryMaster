@@ -1,21 +1,69 @@
 {
   "ID": "80a5809c-ce84-4a61-a2c9-68406d87b517",
-  "Version": "2.3.4",
+  "Version": "3.10.0.0",
   "Name": "leftDuJuan",
   "Content": {
     "Content": {
       "Animation": {
-        "Duration": 50,
+        "Duration": 90,
         "Speed": 1.0,
         "ActivedAnimationName": "doAction",
         "Timelines": [
+          {
+            "ActionTag": -452197091,
+            "Property": "Position",
+            "Frames": [
+              {
+                "X": 96.371,
+                "Y": 97.8767,
+                "FrameIndex": 0,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "PointFrameData"
+              }
+            ],
+            "ctype": "TimelineData"
+          },
+          {
+            "ActionTag": -452197091,
+            "Property": "Scale",
+            "Frames": [
+              {
+                "X": 1.0,
+                "Y": 1.0,
+                "FrameIndex": 0,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "ScaleValueFrameData"
+              }
+            ],
+            "ctype": "TimelineData"
+          },
+          {
+            "ActionTag": -452197091,
+            "Property": "RotationSkew",
+            "Frames": [
+              {
+                "X": 0.0,
+                "Y": 0.0,
+                "FrameIndex": 0,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "ScaleValueFrameData"
+              }
+            ],
+            "ctype": "TimelineData"
+          },
           {
             "ActionTag": 1590117815,
             "Property": "Position",
             "Frames": [
               {
-                "X": 100.0,
-                "Y": -100.0,
+                "X": -99.0,
+                "Y": -97.8751,
                 "FrameIndex": 0,
                 "EasingData": {
                   "Type": 0
@@ -23,9 +71,9 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": 856.4663,
-                "Y": -95.287,
-                "FrameIndex": 50,
+                "X": 617.4171,
+                "Y": -95.2948,
+                "FrameIndex": 90,
                 "EasingData": {
                   "Type": 0
                 },
@@ -39,7 +87,7 @@
             "Property": "Scale",
             "Frames": [
               {
-                "X": -1.0,
+                "X": 1.0,
                 "Y": 1.0,
                 "FrameIndex": 0,
                 "EasingData": {
@@ -72,7 +120,7 @@
             "Frames": [
               {
                 "Value": "end",
-                "FrameIndex": 50,
+                "FrameIndex": 90,
                 "Tween": false,
                 "ctype": "EventFrameData"
               }
@@ -84,8 +132,8 @@
             "Property": "Position",
             "Frames": [
               {
-                "X": -188.242,
-                "Y": -175.1263,
+                "X": -101.4795,
+                "Y": -99.9305,
                 "FrameIndex": 0,
                 "EasingData": {
                   "Type": 0
@@ -96,28 +144,12 @@
             "ctype": "TimelineData"
           },
           {
-            "ActionTag": -310822314,
-            "Property": "Scale",
-            "Frames": [
-              {
-                "X": 1.8315,
-                "Y": 1.8315,
-                "FrameIndex": 0,
-                "EasingData": {
-                  "Type": 0
-                },
-                "ctype": "ScaleValueFrameData"
-              }
-            ],
-            "ctype": "TimelineData"
-          },
-          {
             "ActionTag": 1737965498,
             "Property": "FrameEvent",
             "Frames": [
               {
                 "Value": "end",
-                "FrameIndex": 50,
+                "FrameIndex": 90,
                 "Tween": false,
                 "ctype": "EventFrameData"
               }
@@ -140,12 +172,7 @@
         "Children": [
           {
             "ClipAble": false,
-            "BackColorAlpha": 0,
-            "FileData": {
-              "Type": "Normal",
-              "Path": "qingong/images/dialogue_dujuan_happy.png",
-              "Plist": ""
-            },
+            "BackColorAlpha": 102,
             "ComboBoxIndex": 1,
             "SingleColor": {
               "R": 150,
@@ -159,17 +186,15 @@
             "ColorVector": {
               "ScaleY": 1.0
             },
-            "Scale9OriginX": 71,
-            "Scale9OriginY": 117,
-            "Scale9Width": 75,
-            "Scale9Height": 121,
+            "Scale9Width": 1,
+            "Scale9Height": 1,
             "AnchorPoint": {},
             "Position": {
-              "X": 100.0,
-              "Y": -100.0
+              "X": 617.4171,
+              "Y": -95.2948
             },
             "Scale": {
-              "ScaleX": -1.0,
+              "ScaleX": 1.0,
               "ScaleY": 1.0
             },
             "CColor": {},
@@ -182,11 +207,63 @@
               "X": 0.0,
               "Y": 0.0
             },
-            "LeftMargin": 100.0,
-            "RightMargin": -300.0,
-            "TopMargin": -100.0,
-            "BottomMargin": -100.0,
+            "LeftMargin": 617.4171,
+            "RightMargin": -817.4171,
+            "TopMargin": -104.7052,
+            "BottomMargin": -95.2948,
             "Tag": 11,
+            "FrameEvent": "end",
+            "Children": [
+              {
+                "FontSize": 20,
+                "LabelText": "左边的杜鹃",
+                "OutlineColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "ShadowColor": {
+                  "R": 110,
+                  "G": 110,
+                  "B": 110
+                },
+                "ShadowOffsetX": 2.0,
+                "ShadowOffsetY": -2.0,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 96.371,
+                  "Y": 97.8767
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.4819,
+                  "Y": 0.4894
+                },
+                "PreSize": {
+                  "X": 0.5,
+                  "Y": 0.115
+                },
+                "LeftMargin": 46.371,
+                "RightMargin": 53.629,
+                "TopMargin": 90.6233,
+                "BottomMargin": 86.3767,
+                "Tag": 22,
+                "ActionTag": -452197091,
+                "Size": {
+                  "X": 100.0,
+                  "Y": 23.0
+                },
+                "Name": "Text_1",
+                "ctype": "TextObjectData"
+              }
+            ],
             "ActionTag": 1590117815,
             "Size": {
               "X": 200.0,
@@ -215,12 +292,12 @@
             "TouchEnable": true,
             "AnchorPoint": {},
             "Position": {
-              "X": -188.242,
-              "Y": -175.1263
+              "X": -101.4795,
+              "Y": -99.9305
             },
             "Scale": {
-              "ScaleX": 1.8315,
-              "ScaleY": 1.8315
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
             },
             "CColor": {},
             "IconVisible": false,
@@ -232,10 +309,10 @@
               "X": 0.0,
               "Y": 0.0
             },
-            "LeftMargin": -188.242,
-            "RightMargin": -11.758,
-            "TopMargin": -24.8737,
-            "BottomMargin": -175.1263,
+            "LeftMargin": -101.4795,
+            "RightMargin": -98.5205,
+            "TopMargin": -100.0695,
+            "BottomMargin": -99.9305,
             "CallBackType": "Touch",
             "Tag": 22,
             "ActionTag": -310822314,
@@ -271,6 +348,7 @@
             "TopMargin": 138.0,
             "BottomMargin": -138.0,
             "Tag": 28,
+            "FrameEvent": "end",
             "ActionTag": 1737965498,
             "Size": {
               "X": 0.0,
@@ -287,9 +365,7 @@
         "Name": "Node",
         "ctype": "SingleNodeObjectData"
       },
-      "UsedResources": [
-        "images/dialogue_dujuan_happy.png"
-      ],
+      "UsedResources": [],
       "ctype": "GameFileData"
     }
   },

@@ -33,7 +33,7 @@ var itemBase = cc.Class.extend({
         if (this._source._className == "Node"){
             var click = (this._source.getChildByName("click") || this._source.getChildren()[0])
             var pos = click.convertToWorldSpace(cc.p(0,0));
-            this._clickArea = new cc.Rect();
+            this._clickArea = cc.rect();
             this._clickArea.x = pos.x;
             this._clickArea.y = pos.y;
             this._clickArea.width = click.width;
@@ -48,6 +48,9 @@ var itemBase = cc.Class.extend({
             }
         } else {
             this._clickArea = this._source.getBoundingBox();
+            var pos = this._source.convertToWorldSpace(cc.p(0,0));
+            this._clickArea.x = pos.x;
+            this._clickArea.y = pos.y;
         }
 
         this._originalPos = this._source.getPosition();
@@ -114,7 +117,8 @@ var itemBase = cc.Class.extend({
             this.onTalk();
         }
         if (this.haveBehavior(ITEM_BEHAVIOR.goto)){
-            this.onGotoNextScene();
+            var loc = touch.getLocation();
+            this.onGotoNextScene(loc);
         }
         if (this.haveBehavior(ITEM_BEHAVIOR.global)){
             this.onGetGlobalItem();
@@ -250,8 +254,8 @@ var itemBase = cc.Class.extend({
     },
 
     //进入下一个场景
-    onGotoNextScene:function(){
+    onGotoNextScene:function(loc){
         var sid = this._info.goto;
-        sceneManager.createScene(sid);
+        sceneManager.createScene(sid,loc);
     }
 });

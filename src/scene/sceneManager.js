@@ -3,12 +3,12 @@
  */
 
 var sceneManager = {
-
+    scene:null  //记录当前的主场景
 };
 
 
 //创建不同类型的场景
-sceneManager.createScene = function(sid){
+sceneManager.createScene = function(sid,loc){
     //var self = arguments.callee;
     if (cc.isArray(sid) && sid.length > 1) {
         //弹出选择场景的界面
@@ -20,18 +20,17 @@ sceneManager.createScene = function(sid){
         var info = this.getSceneInfo(sid);
         switch (info.type) {
             case SCENE_Type.full:   //创建全屏的场景
-                new fullScene(sid,info);
+                this.scene = new fullScene(sid,info);
                 PLAYER_STATE.mainScene = sid;
                 break;
             case SCENE_Type.embed:  //创建嵌入的场景
-                new embedScene(sid,info);
+                new embedScene(sid,info,loc);   //嵌入场景需要点击位置
                 break;
             case SCENE_Type.game:
                 new gameScene(sid,info);
                 //taskManager.completeTask(4001); //先直接完成游戏
                 //PLAYER_STATE.scene = 3;   //强行回到掖庭
                 break;
-
         }
         PLAYER_STATE.scene = sid;   //改玩家状态
     }

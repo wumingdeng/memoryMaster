@@ -32,7 +32,7 @@ var findSomethingLayer = cc.Layer.extend({
         this.initScene()
     },
     initGameData: function () {
-        this._checkPos = String(SD_SCENE.data[this._sceneId % 1000-1][SD_SCENE.CLUE_POINTS]).split("_")
+        this._checkPos = GAME_CONFIG["g"+this._index].checkPos.split("_")
         var ct = 0
         this._checkPos.forEach(function (e) {
             var yesOrNo = e.split("`")[2]
@@ -43,8 +43,8 @@ var findSomethingLayer = cc.Layer.extend({
     },
     initScene: function () {
         this.initGameData()
-        jsb.fileUtils.addSearchPath("res")
-        this._node = ccs.load(res.gameScene7_json).node
+        // jsb.fileUtils.addSearchPath("res")
+        // this._node = ccs.load(res.gameScene7_json).node
         this.drawWidget()
         this._node.getChildByName("imgSource").setVisible(false)
         var txtTitle = this._node.getChildByName("txtTitle")
@@ -54,7 +54,7 @@ var findSomethingLayer = cc.Layer.extend({
         //cfun.setTextBold(this._clueCountText)
         this._clueCountText = this._node.getChildByName("txtProgess")
         this._clueCountText.setString("0/" + this._allClueCount)
-        this.addChild(this._node)
+        // this.addChild(this._node)
 
         /*放大镜的遮罩效果*/
         var holesClipper = new cc.ClippingNode() //--剪裁节点
@@ -64,11 +64,11 @@ var findSomethingLayer = cc.Layer.extend({
         var points = [cc.p(0, 0), cc.p(130, 0), cc.p(130, 130), cc.p(0, 130)]
         this._draw.drawPoly(points, cc.color(1, 0, 0, 0.5), 4, cc.color(0, 0, 1, 1))
 
-        this._holeUI = extraFunc.createSprite("yidongqu.png","gameScene7_1.plist")
-        var sptYes = extraFunc.createSprite("gg.png", "gameScene7_1.plist")
+        this._holeUI = sptExt.createSprite("yidongqu.png","gameScene7_1.plist")
+        var sptYes = sptExt.createSprite("gg.png", "gameScene7_1.plist")
         sptYes.setName("yes")
         sptYes.setOpacity(0)
-        var sptNo = extraFunc.createSprite("XX.png", "gameScene7_1.plist")
+        var sptNo = sptExt.createSprite("XX.png", "gameScene7_1.plist")
         sptNo.setName("no")
         sptNo.setOpacity(0)
         sptNo.setPosition(125, 25)
@@ -90,8 +90,8 @@ var findSomethingLayer = cc.Layer.extend({
         this.addChild(this._holeUI, 100)
         holesClipper.setPosition(Number(this._rectArr[0]) + maskW / 2, Number(this._rectArr[1]) + maskH / 2)
 
-        var spt = extraFunc.createSprite("jindutiao.png", "gameScene7_1.plist")
-        this._loadingbarTimer = extraFunc.createSprite("jindutiaodi.png", "gameScene7_1.plist")
+        var spt = sptExt.createSprite("jindutiao.png", "gameScene7_1.plist")
+        this._loadingbarTimer = sptExt.createSprite("jindutiaodi.png", "gameScene7_1.plist")
         this._pt = new cc.ProgressTimer(spt)
         this._pt.setPosition(this._loadingbarTimer.width / 2,this._loadingbarTimer.height/ 2)
         this._pt.setMidpoint(cc.p(0, 0))
@@ -257,7 +257,7 @@ var findSomethingLayer = cc.Layer.extend({
         bgTxtr.begin()
         this._node.visit()
         bgTxtr.end()
-        this._rectArr = String(SD_SCENE.data[this._sceneId % 1000 -1][SD_SCENE.VALID_RECT]).split("`")
+        this._rectArr = GAME_CONFIG["g"+this._index].validRect.split("`")
         var tx = bgTxtr.getSprite().getTexture()
         var rect = cc.rect(Number(this._rectArr[0]), Number(this._rectArr[1]), Number(this._rectArr[2]), Number(this._rectArr[3]))
         this._maskSpt = new cc.Sprite(tx, rect,false)

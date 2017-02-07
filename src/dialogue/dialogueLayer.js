@@ -15,6 +15,7 @@ var dialogueLayer = cc.Layer.extend({
     },
 
     init:function(){
+        this._super
         this._info = TALK_CONFIG["t" + this._id];
         var content = this._info.content;
         var text = new ccui.Text(content,"customFont",40);

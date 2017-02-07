@@ -1,6 +1,6 @@
 {
   "ID": "76a573e1-7478-43a3-b525-16b26840fc12",
-  "Version": "2.3.4",
+  "Version": "3.10.0.0",
   "Name": "cosmeticCase",
   "Content": {
     "Content": {
@@ -10,40 +10,13 @@
         "ActivedAnimationName": "doAction",
         "Timelines": [
           {
-            "ActionTag": 2146083900,
+            "ActionTag": -446806148,
             "Property": "Position",
             "Frames": [
               {
-                "X": 0.0,
-                "Y": 0.0,
+                "X": -97.0,
+                "Y": -100.0,
                 "FrameIndex": 0,
-                "EasingData": {
-                  "Type": 0
-                },
-                "ctype": "PointFrameData"
-              },
-              {
-                "X": 0.0,
-                "Y": 0.0,
-                "FrameIndex": 30,
-                "EasingData": {
-                  "Type": 0
-                },
-                "ctype": "PointFrameData"
-              },
-              {
-                "X": 0.0,
-                "Y": 0.0,
-                "FrameIndex": 59,
-                "EasingData": {
-                  "Type": 0
-                },
-                "ctype": "PointFrameData"
-              },
-              {
-                "X": 0.0,
-                "Y": 0.0,
-                "FrameIndex": 60,
                 "EasingData": {
                   "Type": 0
                 },
@@ -53,7 +26,7 @@
             "ctype": "TimelineData"
           },
           {
-            "ActionTag": 2146083900,
+            "ActionTag": -446806148,
             "Property": "Scale",
             "Frames": [
               {
@@ -64,180 +37,12 @@
                   "Type": 0
                 },
                 "ctype": "ScaleValueFrameData"
-              },
-              {
-                "X": 2.0,
-                "Y": 2.0,
-                "FrameIndex": 30,
-                "EasingData": {
-                  "Type": 0
-                },
-                "ctype": "ScaleValueFrameData"
-              },
-              {
-                "X": 2.0,
-                "Y": 2.0,
-                "FrameIndex": 59,
-                "EasingData": {
-                  "Type": 0
-                },
-                "ctype": "ScaleValueFrameData"
-              },
-              {
-                "X": 2.0,
-                "Y": 2.0,
-                "FrameIndex": 60,
-                "EasingData": {
-                  "Type": 0
-                },
-                "ctype": "ScaleValueFrameData"
               }
             ],
             "ctype": "TimelineData"
           },
           {
-            "ActionTag": 2146083900,
-            "Property": "RotationSkew",
-            "Frames": [
-              {
-                "X": 0.0,
-                "Y": 0.0,
-                "FrameIndex": 30,
-                "EasingData": {
-                  "Type": 0
-                },
-                "ctype": "ScaleValueFrameData"
-              },
-              {
-                "X": 0.0,
-                "Y": 0.0,
-                "FrameIndex": 59,
-                "EasingData": {
-                  "Type": 0
-                },
-                "ctype": "ScaleValueFrameData"
-              },
-              {
-                "X": 0.0,
-                "Y": 0.0,
-                "FrameIndex": 60,
-                "EasingData": {
-                  "Type": 0
-                },
-                "ctype": "ScaleValueFrameData"
-              }
-            ],
-            "ctype": "TimelineData"
-          },
-          {
-            "ActionTag": 2146083900,
-            "Property": "FileData",
-            "Frames": [
-              {
-                "TextureFile": {
-                  "Type": "Normal",
-                  "Path": "qingong/images/qingong_shoushihe.png",
-                  "Plist": ""
-                },
-                "FrameIndex": 59,
-                "Tween": false,
-                "ctype": "TextureFrameData"
-              },
-              {
-                "TextureFile": {
-                  "Type": "Normal",
-                  "Path": "qingong/images/qingong_shoushihe1.png",
-                  "Plist": ""
-                },
-                "FrameIndex": 60,
-                "Tween": false,
-                "ctype": "TextureFrameData"
-              }
-            ],
-            "ctype": "TimelineData"
-          },
-          {
-            "ActionTag": 2146083900,
-            "Property": "BlendFunc",
-            "Frames": [
-              {
-                "Src": 1,
-                "Dst": 771,
-                "FrameIndex": 59,
-                "Tween": false,
-                "ctype": "BlendFuncFrameData"
-              },
-              {
-                "Src": 1,
-                "Dst": 771,
-                "FrameIndex": 60,
-                "Tween": false,
-                "ctype": "BlendFuncFrameData"
-              }
-            ],
-            "ctype": "TimelineData"
-          },
-          {
-            "ActionTag": -78911724,
-            "Property": "Position",
-            "Frames": [
-              {
-                "X": -0.0563,
-                "Y": -16.4548,
-                "FrameIndex": 0,
-                "EasingData": {
-                  "Type": 0
-                },
-                "ctype": "PointFrameData"
-              },
-              {
-                "X": -0.0563,
-                "Y": -16.4548,
-                "FrameIndex": 59,
-                "EasingData": {
-                  "Type": 0
-                },
-                "ctype": "PointFrameData"
-              },
-              {
-                "X": -0.0563,
-                "Y": -16.4548,
-                "FrameIndex": 60,
-                "EasingData": {
-                  "Type": 0
-                },
-                "ctype": "PointFrameData"
-              }
-            ],
-            "ctype": "TimelineData"
-          },
-          {
-            "ActionTag": -78911724,
-            "Property": "Scale",
-            "Frames": [
-              {
-                "X": 1.0,
-                "Y": 1.0,
-                "FrameIndex": 0,
-                "EasingData": {
-                  "Type": 0
-                },
-                "ctype": "ScaleValueFrameData"
-              },
-              {
-                "X": 1.0,
-                "Y": 1.0,
-                "FrameIndex": 59,
-                "EasingData": {
-                  "Type": 0
-                },
-                "ctype": "ScaleValueFrameData"
-              }
-            ],
-            "ctype": "TimelineData"
-          },
-          {
-            "ActionTag": -78911724,
+            "ActionTag": -446806148,
             "Property": "RotationSkew",
             "Frames": [
               {
@@ -250,56 +55,18 @@
                 "ctype": "ScaleValueFrameData"
               },
               {
-                "X": 0.0,
-                "Y": 0.0,
-                "FrameIndex": 59,
+                "X": -41.2687,
+                "Y": -41.2681,
+                "FrameIndex": 30,
                 "EasingData": {
                   "Type": 0
                 },
                 "ctype": "ScaleValueFrameData"
-              }
-            ],
-            "ctype": "TimelineData"
-          },
-          {
-            "ActionTag": -78911724,
-            "Property": "Alpha",
-            "Frames": [
-              {
-                "Value": 0,
-                "FrameIndex": 0,
-                "EasingData": {
-                  "Type": 0
-                },
-                "ctype": "IntFrameData"
               },
               {
-                "Value": 0,
-                "FrameIndex": 59,
-                "EasingData": {
-                  "Type": 0
-                },
-                "ctype": "IntFrameData"
-              },
-              {
-                "Value": 133,
+                "X": 0.0,
+                "Y": 0.0,
                 "FrameIndex": 60,
-                "EasingData": {
-                  "Type": 0
-                },
-                "ctype": "IntFrameData"
-              }
-            ],
-            "ctype": "TimelineData"
-          },
-          {
-            "ActionTag": 386254884,
-            "Property": "Scale",
-            "Frames": [
-              {
-                "X": 1.0,
-                "Y": 1.0,
-                "FrameIndex": 30,
                 "EasingData": {
                   "Type": 0
                 },
@@ -336,67 +103,26 @@
         "Tag": 8,
         "Children": [
           {
-            "FileData": {
-              "Type": "Normal",
-              "Path": "qingong/images/qingong_shoushihe1.png",
-              "Plist": ""
+            "ClipAble": false,
+            "BackColorAlpha": 102,
+            "ComboBoxIndex": 1,
+            "SingleColor": {
+              "R": 150,
+              "G": 200
             },
-            "BlendFunc": {
-              "Src": 1,
-              "Dst": 771
+            "FirstColor": {
+              "R": 150,
+              "G": 200
             },
-            "AnchorPoint": {
-              "ScaleX": 0.5,
-              "ScaleY": 0.5
+            "EndColor": {},
+            "ColorVector": {
+              "ScaleY": 1.0
             },
+            "TouchEnable": true,
+            "AnchorPoint": {},
             "Position": {
-              "X": 0.0,
-              "Y": 0.0
-            },
-            "Scale": {
-              "ScaleX": 2.0,
-              "ScaleY": 2.0
-            },
-            "CColor": {},
-            "IconVisible": false,
-            "PrePosition": {
-              "X": 0.0,
-              "Y": 0.0
-            },
-            "PreSize": {
-              "X": 0.0,
-              "Y": 0.0
-            },
-            "LeftMargin": -29.5,
-            "RightMargin": -29.5,
-            "TopMargin": -23.0,
-            "BottomMargin": -23.0,
-            "Tag": 178,
-            "ActionTag": 2146083900,
-            "Size": {
-              "X": 69.0,
-              "Y": 77.0
-            },
-            "Name": "Panel_1",
-            "ctype": "SpriteObjectData"
-          },
-          {
-            "FileData": {
-              "Type": "Normal",
-              "Path": "qingong/images/huayuan_yanshi.png",
-              "Plist": ""
-            },
-            "BlendFunc": {
-              "Src": 1,
-              "Dst": 771
-            },
-            "AnchorPoint": {
-              "ScaleX": 0.5,
-              "ScaleY": 0.5
-            },
-            "Position": {
-              "X": -0.0563,
-              "Y": -16.4548
+              "X": -97.0,
+              "Y": -100.0
             },
             "Scale": {
               "ScaleX": 1.0,
@@ -412,19 +138,69 @@
               "X": 0.0,
               "Y": 0.0
             },
-            "LeftMargin": -20.5563,
-            "RightMargin": -20.4437,
-            "TopMargin": 9.9548,
-            "BottomMargin": -22.9548,
-            "Tag": 179,
-            "ActionTag": -78911724,
+            "LeftMargin": -97.0,
+            "RightMargin": -103.0,
+            "TopMargin": -100.0,
+            "BottomMargin": -100.0,
+            "Tag": 9,
+            "Children": [
+              {
+                "FontSize": 20,
+                "LabelText": "化妆盒",
+                "OutlineColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "ShadowColor": {
+                  "R": 110,
+                  "G": 110,
+                  "B": 110
+                },
+                "ShadowOffsetX": 2.0,
+                "ShadowOffsetY": -2.0,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 95.0,
+                  "Y": 99.0
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.475,
+                  "Y": 0.495
+                },
+                "PreSize": {
+                  "X": 0.3,
+                  "Y": 0.115
+                },
+                "LeftMargin": 65.0,
+                "RightMargin": 75.0,
+                "TopMargin": 89.5,
+                "BottomMargin": 87.5,
+                "Tag": 11,
+                "ActionTag": -187285649,
+                "Size": {
+                  "X": 60.0,
+                  "Y": 23.0
+                },
+                "Name": "Text_1",
+                "ctype": "TextObjectData"
+              }
+            ],
+            "ActionTag": -446806148,
             "Size": {
-              "X": 41.0,
-              "Y": 13.0
+              "X": 200.0,
+              "Y": 200.0
             },
-            "Alpha": 133,
-            "Name": "huayuan_yanshi_3",
-            "ctype": "SpriteObjectData"
+            "Name": "Panel_1",
+            "ctype": "PanelObjectData"
           },
           {
             "ClipAble": false,
@@ -441,8 +217,6 @@
             "ColorVector": {
               "ScaleY": 1.0
             },
-            "Scale9Width": 1,
-            "Scale9Height": 1,
             "TouchEnable": true,
             "AnchorPoint": {},
             "Position": {
@@ -501,6 +275,7 @@
             "TopMargin": 62.0,
             "BottomMargin": -62.0,
             "Tag": 12,
+            "FrameEvent": "end",
             "ActionTag": -1220508360,
             "Size": {
               "X": 0.0,
@@ -517,11 +292,7 @@
         "Name": "Node",
         "ctype": "SingleNodeObjectData"
       },
-      "UsedResources": [
-        "../images/huayuan_yanshi.png",
-        "../images/qingong_shoushihe.png",
-        "../images/qingong_shoushihe1.png"
-      ],
+      "UsedResources": [],
       "ctype": "GameFileData"
     }
   },

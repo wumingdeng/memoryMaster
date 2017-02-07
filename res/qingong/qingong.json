@@ -1,11 +1,11 @@
 {
   "ID": "989f4d78-54ba-4ee8-8826-5623cde20e1a",
-  "Version": "2.3.4",
+  "Version": "3.10.0.0",
   "Name": "qingong",
   "Content": {
     "Content": {
       "Animation": {
-        "Duration": 0,
+        "Duration": 90,
         "Speed": 1.0,
         "Timelines": [
           {
@@ -19,6 +19,14 @@
                 "FrameIndex": 0,
                 "Tween": false,
                 "ctype": "InnerActionFrameData"
+              },
+              {
+                "InnerActionType": "NoLoopAction",
+                "CurrentAniamtionName": "-- ALL --",
+                "SingleFrameIndex": 0,
+                "FrameIndex": 90,
+                "Tween": false,
+                "ctype": "InnerActionFrameData"
               }
             ],
             "ctype": "TimelineData"
@@ -29,8 +37,17 @@
             "Frames": [
               {
                 "X": 174.3716,
-                "Y": 174.0891,
+                "Y": 180.089,
                 "FrameIndex": 0,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "PointFrameData"
+              },
+              {
+                "X": 174.3716,
+                "Y": 180.089,
+                "FrameIndex": 90,
                 "EasingData": {
                   "Type": 0
                 },
@@ -51,6 +68,15 @@
                   "Type": 0
                 },
                 "ctype": "ScaleValueFrameData"
+              },
+              {
+                "X": 1.0,
+                "Y": 1.0,
+                "FrameIndex": 90,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "ScaleValueFrameData"
               }
             ],
             "ctype": "TimelineData"
@@ -63,6 +89,15 @@
                 "X": 0.0,
                 "Y": 0.0,
                 "FrameIndex": 0,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "ScaleValueFrameData"
+              },
+              {
+                "X": 0.0,
+                "Y": 0.0,
+                "FrameIndex": 90,
                 "EasingData": {
                   "Type": 0
                 },
@@ -92,7 +127,7 @@
             "Frames": [
               {
                 "X": 898.0752,
-                "Y": 174.4504,
+                "Y": 188.4503,
                 "FrameIndex": 0,
                 "EasingData": {
                   "Type": 0
@@ -145,6 +180,14 @@
                 "FrameIndex": 0,
                 "Tween": false,
                 "ctype": "InnerActionFrameData"
+              },
+              {
+                "InnerActionType": "LoopAction",
+                "CurrentAniamtionName": "-- ALL --",
+                "SingleFrameIndex": 0,
+                "FrameIndex": 60,
+                "Tween": false,
+                "ctype": "InnerActionFrameData"
               }
             ],
             "ctype": "TimelineData"
@@ -154,9 +197,18 @@
             "Property": "Position",
             "Frames": [
               {
-                "X": 423.9889,
-                "Y": 162.7318,
+                "X": 427.2397,
+                "Y": 237.4975,
                 "FrameIndex": 0,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "PointFrameData"
+              },
+              {
+                "X": 427.2397,
+                "Y": 237.4975,
+                "FrameIndex": 60,
                 "EasingData": {
                   "Type": 0
                 },
@@ -177,6 +229,15 @@
                   "Type": 0
                 },
                 "ctype": "ScaleValueFrameData"
+              },
+              {
+                "X": 1.0,
+                "Y": 1.0,
+                "FrameIndex": 60,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "ScaleValueFrameData"
               }
             ],
             "ctype": "TimelineData"
@@ -193,6 +254,15 @@
                   "Type": 0
                 },
                 "ctype": "ScaleValueFrameData"
+              },
+              {
+                "X": 0.0,
+                "Y": 0.0,
+                "FrameIndex": 60,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "ScaleValueFrameData"
               }
             ],
             "ctype": "TimelineData"
@@ -205,21 +275,26 @@
         "Tag": 8,
         "Children": [
           {
-            "FileData": {
-              "Type": "Normal",
-              "Path": "qingong/images/gameScene_1.jpg",
-              "Plist": ""
+            "ClipAble": false,
+            "ComboBoxIndex": 1,
+            "SingleColor": {
+              "R": 140,
+              "G": 147,
+              "B": 155
             },
-            "BlendFunc": {
-              "Src": 770,
-              "Dst": 771
+            "FirstColor": {
+              "R": 150,
+              "G": 200
             },
-            "AnchorPoint": {
-              "ScaleY": 0.5
+            "EndColor": {},
+            "ColorVector": {
+              "ScaleY": 1.0
             },
+            "TouchEnable": true,
+            "AnchorPoint": {},
             "Position": {
-              "X": 0.0,
-              "Y": 320.0
+              "X": -437.972,
+              "Y": 0.0
             },
             "Scale": {
               "ScaleX": 1.0,
@@ -228,63 +303,23 @@
             "CColor": {},
             "IconVisible": false,
             "PrePosition": {
-              "X": 0.0,
-              "Y": 0.5
+              "X": -0.3855,
+              "Y": 0.0
             },
             "PreSize": {
-              "X": 0.5009,
+              "X": 1.7606,
               "Y": 1.0
             },
-            "RightMargin": 567.0,
-            "ActionTag": 714477589,
+            "LeftMargin": -437.972,
+            "RightMargin": -426.028,
+            "Tag": 273,
+            "ActionTag": 1323309900,
             "Size": {
-              "X": 569.0,
+              "X": 2000.0,
               "Y": 640.0
             },
-            "Name": "gameScene_1_2",
-            "ctype": "SpriteObjectData"
-          },
-          {
-            "FileData": {
-              "Type": "Normal",
-              "Path": "qingong/images/gameScene_1_02.jpg",
-              "Plist": ""
-            },
-            "BlendFunc": {
-              "Src": 770,
-              "Dst": 771
-            },
-            "AnchorPoint": {
-              "ScaleX": 0.4989,
-              "ScaleY": 0.5
-            },
-            "Position": {
-              "X": 851.8536,
-              "Y": 320.0
-            },
-            "Scale": {
-              "ScaleX": 1.0,
-              "ScaleY": 1.0
-            },
-            "CColor": {},
-            "IconVisible": false,
-            "PrePosition": {
-              "X": 0.7499,
-              "Y": 0.5
-            },
-            "PreSize": {
-              "X": 0.5009,
-              "Y": 1.0
-            },
-            "LeftMargin": 568.0037,
-            "RightMargin": -1.0037,
-            "ActionTag": 54256168,
-            "Size": {
-              "X": 569.0,
-              "Y": 640.0
-            },
-            "Name": "gameScene_1_02_1",
-            "ctype": "SpriteObjectData"
+            "Name": "bg",
+            "ctype": "PanelObjectData"
           },
           {
             "FileData": {
@@ -298,7 +333,7 @@
             "AnchorPoint": {},
             "Position": {
               "X": 174.3716,
-              "Y": 174.0891
+              "Y": 180.089
             },
             "Scale": {
               "ScaleX": 1.0,
@@ -308,7 +343,7 @@
             "IconVisible": true,
             "PrePosition": {
               "X": 0.1535,
-              "Y": 0.272
+              "Y": 0.2814
             },
             "PreSize": {
               "X": 0.0,
@@ -316,8 +351,8 @@
             },
             "LeftMargin": 174.3716,
             "RightMargin": 961.6284,
-            "TopMargin": 465.9109,
-            "BottomMargin": 174.0891,
+            "TopMargin": 459.911,
+            "BottomMargin": 180.089,
             "Tag": 101,
             "ActionTag": -951668054,
             "Size": {
@@ -361,17 +396,17 @@
             },
             "PreSize": {
               "X": 0.0634,
-              "Y": 0.0562
+              "Y": 0.0656
             },
             "LeftMargin": 519.988,
             "RightMargin": 544.012,
-            "TopMargin": 54.5762,
-            "BottomMargin": 549.4238,
+            "TopMargin": 51.5762,
+            "BottomMargin": 546.4238,
             "Tag": 26,
             "ActionTag": -1374255836,
             "Size": {
               "X": 72.0,
-              "Y": 36.0
+              "Y": 42.0
             },
             "Name": "Text_1",
             "ctype": "TextObjectData"
@@ -388,7 +423,7 @@
             "AnchorPoint": {},
             "Position": {
               "X": 898.0752,
-              "Y": 174.4504
+              "Y": 188.4503
             },
             "Scale": {
               "ScaleX": 1.0,
@@ -398,7 +433,7 @@
             "IconVisible": true,
             "PrePosition": {
               "X": 0.7906,
-              "Y": 0.2726
+              "Y": 0.2945
             },
             "PreSize": {
               "X": 0.0,
@@ -406,8 +441,8 @@
             },
             "LeftMargin": 898.0752,
             "RightMargin": 237.9248,
-            "TopMargin": 465.5496,
-            "BottomMargin": 174.4504,
+            "TopMargin": 451.5497,
+            "BottomMargin": 188.4503,
             "Tag": 102,
             "ActionTag": 21797023,
             "Size": {
@@ -428,8 +463,8 @@
             "InnerActionSpeed": 1.0,
             "AnchorPoint": {},
             "Position": {
-              "X": 423.9889,
-              "Y": 162.7318
+              "X": 427.2397,
+              "Y": 237.4975
             },
             "Scale": {
               "ScaleX": 1.0,
@@ -438,17 +473,17 @@
             "CColor": {},
             "IconVisible": true,
             "PrePosition": {
-              "X": 0.3732,
-              "Y": 0.2543
+              "X": 0.3761,
+              "Y": 0.3711
             },
             "PreSize": {
               "X": 0.0,
               "Y": 0.0
             },
-            "LeftMargin": 423.9889,
-            "RightMargin": 712.0111,
-            "TopMargin": 477.2682,
-            "BottomMargin": 162.7318,
+            "LeftMargin": 427.2397,
+            "RightMargin": 708.7603,
+            "TopMargin": 402.5025,
+            "BottomMargin": 237.4975,
             "Tag": 103,
             "ActionTag": -976873939,
             "Size": {
@@ -460,12 +495,7 @@
           },
           {
             "ClipAble": false,
-            "BackColorAlpha": 0,
-            "FileData": {
-              "Type": "Normal",
-              "Path": "qingong/images/concat_06_3.png",
-              "Plist": ""
-            },
+            "BackColorAlpha": 102,
             "ComboBoxIndex": 1,
             "SingleColor": {
               "R": 3,
@@ -480,15 +510,13 @@
             "ColorVector": {
               "ScaleY": 1.0
             },
-            "Scale9OriginX": 5,
-            "Scale9OriginY": 10,
-            "Scale9Width": 6,
-            "Scale9Height": 13,
+            "Scale9Width": 1,
+            "Scale9Height": 1,
             "TouchEnable": true,
             "AnchorPoint": {},
             "Position": {
-              "X": 373.1166,
-              "Y": 112.5507
+              "X": 377.0,
+              "Y": 187.0
             },
             "Scale": {
               "ScaleX": 1.0,
@@ -497,35 +525,29 @@
             "CColor": {},
             "IconVisible": false,
             "PrePosition": {
-              "X": 0.3284,
-              "Y": 0.1759
+              "X": 0.3319,
+              "Y": 0.2922
             },
             "PreSize": {
               "X": 0.088,
-              "Y": 0.1562
+              "Y": 0.1563
             },
-            "LeftMargin": 373.1166,
-            "RightMargin": 662.8834,
-            "TopMargin": 427.4493,
-            "BottomMargin": 112.5507,
+            "LeftMargin": 377.0,
+            "RightMargin": 659.0,
+            "TopMargin": 353.0,
+            "BottomMargin": 187.0,
             "Tag": 104,
             "ActionTag": -703041712,
             "Size": {
               "X": 100.0,
               "Y": 100.0
             },
-            "Alpha": 245,
             "Name": "candle",
             "ctype": "PanelObjectData"
           },
           {
             "ClipAble": false,
-            "BackColorAlpha": 0,
-            "FileData": {
-              "Type": "Normal",
-              "Path": "qingong/images/qingong_shoushihe.png",
-              "Plist": ""
-            },
+            "BackColorAlpha": 102,
             "ComboBoxIndex": 1,
             "SingleColor": {
               "R": 73,
@@ -540,15 +562,13 @@
             "ColorVector": {
               "ScaleY": 1.0
             },
-            "Scale9OriginX": 19,
-            "Scale9OriginY": 15,
-            "Scale9Width": 21,
-            "Scale9Height": 16,
+            "Scale9Width": 1,
+            "Scale9Height": 1,
             "TouchEnable": true,
             "AnchorPoint": {},
             "Position": {
-              "X": 565.705,
-              "Y": 155.8296
+              "X": 567.0,
+              "Y": 252.0
             },
             "Scale": {
               "ScaleX": 1.0,
@@ -557,17 +577,17 @@
             "CColor": {},
             "IconVisible": false,
             "PrePosition": {
-              "X": 0.498,
-              "Y": 0.2435
+              "X": 0.4991,
+              "Y": 0.3938
             },
             "PreSize": {
               "X": 0.088,
-              "Y": 0.1562
+              "Y": 0.1563
             },
-            "LeftMargin": 565.705,
-            "RightMargin": 470.295,
-            "TopMargin": 384.1704,
-            "BottomMargin": 155.8296,
+            "LeftMargin": 567.0,
+            "RightMargin": 469.0,
+            "TopMargin": 288.0,
+            "BottomMargin": 252.0,
             "Tag": 105,
             "ActionTag": 740986517,
             "Size": {
@@ -579,12 +599,7 @@
           },
           {
             "ClipAble": false,
-            "BackColorAlpha": 0,
-            "FileData": {
-              "Type": "Normal",
-              "Path": "qingong/images/qingong_denglong.png",
-              "Plist": ""
-            },
+            "BackColorAlpha": 102,
             "ComboBoxIndex": 1,
             "SingleColor": {},
             "FirstColor": {
@@ -595,10 +610,8 @@
             "ColorVector": {
               "ScaleY": 1.0
             },
-            "Scale9OriginX": 25,
-            "Scale9OriginY": 31,
-            "Scale9Width": 28,
-            "Scale9Height": 32,
+            "Scale9Width": 1,
+            "Scale9Height": 1,
             "TouchEnable": true,
             "AnchorPoint": {},
             "Position": {
@@ -617,7 +630,7 @@
             },
             "PreSize": {
               "X": 0.088,
-              "Y": 0.1562
+              "Y": 0.1563
             },
             "LeftMargin": 97.0,
             "RightMargin": 939.0,
@@ -634,12 +647,7 @@
           },
           {
             "ClipAble": false,
-            "BackColorAlpha": 0,
-            "FileData": {
-              "Type": "Normal",
-              "Path": "qingong/images/qingong_liushu.png",
-              "Plist": ""
-            },
+            "BackColorAlpha": 102,
             "ComboBoxIndex": 1,
             "SingleColor": {
               "R": 150,
@@ -653,10 +661,8 @@
             "ColorVector": {
               "ScaleY": 1.0
             },
-            "Scale9OriginX": 8,
-            "Scale9OriginY": 42,
-            "Scale9Width": 11,
-            "Scale9Height": 46,
+            "Scale9Width": 1,
+            "Scale9Height": 1,
             "TouchEnable": true,
             "AnchorPoint": {},
             "Position": {
@@ -675,7 +681,7 @@
             },
             "PreSize": {
               "X": 0.044,
-              "Y": 0.1562
+              "Y": 0.1563
             },
             "LeftMargin": 997.0,
             "RightMargin": 89.0,
@@ -692,12 +698,7 @@
           },
           {
             "ClipAble": false,
-            "BackColorAlpha": 0,
-            "FileData": {
-              "Type": "Normal",
-              "Path": "qingong/images/qingong_bingfu.png",
-              "Plist": ""
-            },
+            "BackColorAlpha": 102,
             "ComboBoxIndex": 1,
             "SingleColor": {
               "G": 0,
@@ -711,10 +712,8 @@
             "ColorVector": {
               "ScaleY": 1.0
             },
-            "Scale9OriginX": 16,
-            "Scale9OriginY": 16,
-            "Scale9Width": 18,
-            "Scale9Height": 17,
+            "Scale9Width": 1,
+            "Scale9Height": 1,
             "TouchEnable": true,
             "AnchorPoint": {},
             "Position": {
@@ -733,7 +732,7 @@
             },
             "PreSize": {
               "X": 0.0176,
-              "Y": 0.1562
+              "Y": 0.1563
             },
             "LeftMargin": 783.0,
             "RightMargin": 333.0,
@@ -750,21 +749,14 @@
           }
         ],
         "Size": {
-          "X": 1136.0,
-          "Y": 640.0
+          "X": 1920.0,
+          "Y": 1080.0
         },
         "Name": "Scene",
         "ctype": "SingleNodeObjectData"
       },
       "UsedResources": [
         "burningCandle.json",
-        "images/concat_06_3.png",
-        "images/gameScene_1.jpg",
-        "images/gameScene_1_02.jpg",
-        "images/qingong_bingfu.png",
-        "images/qingong_denglong.png",
-        "images/qingong_liushu.png",
-        "images/qingong_shoushihe.png",
         "leftDuJuan.json",
         "rightDujuan.json"
       ],

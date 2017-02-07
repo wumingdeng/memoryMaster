@@ -26,11 +26,11 @@ var PLAYER_STATE = {
     },
 
     get mainScene(){
-        if (!this._mainscene){
-            this._mainscene = cc.sys.localStorage.getItem("mainScene") || 1;
-            this._mainscene = Number(this._mainscene);
-        }
-        return this._mainscene;
+         if (!this._mainscene){
+             this._mainscene = cc.sys.localStorage.getItem("mainScene") || 1;
+             this._mainscene = Number(this._mainscene);
+         }
+         return this._mainscene;
     },
 
     getItem:function(id){

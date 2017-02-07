@@ -1,6 +1,6 @@
 {
   "ID": "65efca09-fa02-4747-af6d-edd041fc805d",
-  "Version": "2.3.4",
+  "Version": "3.10.0.0",
   "Name": "desktop",
   "Content": {
     "Content": {
@@ -66,12 +66,7 @@
           },
           {
             "ClipAble": false,
-            "BackColorAlpha": 0,
-            "FileData": {
-              "Type": "Normal",
-              "Path": "qingong/images/kuang.png",
-              "Plist": ""
-            },
+            "BackColorAlpha": 102,
             "ComboBoxIndex": 1,
             "SingleColor": {
               "R": 70,
@@ -86,10 +81,8 @@
             "ColorVector": {
               "ScaleY": 1.0
             },
-            "Scale9OriginX": 80,
-            "Scale9OriginY": 68,
-            "Scale9Width": 85,
-            "Scale9Height": 73,
+            "Scale9Width": 1,
+            "Scale9Height": 1,
             "TouchEnable": true,
             "AnchorPoint": {},
             "Position": {
@@ -127,12 +120,7 @@
           },
           {
             "ClipAble": false,
-            "BackColorAlpha": 0,
-            "FileData": {
-              "Type": "Normal",
-              "Path": "qingong/images/qingong_shoushihe1.png",
-              "Plist": ""
-            },
+            "BackColorAlpha": 102,
             "ComboBoxIndex": 1,
             "SingleColor": {
               "R": 205,
@@ -146,10 +134,8 @@
             "ColorVector": {
               "ScaleY": 1.0
             },
-            "Scale9OriginX": 19,
-            "Scale9OriginY": 15,
-            "Scale9Width": 31,
-            "Scale9Height": 47,
+            "Scale9Width": 1,
+            "Scale9Height": 1,
             "TouchEnable": true,
             "AnchorPoint": {},
             "Position": {
@@ -185,12 +171,7 @@
           },
           {
             "ClipAble": false,
-            "BackColorAlpha": 0,
-            "FileData": {
-              "Type": "Normal",
-              "Path": "qingong/images/huayuan_yanshi.png",
-              "Plist": ""
-            },
+            "BackColorAlpha": 102,
             "ComboBoxIndex": 1,
             "SingleColor": {
               "R": 150,
@@ -204,10 +185,8 @@
             "ColorVector": {
               "ScaleY": 1.0
             },
-            "Scale9OriginX": 13,
-            "Scale9OriginY": 4,
-            "Scale9Width": 15,
-            "Scale9Height": 5,
+            "Scale9Width": 1,
+            "Scale9Height": 1,
             "TouchEnable": true,
             "AnchorPoint": {},
             "Position": {
@@ -252,8 +231,8 @@
             "InnerActionSpeed": 1.0,
             "AnchorPoint": {},
             "Position": {
-              "X": 569.7202,
-              "Y": 319.2412
+              "X": 565.0,
+              "Y": 334.0
             },
             "Scale": {
               "ScaleX": 1.0,
@@ -262,17 +241,17 @@
             "CColor": {},
             "IconVisible": true,
             "PrePosition": {
-              "X": 0.5015,
-              "Y": 0.4988
+              "X": 0.4974,
+              "Y": 0.5219
             },
             "PreSize": {
               "X": 0.0,
               "Y": 0.0
             },
-            "LeftMargin": 569.7202,
-            "RightMargin": 566.2798,
-            "TopMargin": 320.7588,
-            "BottomMargin": 319.2412,
+            "LeftMargin": 565.0,
+            "RightMargin": 571.0,
+            "TopMargin": 306.0,
+            "BottomMargin": 334.0,
             "Tag": 201,
             "ActionTag": -1862568569,
             "Size": {
@@ -284,16 +263,13 @@
           }
         ],
         "Size": {
-          "X": 1136.0,
-          "Y": 640.0
+          "X": 1920.0,
+          "Y": 1080.0
         },
         "Name": "Scene",
         "ctype": "SingleNodeObjectData"
       },
       "UsedResources": [
-        "../images/huayuan_yanshi.png",
-        "../images/kuang.png",
-        "../images/qingong_shoushihe1.png",
         "cosmeticCase.json"
       ],
       "ctype": "GameFileData"

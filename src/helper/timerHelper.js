@@ -31,12 +31,13 @@ timerHelper.createTimer = function(callback, target ,interval, repeat, delay,pau
     timerHelper.TEMPORARY_TIMER_TABLE.push(timerObj)
 }
 
+
 //--移除定时器
 timerHelper.removeTimer = function(key){
-    for(var idx in this.TEMPORARY_TIMER_TABLE){
+    for (var idx in this.TEMPORARY_TIMER_TABLE) {
         var t = this.TEMPORARY_TIMER_TABLE[idx]
-        if(t.k == key){
-            this.TEMPORARY_TIMER_TABLE.splice(Number(idx),1)
+        if (t.k == key) {
+            this.TEMPORARY_TIMER_TABLE.splice(Number(idx), 1)
             cc.director.getScheduler().unschedule(key, t.tar)
             break;
         }
@@ -50,3 +51,7 @@ timerHelper.removeAllTimer = function(){
     })
     this.TEMPORARY_TIMER_TABLE = []
 }
+
+timerHelper.TALK_TIME=10001 //手机通话时间的定时器
+timerHelper.SILDE_TIME=10002 //手机滑动的文本的闪光定时器
+timerHelper.NUMBER_BTN_TIME=10003 //手机输入数字按钮的定时器

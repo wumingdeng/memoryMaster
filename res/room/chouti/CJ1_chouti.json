@@ -1,0 +1,1060 @@
+{
+  "ID": "013c2b4b-d50c-400e-b9de-480d4cf6a75c",
+  "Version": "3.10.0.0",
+  "Name": "CJ1_chouti",
+  "Content": {
+    "Content": {
+      "Animation": {
+        "Duration": 0,
+        "Speed": 1.0,
+        "Timelines": [],
+        "ctype": "TimelineActionData"
+      },
+      "AnimationList": [],
+      "ObjectData": {
+        "Tag": 337,
+        "Children": [
+          {
+            "ClipAble": false,
+            "ComboBoxIndex": 1,
+            "SingleColor": {
+              "R": 0,
+              "G": 0,
+              "B": 0
+            },
+            "FirstColor": {
+              "R": 150,
+              "G": 200
+            },
+            "EndColor": {},
+            "ColorVector": {
+              "ScaleY": 1.0
+            },
+            "Scale9Width": 1,
+            "Scale9Height": 1,
+            "TouchEnable": true,
+            "AnchorPoint": {},
+            "Position": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "PercentWidthEnable": true,
+            "PercentHeightEnable": true,
+            "PercentWidthEnabled": true,
+            "PercentHeightEnabled": true,
+            "PreSize": {
+              "X": 1.0,
+              "Y": 1.0
+            },
+            "Tag": 42,
+            "ActionTag": -916861182,
+            "Size": {
+              "X": 1920.0,
+              "Y": 1080.0
+            },
+            "Name": "bg",
+            "ctype": "PanelObjectData"
+          },
+          {
+            "ClipAble": false,
+            "BackColorAlpha": 102,
+            "SingleColor": {
+              "R": 150,
+              "G": 200
+            },
+            "FirstColor": {
+              "R": 150,
+              "G": 200
+            },
+            "EndColor": {},
+            "ColorVector": {
+              "ScaleY": 1.0
+            },
+            "Scale9Width": 1,
+            "Scale9Height": 1,
+            "TouchEnable": true,
+            "AnchorPoint": {
+              "ScaleX": 0.4969,
+              "ScaleY": 0.4864
+            },
+            "Position": {
+              "X": 959.2271,
+              "Y": 629.2035
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.4996,
+              "Y": 0.5826
+            },
+            "PreSize": {
+              "X": 0.5609,
+              "Y": 0.6352
+            },
+            "LeftMargin": 424.0769,
+            "RightMargin": 418.9231,
+            "TopMargin": 98.4821,
+            "BottomMargin": 295.5179,
+            "Children": [
+              {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "room/chouti/CJ1_chouti_chouti.png",
+                  "Plist": ""
+                },
+                "BlendFunc": {
+                  "Src": 1,
+                  "Dst": 771
+                },
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 540.0078,
+                  "Y": 340.002
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.5014,
+                  "Y": 0.4956
+                },
+                "PreSize": {
+                  "X": 1.0,
+                  "Y": 1.0
+                },
+                "LeftMargin": 1.5078,
+                "RightMargin": -1.5078,
+                "TopMargin": 2.998,
+                "BottomMargin": -2.998,
+                "ActionTag": -1661615963,
+                "Size": {
+                  "X": 1077.0,
+                  "Y": 686.0
+                },
+                "Name": "CJ1_chouti_chouti_1",
+                "ctype": "SpriteObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "PlistSubImage",
+                  "Path": "CJ1_chouti_shouji.png",
+                  "Plist": "room/chouti/gameScene_1_chouti.plist"
+                },
+                "BlendFunc": {
+                  "Src": 1,
+                  "Dst": 771
+                },
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 498.4683,
+                  "Y": 304.903
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.4628,
+                  "Y": 0.4445
+                },
+                "PreSize": {
+                  "X": 0.1458,
+                  "Y": 0.2726
+                },
+                "LeftMargin": 419.9683,
+                "RightMargin": 500.0317,
+                "TopMargin": 287.597,
+                "BottomMargin": 211.403,
+                "Tag": 208,
+                "ActionTag": -1779495342,
+                "Size": {
+                  "X": 157.0,
+                  "Y": 187.0
+                },
+                "Name": "CJ1_chouti_shouji_2",
+                "ctype": "SpriteObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "room/chouti/chouti_zhi2.json",
+                  "Plist": ""
+                },
+                "StretchWidthEnable": false,
+                "StretchHeightEnable": false,
+                "InnerActionSpeed": 1.0,
+                "AnchorPoint": {},
+                "Position": {
+                  "X": 562.8181,
+                  "Y": 421.5882
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": true,
+                "PrePosition": {
+                  "X": 0.5226,
+                  "Y": 0.6146
+                },
+                "PreSize": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "LeftMargin": 562.8181,
+                "RightMargin": 514.1819,
+                "TopMargin": 264.4118,
+                "BottomMargin": 421.5882,
+                "Tag": 207,
+                "ActionTag": -1252570335,
+                "Size": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "Name": "chouti_zhi2",
+                "ctype": "ProjectNodeObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "PlistSubImage",
+                  "Path": "CJ1_chouti_zhizhang3.png",
+                  "Plist": "room/chouti/gameScene_1_chouti.plist"
+                },
+                "BlendFunc": {
+                  "Src": 1,
+                  "Dst": 771
+                },
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 448.9905,
+                  "Y": 552.2841
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.4169,
+                  "Y": 0.8051
+                },
+                "PreSize": {
+                  "X": 0.2739,
+                  "Y": 0.3324
+                },
+                "LeftMargin": 301.4905,
+                "RightMargin": 480.5095,
+                "TopMargin": 19.7159,
+                "BottomMargin": 438.2841,
+                "Tag": 217,
+                "ActionTag": -1232590304,
+                "Size": {
+                  "X": 295.0,
+                  "Y": 228.0
+                },
+                "Name": "CJ1_chouti_zhizhang3_9",
+                "ctype": "SpriteObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "PlistSubImage",
+                  "Path": "CJ1_chouti_zhizhang2.png",
+                  "Plist": "room/chouti/gameScene_1_chouti.plist"
+                },
+                "BlendFunc": {
+                  "Src": 1,
+                  "Dst": 771
+                },
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 688.8943,
+                  "Y": 436.3119
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.6396,
+                  "Y": 0.636
+                },
+                "PreSize": {
+                  "X": 0.2683,
+                  "Y": 0.4052
+                },
+                "LeftMargin": 544.3943,
+                "RightMargin": 243.6057,
+                "TopMargin": 110.6881,
+                "BottomMargin": 297.3119,
+                "ActionTag": -1417251386,
+                "Size": {
+                  "X": 289.0,
+                  "Y": 278.0
+                },
+                "Name": "CJ1_chouti_zhizhang2_4",
+                "ctype": "SpriteObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "PlistSubImage",
+                  "Path": "CJ1_chouti_qianbi.png",
+                  "Plist": "room/chouti/gameScene_1_chouti.plist"
+                },
+                "BlendFunc": {
+                  "Src": 1,
+                  "Dst": 771
+                },
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 725.9393,
+                  "Y": 398.6115
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.674,
+                  "Y": 0.5811
+                },
+                "PreSize": {
+                  "X": 0.2442,
+                  "Y": 0.1706
+                },
+                "LeftMargin": 594.4393,
+                "RightMargin": 219.5607,
+                "TopMargin": 228.8885,
+                "BottomMargin": 340.1115,
+                "ActionTag": -117270929,
+                "Size": {
+                  "X": 263.0,
+                  "Y": 117.0
+                },
+                "Name": "CJ1_chouti_qianbi_5",
+                "ctype": "SpriteObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "room/chouti/chouti_zhi.json",
+                  "Plist": ""
+                },
+                "StretchWidthEnable": false,
+                "StretchHeightEnable": false,
+                "InnerActionSpeed": 1.0,
+                "AnchorPoint": {},
+                "Position": {
+                  "X": 394.1835,
+                  "Y": 305.6518
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": true,
+                "PrePosition": {
+                  "X": 0.366,
+                  "Y": 0.4456
+                },
+                "PreSize": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "LeftMargin": 394.1835,
+                "RightMargin": 682.8165,
+                "TopMargin": 380.3482,
+                "BottomMargin": 305.6518,
+                "Tag": 206,
+                "ActionTag": -2005211852,
+                "Size": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "Name": "chouti_zhi",
+                "ctype": "ProjectNodeObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "PlistSubImage",
+                  "Path": "CJ1_chouti_zhizhang1.png",
+                  "Plist": "room/chouti/gameScene_1_chouti.plist"
+                },
+                "BlendFunc": {
+                  "Src": 1,
+                  "Dst": 771
+                },
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 729.3297,
+                  "Y": 415.4399
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "RotationSkewX": 21.4936,
+                "RotationSkewY": 21.4913,
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.6772,
+                  "Y": 0.6056
+                },
+                "PreSize": {
+                  "X": 0.2507,
+                  "Y": 0.3499
+                },
+                "LeftMargin": 594.3297,
+                "RightMargin": 212.6703,
+                "TopMargin": 150.5601,
+                "BottomMargin": 295.4399,
+                "Tag": 216,
+                "ActionTag": -1327903894,
+                "Size": {
+                  "X": 270.0,
+                  "Y": 240.0
+                },
+                "Name": "CJ1_chouti_zhizhang1_7",
+                "ctype": "SpriteObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "PlistSubImage",
+                  "Path": "CJ1_chouti_yuanpan.png",
+                  "Plist": "room/chouti/gameScene_1_chouti.plist"
+                },
+                "BlendFunc": {
+                  "Src": 1,
+                  "Dst": 771
+                },
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 286.8305,
+                  "Y": 295.9613
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.2663,
+                  "Y": 0.4314
+                },
+                "PreSize": {
+                  "X": 0.1291,
+                  "Y": 0.1574
+                },
+                "LeftMargin": 217.3305,
+                "RightMargin": 720.6695,
+                "TopMargin": 336.0387,
+                "BottomMargin": 241.9613,
+                "ActionTag": 1947818789,
+                "Size": {
+                  "X": 139.0,
+                  "Y": 108.0
+                },
+                "Name": "CJ1_chouti_yuanpan_12",
+                "ctype": "SpriteObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "PlistSubImage",
+                  "Path": "CJ1_chouti_tongbei.png",
+                  "Plist": "room/chouti/gameScene_1_chouti.plist"
+                },
+                "BlendFunc": {
+                  "Src": 1,
+                  "Dst": 771
+                },
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 350.756,
+                  "Y": 192.407
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.3257,
+                  "Y": 0.2805
+                },
+                "PreSize": {
+                  "X": 0.182,
+                  "Y": 0.1662
+                },
+                "LeftMargin": 252.756,
+                "RightMargin": 628.244,
+                "TopMargin": 436.593,
+                "BottomMargin": 135.407,
+                "ActionTag": -150089482,
+                "Size": {
+                  "X": 196.0,
+                  "Y": 114.0
+                },
+                "Name": "CJ1_chouti_tongbei_11",
+                "ctype": "SpriteObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "room/chouti/chouti_benzi.json",
+                  "Plist": ""
+                },
+                "StretchWidthEnable": false,
+                "StretchHeightEnable": false,
+                "InnerActionSpeed": 1.0,
+                "AnchorPoint": {},
+                "Position": {
+                  "X": 526.985,
+                  "Y": 330.9487
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": true,
+                "PrePosition": {
+                  "X": 0.4893,
+                  "Y": 0.4824
+                },
+                "PreSize": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "LeftMargin": 526.985,
+                "RightMargin": 550.015,
+                "TopMargin": 355.0513,
+                "BottomMargin": 330.9487,
+                "Tag": 205,
+                "ActionTag": -509087405,
+                "Size": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "Name": "chouti_benzi",
+                "ctype": "ProjectNodeObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "PlistSubImage",
+                  "Path": "CJ1_chouti_benzi.png",
+                  "Plist": "room/chouti/gameScene_1_chouti.plist"
+                },
+                "BlendFunc": {
+                  "Src": 1,
+                  "Dst": 771
+                },
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 267.705,
+                  "Y": 430.1965
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.2486,
+                  "Y": 0.6271
+                },
+                "PreSize": {
+                  "X": 0.1866,
+                  "Y": 0.3688
+                },
+                "LeftMargin": 167.205,
+                "RightMargin": 708.795,
+                "TopMargin": 129.3035,
+                "BottomMargin": 303.6965,
+                "Tag": 215,
+                "ActionTag": -931687919,
+                "Size": {
+                  "X": 201.0,
+                  "Y": 253.0
+                },
+                "Name": "CJ1_chouti_benzi_5",
+                "ctype": "SpriteObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "room/chouti/chouti_dingshuji.json",
+                  "Plist": ""
+                },
+                "StretchWidthEnable": false,
+                "StretchHeightEnable": false,
+                "InnerActionSpeed": 1.0,
+                "AnchorPoint": {},
+                "Position": {
+                  "X": 362.5632,
+                  "Y": 377.3233
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": true,
+                "PrePosition": {
+                  "X": 0.3366,
+                  "Y": 0.55
+                },
+                "PreSize": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "LeftMargin": 362.5632,
+                "RightMargin": 714.4368,
+                "TopMargin": 308.6767,
+                "BottomMargin": 377.3233,
+                "Tag": 204,
+                "ActionTag": -1774673850,
+                "Size": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "Name": "chouti_dingshuji",
+                "ctype": "ProjectNodeObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "PlistSubImage",
+                  "Path": "CJ1_chouti_dingshuji.png",
+                  "Plist": "room/chouti/gameScene_1_chouti.plist"
+                },
+                "BlendFunc": {
+                  "Src": 1,
+                  "Dst": 771
+                },
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 308.2808,
+                  "Y": 466.8113
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.2862,
+                  "Y": 0.6805
+                },
+                "PreSize": {
+                  "X": 0.1718,
+                  "Y": 0.1414
+                },
+                "LeftMargin": 215.7808,
+                "RightMargin": 676.2192,
+                "TopMargin": 170.6887,
+                "BottomMargin": 418.3113,
+                "Tag": 214,
+                "ActionTag": -408688599,
+                "Size": {
+                  "X": 185.0,
+                  "Y": 97.0
+                },
+                "Name": "CJ1_chouti_dingshuji_4",
+                "ctype": "SpriteObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "room/chouti/chouti_shubiao.json",
+                  "Plist": ""
+                },
+                "StretchWidthEnable": false,
+                "StretchHeightEnable": false,
+                "InnerActionSpeed": 1.0,
+                "AnchorPoint": {},
+                "Position": {
+                  "X": 467.9637,
+                  "Y": 311.9758
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": true,
+                "PrePosition": {
+                  "X": 0.4345,
+                  "Y": 0.4548
+                },
+                "PreSize": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "LeftMargin": 467.9637,
+                "RightMargin": 609.0363,
+                "TopMargin": 374.0242,
+                "BottomMargin": 311.9758,
+                "Tag": 203,
+                "ActionTag": -114056419,
+                "Size": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "Name": "chouti_shubiao",
+                "ctype": "ProjectNodeObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "PlistSubImage",
+                  "Path": "CJ1_chouti_shubiao.png",
+                  "Plist": "room/chouti/gameScene_1_chouti.plist"
+                },
+                "BlendFunc": {
+                  "Src": 1,
+                  "Dst": 771
+                },
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 248.1624,
+                  "Y": 331.1234
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.2304,
+                  "Y": 0.4827
+                },
+                "PreSize": {
+                  "X": 0.0678,
+                  "Y": 0.1327
+                },
+                "LeftMargin": 211.6624,
+                "RightMargin": 792.3376,
+                "TopMargin": 309.3766,
+                "BottomMargin": 285.6234,
+                "Tag": 213,
+                "ActionTag": 681126707,
+                "Size": {
+                  "X": 73.0,
+                  "Y": 91.0
+                },
+                "Name": "CJ1_chouti_shubiao_3",
+                "ctype": "SpriteObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "room/chouti/chouti_xiaogou.json",
+                  "Plist": ""
+                },
+                "StretchWidthEnable": false,
+                "StretchHeightEnable": false,
+                "InnerActionSpeed": 1.0,
+                "AnchorPoint": {},
+                "Position": {
+                  "X": 697.726,
+                  "Y": 316.1913
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": true,
+                "PrePosition": {
+                  "X": 0.6478,
+                  "Y": 0.4609
+                },
+                "PreSize": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "LeftMargin": 697.726,
+                "RightMargin": 379.274,
+                "TopMargin": 369.8087,
+                "BottomMargin": 316.1913,
+                "Tag": 202,
+                "ActionTag": 815434175,
+                "Size": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "Name": "chouti_xiaogou",
+                "ctype": "ProjectNodeObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "PlistSubImage",
+                  "Path": "CJ1_chouti_xiaogou.png",
+                  "Plist": "room/chouti/gameScene_1_chouti.plist"
+                },
+                "BlendFunc": {
+                  "Src": 1,
+                  "Dst": 771
+                },
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 886.3234,
+                  "Y": 389.0355
+                },
+                "Scale": {
+                  "ScaleX": -1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.823,
+                  "Y": 0.5671
+                },
+                "PreSize": {
+                  "X": 0.1086,
+                  "Y": 0.191
+                },
+                "LeftMargin": 827.8234,
+                "RightMargin": 132.1766,
+                "TopMargin": 231.4645,
+                "BottomMargin": 323.5355,
+                "Tag": 212,
+                "ActionTag": -357591288,
+                "Size": {
+                  "X": 117.0,
+                  "Y": 131.0
+                },
+                "Name": "CJ1_chouti_xiaogou_2",
+                "ctype": "SpriteObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "room/chouti/chouti_wawa.json",
+                  "Plist": ""
+                },
+                "StretchWidthEnable": false,
+                "StretchHeightEnable": false,
+                "InnerActionSpeed": 1.0,
+                "AnchorPoint": {},
+                "Position": {
+                  "X": 421.589,
+                  "Y": 295.1134
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": true,
+                "PrePosition": {
+                  "X": 0.3914,
+                  "Y": 0.4302
+                },
+                "PreSize": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "LeftMargin": 421.589,
+                "RightMargin": 655.411,
+                "TopMargin": 390.8866,
+                "BottomMargin": 295.1134,
+                "Tag": 201,
+                "ActionTag": 221505019,
+                "Size": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "Name": "chouti_wawa",
+                "ctype": "ProjectNodeObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "PlistSubImage",
+                  "Path": "CJ1_chouti_wano.png",
+                  "Plist": "room/chouti/gameScene_1_chouti.plist"
+                },
+                "BlendFunc": {
+                  "Src": 1,
+                  "Dst": 771
+                },
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 284.5637,
+                  "Y": 208.8603
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.2642,
+                  "Y": 0.3045
+                },
+                "PreSize": {
+                  "X": 0.1142,
+                  "Y": 0.2362
+                },
+                "LeftMargin": 223.0637,
+                "RightMargin": 730.9363,
+                "TopMargin": 396.1397,
+                "BottomMargin": 127.8603,
+                "Tag": 211,
+                "ActionTag": -1094700630,
+                "Size": {
+                  "X": 123.0,
+                  "Y": 162.0
+                },
+                "Name": "CJ1_chouti_wano_1",
+                "ctype": "SpriteObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "room/chouti/CJ1_chouti_tanchukuang.png",
+                  "Plist": ""
+                },
+                "BlendFunc": {
+                  "Src": 1,
+                  "Dst": 771
+                },
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 540.0071,
+                  "Y": 340.0016
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.5014,
+                  "Y": 0.4956
+                },
+                "PreSize": {
+                  "X": 1.0557,
+                  "Y": 1.0875
+                },
+                "LeftMargin": -28.4929,
+                "RightMargin": -31.5071,
+                "TopMargin": -27.0016,
+                "BottomMargin": -32.9984,
+                "ActionTag": 251367785,
+                "Size": {
+                  "X": 1137.0,
+                  "Y": 746.0
+                },
+                "Name": "CJ1_chouti_tanchukuang_1",
+                "ctype": "SpriteObjectData"
+              }
+            ],
+            "ActionTag": -786447570,
+            "Size": {
+              "X": 1077.0,
+              "Y": 686.0
+            },
+            "Name": "window",
+            "ctype": "PanelObjectData"
+          }
+        ],
+        "Size": {
+          "X": 1920.0,
+          "Y": 1080.0
+        },
+        "Name": "Scene",
+        "ctype": "SingleNodeObjectData"
+      },
+      "UsedResources": [
+        "chouti_benzi.json",
+        "chouti_dingshuji.json",
+        "chouti_shubiao.json",
+        "chouti_wawa.json",
+        "chouti_xiaogou.json",
+        "chouti_zhi.json",
+        "chouti_zhi2.json",
+        "CJ1_chouti_chouti.png",
+        "CJ1_chouti_tanchukuang.png",
+        "gameScene_1_chouti.plist",
+        "gameScene_1_chouti.png"
+      ],
+      "ctype": "GameFileData"
+    }
+  },
+  "Type": "Scene"
+}

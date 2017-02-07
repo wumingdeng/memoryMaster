@@ -6,7 +6,7 @@
 
 GLOBAL_ITEM_CONFIG = {
     g1:{
-        name:"纸条",
+        name:"手机",
         img:"res/globalItem/zhitiao.png",
         target:[102]        //全局物品交互的目标 可以是多个  全局物品使用后判断还有没有其他目标 如果没有了 就从物品栏中消失
     },

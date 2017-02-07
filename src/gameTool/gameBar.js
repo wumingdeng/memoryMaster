@@ -9,6 +9,7 @@ var gameBar = cc.Layer.extend({
     _globalArea:null,
     _mainBar:null,
     _items:null,    //存放全局物品
+    _phoneBtn:null, //手机按钮
 
     ctor:function(){
         this._super();
@@ -55,9 +56,16 @@ var gameBar = cc.Layer.extend({
             hintFun.beginHint()
 
         }
-
         hintBtn.addTouchEventListener(onHint)
 
+        //手机界面
+        this._phoneBtn = ccui.helper.seekWidgetByName(this._ui,"phoneBtn");
+        function onPhone(sender,type){
+            if (type != ccui.Widget.TOUCH_ENDED) return;
+            this.onOpenPhone();
+
+        }
+        this._phoneBtn.addTouchEventListener(onPhone.bind(this));
     },
 
     touchBegan:function(touch,event){
@@ -136,12 +144,17 @@ var gameBar = cc.Layer.extend({
 
     //打开设置
     openSet:function(){
-
+        
     },
 
     //提示
     onHint:function(){
 
+    },
+
+    //手机界面
+    onOpenPhone:function(){
+        sceneManager.createScene(7);
     },
 
     hide:function(){

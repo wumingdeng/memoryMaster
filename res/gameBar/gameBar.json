@@ -17,7 +17,6 @@
           {
             "ClipAble": false,
             "BackColorAlpha": 102,
-            "ComboBoxIndex": 1,
             "SingleColor": {
               "R": 217,
               "G": 217,
@@ -53,15 +52,419 @@
             "PercentWidthEnabled": true,
             "PreSize": {
               "X": 1.0,
-              "Y": 0.1563
+              "Y": 0.1944
             },
-            "TopMargin": 540.0,
+            "TopMargin": 870.0,
             "Tag": 35,
             "Children": [
               {
+                "FileData": {
+                  "Type": "PlistSubImage",
+                  "Path": "zhucaidan_wupinlan.png",
+                  "Plist": "gameBar/gameScene_1_zhucaidan.plist"
+                },
+                "BlendFunc": {
+                  "Src": 1,
+                  "Dst": 771
+                },
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 959.9999,
+                  "Y": 128.29
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.5,
+                  "Y": 0.6109
+                },
+                "PreSize": {
+                  "X": 1.0,
+                  "Y": 1.2286
+                },
+                "LeftMargin": -0.0001,
+                "RightMargin": 0.0001,
+                "TopMargin": -47.29,
+                "BottomMargin": -0.71,
+                "Tag": 242,
+                "ActionTag": 1088771130,
+                "Size": {
+                  "X": 1920.0,
+                  "Y": 258.0
+                },
+                "Name": "zhucaidan_wupinlan_50",
+                "ctype": "SpriteObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "PlistSubImage",
+                  "Path": "zhucaidan_01.png",
+                  "Plist": "gameBar/gameScene_1_zhucaidan.plist"
+                },
+                "BlendFunc": {
+                  "Src": 1,
+                  "Dst": 771
+                },
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 147.7953,
+                  "Y": 183.3246
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.077,
+                  "Y": 0.873
+                },
+                "PreSize": {
+                  "X": 0.0979,
+                  "Y": 1.0048
+                },
+                "LeftMargin": 53.7953,
+                "RightMargin": 1678.2047,
+                "TopMargin": -78.8246,
+                "BottomMargin": 77.8246,
+                "Tag": 233,
+                "ActionTag": 221027853,
+                "Size": {
+                  "X": 188.0,
+                  "Y": 211.0
+                },
+                "Name": "zhucaidan_01_56",
+                "ctype": "SpriteObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "PlistSubImage",
+                  "Path": "zhucaidan_02.png",
+                  "Plist": "gameBar/gameScene_1_zhucaidan.plist"
+                },
+                "BlendFunc": {
+                  "Src": 1,
+                  "Dst": 771
+                },
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 155.3784,
+                  "Y": 35.4701
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.0809,
+                  "Y": 0.1689
+                },
+                "PreSize": {
+                  "X": 0.1427,
+                  "Y": 0.2714
+                },
+                "LeftMargin": 18.3784,
+                "RightMargin": 1627.6216,
+                "TopMargin": 146.0299,
+                "BottomMargin": 6.9701,
+                "Tag": 234,
+                "ActionTag": -1218320021,
+                "Size": {
+                  "X": 274.0,
+                  "Y": 57.0
+                },
+                "Name": "zhucaidan_02_57",
+                "ctype": "SpriteObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "PlistSubImage",
+                  "Path": "zhucaidan_03.png",
+                  "Plist": "gameBar/gameScene_1_zhucaidan.plist"
+                },
+                "BlendFunc": {
+                  "Src": 1,
+                  "Dst": 771
+                },
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 317.451,
+                  "Y": 121.7192
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.1653,
+                  "Y": 0.5796
+                },
+                "PreSize": {
+                  "X": 0.0474,
+                  "Y": 0.4333
+                },
+                "LeftMargin": 271.951,
+                "RightMargin": 1557.0491,
+                "TopMargin": 42.7808,
+                "BottomMargin": 76.2192,
+                "Tag": 235,
+                "ActionTag": -1482799916,
+                "Size": {
+                  "X": 91.0,
+                  "Y": 91.0
+                },
+                "Name": "zhucaidan_03_58",
+                "ctype": "SpriteObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "PlistSubImage",
+                  "Path": "zhucaidan_05.png",
+                  "Plist": "gameBar/gameScene_1_zhucaidan.plist"
+                },
+                "BlendFunc": {
+                  "Src": 1,
+                  "Dst": 771
+                },
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 208.4545,
+                  "Y": 344.4506
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.1086,
+                  "Y": 1.6402
+                },
+                "PreSize": {
+                  "X": 0.0474,
+                  "Y": 0.4333
+                },
+                "LeftMargin": 162.9545,
+                "RightMargin": 1666.0455,
+                "TopMargin": -179.9506,
+                "BottomMargin": 298.9506,
+                "Tag": 237,
+                "ActionTag": 1166782915,
+                "Size": {
+                  "X": 91.0,
+                  "Y": 91.0
+                },
+                "Name": "zhucaidan_05_60",
+                "ctype": "SpriteObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "PlistSubImage",
+                  "Path": "jineng1.png",
+                  "Plist": "gameBar/gameScene_1_zhucaidan.plist"
+                },
+                "BlendFunc": {
+                  "Src": 1,
+                  "Dst": 771
+                },
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 1784.1357,
+                  "Y": 309.2321
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.9292,
+                  "Y": 1.4725
+                },
+                "PreSize": {
+                  "X": 0.0474,
+                  "Y": 0.4333
+                },
+                "LeftMargin": 1738.6357,
+                "RightMargin": 90.3643,
+                "TopMargin": -144.7321,
+                "BottomMargin": 263.7321,
+                "Tag": 238,
+                "ActionTag": -2140710990,
+                "Size": {
+                  "X": 91.0,
+                  "Y": 91.0
+                },
+                "Name": "jineng1_52",
+                "ctype": "SpriteObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "PlistSubImage",
+                  "Path": "jineng1.png",
+                  "Plist": "gameBar/gameScene_1_zhucaidan.plist"
+                },
+                "BlendFunc": {
+                  "Src": 1,
+                  "Dst": 771
+                },
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 1632.4476,
+                  "Y": 68.1749
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.8502,
+                  "Y": 0.3246
+                },
+                "PreSize": {
+                  "X": 0.0474,
+                  "Y": 0.4333
+                },
+                "LeftMargin": 1586.9476,
+                "RightMargin": 242.0524,
+                "TopMargin": 96.3251,
+                "BottomMargin": 22.6749,
+                "Tag": 239,
+                "ActionTag": -370946294,
+                "Size": {
+                  "X": 91.0,
+                  "Y": 91.0
+                },
+                "Name": "jineng1_54",
+                "ctype": "SpriteObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "PlistSubImage",
+                  "Path": "jineng1.png",
+                  "Plist": "gameBar/gameScene_1_zhucaidan.plist"
+                },
+                "BlendFunc": {
+                  "Src": 1,
+                  "Dst": 771
+                },
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 1635.9741,
+                  "Y": 231.6235
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.8521,
+                  "Y": 1.103
+                },
+                "PreSize": {
+                  "X": 0.0474,
+                  "Y": 0.4333
+                },
+                "LeftMargin": 1590.4741,
+                "RightMargin": 238.5259,
+                "TopMargin": -67.1235,
+                "BottomMargin": 186.1235,
+                "Tag": 240,
+                "ActionTag": 1028855683,
+                "Size": {
+                  "X": 91.0,
+                  "Y": 91.0
+                },
+                "Name": "jineng1_55",
+                "ctype": "SpriteObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "PlistSubImage",
+                  "Path": "jineng.png",
+                  "Plist": "gameBar/gameScene_1_zhucaidan.plist"
+                },
+                "BlendFunc": {
+                  "Src": 1,
+                  "Dst": 771
+                },
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 1782.6189,
+                  "Y": 140.5355
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.9284,
+                  "Y": 0.6692
+                },
+                "PreSize": {
+                  "X": 0.1026,
+                  "Y": 0.9333
+                },
+                "LeftMargin": 1684.1189,
+                "RightMargin": 38.8811,
+                "TopMargin": -28.5355,
+                "BottomMargin": 42.5355,
+                "Tag": 241,
+                "ActionTag": -1802760192,
+                "Size": {
+                  "X": 197.0,
+                  "Y": 196.0
+                },
+                "Name": "jineng_51",
+                "ctype": "SpriteObjectData"
+              },
+              {
                 "ClipAble": false,
                 "BackColorAlpha": 102,
-                "ComboBoxIndex": 1,
                 "SingleColor": {
                   "R": 150,
                   "G": 200
@@ -80,8 +483,8 @@
                   "ScaleX": 0.5
                 },
                 "Position": {
-                  "X": 568.0,
-                  "Y": 0.0
+                  "X": 993.024,
+                  "Y": 39.5912
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -91,54 +494,54 @@
                 "IconVisible": false,
                 "PositionPercentXEnabled": true,
                 "PrePosition": {
-                  "X": 0.5,
-                  "Y": 0.0
+                  "X": 0.5172,
+                  "Y": 0.1885
                 },
-                "PercentWidthEnable": true,
-                "PercentWidthEnabled": true,
                 "PreSize": {
-                  "X": 0.6,
-                  "Y": 1.0
+                  "X": 0.5208,
+                  "Y": 0.619
                 },
-                "LeftMargin": 227.2,
-                "RightMargin": 227.2,
+                "LeftMargin": 493.024,
+                "RightMargin": 426.9761,
+                "TopMargin": 40.4088,
+                "BottomMargin": 39.5912,
                 "Tag": 36,
                 "ActionTag": -1679167880,
                 "Size": {
-                  "X": 681.6,
-                  "Y": 100.0
+                  "X": 1000.0,
+                  "Y": 130.0
                 },
                 "Name": "globalArea",
                 "ctype": "PanelObjectData"
               },
               {
                 "FontSize": 14,
-                "ButtonText": "提示",
+                "ButtonText": "",
                 "TextColor": {
                   "R": 65,
                   "G": 65,
                   "B": 70
                 },
                 "DisabledFileData": {
-                  "Type": "Default",
-                  "Path": "Default/Button_Disable.png",
-                  "Plist": ""
+                  "Type": "PlistSubImage",
+                  "Path": "zhucaidan_04.png",
+                  "Plist": "gameBar/gameScene_1_zhucaidan.plist"
                 },
                 "PressedFileData": {
-                  "Type": "Default",
-                  "Path": "Default/Button_Press.png",
-                  "Plist": ""
+                  "Type": "PlistSubImage",
+                  "Path": "zhucaidan_04.png",
+                  "Plist": "gameBar/gameScene_1_zhucaidan.plist"
                 },
                 "NormalFileData": {
-                  "Type": "Default",
-                  "Path": "Default/Button_Normal.png",
-                  "Plist": ""
+                  "Type": "PlistSubImage",
+                  "Path": "zhucaidan_04.png",
+                  "Plist": "gameBar/gameScene_1_zhucaidan.plist"
                 },
                 "Scale9Enable": true,
                 "Scale9OriginX": 15,
                 "Scale9OriginY": 11,
-                "Scale9Width": 16,
-                "Scale9Height": 14,
+                "Scale9Width": 61,
+                "Scale9Height": 69,
                 "OutlineColor": {
                   "G": 0,
                   "B": 0
@@ -156,8 +559,8 @@
                   "ScaleY": 0.5
                 },
                 "Position": {
-                  "X": 1004.0,
-                  "Y": 52.9168
+                  "X": 307.7607,
+                  "Y": 248.7386
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -166,54 +569,54 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.8838,
-                  "Y": 0.5292
+                  "X": 0.1603,
+                  "Y": 1.1845
                 },
                 "PreSize": {
-                  "X": 0.0405,
-                  "Y": 0.36
+                  "X": 0.0474,
+                  "Y": 0.4333
                 },
-                "LeftMargin": 981.0,
-                "RightMargin": 109.0,
-                "TopMargin": 29.0832,
-                "BottomMargin": 34.9168,
-                "Tag": 37,
-                "ActionTag": 903385101,
+                "LeftMargin": 262.2607,
+                "RightMargin": 1566.7393,
+                "TopMargin": -84.2386,
+                "BottomMargin": 203.2386,
+                "Tag": 1037,
+                "ActionTag": 64034940,
                 "Size": {
-                  "X": 46.0,
-                  "Y": 36.0
+                  "X": 91.0,
+                  "Y": 91.0
                 },
-                "Name": "hintBtn",
+                "Name": "phoneBtn",
                 "ctype": "ButtonObjectData"
               },
               {
                 "FontSize": 14,
-                "ButtonText": "设置",
+                "ButtonText": "",
                 "TextColor": {
                   "R": 65,
                   "G": 65,
                   "B": 70
                 },
                 "DisabledFileData": {
-                  "Type": "Default",
-                  "Path": "Default/Button_Disable.png",
-                  "Plist": ""
+                  "Type": "PlistSubImage",
+                  "Path": "zhucaidan_01.png",
+                  "Plist": "gameBar/gameScene_1_zhucaidan.plist"
                 },
                 "PressedFileData": {
-                  "Type": "Default",
-                  "Path": "Default/Button_Press.png",
-                  "Plist": ""
+                  "Type": "PlistSubImage",
+                  "Path": "zhucaidan_01.png",
+                  "Plist": "gameBar/gameScene_1_zhucaidan.plist"
                 },
                 "NormalFileData": {
-                  "Type": "Default",
-                  "Path": "Default/Button_Normal.png",
-                  "Plist": ""
+                  "Type": "PlistSubImage",
+                  "Path": "zhucaidan_01.png",
+                  "Plist": "gameBar/gameScene_1_zhucaidan.plist"
                 },
                 "Scale9Enable": true,
                 "Scale9OriginX": 15,
                 "Scale9OriginY": 11,
-                "Scale9Width": 16,
-                "Scale9Height": 14,
+                "Scale9Width": 158,
+                "Scale9Height": 189,
                 "OutlineColor": {
                   "G": 0,
                   "B": 0
@@ -231,8 +634,8 @@
                   "ScaleY": 0.5
                 },
                 "Position": {
-                  "X": 134.0,
-                  "Y": 51.9168
+                  "X": 145.5946,
+                  "Y": 184.5936
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -241,47 +644,46 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.118,
-                  "Y": 0.5192
+                  "X": 0.0758,
+                  "Y": 0.879
                 },
                 "PreSize": {
-                  "X": 0.0405,
-                  "Y": 0.36
+                  "X": 0.0979,
+                  "Y": 1.0048
                 },
-                "LeftMargin": 111.0,
-                "RightMargin": 979.0,
-                "TopMargin": 30.0832,
-                "BottomMargin": 33.9168,
-                "Tag": 38,
-                "ActionTag": 148834196,
+                "LeftMargin": 51.5946,
+                "RightMargin": 1680.4054,
+                "TopMargin": -80.0936,
+                "BottomMargin": 79.0936,
+                "Tag": 243,
+                "ActionTag": 166462827,
                 "Size": {
-                  "X": 46.0,
-                  "Y": 36.0
+                  "X": 188.0,
+                  "Y": 211.0
                 },
-                "Name": "setBtn",
+                "Name": "hintBtn",
                 "ctype": "ButtonObjectData"
               }
             ],
             "ActionTag": 586076607,
             "Size": {
-              "X": 1136.0,
-              "Y": 100.0
+              "X": 1920.0,
+              "Y": 210.0
             },
             "Name": "mainBar",
             "ctype": "PanelObjectData"
           }
         ],
         "Size": {
-          "X": 1136.0,
-          "Y": 640.0
+          "X": 1920.0,
+          "Y": 1080.0
         },
         "Name": "Scene",
         "ctype": "SingleNodeObjectData"
       },
       "UsedResources": [
-        "../Default/Button_Disable.png",
-        "../Default/Button_Normal.png",
-        "../Default/Button_Press.png"
+        "gameScene_1_zhucaidan.plist",
+        "gameScene_1_zhucaidan.png"
       ],
       "ctype": "GameFileData"
     }

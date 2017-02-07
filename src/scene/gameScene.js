@@ -7,45 +7,43 @@ var gameScene = sceneBase.extend({
 
     ctor:function(id,info){
         this._super(id,info);
-
-        this.initGame();
-        this.changeScene();
+        var gRes = scene_resources["s"+id]
+        cc.LoaderScene.preload(gRes, function () {
+            this.initGame()
+            this.changeScene()
+        }, this);
     },
 
     //根据配置选择游戏
     initGame:function(){
         var gameId = this._info.gameId;
         var gameType = GAME_CONFIG["g" + gameId].type
-        // var index = GAME_CONFIG["g" + gameId].index
+        this.embedTyp = GAME_CONFIG["g" + gameId].et || 1
         var game
         switch(gameType) {
             case GAME_TYPE.puzzle:
-                game = new jigsawGame(gameId,this._ui)
+                game = new jigsawGame(gameId,this)
+                break;
+            case GAME_TYPE.findSomething:
+                game = new findSomethingLayer(gameId,this)
+                break;
+            case GAME_TYPE.phone:
+                game = new phoneLayer(gameId,this)
+                break;
+            default:
+                break;
         }
-
-        this.addChild(game);
-
-        //添加返回按钮
-        var returnBtn = new ccui.Button()
-        returnBtn.setTouchEnabled(true);
-        returnBtn.loadTextures(res.game_return_png,res.game_return_png,res.game_return_png);
-
-        function onTouchReturn(sender,touchType){
-            if (touchType != ccui.Widget.TOUCH_ENDED) return;
-            this.backTo()
-        }
-        returnBtn.addTouchEventListener(onTouchReturn.bind(this))
-
-        returnBtn.x = vsize.width - 100;
-        returnBtn.y = vsize.height - 100;
-        this.addChild(returnBtn,100)
     },
 
     //全屏类型直接切换场景
     changeScene:function(){
-        var newScene = new cc.Scene();
-        newScene.addChild(this);
-        cc.director.runScene(newScene);
+        if(this.embedTyp==EMBED_Type.full){
+            var newScene = new cc.Scene();
+            newScene.addChild(this);
+            cc.director.runScene(newScene);
+        }else{
+            
+        }
     },
 
     //完成游戏
@@ -71,5 +69,4 @@ var gameScene = sceneBase.extend({
             sceneManager.createScene(sid);
         }
     }
-
 })

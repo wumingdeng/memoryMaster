@@ -9,8 +9,11 @@ shaderHelper.shaderBeforeCache = new Array() //存放添加的shader
  * 曝光效果
  * @param {cc.Sprite}||{ccui.ImageView} source
  */
+
+
 shaderHelper.createShaderBirghtEffect = function(source)
 {
+    new cc.Sprite()
     var rect = source.getTexture().getContentSizeInPixels()
     shaderHelper.shaderBeforeCache.push({n:source.getName(),gs:source.getShaderProgram()})
     var shader = new cc.GLProgram(res.shader_public, res.shader_celShading);

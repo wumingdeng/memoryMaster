@@ -5,23 +5,22 @@
 
 var globalObject = cc.Node.extend({
     _id:null,
-    tag:null,
+    _tag:null,
     _info:null, //配置信息
     _img:null,  //皮肤
     _isTouch:false, //是否点到全局物品
     _target:null,   //全局物品的目标
     _text:null,     //名字
     ctor:function(id){
-        //var nodep = cc.Node.prototype;
-        //nodep.ctor.call(this);
         this._super();
         this._id = id;
-        this.tag = id;
+        this._tag = id;
         this.init();
 
 
     },
     init:function(){
+        this._super()
         this._info = GLOBAL_ITEM_CONFIG["g" + this._id];
         var imgPath = this._info.img;
         this._img = new cc.Sprite(imgPath);
@@ -60,11 +59,9 @@ var globalObject = cc.Node.extend({
         if (this.isTouchItem(pos)){
             trace1("global began");
             this._isTouch = true;
-
             touch.stopPropagation();     //停止向下传递事件
             return true;
         }
-
         return false
     },
     touchMoved:function(touch,event){
@@ -72,7 +69,6 @@ var globalObject = cc.Node.extend({
         var location = touch.getLocation();
         var pos = this._img.parent.convertToNodeSpace(location);
         this._img.setPosition(pos);
-
         trace2("global move")
     },
     touchEnded:function(touch,event){
@@ -129,7 +125,6 @@ var globalObject = cc.Node.extend({
 
     //检测被点击的目标可不可以被组合
     checkTouchTarget:function(target){
-
         var find = false;
         //寻找目标
         for (var id in this._target){

@@ -24,12 +24,12 @@ function plistAsyncLoading(plistName,pngName,loadingCallBack,num) {
      * 图片没有存在的话，通过plist文件载入精灵帧缓存
      */
     if (jsb.fileUtils.isFileExist(pngName)) {
-
         cc.director.getTextureCache().addImageAsync(pngName, plistImageAsyncCallBack)
     }else{
         plistImageAsyncCallBack()
     }
 }
+
 var spriteFrameUITable = [] //存放精灵帧的数组，以便于在方便清理
 var textureUITable = [] //存放纹理的数组，以便于在方便清理
 /**
@@ -42,7 +42,7 @@ function addUITableManagement(texture,plist) {
         var spriteFramestable = jsb.fileUtils.getValueMapFromFile(plist)
         for (var key in  spriteFramestable["frames"]) {
             if (key) {
-                var sptFrame = cc.spriteFrameCache.getSpriteFrame(key)
+                var sptFrame = cc.spriteFrameCache.getSpriteFrame(key) 
                 if (!sptFrame) {
 
                 }else{
@@ -56,15 +56,10 @@ function addUITableManagement(texture,plist) {
         textureUITable.push(texture)
         texture.retain()
     }
+    new ccui.Text
 }
 STATIC_RESOURCE = [   //把需要常驻内存的资源文件存放在该数组中
     "baseUI.plist",
-//    "caseDetailUI.plist",
-//    "indexViewUI.plist",
-//    "noteResource.plist",
-//    "Animation/iconAnimation/datangqian_ziyuanxiaoguo.plist",
-//    "Animation/sceneBgAnimation/Anjianliebiao_wanfatishixiaoguo.plist",
-//    "gameSceneUI.plist"
 ]
 
 //---是否是常驻内存的资源
@@ -89,19 +84,5 @@ function removeUITableManagement() {
     spriteFrameUITable = []
 }
 
-/**
- * 把常驻内存的资源通过解析plist文件，把每一个精灵侦对象增加引用计数，不然系统自动清理对象
- * @param {string} file plist's files*/
-function saveComUI(file){
-    var baseUISpriteFramestable = jsb.fileUtils.getValueMapFromFile(file)
-    var spriteFramestable = baseUISpriteFramestable["frames"]
-    for (var key in  spriteFramestable["frames"]) {
-        if (key) {
-            var sptFrame = cc.spriteFrameCache.getSpriteFrame(key)
-            if (sptFrame){
-                sptFrame.retain()
-            }
-        }
-    }
-}
+
 

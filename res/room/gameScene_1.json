@@ -1,0 +1,3108 @@
+{
+  "ID": "dc056d61-f276-45ae-9999-04acb8c3f629",
+  "Version": "3.10.0.0",
+  "Name": "gameScene_1",
+  "Content": {
+    "Content": {
+      "Animation": {
+        "Duration": 0,
+        "Speed": 1.0,
+        "Timelines": [],
+        "ctype": "TimelineActionData"
+      },
+      "AnimationList": [
+        {
+          "StartIndex": 0,
+          "EndIndex": 0,
+          "Name": "bg",
+          "ctype": "AnimationInfoData"
+        }
+      ],
+      "ObjectData": {
+        "Children": [
+          {
+            "ClipAble": false,
+            "BackColorAlpha": 102,
+            "ComboBoxIndex": 1,
+            "SingleColor": {
+              "R": 150,
+              "G": 200
+            },
+            "FirstColor": {
+              "R": 150,
+              "G": 200
+            },
+            "EndColor": {},
+            "ColorVector": {
+              "ScaleY": 1.0
+            },
+            "Scale9Width": 1,
+            "Scale9Height": 1,
+            "TouchEnable": true,
+            "AnchorPoint": {},
+            "Position": {
+              "X": -1481.4875,
+              "Y": 0.4634
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": -0.7716,
+              "Y": 0.0004
+            },
+            "PreSize": {
+              "X": 1.7708,
+              "Y": 1.0
+            },
+            "LeftMargin": -1481.4875,
+            "RightMargin": 1.4875,
+            "TopMargin": -0.4634,
+            "BottomMargin": 0.4634,
+            "Tag": 86,
+            "Children": [
+              {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "room/gameScene_1_01.jpg",
+                  "Plist": ""
+                },
+                "BlendFunc": {
+                  "Src": 770,
+                  "Dst": 771
+                },
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 425.0,
+                  "Y": 540.0
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.125,
+                  "Y": 0.5
+                },
+                "PreSize": {
+                  "X": 0.25,
+                  "Y": 1.0
+                },
+                "RightMargin": 2550.0,
+                "Tag": 338,
+                "ActionTag": 2038629410,
+                "Size": {
+                  "X": 850.0,
+                  "Y": 1080.0
+                },
+                "Name": "gameScene_1_01_36",
+                "ctype": "SpriteObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "room/gameScene_1_02.jpg",
+                  "Plist": ""
+                },
+                "BlendFunc": {
+                  "Src": 770,
+                  "Dst": 771
+                },
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 1275.0,
+                  "Y": 539.9999
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.375,
+                  "Y": 0.5
+                },
+                "PreSize": {
+                  "X": 0.25,
+                  "Y": 1.0
+                },
+                "LeftMargin": 850.0,
+                "RightMargin": 1700.0,
+                "TopMargin": 0.0001,
+                "BottomMargin": -0.0001,
+                "Tag": 39,
+                "ActionTag": -917413110,
+                "Size": {
+                  "X": 850.0,
+                  "Y": 1080.0
+                },
+                "Name": "gameScene_1_02_37",
+                "ctype": "SpriteObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "room/gameScene_1_03.jpg",
+                  "Plist": ""
+                },
+                "BlendFunc": {
+                  "Src": 770,
+                  "Dst": 771
+                },
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 2125.0005,
+                  "Y": 540.9479
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.625,
+                  "Y": 0.5009
+                },
+                "PreSize": {
+                  "X": 0.25,
+                  "Y": 1.0
+                },
+                "LeftMargin": 1700.0005,
+                "RightMargin": 849.9995,
+                "TopMargin": -0.9479,
+                "BottomMargin": 0.9479,
+                "Tag": 40,
+                "ActionTag": 1281831506,
+                "Size": {
+                  "X": 850.0,
+                  "Y": 1080.0
+                },
+                "Name": "gameScene_1_03_38",
+                "ctype": "SpriteObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "room/gameScene_1_04.jpg",
+                  "Plist": ""
+                },
+                "BlendFunc": {
+                  "Src": 770,
+                  "Dst": 771
+                },
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 2974.9995,
+                  "Y": 539.9999
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.875,
+                  "Y": 0.5
+                },
+                "PreSize": {
+                  "X": 0.25,
+                  "Y": 1.0
+                },
+                "LeftMargin": 2549.9995,
+                "RightMargin": 0.0005,
+                "TopMargin": 0.0001,
+                "BottomMargin": -0.0001,
+                "Tag": 1111,
+                "ActionTag": -221125769,
+                "Size": {
+                  "X": 850.0,
+                  "Y": 1080.0
+                },
+                "Name": "gameScene_1_04_39",
+                "ctype": "SpriteObjectData"
+              }
+            ],
+            "ActionTag": -1977484868,
+            "Size": {
+              "X": 3400.0,
+              "Y": 1080.0
+            },
+            "Name": "bg",
+            "ctype": "PanelObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "PlistSubImage",
+              "Path": "CJ1_dunpai.png",
+              "Plist": "room/gameScene_1.plist"
+            },
+            "BlendFunc": {
+              "Src": 1,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 720.001,
+              "Y": 348.6502
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.375,
+              "Y": 0.3228
+            },
+            "PreSize": {
+              "X": 0.1432,
+              "Y": 0.2574
+            },
+            "LeftMargin": 582.501,
+            "RightMargin": 1062.499,
+            "TopMargin": 592.3498,
+            "BottomMargin": 209.6502,
+            "ActionTag": 794370807,
+            "Size": {
+              "X": 275.0,
+              "Y": 278.0
+            },
+            "Name": "CJ1_dunpai_57",
+            "ctype": "SpriteObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "PlistSubImage",
+              "Path": "CJ1_ZD006.png",
+              "Plist": "room/gameScene_1zhedang.plist"
+            },
+            "BlendFunc": {
+              "Src": 1,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 1113.6359,
+              "Y": 166.9433
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "RotationSkewX": -0.0769,
+            "RotationSkewY": -0.0752,
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.58,
+              "Y": 0.1546
+            },
+            "PreSize": {
+              "X": 0.3771,
+              "Y": 0.3102
+            },
+            "LeftMargin": 751.6359,
+            "RightMargin": 444.3641,
+            "TopMargin": 745.5567,
+            "BottomMargin": -0.5567,
+            "ActionTag": 1290070705,
+            "Size": {
+              "X": 724.0,
+              "Y": 335.0
+            },
+            "Name": "CJ1_ZD006_6",
+            "ctype": "SpriteObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "PlistSubImage",
+              "Path": "CJ1_baiqi.png",
+              "Plist": "room/gameScene_1.plist"
+            },
+            "BlendFunc": {
+              "Src": 1,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": -449.0005,
+              "Y": 667.0001
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": -0.2339,
+              "Y": 0.6176
+            },
+            "PreSize": {
+              "X": 0.012,
+              "Y": 0.0343
+            },
+            "LeftMargin": -460.5005,
+            "RightMargin": 2357.5005,
+            "TopMargin": 394.4999,
+            "BottomMargin": 648.5001,
+            "Tag": 44,
+            "ActionTag": 80170967,
+            "Size": {
+              "X": 23.0,
+              "Y": 37.0
+            },
+            "Name": "CJ1_baiqi_42",
+            "ctype": "SpriteObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "PlistSubImage",
+              "Path": "CJ1_beizi1.png",
+              "Plist": "room/gameScene_1.plist"
+            },
+            "BlendFunc": {
+              "Src": 1,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.333,
+              "ScaleY": 0.7611
+            },
+            "Position": {
+              "X": -565.0001,
+              "Y": 623.0002
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": -0.2943,
+              "Y": 0.5769
+            },
+            "PreSize": {
+              "X": 0.0156,
+              "Y": 0.0222
+            },
+            "LeftMargin": -574.9901,
+            "RightMargin": 2464.9902,
+            "TopMargin": 451.2662,
+            "BottomMargin": 604.7338,
+            "Tag": 45,
+            "ActionTag": -552568451,
+            "Size": {
+              "X": 30.0,
+              "Y": 24.0
+            },
+            "Name": "CJ1_beizi1_43",
+            "ctype": "SpriteObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "PlistSubImage",
+              "Path": "CJ1_bi.png",
+              "Plist": "room/gameScene_1.plist"
+            },
+            "BlendFunc": {
+              "Src": 1,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 1118.0021,
+              "Y": 481.0001
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.5823,
+              "Y": 0.4454
+            },
+            "PreSize": {
+              "X": 0.0188,
+              "Y": 0.0917
+            },
+            "LeftMargin": 1100.0021,
+            "RightMargin": 783.9979,
+            "TopMargin": 549.4999,
+            "BottomMargin": 431.5001,
+            "Tag": 46,
+            "ActionTag": -542196506,
+            "Size": {
+              "X": 36.0,
+              "Y": 99.0
+            },
+            "Name": "CJ1_bi_44",
+            "ctype": "SpriteObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "PlistSubImage",
+              "Path": "CJ1_huaping.png",
+              "Plist": "room/gameScene_1.plist"
+            },
+            "BlendFunc": {
+              "Src": 1,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": -1102.7047,
+              "Y": 895.0005
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": -0.5743,
+              "Y": 0.8287
+            },
+            "PreSize": {
+              "X": 0.0432,
+              "Y": 0.1889
+            },
+            "LeftMargin": -1144.2047,
+            "RightMargin": 2981.2046,
+            "TopMargin": 82.9995,
+            "BottomMargin": 793.0005,
+            "Tag": 65,
+            "ActionTag": 1663177288,
+            "Size": {
+              "X": 83.0,
+              "Y": 204.0
+            },
+            "Name": "CJ1_huaping_63",
+            "ctype": "SpriteObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "PlistSubImage",
+              "Path": "CJ1_bitong.png",
+              "Plist": "room/gameScene_1.plist"
+            },
+            "BlendFunc": {
+              "Src": 1,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": -1066.0009,
+              "Y": 829.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": -0.5552,
+              "Y": 0.7676
+            },
+            "PreSize": {
+              "X": 0.0359,
+              "Y": 0.0685
+            },
+            "LeftMargin": -1100.5009,
+            "RightMargin": 2951.501,
+            "TopMargin": 214.0,
+            "BottomMargin": 792.0,
+            "Tag": 47,
+            "ActionTag": -53652994,
+            "Size": {
+              "X": 69.0,
+              "Y": 74.0
+            },
+            "Name": "CJ1_bitong_45",
+            "ctype": "SpriteObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "PlistSubImage",
+              "Path": "CJ1_bitong1.png",
+              "Plist": "room/gameScene_1.plist"
+            },
+            "BlendFunc": {
+              "Src": 1,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 1233.0009,
+              "Y": 819.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.6422,
+              "Y": 0.7583
+            },
+            "PreSize": {
+              "X": 0.037,
+              "Y": 0.1065
+            },
+            "LeftMargin": 1197.5009,
+            "RightMargin": 651.4991,
+            "TopMargin": 203.5,
+            "BottomMargin": 761.5,
+            "Tag": 48,
+            "ActionTag": -31801441,
+            "Size": {
+              "X": 71.0,
+              "Y": 115.0
+            },
+            "Name": "CJ1_bitong1_46",
+            "ctype": "SpriteObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "PlistSubImage",
+              "Path": "CJ1_bujia.png",
+              "Plist": "room/gameScene_1.plist"
+            },
+            "BlendFunc": {
+              "Src": 1,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 5.0,
+              "Y": 422.0004
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.0026,
+              "Y": 0.3907
+            },
+            "PreSize": {
+              "X": 0.0823,
+              "Y": 0.1139
+            },
+            "LeftMargin": -74.0,
+            "RightMargin": 1836.0,
+            "TopMargin": 596.4996,
+            "BottomMargin": 360.5004,
+            "Tag": 49,
+            "ActionTag": 493841565,
+            "Size": {
+              "X": 158.0,
+              "Y": 123.0
+            },
+            "Name": "CJ1_bujia_47",
+            "ctype": "SpriteObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "PlistSubImage",
+              "Path": "CJ1_chaju.png",
+              "Plist": "room/gameScene_1.plist"
+            },
+            "BlendFunc": {
+              "Src": 1,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": -1289.0005,
+              "Y": 717.0004
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": -0.6714,
+              "Y": 0.6639
+            },
+            "PreSize": {
+              "X": 0.0849,
+              "Y": 0.1231
+            },
+            "LeftMargin": -1370.5005,
+            "RightMargin": 3127.5005,
+            "TopMargin": 296.4996,
+            "BottomMargin": 650.5004,
+            "Tag": 50,
+            "ActionTag": 1339638484,
+            "Size": {
+              "X": 163.0,
+              "Y": 133.0
+            },
+            "Name": "CJ1_chaju_48",
+            "ctype": "SpriteObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "PlistSubImage",
+              "Path": "CJ1_changbihou.png",
+              "Plist": "room/gameScene_1.plist"
+            },
+            "BlendFunc": {
+              "Src": 1,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 486.5962,
+              "Y": 807.5594
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.2534,
+              "Y": 0.7477
+            },
+            "PreSize": {
+              "X": 0.0562,
+              "Y": 0.088
+            },
+            "LeftMargin": 432.5962,
+            "RightMargin": 1379.4038,
+            "TopMargin": 224.9406,
+            "BottomMargin": 760.0594,
+            "Tag": 51,
+            "ActionTag": -1469425615,
+            "Size": {
+              "X": 108.0,
+              "Y": 95.0
+            },
+            "Name": "CJ1_changbihou_49",
+            "ctype": "SpriteObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "PlistSubImage",
+              "Path": "CJ1_chelun.png",
+              "Plist": "room/gameScene_1.plist"
+            },
+            "BlendFunc": {
+              "Src": 1,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": -384.9995,
+              "Y": 880.1301
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": -0.2005,
+              "Y": 0.8149
+            },
+            "PreSize": {
+              "X": 0.0542,
+              "Y": 0.0963
+            },
+            "LeftMargin": -436.9995,
+            "RightMargin": 2252.9995,
+            "TopMargin": 147.8699,
+            "BottomMargin": 828.1301,
+            "Tag": 52,
+            "ActionTag": 188147502,
+            "Size": {
+              "X": 104.0,
+              "Y": 104.0
+            },
+            "Name": "CJ1_chelun_50",
+            "ctype": "SpriteObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "PlistSubImage",
+              "Path": "CJ1_daidinghe.png",
+              "Plist": "room/gameScene_1.plist"
+            },
+            "BlendFunc": {
+              "Src": 1,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 462.0001,
+              "Y": 828.4601
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.2406,
+              "Y": 0.7671
+            },
+            "PreSize": {
+              "X": 0.0443,
+              "Y": 0.1194
+            },
+            "LeftMargin": 419.5001,
+            "RightMargin": 1415.4999,
+            "TopMargin": 187.0399,
+            "BottomMargin": 763.9601,
+            "Tag": 53,
+            "ActionTag": -1454743581,
+            "Size": {
+              "X": 85.0,
+              "Y": 129.0
+            },
+            "Name": "CJ1_daidinghe_51",
+            "ctype": "SpriteObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "PlistSubImage",
+              "Path": "CJ1_dawei.png",
+              "Plist": "room/gameScene_1.plist"
+            },
+            "BlendFunc": {
+              "Src": 1,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 1254.0023,
+              "Y": 669.2302
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.6531,
+              "Y": 0.6197
+            },
+            "PreSize": {
+              "X": 0.0542,
+              "Y": 0.138
+            },
+            "LeftMargin": 1202.0023,
+            "RightMargin": 613.9977,
+            "TopMargin": 336.2698,
+            "BottomMargin": 594.7302,
+            "Tag": 54,
+            "ActionTag": 626535621,
+            "Size": {
+              "X": 104.0,
+              "Y": 149.0
+            },
+            "Name": "CJ1_dawei_52",
+            "ctype": "SpriteObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "PlistSubImage",
+              "Path": "CJ1_daxiang.png",
+              "Plist": "room/gameScene_1.plist"
+            },
+            "BlendFunc": {
+              "Src": 1,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 188.9995,
+              "Y": 967.0007
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.0984,
+              "Y": 0.8954
+            },
+            "PreSize": {
+              "X": 0.0542,
+              "Y": 0.0833
+            },
+            "LeftMargin": 136.9995,
+            "RightMargin": 1679.0005,
+            "TopMargin": 67.9993,
+            "BottomMargin": 922.0007,
+            "Tag": 55,
+            "ActionTag": 1329120420,
+            "Size": {
+              "X": 104.0,
+              "Y": 90.0
+            },
+            "Name": "CJ1_daxiang_53",
+            "ctype": "SpriteObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "PlistSubImage",
+              "Path": "CJ1_xiangzi.png",
+              "Plist": "room/gameScene_1.plist"
+            },
+            "BlendFunc": {
+              "Src": 1,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 1117.0018,
+              "Y": 349.0401
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.5818,
+              "Y": 0.3232
+            },
+            "PreSize": {
+              "X": 0.0458,
+              "Y": 0.0472
+            },
+            "LeftMargin": 1073.0018,
+            "RightMargin": 758.9982,
+            "TopMargin": 705.4599,
+            "BottomMargin": 323.5401,
+            "Tag": 92,
+            "ActionTag": 1669653765,
+            "Size": {
+              "X": 88.0,
+              "Y": 51.0
+            },
+            "Name": "CJ1_xiangzi_90",
+            "ctype": "SpriteObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "PlistSubImage",
+              "Path": "CJ1_jihe.png",
+              "Plist": "room/gameScene_1.plist"
+            },
+            "BlendFunc": {
+              "Src": 1,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 1013.0018,
+              "Y": 314.0002
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.5276,
+              "Y": 0.2907
+            },
+            "PreSize": {
+              "X": 0.0766,
+              "Y": 0.1194
+            },
+            "LeftMargin": 939.5018,
+            "RightMargin": 833.4983,
+            "TopMargin": 701.4998,
+            "BottomMargin": 249.5002,
+            "Tag": 67,
+            "ActionTag": -41617815,
+            "Size": {
+              "X": 147.0,
+              "Y": 129.0
+            },
+            "Name": "CJ1_jihe_65",
+            "ctype": "SpriteObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "PlistSubImage",
+              "Path": "CJ1_dianhua.png",
+              "Plist": "room/gameScene_1.plist"
+            },
+            "BlendFunc": {
+              "Src": 1,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 866.9996,
+              "Y": 275.8901
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.4516,
+              "Y": 0.2555
+            },
+            "PreSize": {
+              "X": 0.0833,
+              "Y": 0.0602
+            },
+            "LeftMargin": 786.9996,
+            "RightMargin": 973.0004,
+            "TopMargin": 771.6099,
+            "BottomMargin": 243.3901,
+            "Tag": 56,
+            "ActionTag": 1828345465,
+            "Size": {
+              "X": 160.0,
+              "Y": 65.0
+            },
+            "Name": "CJ1_dianhua_54",
+            "ctype": "SpriteObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "PlistSubImage",
+              "Path": "CJ1_diaoxiang.png",
+              "Plist": "room/gameScene_1.plist"
+            },
+            "BlendFunc": {
+              "Src": 1,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 307.9991,
+              "Y": 491.0101
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.1604,
+              "Y": 0.4546
+            },
+            "PreSize": {
+              "X": 0.0771,
+              "Y": 0.1194
+            },
+            "LeftMargin": 233.9991,
+            "RightMargin": 1538.0009,
+            "TopMargin": 524.4899,
+            "BottomMargin": 426.5101,
+            "Tag": 57,
+            "ActionTag": 186225172,
+            "Size": {
+              "X": 148.0,
+              "Y": 129.0
+            },
+            "Name": "CJ1_diaoxiang_55",
+            "ctype": "SpriteObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "PlistSubImage",
+              "Path": "CJ1_ditu.png",
+              "Plist": "room/gameScene_1.plist"
+            },
+            "BlendFunc": {
+              "Src": 1,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 152.9999,
+              "Y": 648.1401
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.0797,
+              "Y": 0.6001
+            },
+            "PreSize": {
+              "X": 0.0406,
+              "Y": 0.0954
+            },
+            "LeftMargin": 113.9999,
+            "RightMargin": 1728.0001,
+            "TopMargin": 380.3599,
+            "BottomMargin": 596.6401,
+            "Tag": 58,
+            "ActionTag": -1273121009,
+            "Size": {
+              "X": 78.0,
+              "Y": 103.0
+            },
+            "Name": "CJ1_ditu_56",
+            "ctype": "SpriteObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "PlistSubImage",
+              "Path": "CJ1_erji.png",
+              "Plist": "room/gameScene_1.plist"
+            },
+            "BlendFunc": {
+              "Src": 1,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 1250.0001,
+              "Y": 477.0001
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.651,
+              "Y": 0.4417
+            },
+            "PreSize": {
+              "X": 0.0568,
+              "Y": 0.087
+            },
+            "LeftMargin": 1195.5001,
+            "RightMargin": 615.4999,
+            "TopMargin": 555.9999,
+            "BottomMargin": 430.0001,
+            "Tag": 60,
+            "ActionTag": 562597467,
+            "Size": {
+              "X": 109.0,
+              "Y": 94.0
+            },
+            "Name": "CJ1_erji_58",
+            "ctype": "SpriteObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "PlistSubImage",
+              "Path": "CJ1_fengmi.png",
+              "Plist": "room/gameScene_1.plist"
+            },
+            "BlendFunc": {
+              "Src": 1,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 249.0013,
+              "Y": 660.7903
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.1297,
+              "Y": 0.6118
+            },
+            "PreSize": {
+              "X": 0.0719,
+              "Y": 0.1185
+            },
+            "LeftMargin": 180.0013,
+            "RightMargin": 1601.9988,
+            "TopMargin": 355.2097,
+            "BottomMargin": 596.7903,
+            "Tag": 61,
+            "ActionTag": -834975069,
+            "Size": {
+              "X": 138.0,
+              "Y": 128.0
+            },
+            "Name": "CJ1_fengmi_59",
+            "ctype": "SpriteObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "PlistSubImage",
+              "Path": "CJ1_goujiqizi.png",
+              "Plist": "room/gameScene_1.plist"
+            },
+            "BlendFunc": {
+              "Src": 1,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 662.0061,
+              "Y": 796.1577
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.3448,
+              "Y": 0.7372
+            },
+            "PreSize": {
+              "X": 0.0255,
+              "Y": 0.0685
+            },
+            "LeftMargin": 637.5061,
+            "RightMargin": 1233.4939,
+            "TopMargin": 246.8423,
+            "BottomMargin": 759.1577,
+            "Tag": 62,
+            "ActionTag": 1403047001,
+            "Size": {
+              "X": 49.0,
+              "Y": 74.0
+            },
+            "Name": "CJ1_goujiqizi_60",
+            "ctype": "SpriteObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "PlistSubImage",
+              "Path": "CJ1_gubei.png",
+              "Plist": "room/gameScene_1.plist"
+            },
+            "BlendFunc": {
+              "Src": 1,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": -1172.0011,
+              "Y": 829.51
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": -0.6104,
+              "Y": 0.7681
+            },
+            "PreSize": {
+              "X": 0.0292,
+              "Y": 0.0583
+            },
+            "LeftMargin": -1200.0011,
+            "RightMargin": 3064.001,
+            "TopMargin": 218.99,
+            "BottomMargin": 798.01,
+            "Tag": 63,
+            "ActionTag": -370420477,
+            "Size": {
+              "X": 56.0,
+              "Y": 63.0
+            },
+            "Name": "CJ1_gubei_61",
+            "ctype": "SpriteObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "PlistSubImage",
+              "Path": "CJ1_jiaodaijia.png",
+              "Plist": "room/gameScene_1.plist"
+            },
+            "BlendFunc": {
+              "Src": 1,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 24.9995,
+              "Y": 667.33
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.013,
+              "Y": 0.6179
+            },
+            "PreSize": {
+              "X": 0.0453,
+              "Y": 0.0352
+            },
+            "LeftMargin": -18.5005,
+            "RightMargin": 1851.5005,
+            "TopMargin": 393.67,
+            "BottomMargin": 648.33,
+            "Tag": 66,
+            "ActionTag": -1291846193,
+            "Size": {
+              "X": 87.0,
+              "Y": 38.0
+            },
+            "Name": "CJ1_jiaodaijia_64",
+            "ctype": "SpriteObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "PlistSubImage",
+              "Path": "CJ1_jishiben.png",
+              "Plist": "room/gameScene_1.plist"
+            },
+            "BlendFunc": {
+              "Src": 1,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 1010.0009,
+              "Y": 265.0002
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.526,
+              "Y": 0.2454
+            },
+            "PreSize": {
+              "X": 0.0641,
+              "Y": 0.0389
+            },
+            "LeftMargin": 948.5009,
+            "RightMargin": 848.499,
+            "TopMargin": 793.9998,
+            "BottomMargin": 244.0002,
+            "Tag": 68,
+            "ActionTag": -165270448,
+            "Size": {
+              "X": 123.0,
+              "Y": 42.0
+            },
+            "Name": "CJ1_jishiben_66",
+            "ctype": "SpriteObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "PlistSubImage",
+              "Path": "CJ1_jita.png",
+              "Plist": "room/gameScene_1.plist"
+            },
+            "BlendFunc": {
+              "Src": 1,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 159.9996,
+              "Y": 262.7326
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.0833,
+              "Y": 0.2433
+            },
+            "PreSize": {
+              "X": 0.062,
+              "Y": 0.3935
+            },
+            "LeftMargin": 100.4996,
+            "RightMargin": 1700.5004,
+            "TopMargin": 604.7674,
+            "BottomMargin": 50.2326,
+            "Tag": 69,
+            "ActionTag": -1292537817,
+            "Size": {
+              "X": 119.0,
+              "Y": 425.0
+            },
+            "Name": "CJ1_jita_67",
+            "ctype": "SpriteObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "PlistSubImage",
+              "Path": "CJ1_jiu.png",
+              "Plist": "room/gameScene_1.plist"
+            },
+            "BlendFunc": {
+              "Src": 1,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 1271.9996,
+              "Y": 814.5107
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.6625,
+              "Y": 0.7542
+            },
+            "PreSize": {
+              "X": 0.0188,
+              "Y": 0.0963
+            },
+            "LeftMargin": 1253.9996,
+            "RightMargin": 630.0004,
+            "TopMargin": 213.4893,
+            "BottomMargin": 762.5107,
+            "Tag": 70,
+            "ActionTag": -1253606012,
+            "Size": {
+              "X": 36.0,
+              "Y": 104.0
+            },
+            "Name": "CJ1_jiu_68",
+            "ctype": "SpriteObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "PlistSubImage",
+              "Path": "CJ1_jiujia.png",
+              "Plist": "room/gameScene_1.plist"
+            },
+            "BlendFunc": {
+              "Src": 1,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": -39.9994,
+              "Y": 700.13
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": -0.0208,
+              "Y": 0.6483
+            },
+            "PreSize": {
+              "X": 0.0667,
+              "Y": 0.1194
+            },
+            "LeftMargin": -103.9994,
+            "RightMargin": 1895.9994,
+            "TopMargin": 315.37,
+            "BottomMargin": 635.63,
+            "Tag": 71,
+            "ActionTag": 787731328,
+            "Size": {
+              "X": 128.0,
+              "Y": 129.0
+            },
+            "Name": "CJ1_jiujia_69",
+            "ctype": "SpriteObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "PlistSubImage",
+              "Path": "CJ1_lanhua.png",
+              "Plist": "room/gameScene_1.plist"
+            },
+            "BlendFunc": {
+              "Src": 1,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 1096.6442,
+              "Y": 312.0001
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.5712,
+              "Y": 0.2889
+            },
+            "PreSize": {
+              "X": 0.0422,
+              "Y": 0.1204
+            },
+            "LeftMargin": 1056.1442,
+            "RightMargin": 782.8558,
+            "TopMargin": 702.9999,
+            "BottomMargin": 247.0001,
+            "Tag": 72,
+            "ActionTag": -335168604,
+            "Size": {
+              "X": 81.0,
+              "Y": 130.0
+            },
+            "Name": "CJ1_lanhua_70",
+            "ctype": "SpriteObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "PlistSubImage",
+              "Path": "CJ1_lunzi.png",
+              "Plist": "room/gameScene_1.plist"
+            },
+            "BlendFunc": {
+              "Src": 1,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 726.0009,
+              "Y": 969.3787
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.3781,
+              "Y": 0.8976
+            },
+            "PreSize": {
+              "X": 0.0464,
+              "Y": 0.0796
+            },
+            "LeftMargin": 681.5009,
+            "RightMargin": 1149.499,
+            "TopMargin": 67.6213,
+            "BottomMargin": 926.3787,
+            "Tag": 73,
+            "ActionTag": -1427318117,
+            "Size": {
+              "X": 89.0,
+              "Y": 86.0
+            },
+            "Name": "CJ1_lunzi_71",
+            "ctype": "SpriteObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "PlistSubImage",
+              "Path": "CJ1_lunzi1.png",
+              "Plist": "room/gameScene_1.plist"
+            },
+            "BlendFunc": {
+              "Src": 1,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 306.0,
+              "Y": 973.1605
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.1594,
+              "Y": 0.9011
+            },
+            "PreSize": {
+              "X": 0.0604,
+              "Y": 0.0907
+            },
+            "LeftMargin": 248.0,
+            "RightMargin": 1556.0,
+            "TopMargin": 57.8395,
+            "BottomMargin": 924.1605,
+            "Tag": 74,
+            "ActionTag": 1129001895,
+            "Size": {
+              "X": 116.0,
+              "Y": 98.0
+            },
+            "Name": "CJ1_lunzi1_72",
+            "ctype": "SpriteObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "PlistSubImage",
+              "Path": "CJ1_maoxian.png",
+              "Plist": "room/gameScene_1.plist"
+            },
+            "BlendFunc": {
+              "Src": 1,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": -7.9996,
+              "Y": 577.7202
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": -0.0042,
+              "Y": 0.5349
+            },
+            "PreSize": {
+              "X": 0.0417,
+              "Y": 0.075
+            },
+            "LeftMargin": -47.9996,
+            "RightMargin": 1887.9996,
+            "TopMargin": 461.7798,
+            "BottomMargin": 537.2202,
+            "Tag": 75,
+            "ActionTag": -1435611062,
+            "Size": {
+              "X": 80.0,
+              "Y": 81.0
+            },
+            "Name": "CJ1_maoxian_73",
+            "ctype": "SpriteObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "PlistSubImage",
+              "Path": "CJ1_qixie.png",
+              "Plist": "room/gameScene_1.plist"
+            },
+            "BlendFunc": {
+              "Src": 1,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 774.7014,
+              "Y": 788.101
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.4035,
+              "Y": 0.7297
+            },
+            "PreSize": {
+              "X": 0.0635,
+              "Y": 0.05
+            },
+            "LeftMargin": 713.7014,
+            "RightMargin": 1084.2986,
+            "TopMargin": 264.899,
+            "BottomMargin": 761.101,
+            "Tag": 77,
+            "ActionTag": -1699521002,
+            "Size": {
+              "X": 122.0,
+              "Y": 54.0
+            },
+            "Name": "CJ1_qixie_75",
+            "ctype": "SpriteObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "PlistSubImage",
+              "Path": "CJ1_taideng.png",
+              "Plist": "room/gameScene_1.plist"
+            },
+            "BlendFunc": {
+              "Src": 1,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 16.9993,
+              "Y": 906.3807
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.0089,
+              "Y": 0.8392
+            },
+            "PreSize": {
+              "X": 0.0573,
+              "Y": 0.1565
+            },
+            "LeftMargin": -38.0007,
+            "RightMargin": 1848.0007,
+            "TopMargin": 89.1193,
+            "BottomMargin": 821.8807,
+            "Tag": 78,
+            "ActionTag": 2107069669,
+            "Size": {
+              "X": 110.0,
+              "Y": 169.0
+            },
+            "Name": "CJ1_taideng_76",
+            "ctype": "SpriteObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "PlistSubImage",
+              "Path": "CJ1_tiejia.png",
+              "Plist": "room/gameScene_1.plist"
+            },
+            "BlendFunc": {
+              "Src": 1,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 177.9993,
+              "Y": 383.55
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.0927,
+              "Y": 0.3551
+            },
+            "PreSize": {
+              "X": 0.0651,
+              "Y": 0.0361
+            },
+            "LeftMargin": 115.4993,
+            "RightMargin": 1679.5007,
+            "TopMargin": 676.95,
+            "BottomMargin": 364.05,
+            "Tag": 80,
+            "ActionTag": -1680504253,
+            "Size": {
+              "X": 125.0,
+              "Y": 39.0
+            },
+            "Name": "CJ1_tiejia_78",
+            "ctype": "SpriteObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "PlistSubImage",
+              "Path": "CJ1_tieta.png",
+              "Plist": "room/gameScene_1.plist"
+            },
+            "BlendFunc": {
+              "Src": 1,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 330.9995,
+              "Y": 836.2201
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.1724,
+              "Y": 0.7743
+            },
+            "PreSize": {
+              "X": 0.0443,
+              "Y": 0.1398
+            },
+            "LeftMargin": 288.4995,
+            "RightMargin": 1546.5005,
+            "TopMargin": 168.2799,
+            "BottomMargin": 760.7201,
+            "Tag": 81,
+            "ActionTag": 864726220,
+            "Size": {
+              "X": 85.0,
+              "Y": 151.0
+            },
+            "Name": "CJ1_tieta_79",
+            "ctype": "SpriteObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "PlistSubImage",
+              "Path": "CJ1_tuxiang.png",
+              "Plist": "room/gameScene_1.plist"
+            },
+            "BlendFunc": {
+              "Src": 1,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": -905.0001,
+              "Y": 873.7802
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": -0.4714,
+              "Y": 0.8091
+            },
+            "PreSize": {
+              "X": 0.05,
+              "Y": 0.112
+            },
+            "LeftMargin": -953.0001,
+            "RightMargin": 2777.0,
+            "TopMargin": 145.7198,
+            "BottomMargin": 813.2802,
+            "Tag": 82,
+            "ActionTag": -650675534,
+            "Size": {
+              "X": 96.0,
+              "Y": 121.0
+            },
+            "Name": "CJ1_tuxiang_80",
+            "ctype": "SpriteObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "PlistSubImage",
+              "Path": "CJ1_shexiangtou.png",
+              "Plist": "room/gameScene_1.plist"
+            },
+            "BlendFunc": {
+              "Src": 1,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": -800.2186,
+              "Y": 756.0544
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": -0.4168,
+              "Y": 0.7001
+            },
+            "PreSize": {
+              "X": 0.0375,
+              "Y": 0.0407
+            },
+            "LeftMargin": -836.2186,
+            "RightMargin": 2684.2188,
+            "TopMargin": 301.9456,
+            "BottomMargin": 734.0544,
+            "ActionTag": 1297397178,
+            "Size": {
+              "X": 72.0,
+              "Y": 44.0
+            },
+            "Name": "CJ1_shexiangtou_21",
+            "ctype": "SpriteObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "PlistSubImage",
+              "Path": "CJ1_tuxiang1.png",
+              "Plist": "room/gameScene_1.plist"
+            },
+            "BlendFunc": {
+              "Src": 1,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": -1415.0002,
+              "Y": 734.1406
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": -0.737,
+              "Y": 0.6798
+            },
+            "PreSize": {
+              "X": 0.0589,
+              "Y": 0.1444
+            },
+            "LeftMargin": -1471.5002,
+            "RightMargin": 3278.5002,
+            "TopMargin": 267.8594,
+            "BottomMargin": 656.1406,
+            "Tag": 83,
+            "ActionTag": 1987274082,
+            "Size": {
+              "X": 113.0,
+              "Y": 156.0
+            },
+            "Name": "CJ1_tuxiang1_81",
+            "ctype": "SpriteObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "PlistSubImage",
+              "Path": "CJ1_wan.png",
+              "Plist": "room/gameScene_1.plist"
+            },
+            "BlendFunc": {
+              "Src": 1,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 1122.0006,
+              "Y": 707.5802
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.5844,
+              "Y": 0.6552
+            },
+            "PreSize": {
+              "X": 0.0474,
+              "Y": 0.0472
+            },
+            "LeftMargin": 1076.5006,
+            "RightMargin": 752.4994,
+            "TopMargin": 346.9198,
+            "BottomMargin": 682.0802,
+            "Tag": 84,
+            "ActionTag": 668879875,
+            "Size": {
+              "X": 91.0,
+              "Y": 51.0
+            },
+            "Name": "CJ1_wan_82",
+            "ctype": "SpriteObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "PlistSubImage",
+              "Path": "CJ1_wano.png",
+              "Plist": "room/gameScene_1.plist"
+            },
+            "BlendFunc": {
+              "Src": 1,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": -355.9993,
+              "Y": 538.3739
+            },
+            "Scale": {
+              "ScaleX": 0.72,
+              "ScaleY": 0.72
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": -0.1854,
+              "Y": 0.4985
+            },
+            "PreSize": {
+              "X": 0.0688,
+              "Y": 0.0574
+            },
+            "LeftMargin": -421.9993,
+            "RightMargin": 2209.9993,
+            "TopMargin": 510.6261,
+            "BottomMargin": 507.3739,
+            "Tag": 85,
+            "ActionTag": -823562601,
+            "Size": {
+              "X": 132.0,
+              "Y": 62.0
+            },
+            "Name": "CJ1_wano_83",
+            "ctype": "SpriteObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "PlistSubImage",
+              "Path": "CJ1_wano1.png",
+              "Plist": "room/gameScene_1.plist"
+            },
+            "BlendFunc": {
+              "Src": 1,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": -490.0,
+              "Y": 666.8514
+            },
+            "Scale": {
+              "ScaleX": 0.8,
+              "ScaleY": 0.8264
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": -0.2552,
+              "Y": 0.6175
+            },
+            "PreSize": {
+              "X": 0.0344,
+              "Y": 0.038
+            },
+            "LeftMargin": -523.0,
+            "RightMargin": 2377.0,
+            "TopMargin": 392.6486,
+            "BottomMargin": 646.3514,
+            "Tag": 86,
+            "ActionTag": 700625762,
+            "Size": {
+              "X": 66.0,
+              "Y": 41.0
+            },
+            "Name": "CJ1_wano1_84",
+            "ctype": "SpriteObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "PlistSubImage",
+              "Path": "CJ1_mingpianzuo.png",
+              "Plist": "room/gameScene_1.plist"
+            },
+            "BlendFunc": {
+              "Src": 1,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 576.9933,
+              "Y": 781.6131
+            },
+            "Scale": {
+              "ScaleX": 0.8,
+              "ScaleY": 0.8
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.3005,
+              "Y": 0.7237
+            },
+            "PreSize": {
+              "X": 0.0677,
+              "Y": 0.0537
+            },
+            "LeftMargin": 511.9933,
+            "RightMargin": 1278.0067,
+            "TopMargin": 269.3869,
+            "BottomMargin": 752.6131,
+            "Tag": 76,
+            "ActionTag": -1112314629,
+            "Size": {
+              "X": 130.0,
+              "Y": 58.0
+            },
+            "Name": "CJ1_mingpianzuo_74",
+            "ctype": "SpriteObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "PlistSubImage",
+              "Path": "CJ1_wenjujia.png",
+              "Plist": "room/gameScene_1.plist"
+            },
+            "BlendFunc": {
+              "Src": 1,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 331.001,
+              "Y": 315.0648
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.1724,
+              "Y": 0.2917
+            },
+            "PreSize": {
+              "X": 0.0266,
+              "Y": 0.0981
+            },
+            "LeftMargin": 305.501,
+            "RightMargin": 1563.499,
+            "TopMargin": 711.9352,
+            "BottomMargin": 262.0648,
+            "Tag": 87,
+            "ActionTag": 1784299783,
+            "Size": {
+              "X": 51.0,
+              "Y": 106.0
+            },
+            "Name": "CJ1_wenjujia_85",
+            "ctype": "SpriteObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "PlistSubImage",
+              "Path": "CJ1_XA.png",
+              "Plist": "room/gameScene_1.plist"
+            },
+            "BlendFunc": {
+              "Src": 1,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 996.0004,
+              "Y": 975.7004
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.5188,
+              "Y": 0.9034
+            },
+            "PreSize": {
+              "X": 0.0703,
+              "Y": 0.0944
+            },
+            "LeftMargin": 928.5004,
+            "RightMargin": 856.4995,
+            "TopMargin": 53.2996,
+            "BottomMargin": 924.7004,
+            "Tag": 88,
+            "ActionTag": 1665109449,
+            "Size": {
+              "X": 135.0,
+              "Y": 102.0
+            },
+            "Name": "CJ1_XA_86",
+            "ctype": "SpriteObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "PlistSubImage",
+              "Path": "CJ1_xiangji.png",
+              "Plist": "room/gameScene_1.plist"
+            },
+            "BlendFunc": {
+              "Src": 1,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 265.0005,
+              "Y": 290.9701
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.138,
+              "Y": 0.2694
+            },
+            "PreSize": {
+              "X": 0.0474,
+              "Y": 0.0667
+            },
+            "LeftMargin": 219.5005,
+            "RightMargin": 1609.4995,
+            "TopMargin": 753.0299,
+            "BottomMargin": 254.9701,
+            "Tag": 89,
+            "ActionTag": 453895348,
+            "Size": {
+              "X": 91.0,
+              "Y": 72.0
+            },
+            "Name": "CJ1_xiangji_87",
+            "ctype": "SpriteObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "PlistSubImage",
+              "Path": "CJ1_xiangkuang.png",
+              "Plist": "room/gameScene_1.plist"
+            },
+            "BlendFunc": {
+              "Src": 1,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": -1234.0011,
+              "Y": 842.9003
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": -0.6427,
+              "Y": 0.7805
+            },
+            "PreSize": {
+              "X": 0.0354,
+              "Y": 0.0861
+            },
+            "LeftMargin": -1268.0011,
+            "RightMargin": 3120.001,
+            "TopMargin": 190.5997,
+            "BottomMargin": 796.4003,
+            "Tag": 90,
+            "ActionTag": 112408220,
+            "Size": {
+              "X": 68.0,
+              "Y": 93.0
+            },
+            "Name": "CJ1_xiangkuang_88",
+            "ctype": "SpriteObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "PlistSubImage",
+              "Path": "CJ1_xiangpian.png",
+              "Plist": "room/gameScene_1.plist"
+            },
+            "BlendFunc": {
+              "Src": 1,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": -857.4778,
+              "Y": 770.9598
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": -0.4466,
+              "Y": 0.7139
+            },
+            "PreSize": {
+              "X": 0.0276,
+              "Y": 0.0704
+            },
+            "LeftMargin": -883.9778,
+            "RightMargin": 2750.9778,
+            "TopMargin": 271.0402,
+            "BottomMargin": 732.9598,
+            "Tag": 91,
+            "ActionTag": 1684670015,
+            "Size": {
+              "X": 53.0,
+              "Y": 76.0
+            },
+            "Name": "CJ1_xiangpian_89",
+            "ctype": "SpriteObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "PlistSubImage",
+              "Path": "CJ1_fengshan.png",
+              "Plist": "room/gameScene_1.plist"
+            },
+            "BlendFunc": {
+              "Src": 1,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": -271.9139,
+              "Y": 877.6541
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": -0.1416,
+              "Y": 0.8126
+            },
+            "PreSize": {
+              "X": 0.0432,
+              "Y": 0.1194
+            },
+            "LeftMargin": -313.4139,
+            "RightMargin": 2150.4138,
+            "TopMargin": 137.8459,
+            "BottomMargin": 813.1541,
+            "Tag": 104,
+            "ActionTag": -59908334,
+            "Size": {
+              "X": 83.0,
+              "Y": 129.0
+            },
+            "Name": "CJ1_fengshan_22",
+            "ctype": "SpriteObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "PlistSubImage",
+              "Path": "CJ1_xiangzi1.png",
+              "Plist": "room/gameScene_1.plist"
+            },
+            "BlendFunc": {
+              "Src": 1,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 212.0,
+              "Y": 797.8606
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.1104,
+              "Y": 0.7388
+            },
+            "PreSize": {
+              "X": 0.0891,
+              "Y": 0.0907
+            },
+            "LeftMargin": 126.5,
+            "RightMargin": 1622.5,
+            "TopMargin": 233.1394,
+            "BottomMargin": 748.8606,
+            "Tag": 93,
+            "ActionTag": -1273954021,
+            "Size": {
+              "X": 171.0,
+              "Y": 98.0
+            },
+            "Name": "CJ1_xiangzi1_91",
+            "ctype": "SpriteObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "PlistSubImage",
+              "Path": "CJ1_xianzhou.png",
+              "Plist": "room/gameScene_1.plist"
+            },
+            "BlendFunc": {
+              "Src": 1,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 351.0006,
+              "Y": 631.32
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.1828,
+              "Y": 0.5846
+            },
+            "PreSize": {
+              "X": 0.0198,
+              "Y": 0.063
+            },
+            "LeftMargin": 332.0006,
+            "RightMargin": 1549.9994,
+            "TopMargin": 414.68,
+            "BottomMargin": 597.32,
+            "Tag": 94,
+            "ActionTag": 108760657,
+            "Size": {
+              "X": 38.0,
+              "Y": 68.0
+            },
+            "Name": "CJ1_xianzhou_92",
+            "ctype": "SpriteObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "PlistSubImage",
+              "Path": "CJ1_ZD002.png",
+              "Plist": "room/gameScene_1zhedang.plist"
+            },
+            "BlendFunc": {
+              "Src": 1,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 1215.1561,
+              "Y": 458.8044
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.6329,
+              "Y": 0.4248
+            },
+            "PreSize": {
+              "X": 0.025,
+              "Y": 0.1019
+            },
+            "LeftMargin": 1191.1561,
+            "RightMargin": 680.8439,
+            "TopMargin": 566.1956,
+            "BottomMargin": 403.8044,
+            "Tag": 96,
+            "ActionTag": 647426313,
+            "Size": {
+              "X": 48.0,
+              "Y": 110.0
+            },
+            "Name": "CJ1_ZD002_94",
+            "ctype": "SpriteObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "PlistSubImage",
+              "Path": "CJ1_ZD004.png",
+              "Plist": "room/gameScene_1zhedang.plist"
+            },
+            "BlendFunc": {
+              "Src": 1,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": -13.9999,
+              "Y": 835.0002
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": -0.0073,
+              "Y": 0.7731
+            },
+            "PreSize": {
+              "X": 0.0693,
+              "Y": 0.0731
+            },
+            "LeftMargin": -80.4999,
+            "RightMargin": 1867.4999,
+            "TopMargin": 205.4998,
+            "BottomMargin": 795.5002,
+            "Tag": 97,
+            "ActionTag": 368557867,
+            "Size": {
+              "X": 133.0,
+              "Y": 79.0
+            },
+            "Name": "CJ1_ZD004_95",
+            "ctype": "SpriteObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "room/chuanglian.json",
+              "Plist": ""
+            },
+            "StretchWidthEnable": false,
+            "StretchHeightEnable": false,
+            "InnerActionSpeed": 1.0,
+            "AnchorPoint": {},
+            "Position": {
+              "X": -26.59,
+              "Y": 578.7354
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": true,
+            "PrePosition": {
+              "X": -0.0138,
+              "Y": 0.5359
+            },
+            "PreSize": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "LeftMargin": -26.59,
+            "RightMargin": 1946.59,
+            "TopMargin": 501.2646,
+            "BottomMargin": 578.7354,
+            "Tag": 103,
+            "ActionTag": -150956378,
+            "Size": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "Name": "chuanglian",
+            "ctype": "ProjectNodeObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "room/CJ1_lianzi1.png",
+              "Plist": ""
+            },
+            "BlendFunc": {
+              "Src": 1,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": -107.6794,
+              "Y": 583.5147
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": -0.0561,
+              "Y": 0.5403
+            },
+            "PreSize": {
+              "X": 0.0729,
+              "Y": 0.9315
+            },
+            "LeftMargin": -177.6794,
+            "RightMargin": 1957.6794,
+            "TopMargin": -6.5146,
+            "BottomMargin": 80.5147,
+            "Tag": 104,
+            "ActionTag": 1830621030,
+            "Size": {
+              "X": 140.0,
+              "Y": 1006.0
+            },
+            "Name": "CJ1_lianzi1_5",
+            "ctype": "SpriteObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "PlistSubImage",
+              "Path": "CJ1_tangyi.png",
+              "Plist": "room/gameScene_1zhedang.plist"
+            },
+            "BlendFunc": {
+              "Src": 1,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": -130.0005,
+              "Y": 227.2049
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": -0.0677,
+              "Y": 0.2104
+            },
+            "PreSize": {
+              "X": 0.1891,
+              "Y": 0.3519
+            },
+            "LeftMargin": -311.5005,
+            "RightMargin": 1868.5005,
+            "TopMargin": 662.7951,
+            "BottomMargin": 37.2049,
+            "ActionTag": 1092561981,
+            "Size": {
+              "X": 363.0,
+              "Y": 380.0
+            },
+            "Name": "CJ1_tangyi_77",
+            "ctype": "SpriteObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "PlistSubImage",
+              "Path": "CJ1_ZD001.png",
+              "Plist": "room/gameScene_1zhedang.plist"
+            },
+            "BlendFunc": {
+              "Src": 1,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 935.7944,
+              "Y": 817.9213
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.4874,
+              "Y": 0.7573
+            },
+            "PreSize": {
+              "X": 0.05,
+              "Y": 0.1056
+            },
+            "LeftMargin": 887.7944,
+            "RightMargin": 936.2056,
+            "TopMargin": 205.0787,
+            "BottomMargin": 760.9213,
+            "Tag": 63,
+            "ActionTag": 269059734,
+            "Size": {
+              "X": 96.0,
+              "Y": 114.0
+            },
+            "Name": "CJ1_ZD001_1",
+            "ctype": "SpriteObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "PlistSubImage",
+              "Path": "CJ1_ZD005.png",
+              "Plist": "room/gameScene_1zhedang.plist"
+            },
+            "BlendFunc": {
+              "Src": 1,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": -1064.382,
+              "Y": 195.3289
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": -0.5544,
+              "Y": 0.1809
+            },
+            "PreSize": {
+              "X": 0.0969,
+              "Y": 0.3083
+            },
+            "LeftMargin": -1157.382,
+            "RightMargin": 2891.3818,
+            "TopMargin": 718.1711,
+            "BottomMargin": 28.8289,
+            "Tag": 65,
+            "ActionTag": -458910768,
+            "Size": {
+              "X": 186.0,
+              "Y": 333.0
+            },
+            "Name": "CJ1_ZD005_3",
+            "ctype": "SpriteObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "PlistSubImage",
+              "Path": "CJ1_wurenji.png",
+              "Plist": "room/gameScene_1.plist"
+            },
+            "BlendFunc": {
+              "Src": 1,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 1600.0343,
+              "Y": 685.2045
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.8334,
+              "Y": 0.6344
+            },
+            "PreSize": {
+              "X": 0.1771,
+              "Y": 0.2491
+            },
+            "LeftMargin": 1430.0343,
+            "RightMargin": 149.9657,
+            "TopMargin": 260.2955,
+            "BottomMargin": 550.7045,
+            "ActionTag": -2112650480,
+            "Size": {
+              "X": 340.0,
+              "Y": 269.0
+            },
+            "Name": "CJ1_wurenji_18",
+            "ctype": "SpriteObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "PlistSubImage",
+              "Path": "CJ1_ZD007.png",
+              "Plist": "room/gameScene_1zhedang.plist"
+            },
+            "BlendFunc": {
+              "Src": 1,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 1662.4283,
+              "Y": 636.3719
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.8658,
+              "Y": 0.5892
+            },
+            "PreSize": {
+              "X": 0.2651,
+              "Y": 0.8222
+            },
+            "LeftMargin": 1407.9283,
+            "RightMargin": 3.0717,
+            "TopMargin": -0.3718,
+            "BottomMargin": 192.3719,
+            "ActionTag": 1389185533,
+            "Size": {
+              "X": 509.0,
+              "Y": 888.0
+            },
+            "Name": "CJ1_ZD007_19",
+            "ctype": "SpriteObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "PlistSubImage",
+              "Path": "CJ1_guang.png",
+              "Plist": "room/gameScene_1.plist"
+            },
+            "BlendFunc": {
+              "Src": 1,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 116.0688,
+              "Y": 893.8785
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.0605,
+              "Y": 0.8277
+            },
+            "PreSize": {
+              "X": 0.0844,
+              "Y": 0.1648
+            },
+            "LeftMargin": 35.0688,
+            "RightMargin": 1722.9312,
+            "TopMargin": 97.1215,
+            "BottomMargin": 804.8785,
+            "ActionTag": 334917499,
+            "Size": {
+              "X": 162.0,
+              "Y": 178.0
+            },
+            "Name": "CJ1_guang_1",
+            "ctype": "SpriteObjectData"
+          },
+          {
+            "ClipAble": false,
+            "BackColorAlpha": 102,
+            "SingleColor": {
+              "R": 150,
+              "G": 200
+            },
+            "FirstColor": {
+              "R": 150,
+              "G": 200
+            },
+            "EndColor": {},
+            "ColorVector": {
+              "ScaleY": 1.0
+            },
+            "Scale9Width": 1,
+            "Scale9Height": 1,
+            "TouchEnable": true,
+            "AnchorPoint": {},
+            "Position": {
+              "X": 409.9003,
+              "Y": 661.7074
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.2135,
+              "Y": 0.6127
+            },
+            "PreSize": {
+              "X": 0.1667,
+              "Y": 0.0926
+            },
+            "LeftMargin": 409.9003,
+            "RightMargin": 1190.0997,
+            "TopMargin": 318.2926,
+            "BottomMargin": 661.7074,
+            "Tag": 101,
+            "ActionTag": 202026262,
+            "Size": {
+              "X": 320.0,
+              "Y": 100.0
+            },
+            "Name": "chouti",
+            "ctype": "PanelObjectData"
+          }
+        ],
+        "Size": {
+          "X": 1920.0,
+          "Y": 1080.0
+        },
+        "Name": "Scene",
+        "ctype": "SingleNodeObjectData"
+      },
+      "UsedResources": [
+        "chuanglian.json",
+        "CJ1_lianzi1.png",
+        "gameScene_1.plist",
+        "gameScene_1.png",
+        "gameScene_1_01.jpg",
+        "gameScene_1_02.jpg",
+        "gameScene_1_03.jpg",
+        "gameScene_1_04.jpg",
+        "gameScene_1zhedang.plist",
+        "gameScene_1zhedang.png"
+      ],
+      "ctype": "GameFileData"
+    }
+  },
+  "Type": "Scene"
+}

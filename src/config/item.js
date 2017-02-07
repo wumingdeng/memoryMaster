@@ -36,29 +36,21 @@ ITEM_CONFIG = {
 ITEM_CONFIG.data = {
     //s1寝宫
     "i101": {
-        name: "左侧的杜鹃",
+        name: "抽屉",
         state:{
             "0":{
-                autoAction:true,
                 visible: true,     //初始的显示状态
-                behavior: ITEM_BEHAVIOR.autoAction,  //初始行为
+                behavior: ITEM_BEHAVIOR.goto,  //初始行为
+                goto:2
             },
             "1":{
                 visible:false   //杜鹃动画播完就可以隐藏了
-            },
-            "2":{
-                visible:true,   //左侧的杜鹃出现
-                talk:2,
-                behavior:ITEM_BEHAVIOR.talk
-            },
-            "3":{
-                visible:false   //隐藏左侧杜鹃
             }
         }
     },
 
     "i102": {
-        name: "右侧的杜鹃",
+        name: "窗帘",
         state:{
             "0":{
                 visible: false     //初始的显示状态
@@ -85,145 +77,212 @@ ITEM_CONFIG.data = {
         }
     },
     "i103": {
-        name: "燃烧的蜡烛",
+        name: "窗帘",
         state:{
             "0":{
-                hint: 1,           //对应的提示文本
-                action:true,
                 visible: true,     //初始的显示状态
-                behavior: ITEM_BEHAVIOR.hint,  //初始行为
-            },
-            "1":{
                 behavior:ITEM_BEHAVIOR.action   //蜡烛变成点击可熄灭
             },
-            "2":{
-                visible:false   //燃烧的蜡烛消失
-            },
-            "3":{    //蜡烛点亮并且无提示
-                visible:true,
-                behavior:ITEM_BEHAVIOR.none
+            "1":{
+                visible:false
             }
         }
     },
     "i104":{
-        name:"熄灭的蜡烛",
+        name:"拉开的窗帘",
         state:{
             "0":{
                 visible:false,
             },
             "1":{
                 visible:true, //熄灭的蜡烛变成可见
-                wait:108,
-                behavior:ITEM_BEHAVIOR.wait
-            },
-            "2":{
-                visible:false   //隐藏蜡烛熄灭的图片
+                behavior:ITEM_BEHAVIOR.none
             }
         }
     },
-    "i105":{
-        name:"化妆盒",
-        state:{
-            "0":{
-                hint:2,
-                visible:true,
-                behavior:ITEM_BEHAVIOR.hint,
-            },
-            "1":{
-                goto:2,
-                behavior:ITEM_BEHAVIOR.goto   //这时再点击化妆盒会打开桌面的小场景
-            },
-            "2":{
-                behavior:ITEM_BEHAVIOR.none     //完成桌面场景的所有交互 这时场景自动关闭 点击寝宫的化妆盒也不在打开这个场景
-            }
-        }
-    },
-    "i106":{
-        name:"窗户",
-        state:{
-            "0":{
-                hint:3,
-                visible:true,
-                behavior:ITEM_BEHAVIOR.hint,
-            },
-            "1":{
-                goto:3,     //窗户变成可以通往掖庭
-                behavior: ITEM_BEHAVIOR.goto
-            },
-            "2":{
-                goto:[3,5]      //拿到钥匙后从窗户可以通往花园~
-            }
-        }
-    },
-    "i107":{
-        name:"眉笔",
-        state:{
-            "0":{
-                global:2,   //全局物品2
-                visible:true,
-                behavior:ITEM_BEHAVIOR.global,
-            },
-            "1":{
-                visible:false
-            }
-        }
-    },
-    "i108":{
-        name:"火种",
-        state:{
-            "0":{
-                move:104,   //组合熄灭的蜡烛
-                visible:true,
-                behavior:ITEM_BEHAVIOR.move,
-            },
-            "1":{
-                visible:false
-            }
-        }
-    },
-    //s2桌面
+    //s2抽屉
     "i201":{
-        name:"桌上的化妆盒",
+        name:"娃娃",
         state:{
             "0":{
-                hint:4,
                 visible:true,
-                behavior:ITEM_BEHAVIOR.hint,
+                behavior:ITEM_BEHAVIOR.action,
             },
             "1":{
-                action:true,    //化妆盒有个打开的帧动画
-                behavior:ITEM_BEHAVIOR.action       //化妆盒变成可以打开
-            },
-            "2":{
-                visible:false   //关闭的化妆盒消失
-            },
+                visible:false   //燃烧的蜡烛消失
+            }
         }
     },
-    "i202":{
-        name:"桌上的钥匙",   //钥匙是可收集的全局物品 开始时不可见
+    "i211":{
+        name:"拨开的娃娃",   //钥匙是可收集的全局物品 开始时不可见
         state:{
             "0":{
                 visible:false,
             },
             "1":{
-                behavior:ITEM_BEHAVIOR.global,
-                global:3,
-                visible:true    //钥匙出现
+                visible:true, //熄灭的蜡烛变成可见
+                behavior:ITEM_BEHAVIOR.none
+            }
+        }
+    },
+    "i202":{
+        name:"小狗",
+        state:{
+            "0":{
+                visible:true,
+                behavior:ITEM_BEHAVIOR.action,
             },
-            "2":{
+            "1":{
+                visible:false   //燃烧的蜡烛消失
+            }
+        }
+    },
+    "i212":{
+        name:"拨开的小狗",   //钥匙是可收集的全局物品 开始时不可见
+        state:{
+            "0":{
                 visible:false
+            },
+            "1":{
+                visible:true, //熄灭的蜡烛变成可见
+                behavior:ITEM_BEHAVIOR.none
             }
         }
     },
     "i203":{
-        name:"打开的化妆盒",
+        name:"鼠标",
+        state:{
+            "0":{
+                visible:true,
+                behavior:ITEM_BEHAVIOR.action,
+            },
+            "1":{
+                visible:false   //燃烧的蜡烛消失
+            }
+        }
+    },
+    "i213":{
+        name:"拨开的鼠标",   //钥匙是可收集的全局物品 开始时不可见
         state:{
             "0":{
                 visible:false,
-                behavior:ITEM_BEHAVIOR.none,     //这东西没有交互行为
             },
             "1":{
-                visible:true    //出现打开的化妆盒
+                visible:true, //熄灭的蜡烛变成可见
+                behavior:ITEM_BEHAVIOR.none
+            }
+        }
+    },
+    "i204":{
+        name:"钉书机",
+        state:{
+            "0":{
+                visible:true,
+                behavior:ITEM_BEHAVIOR.action,
+            },
+            "1":{
+                visible:false   //燃烧的蜡烛消失
+            }
+        }
+    },
+    "i214":{
+        name:"拨开的钉书机",
+        state:{
+            "0":{
+                visible:false,
+            },
+            "1":{
+                visible:true,
+                behavior:ITEM_BEHAVIOR.none
+            }
+        }
+    },
+    "i205":{
+        name:"本子",
+        state:{
+            "0":{
+                visible:true,
+                behavior:ITEM_BEHAVIOR.action
+            },
+            "1":{
+                visible:false
+            }
+        }
+    },
+    "i215":{
+        name:"拨开的本子",
+        state:{
+            "0":{
+                visible:false
+            },
+            "1":{
+                visible:true,
+                behavior:ITEM_BEHAVIOR.none
+            }
+        }
+    },
+    "i206":{
+        name:"纸",
+        state:{
+            "0":{
+                visible:true,
+                behavior:ITEM_BEHAVIOR.action
+            },
+            "1":{
+                visible:false
+            }
+        }
+    },
+    "i216":{
+        name:"拨开的纸",
+        state:{
+            "0":{
+                visible:false
+            },
+            "1":{
+                visible:true,
+                behavior:ITEM_BEHAVIOR.none
+            }
+        }
+    },
+    "i207":{
+        name:"纸2",
+        state:{
+            "0":{
+                visible:true,
+                behavior:ITEM_BEHAVIOR.action
+            },
+            "1":{
+                visible:false
+            }
+        }
+    },
+    "i217":{
+        name:"拨开的纸2",
+        state:{
+            "0":{
+                visible:false
+            },
+            "1":{
+                visible:true,
+                behavior:ITEM_BEHAVIOR.none
+            }
+        }
+    },
+    "i208":{
+        name:"手机",
+        state:{
+            "0":{
+                visible:true,
+                behavior:ITEM_BEHAVIOR.none
+            },
+            "1":{
+                global:1,   //全局物品1
+                visible:true,
+                behavior:ITEM_BEHAVIOR.global
+            },
+            "2":{
+                visible:false
             }
         }
     },

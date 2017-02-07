@@ -7,10 +7,12 @@ var fullScene = sceneBase.extend({
     _arrow:null,    //场景切换箭头
     ctor:function(id,info){
         this._super(id,info);
-        //cc.director.getRunningScene().addChild(this)
-        //cc.director.runScene(this);
-        this.changeScene();
-        this.initFullScene();
+        // this.changeScene();
+        var gRes = scene_resources["s"+id]
+        cc.LoaderScene.preload(gRes, function () {
+            this.initFullScene();
+            this.changeScene()
+        }, this);
     },
     initFullScene:function(){
 
@@ -30,6 +32,11 @@ var fullScene = sceneBase.extend({
         //添加底层工具栏
         GAME_BAR = new gameBar();
         cc.director.getRunningScene().addChild(GAME_BAR,1000);
+        function onView() {
+            cfun.removeFullScreen("view");
+        }
+        //cfun.addFullScreen("view");
+        //sfun.viewScene(this,onView);
     },
 
     onTouchEnded:function(touch,event){

@@ -51,6 +51,8 @@
  }
  *
  */
+var isFirst = true//是否第一次加载,是的话加载公共的资源
+
 cc.game.onStart = function(){
     if(!cc.sys.isNative && document.getElementById("cocosLoading")) //If referenced loading.js, please remove it
         document.body.removeChild(document.getElementById("cocosLoading"));
@@ -60,23 +62,21 @@ cc.game.onStart = function(){
     // Adjust viewport meta
     cc.view.adjustViewPort(true);
     // Setup the resolution policy and design resolution size
-    cc.view.setDesignResolutionSize(1136, 640, cc.ResolutionPolicy.FIXED_HEIGHT);
+    cc.view.setDesignResolutionSize(1920, 1080, cc.ResolutionPolicy.SHOW_ALL);
     // Instead of set design resolution, you can also set the real pixel resolution size
     // Uncomment the following line and delete the previous line.
     // cc.view.setRealPixelResolution(960, 640, cc.ResolutionPolicy.SHOW_ALL);
     // The game will be resized when browser size change
     cc.view.resizeWithBrowserSize(true);
+
+    vsize = cc.director.getVisibleSize();
     //load resources
-    //cc.LoaderScene.preload(g_jigsawGame, function () {
-    cc.LoaderScene.preload(scene_resources, function () { 
-        //var targetScene = searchScene.scene(0,1,1001,1,false)
-        //var targetScene = new findTargetScene()
-        //var targetScene = new jigsawScene()
-        //var targetScene = new sortMapScene()
-        //var targetScene = new findSomethingScene(1002,1)
-        var targetScene = new loginScene()
-        //var targetScene = new HelloWorldScene()
-        cc.director.runScene(targetScene);
+
+
+    cc.LoaderScene.preload(g_resources, function () {
+         cc.director.runScene(new loginScene());
     }, this);
+    //读取玩家数据 根据玩家的记录选择进入的场景
+
 };
 cc.game.run();

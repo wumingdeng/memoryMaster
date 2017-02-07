@@ -973,7 +973,7 @@
         "ctype": "SingleNodeObjectData"
       },
       "UsedResources": [
-        "../../background/ClueUI_bg.jpg",
+        "../../background/SceneUI_bg.jpg",
         "../../background/shoupa.png",
         "../../font/customFont.ttf",
         "gameScene7_1.plist",

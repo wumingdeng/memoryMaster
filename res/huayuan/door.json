@@ -1,6 +1,6 @@
 {
   "ID": "ecf6cff7-4f2d-4178-9a79-ec77dcb47888",
-  "Version": "2.3.4",
+  "Version": "3.10.0.0",
   "Name": "door",
   "Content": {
     "Content": {
@@ -10,22 +10,13 @@
         "ActivedAnimationName": "doAction",
         "Timelines": [
           {
-            "ActionTag": 1867307355,
+            "ActionTag": 142332651,
             "Property": "Position",
             "Frames": [
               {
-                "X": 0.0,
-                "Y": 0.0,
+                "X": 106.0,
+                "Y": 150.0833,
                 "FrameIndex": 0,
-                "EasingData": {
-                  "Type": 0
-                },
-                "ctype": "PointFrameData"
-              },
-              {
-                "X": 0.0,
-                "Y": 0.0,
-                "FrameIndex": 60,
                 "EasingData": {
                   "Type": 0
                 },
@@ -35,7 +26,23 @@
             "ctype": "TimelineData"
           },
           {
-            "ActionTag": 1867307355,
+            "ActionTag": -1195709193,
+            "Property": "Position",
+            "Frames": [
+              {
+                "X": -101.0,
+                "Y": -149.9167,
+                "FrameIndex": 0,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "PointFrameData"
+              }
+            ],
+            "ctype": "TimelineData"
+          },
+          {
+            "ActionTag": -1195709193,
             "Property": "Scale",
             "Frames": [
               {
@@ -48,8 +55,17 @@
                 "ctype": "ScaleValueFrameData"
               },
               {
-                "X": 1.0,
-                "Y": 1.0,
+                "X": 0.615,
+                "Y": 0.615,
+                "FrameIndex": 30,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "ScaleValueFrameData"
+              },
+              {
+                "X": 1.005,
+                "Y": 1.005,
                 "FrameIndex": 60,
                 "EasingData": {
                   "Type": 0
@@ -60,7 +76,7 @@
             "ctype": "TimelineData"
           },
           {
-            "ActionTag": 1867307355,
+            "ActionTag": -1195709193,
             "Property": "RotationSkew",
             "Frames": [
               {
@@ -71,63 +87,6 @@
                   "Type": 0
                 },
                 "ctype": "ScaleValueFrameData"
-              },
-              {
-                "X": 0.0,
-                "Y": 0.0,
-                "FrameIndex": 60,
-                "EasingData": {
-                  "Type": 0
-                },
-                "ctype": "ScaleValueFrameData"
-              }
-            ],
-            "ctype": "TimelineData"
-          },
-          {
-            "ActionTag": 1867307355,
-            "Property": "FileData",
-            "Frames": [
-              {
-                "TextureFile": {
-                  "Type": "Normal",
-                  "Path": "huayuan/images_3/huayuan_men.png",
-                  "Plist": ""
-                },
-                "FrameIndex": 0,
-                "Tween": false,
-                "ctype": "TextureFrameData"
-              },
-              {
-                "TextureFile": {
-                  "Type": "Normal",
-                  "Path": "huayuan/images_3/huayuan_men2.png",
-                  "Plist": ""
-                },
-                "FrameIndex": 60,
-                "Tween": false,
-                "ctype": "TextureFrameData"
-              }
-            ],
-            "ctype": "TimelineData"
-          },
-          {
-            "ActionTag": 1867307355,
-            "Property": "BlendFunc",
-            "Frames": [
-              {
-                "Src": 1,
-                "Dst": 771,
-                "FrameIndex": 0,
-                "Tween": false,
-                "ctype": "BlendFuncFrameData"
-              },
-              {
-                "Src": 1,
-                "Dst": 771,
-                "FrameIndex": 60,
-                "Tween": false,
-                "ctype": "BlendFuncFrameData"
               }
             ],
             "ctype": "TimelineData"
@@ -141,38 +100,6 @@
                 "FrameIndex": 60,
                 "Tween": false,
                 "ctype": "EventFrameData"
-              }
-            ],
-            "ctype": "TimelineData"
-          },
-          {
-            "ActionTag": -777450367,
-            "Property": "Position",
-            "Frames": [
-              {
-                "X": -58.7413,
-                "Y": -91.5715,
-                "FrameIndex": 0,
-                "EasingData": {
-                  "Type": 0
-                },
-                "ctype": "PointFrameData"
-              }
-            ],
-            "ctype": "TimelineData"
-          },
-          {
-            "ActionTag": -777450367,
-            "Property": "Scale",
-            "Frames": [
-              {
-                "X": 0.5937,
-                "Y": 0.5937,
-                "FrameIndex": 0,
-                "EasingData": {
-                  "Type": 0
-                },
-                "ctype": "ScaleValueFrameData"
               }
             ],
             "ctype": "TimelineData"
@@ -192,22 +119,25 @@
         "Tag": 24,
         "Children": [
           {
-            "FileData": {
-              "Type": "Normal",
-              "Path": "huayuan/images_3/huayuan_men.png",
-              "Plist": ""
+            "ClipAble": false,
+            "BackColorAlpha": 102,
+            "ComboBoxIndex": 1,
+            "SingleColor": {},
+            "FirstColor": {
+              "R": 150,
+              "G": 200
             },
-            "BlendFunc": {
-              "Src": 1,
-              "Dst": 771
+            "EndColor": {},
+            "ColorVector": {
+              "ScaleY": 1.0
             },
-            "AnchorPoint": {
-              "ScaleX": 0.5,
-              "ScaleY": 0.5
-            },
+            "Scale9Width": 1,
+            "Scale9Height": 1,
+            "TouchEnable": true,
+            "AnchorPoint": {},
             "Position": {
-              "X": 0.0,
-              "Y": 0.0
+              "X": -101.0,
+              "Y": -149.9167
             },
             "Scale": {
               "ScaleX": 1.0,
@@ -223,18 +153,69 @@
               "X": 0.0,
               "Y": 0.0
             },
-            "LeftMargin": -63.0,
-            "RightMargin": -63.0,
-            "TopMargin": -80.5,
-            "BottomMargin": -80.5,
+            "LeftMargin": -101.0,
+            "RightMargin": -99.0,
+            "TopMargin": -150.0833,
+            "BottomMargin": -149.9167,
             "Tag": 25,
-            "ActionTag": 1867307355,
+            "Children": [
+              {
+                "FontSize": 20,
+                "LabelText": "关闭的门",
+                "OutlineColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "ShadowColor": {
+                  "R": 110,
+                  "G": 110,
+                  "B": 110
+                },
+                "ShadowOffsetX": 2.0,
+                "ShadowOffsetY": -2.0,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 106.0,
+                  "Y": 150.0833
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.53,
+                  "Y": 0.5003
+                },
+                "PreSize": {
+                  "X": 0.4,
+                  "Y": 0.0767
+                },
+                "LeftMargin": 66.0,
+                "RightMargin": 54.0,
+                "TopMargin": 138.4167,
+                "BottomMargin": 138.5833,
+                "Tag": 26,
+                "ActionTag": 142332651,
+                "Size": {
+                  "X": 80.0,
+                  "Y": 23.0
+                },
+                "Name": "Text_1",
+                "ctype": "TextObjectData"
+              }
+            ],
+            "ActionTag": -1195709193,
             "Size": {
-              "X": 126.0,
-              "Y": 161.0
+              "X": 200.0,
+              "Y": 300.0
             },
-            "Name": "huayuan_men_2",
-            "ctype": "SpriteObjectData"
+            "Name": "Panel_1",
+            "ctype": "PanelObjectData"
           },
           {
             "AnchorPoint": {},
@@ -289,12 +270,12 @@
             "TouchEnable": true,
             "AnchorPoint": {},
             "Position": {
-              "X": -58.7413,
-              "Y": -91.5715
+              "X": -101.0,
+              "Y": -149.0
             },
             "Scale": {
-              "ScaleX": 0.5937,
-              "ScaleY": 0.5937
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
             },
             "CColor": {},
             "IconVisible": false,
@@ -306,10 +287,10 @@
               "X": 0.0,
               "Y": 0.0
             },
-            "LeftMargin": -58.7413,
-            "RightMargin": -141.2587,
-            "TopMargin": -208.4285,
-            "BottomMargin": -91.5715,
+            "LeftMargin": -101.0,
+            "RightMargin": -99.0,
+            "TopMargin": -151.0,
+            "BottomMargin": -149.0,
             "Tag": 33,
             "ActionTag": -777450367,
             "Size": {
@@ -327,10 +308,7 @@
         "Name": "Node",
         "ctype": "SingleNodeObjectData"
       },
-      "UsedResources": [
-        "images_3/huayuan_men.png",
-        "images_3/huayuan_men2.png"
-      ],
+      "UsedResources": [],
       "ctype": "GameFileData"
     }
   },

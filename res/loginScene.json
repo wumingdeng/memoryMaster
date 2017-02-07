@@ -55,12 +55,12 @@
             "ShadowOffsetY": -2.0,
             "TouchEnable": true,
             "AnchorPoint": {
-              "ScaleX": 0.5,
-              "ScaleY": 0.5
+              "ScaleX": 0.4764,
+              "ScaleY": 0.4849
             },
             "Position": {
-              "X": 562.0,
-              "Y": 334.0
+              "X": 981.0115,
+              "Y": 519.6414
             },
             "Scale": {
               "ScaleX": 1.0,
@@ -69,17 +69,17 @@
             "CColor": {},
             "IconVisible": false,
             "PrePosition": {
-              "X": 0.4947,
-              "Y": 0.5219
+              "X": 0.5109,
+              "Y": 0.4811
             },
             "PreSize": {
-              "X": 0.0704,
-              "Y": 0.0562
+              "X": 0.0417,
+              "Y": 0.0333
             },
-            "LeftMargin": 522.0,
-            "RightMargin": 534.0,
-            "TopMargin": 288.0,
-            "BottomMargin": 316.0,
+            "LeftMargin": 942.8961,
+            "RightMargin": 897.1039,
+            "TopMargin": 541.8137,
+            "BottomMargin": 502.1863,
             "Tag": 10,
             "ActionTag": -418723375,
             "Size": {
@@ -91,8 +91,8 @@
           }
         ],
         "Size": {
-          "X": 1136.0,
-          "Y": 640.0
+          "X": 1920.0,
+          "Y": 1080.0
         },
         "Name": "Scene",
         "ctype": "SingleNodeObjectData"

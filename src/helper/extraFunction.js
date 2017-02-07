@@ -66,3 +66,20 @@ sptExt.createSprite = function(name,plist) {
         return null
     }
 }
+
+var extfun = {}
+extfun.seekWidgetByName = function (root, name) {
+    if (!root)
+        return null;
+    if (root.getName() === name)
+        return root;
+    var arrayRootChildren = root.getChildren();
+    var length = arrayRootChildren.length;
+    for (var i = 0; i < length; i++) {
+        var child = arrayRootChildren[i];
+        var res = extfun.seekWidgetByName(child, name);
+        if (res !== null)
+            return res;
+    }
+    return null;
+}

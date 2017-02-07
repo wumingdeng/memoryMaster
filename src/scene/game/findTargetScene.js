@@ -30,7 +30,7 @@ var findTargetLayer = cc.Layer.extend({
         //TODO
         var targetTag = 1
         //添加背景
-        var clueBg = extraFunc.createSprite(res.clue_bg)
+        var clueBg = sptExt.createSprite(res.clue_bg)
         clueBg.setPosition(vsize.width / 2, vsize.height / 2)
         this.addChild(clueBg)
 
@@ -72,7 +72,7 @@ var findTargetLayer = cc.Layer.extend({
         var sender = event.getCurrentTarget()
         var p = sender.getParent().convertTouchToNodeSpace(touch)
         if (cc.rectContainsPoint(sender.getBoundingBox(), p)) {
-            if (!extraFunc.getOriginalAlphaPoint(sender, p)) {   //点击处是不透明的
+            if (!cfun.getOriginalAlphaPoint(sender, p)) {   //点击处是不透明的
                 //触摸点和拖动物体中心点的位置差
                 this._beginPoint = cc.pSub(cc.p(sender.x, sender.y), touch.getLocation())    //开始点 用动态属性保证同时移动多个物品时不互相干扰
                 if (sender.getLocalZOrder() < this._pieceCount) {

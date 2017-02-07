@@ -11,75 +11,46 @@
     "modules" : ["cocos2d", "extensions","external"],
 
     "jsList" : [
-        "src/customFunction.js",
-        "src/gameFunctions.js",
-        "src/globalConst.js",
-        "src/SysMenu.js",
-        "src/Utils.js",
-        "src/globalVar.js",
         "src/resource.js",
-        "src/app.js",
-                
-        "src/helper/loadResourceHelper.js",
-        "src/helper/audioHelper.js",
+
+        "src/helper/customFunction.js",
+        "src/helper/extraFunction.js",
+        "src/helper/globalConst.js",
+        "src/helper/globalVariable.js",
+        "src/helper/sceneFunction.js",
         "src/helper/timerHelper.js",
-        "src/helper/taskTraceHelper.js",
-        "src/helper/ActionHelper.js",
-        "src/helper/shaderHelper.js",
-        "src/helper/alertHelper.js",
 
-        "src/until/extraFunc.js",
-        "src/until/crypto.js",
-        "src/until/cryptoExtra.js",
-
-        "src/staticdata/item.js",
-        "src/staticdata/task.js",
-        "src/staticdata/textSimplifiedStyle.js",
-        "src/staticdata/scene.js",
-        "src/staticdata/scene_1.js",
-        "src/staticdata/adjacent.js",
-        "src/staticdata/game.js",
-        "src/staticdata/globalitem.js",
-        "src/staticdata/hint.js",
-        "src/staticdata/talk.js",
+        "src/config/item.js",
+        "src/config/task.js",
+        "src/config/scene.js",
+        "src/config/game.js",
+        "src/config/globalItem.js",
+        "src/config/hint.js",
+        "src/config/talk.js",
 
         "src/scene/sceneBase.js",
-        "src/scene/loadingProgressScene.js",
-        "src/scene/loginScene.js",
         "src/scene/embedScene.js",
         "src/scene/fullScene.js",
         "src/scene/selectScene.js",
         "src/scene/sceneManager.js",
+        "src/scene/gameScene.js",
 
-        "src/gameview/scratchScene.js",
-        "src/gameview/gameTopLayer.js",
-        "src/gameview/searchBottomLayer.js",
-        "src/gameview/searchItemLayer.js",
-        "src/gameview/searchScene.js",
-        "src/gameview/PauseLayer.js",
-        "src/gameview/Tip.js",
-        "src/gameview/clueView/findSomethingScene.js",
-        "src/gameview/clueView/sortMapScene.js",
-        "src/gameview/clueView/jigsawScene.js",
-        "src/gameview/clueView/findTargetScene.js",
+        "src/scene/game/jigsawGame.js",
+        "src/scene/game/findSomethingScene.js",
+        "src/scene/game/phone.js",
+      
+        "src/gameTool/gameBar.js",
+        "src/gameTool/hintFunc.js",
 
         "src/playerStateManger.js",
         "src/login/loginScene.js",
-        "src/gameTool/gameBar.js",
 
         "src/Object/globalObject.js",
         "src/Object/ItemBase.js",
         "src/Object/itemManager.js",
-        "src/Object/items/item102.js",
+        "src/Object/items/item208.js",
         "src/task/taskManager.js",
         "src/hint/hintLayer.js",
-        "src/dialogue/dialogueLayer.js",
-
-        "src/network/httpRequest.js",
-                
-        "src/config/GameConfig.js",
-        "src/config/item/item1.js"
-
-
-    ]
+        "src/dialogue/dialogueLayer.js"
+                ]
 }
