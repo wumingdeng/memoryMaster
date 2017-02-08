@@ -4,3 +4,4 @@ frameworks/runtime-src/
 publish/
 .idea/
 *.DS_Store
+frameworks/cocos2d-html5/
