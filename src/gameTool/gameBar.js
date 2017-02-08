@@ -138,8 +138,6 @@ var gameBar = cc.Layer.extend({
         for (;delIndex < this._items.length; ++delIndex){
             this._items[delIndex].x -= 100;
         }
-
-
     },
 
     //打开设置
@@ -154,7 +152,13 @@ var gameBar = cc.Layer.extend({
 
     //手机界面
     onOpenPhone:function(){
-        sceneManager.createScene(7);
+        if(sceneManager.game){
+            cc.director.getRunningScene().removeChild(sceneManager.game)
+            sceneManager.game=null
+        }else{
+            sceneManager.createScene(7);
+        }
+
     },
 
     hide:function(){

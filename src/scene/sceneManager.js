@@ -3,7 +3,8 @@
  */
 
 var sceneManager = {
-    scene:null  //记录当前的主场景
+    scene:null,  //记录当前的主场景
+    game:null
 };
 
 
@@ -27,7 +28,7 @@ sceneManager.createScene = function(sid,loc){
                 new embedScene(sid,info,loc);   //嵌入场景需要点击位置
                 break;
             case SCENE_Type.game:
-                new gameScene(sid,info);
+                this.game = new gameScene(sid,info);
                 //taskManager.completeTask(4001); //先直接完成游戏
                 //PLAYER_STATE.scene = 3;   //强行回到掖庭
                 break;

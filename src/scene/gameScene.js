@@ -4,21 +4,22 @@
  */
 
 var gameScene = sceneBase.extend({
-
+    _currentGame:null,
     ctor:function(id,info){
         this._super(id,info);
-        var gRes = scene_resources["s"+id]
-        cc.LoaderScene.preload(gRes, function () {
+        // if()
+        // var gRes = scene_resources["s"+id]
+        // cc.LoaderScene.preload(gRes, function () {
             this.initGame()
             this.changeScene()
-        }, this);
+        // }, this);
     },
 
     //根据配置选择游戏
     initGame:function(){
         var gameId = this._info.gameId;
         var gameType = GAME_CONFIG["g" + gameId].type
-        this.embedTyp = GAME_CONFIG["g" + gameId].et || 1
+        this.embedTyp = this._info.et || 1
         var game
         switch(gameType) {
             case GAME_TYPE.puzzle:
@@ -42,7 +43,11 @@ var gameScene = sceneBase.extend({
             newScene.addChild(this);
             cc.director.runScene(newScene);
         }else{
-            
+            // var newScene = new cc.Scene();
+            // newScene.addChild(this);
+            this._currentGame = this
+            cc.director.getRunningScene().addChild(this)
+            // cc.director.pushScene(newScene);
         }
     },
 
@@ -68,5 +73,8 @@ var gameScene = sceneBase.extend({
             trace('返回上一个场景:' + sid);
             sceneManager.createScene(sid);
         }
+    },
+    onHasGameScene:function(){
+        return this._currentGame
     }
 })

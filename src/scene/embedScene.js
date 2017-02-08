@@ -8,17 +8,14 @@ var embedScene = sceneBase.extend({
     _bg:null,
     _window:null,
     _clickLoc:null, //小场景飞出的坐标
-    ctor:function(id,info,loc,type){
-        if(arguments.length == 3){
-            this._super(id,info);
-        }
-        //var gRes = scene_resources["s"+id]
-        //cc.LoaderScene.preload(gRes, function () {
-        //    this.init()
+    ctor:function(id,info,loc){
+        this._super(id,info);
         this._clickLoc = loc;
         this.initScene();
+        // if(info.logic){
+        //     new phoneLayer(info.logic,this)
+        // }
         this.openScene();
-        //}, this);
     },
 
     initScene:function(){

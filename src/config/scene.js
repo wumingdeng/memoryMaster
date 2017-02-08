@@ -73,7 +73,7 @@ SCENE_CONFIG.data = {
     "s7":{
         name:"手机",
         type: SCENE_Type.game,  //小游戏场景
-        et:EMBED_Type.full,
+        et:EMBED_Type.embed,
         gameId:3,
         item: [],   //场景中可点击的物品
         ui:"res/phone/shoujidonghua_mimajiesuo.json",

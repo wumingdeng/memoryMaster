@@ -16,7 +16,7 @@ var phoneLayer = cc.Layer.extend({
     _selectNum:null, //当前按下数字的按钮
     _password:"", //密码
     _isSelectState:false, //false初始状态,true:按住状态
-    ctor: function (index, parent, tid) {
+    ctor: function (index,parent, tid) {
         this._super()
         this._index = index;
         this._node = parent._ui;
