@@ -105,10 +105,10 @@
               "X": 0.5609,
               "Y": 0.6352
             },
-            "LeftMargin": 424.0769,
-            "RightMargin": 418.9231,
-            "TopMargin": 98.4821,
-            "BottomMargin": 295.5179,
+            "LeftMargin": 424.0658,
+            "RightMargin": 418.9341,
+            "TopMargin": 98.4669,
+            "BottomMargin": 295.5331,
             "Children": [
               {
                 "FileData": {
@@ -169,8 +169,8 @@
                   "ScaleY": 0.5
                 },
                 "Position": {
-                  "X": 498.4683,
-                  "Y": 304.903
+                  "X": 527.7789,
+                  "Y": 299.9001
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -179,17 +179,17 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.4628,
-                  "Y": 0.4445
+                  "X": 0.49,
+                  "Y": 0.4372
                 },
                 "PreSize": {
                   "X": 0.1458,
                   "Y": 0.2726
                 },
-                "LeftMargin": 419.9683,
-                "RightMargin": 500.0317,
-                "TopMargin": 287.597,
-                "BottomMargin": 211.403,
+                "LeftMargin": 449.2789,
+                "RightMargin": 470.7211,
+                "TopMargin": 292.5999,
+                "BottomMargin": 206.4001,
                 "Tag": 208,
                 "ActionTag": -1779495342,
                 "Size": {
@@ -210,8 +210,8 @@
                 "InnerActionSpeed": 1.0,
                 "AnchorPoint": {},
                 "Position": {
-                  "X": 562.8181,
-                  "Y": 421.5882
+                  "X": 553.0179,
+                  "Y": 307.9221
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -220,19 +220,19 @@
                 "CColor": {},
                 "IconVisible": true,
                 "PrePosition": {
-                  "X": 0.5226,
-                  "Y": 0.6146
+                  "X": 0.5135,
+                  "Y": 0.4489
                 },
                 "PreSize": {
                   "X": 0.0,
                   "Y": 0.0
                 },
-                "LeftMargin": 562.8181,
-                "RightMargin": 514.1819,
-                "TopMargin": 264.4118,
-                "BottomMargin": 421.5882,
+                "LeftMargin": 553.0179,
+                "RightMargin": 523.9821,
+                "TopMargin": 378.0779,
+                "BottomMargin": 307.9221,
                 "Tag": 207,
-                "ActionTag": -1252570335,
+                "ActionTag": 465540470,
                 "Size": {
                   "X": 0.0,
                   "Y": 0.0
@@ -255,8 +255,8 @@
                   "ScaleY": 0.5
                 },
                 "Position": {
-                  "X": 448.9905,
-                  "Y": 552.2841
+                  "X": 702.4824,
+                  "Y": 428.6978
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -265,24 +265,24 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.4169,
-                  "Y": 0.8051
+                  "X": 0.6523,
+                  "Y": 0.6249
                 },
                 "PreSize": {
                   "X": 0.2739,
                   "Y": 0.3324
                 },
-                "LeftMargin": 301.4905,
-                "RightMargin": 480.5095,
-                "TopMargin": 19.7159,
-                "BottomMargin": 438.2841,
+                "LeftMargin": 554.9824,
+                "RightMargin": 227.0176,
+                "TopMargin": 143.3022,
+                "BottomMargin": 314.6978,
                 "Tag": 217,
-                "ActionTag": -1232590304,
+                "ActionTag": 739010961,
                 "Size": {
                   "X": 295.0,
                   "Y": 228.0
                 },
-                "Name": "CJ1_chouti_zhizhang3_9",
+                "Name": "CJ1_chouti_zhizhang3_14",
                 "ctype": "SpriteObjectData"
               },
               {
@@ -300,8 +300,8 @@
                   "ScaleY": 0.5
                 },
                 "Position": {
-                  "X": 688.8943,
-                  "Y": 436.3119
+                  "X": 591.0116,
+                  "Y": 374.8214
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -310,17 +310,17 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.6396,
-                  "Y": 0.636
+                  "X": 0.5488,
+                  "Y": 0.5464
                 },
                 "PreSize": {
                   "X": 0.2683,
                   "Y": 0.4052
                 },
-                "LeftMargin": 544.3943,
-                "RightMargin": 243.6057,
-                "TopMargin": 110.6881,
-                "BottomMargin": 297.3119,
+                "LeftMargin": 446.5116,
+                "RightMargin": 341.4884,
+                "TopMargin": 172.1786,
+                "BottomMargin": 235.8214,
                 "ActionTag": -1417251386,
                 "Size": {
                   "X": 289.0,
@@ -384,8 +384,8 @@
                 "InnerActionSpeed": 1.0,
                 "AnchorPoint": {},
                 "Position": {
-                  "X": 394.1835,
-                  "Y": 305.6518
+                  "X": 510.8914,
+                  "Y": 325.7302
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -394,17 +394,17 @@
                 "CColor": {},
                 "IconVisible": true,
                 "PrePosition": {
-                  "X": 0.366,
-                  "Y": 0.4456
+                  "X": 0.4744,
+                  "Y": 0.4748
                 },
                 "PreSize": {
                   "X": 0.0,
                   "Y": 0.0
                 },
-                "LeftMargin": 394.1835,
-                "RightMargin": 682.8165,
-                "TopMargin": 380.3482,
-                "BottomMargin": 305.6518,
+                "LeftMargin": 510.8914,
+                "RightMargin": 566.1086,
+                "TopMargin": 360.2698,
+                "BottomMargin": 325.7302,
                 "Tag": 206,
                 "ActionTag": -2005211852,
                 "Size": {
@@ -429,36 +429,34 @@
                   "ScaleY": 0.5
                 },
                 "Position": {
-                  "X": 729.3297,
-                  "Y": 415.4399
+                  "X": 713.0069,
+                  "Y": 350.3959
                 },
                 "Scale": {
                   "ScaleX": 1.0,
                   "ScaleY": 1.0
                 },
-                "RotationSkewX": 21.4936,
-                "RotationSkewY": 21.4913,
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.6772,
-                  "Y": 0.6056
+                  "X": 0.662,
+                  "Y": 0.5108
                 },
                 "PreSize": {
                   "X": 0.2507,
                   "Y": 0.3499
                 },
-                "LeftMargin": 594.3297,
-                "RightMargin": 212.6703,
-                "TopMargin": 150.5601,
-                "BottomMargin": 295.4399,
+                "LeftMargin": 578.0069,
+                "RightMargin": 228.9931,
+                "TopMargin": 215.6041,
+                "BottomMargin": 230.3959,
                 "Tag": 216,
-                "ActionTag": -1327903894,
+                "ActionTag": 779404115,
                 "Size": {
                   "X": 270.0,
                   "Y": 240.0
                 },
-                "Name": "CJ1_chouti_zhizhang1_7",
+                "Name": "CJ1_chouti_zhizhang1_24",
                 "ctype": "SpriteObjectData"
               },
               {
@@ -520,8 +518,8 @@
                   "ScaleY": 0.5
                 },
                 "Position": {
-                  "X": 350.756,
-                  "Y": 192.407
+                  "X": 349.5964,
+                  "Y": 216.7244
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -530,17 +528,17 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.3257,
-                  "Y": 0.2805
+                  "X": 0.3246,
+                  "Y": 0.3159
                 },
                 "PreSize": {
                   "X": 0.182,
                   "Y": 0.1662
                 },
-                "LeftMargin": 252.756,
-                "RightMargin": 628.244,
-                "TopMargin": 436.593,
-                "BottomMargin": 135.407,
+                "LeftMargin": 251.5964,
+                "RightMargin": 629.4036,
+                "TopMargin": 412.2756,
+                "BottomMargin": 159.7244,
                 "ActionTag": -150089482,
                 "Size": {
                   "X": 196.0,
@@ -605,8 +603,8 @@
                   "ScaleY": 0.5
                 },
                 "Position": {
-                  "X": 267.705,
-                  "Y": 430.1965
+                  "X": 325.3899,
+                  "Y": 297.9685
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -615,24 +613,24 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.2486,
-                  "Y": 0.6271
+                  "X": 0.3021,
+                  "Y": 0.4344
                 },
                 "PreSize": {
                   "X": 0.1866,
                   "Y": 0.3688
                 },
-                "LeftMargin": 167.205,
-                "RightMargin": 708.795,
-                "TopMargin": 129.3035,
-                "BottomMargin": 303.6965,
+                "LeftMargin": 224.8899,
+                "RightMargin": 651.1101,
+                "TopMargin": 261.5315,
+                "BottomMargin": 171.4685,
                 "Tag": 215,
-                "ActionTag": -931687919,
+                "ActionTag": -564872437,
                 "Size": {
                   "X": 201.0,
                   "Y": 253.0
                 },
-                "Name": "CJ1_chouti_benzi_5",
+                "Name": "CJ1_chouti_benzi_13",
                 "ctype": "SpriteObjectData"
               },
               {
@@ -691,8 +689,8 @@
                   "ScaleY": 0.5
                 },
                 "Position": {
-                  "X": 308.2808,
-                  "Y": 466.8113
+                  "X": 374.5975,
+                  "Y": 469.0015
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -701,24 +699,24 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.2862,
-                  "Y": 0.6805
+                  "X": 0.3478,
+                  "Y": 0.6837
                 },
                 "PreSize": {
                   "X": 0.1718,
                   "Y": 0.1414
                 },
-                "LeftMargin": 215.7808,
-                "RightMargin": 676.2192,
-                "TopMargin": 170.6887,
-                "BottomMargin": 418.3113,
+                "LeftMargin": 282.0975,
+                "RightMargin": 609.9025,
+                "TopMargin": 168.4985,
+                "BottomMargin": 420.5015,
                 "Tag": 214,
-                "ActionTag": -408688599,
+                "ActionTag": 261337985,
                 "Size": {
                   "X": 185.0,
                   "Y": 97.0
                 },
-                "Name": "CJ1_chouti_dingshuji_4",
+                "Name": "CJ1_chouti_dingshuji_16",
                 "ctype": "SpriteObjectData"
               },
               {
@@ -732,8 +730,8 @@
                 "InnerActionSpeed": 1.0,
                 "AnchorPoint": {},
                 "Position": {
-                  "X": 467.9637,
-                  "Y": 311.9758
+                  "X": 513.1652,
+                  "Y": 310.4693
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -742,17 +740,17 @@
                 "CColor": {},
                 "IconVisible": true,
                 "PrePosition": {
-                  "X": 0.4345,
-                  "Y": 0.4548
+                  "X": 0.4765,
+                  "Y": 0.4526
                 },
                 "PreSize": {
                   "X": 0.0,
                   "Y": 0.0
                 },
-                "LeftMargin": 467.9637,
-                "RightMargin": 609.0363,
-                "TopMargin": 374.0242,
-                "BottomMargin": 311.9758,
+                "LeftMargin": 513.1652,
+                "RightMargin": 563.8348,
+                "TopMargin": 375.5307,
+                "BottomMargin": 310.4693,
                 "Tag": 203,
                 "ActionTag": -114056419,
                 "Size": {
@@ -777,8 +775,8 @@
                   "ScaleY": 0.5
                 },
                 "Position": {
-                  "X": 248.1624,
-                  "Y": 331.1234
+                  "X": 831.8264,
+                  "Y": 366.7018
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -787,24 +785,24 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.2304,
-                  "Y": 0.4827
+                  "X": 0.7724,
+                  "Y": 0.5346
                 },
                 "PreSize": {
                   "X": 0.0678,
                   "Y": 0.1327
                 },
-                "LeftMargin": 211.6624,
-                "RightMargin": 792.3376,
-                "TopMargin": 309.3766,
-                "BottomMargin": 285.6234,
+                "LeftMargin": 795.3264,
+                "RightMargin": 208.6736,
+                "TopMargin": 273.7982,
+                "BottomMargin": 321.2018,
                 "Tag": 213,
-                "ActionTag": 681126707,
+                "ActionTag": -1438930693,
                 "Size": {
                   "X": 73.0,
                   "Y": 91.0
                 },
-                "Name": "CJ1_chouti_shubiao_3",
+                "Name": "CJ1_chouti_shubiao_19",
                 "ctype": "SpriteObjectData"
               },
               {
@@ -863,8 +861,8 @@
                   "ScaleY": 0.5
                 },
                 "Position": {
-                  "X": 886.3234,
-                  "Y": 389.0355
+                  "X": 738.7554,
+                  "Y": 527.7524
                 },
                 "Scale": {
                   "ScaleX": -1.0,
@@ -873,24 +871,24 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.823,
-                  "Y": 0.5671
+                  "X": 0.6859,
+                  "Y": 0.7693
                 },
                 "PreSize": {
                   "X": 0.1086,
                   "Y": 0.191
                 },
-                "LeftMargin": 827.8234,
-                "RightMargin": 132.1766,
-                "TopMargin": 231.4645,
-                "BottomMargin": 323.5355,
+                "LeftMargin": 680.2554,
+                "RightMargin": 279.7446,
+                "TopMargin": 92.7476,
+                "BottomMargin": 462.2524,
                 "Tag": 212,
-                "ActionTag": -357591288,
+                "ActionTag": 16838801,
                 "Size": {
                   "X": 117.0,
                   "Y": 131.0
                 },
-                "Name": "CJ1_chouti_xiaogou_2",
+                "Name": "CJ1_chouti_xiaogou_21",
                 "ctype": "SpriteObjectData"
               },
               {
@@ -904,8 +902,8 @@
                 "InnerActionSpeed": 1.0,
                 "AnchorPoint": {},
                 "Position": {
-                  "X": 421.589,
-                  "Y": 295.1134
+                  "X": 551.6729,
+                  "Y": 281.4205
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -914,17 +912,17 @@
                 "CColor": {},
                 "IconVisible": true,
                 "PrePosition": {
-                  "X": 0.3914,
-                  "Y": 0.4302
+                  "X": 0.5122,
+                  "Y": 0.4102
                 },
                 "PreSize": {
                   "X": 0.0,
                   "Y": 0.0
                 },
-                "LeftMargin": 421.589,
-                "RightMargin": 655.411,
-                "TopMargin": 390.8866,
-                "BottomMargin": 295.1134,
+                "LeftMargin": 551.6729,
+                "RightMargin": 525.3271,
+                "TopMargin": 404.5795,
+                "BottomMargin": 281.4205,
                 "Tag": 201,
                 "ActionTag": 221505019,
                 "Size": {
@@ -949,8 +947,8 @@
                   "ScaleY": 0.5
                 },
                 "Position": {
-                  "X": 284.5637,
-                  "Y": 208.8603
+                  "X": 369.5896,
+                  "Y": 322.1264
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -959,24 +957,24 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.2642,
-                  "Y": 0.3045
+                  "X": 0.3432,
+                  "Y": 0.4696
                 },
                 "PreSize": {
                   "X": 0.1142,
                   "Y": 0.2362
                 },
-                "LeftMargin": 223.0637,
-                "RightMargin": 730.9363,
-                "TopMargin": 396.1397,
-                "BottomMargin": 127.8603,
+                "LeftMargin": 308.0896,
+                "RightMargin": 645.9104,
+                "TopMargin": 282.8736,
+                "BottomMargin": 241.1264,
                 "Tag": 211,
-                "ActionTag": -1094700630,
+                "ActionTag": 622260311,
                 "Size": {
                   "X": 123.0,
                   "Y": 162.0
                 },
-                "Name": "CJ1_chouti_wano_1",
+                "Name": "CJ1_chouti_wano_20",
                 "ctype": "SpriteObjectData"
               },
               {
@@ -1022,6 +1020,81 @@
                 },
                 "Name": "CJ1_chouti_tanchukuang_1",
                 "ctype": "SpriteObjectData"
+              },
+              {
+                "FontSize": 14,
+                "ButtonText": "",
+                "TextColor": {
+                  "R": 65,
+                  "G": 65,
+                  "B": 70
+                },
+                "DisabledFileData": {
+                  "Type": "Normal",
+                  "Path": "Game/gongju_guanbi.png",
+                  "Plist": ""
+                },
+                "PressedFileData": {
+                  "Type": "Normal",
+                  "Path": "Game/gongju_guanbi.png",
+                  "Plist": ""
+                },
+                "NormalFileData": {
+                  "Type": "Normal",
+                  "Path": "Game/gongju_guanbi.png",
+                  "Plist": ""
+                },
+                "Scale9Enable": true,
+                "Scale9OriginX": 15,
+                "Scale9OriginY": 11,
+                "Scale9Width": 89,
+                "Scale9Height": 98,
+                "OutlineColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "ShadowColor": {
+                  "R": 110,
+                  "G": 110,
+                  "B": 110
+                },
+                "ShadowOffsetX": 2.0,
+                "ShadowOffsetY": -2.0,
+                "TouchEnable": true,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 1062.0081,
+                  "Y": 669.8926
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.9861,
+                  "Y": 0.9765
+                },
+                "PreSize": {
+                  "X": 0.1105,
+                  "Y": 0.1749
+                },
+                "LeftMargin": 1002.5081,
+                "RightMargin": -44.5081,
+                "TopMargin": -43.8926,
+                "BottomMargin": 609.8926,
+                "Tag": 2088,
+                "ActionTag": 1688478135,
+                "Size": {
+                  "X": 119.0,
+                  "Y": 120.0
+                },
+                "Name": "closeBtn",
+                "ctype": "ButtonObjectData"
               }
             ],
             "ActionTag": -786447570,
@@ -1041,6 +1114,7 @@
         "ctype": "SingleNodeObjectData"
       },
       "UsedResources": [
+        "../../Game/gongju_guanbi.png",
         "chouti_benzi.json",
         "chouti_dingshuji.json",
         "chouti_shubiao.json",

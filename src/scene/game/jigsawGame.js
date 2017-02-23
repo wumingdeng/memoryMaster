@@ -23,11 +23,13 @@ var jigsawGame = cc.Layer.extend({
     _adjacent:[],
     _index:null,    //游戏序号
     _node:null,
-    ctor: function (index, ui ,tid) {
+    _action:null,
+    ctor: function (index, par ,tid) {
         this._super()
-        //cc.Texture2D.setNeedGetAlpha(true)  //打开取透明度
         this._index = index;
-        this._node = ui;
+        this._node = par._ui;
+        this._action = par._action;
+        this._action.retain()
         this._taskId = tid;
         this.initLayer()
     },
@@ -38,7 +40,7 @@ var jigsawGame = cc.Layer.extend({
         this._vsizeRect.x = 0
         this._vsizeRect.y = 0
 
-        this._node.setPosition(vsize.width / 2, vsize.height / 2)
+        this._node.setPosition(0, 100)
 
         this.analysisAdjacentData(this._index)
         this._node.setLocalZOrder(2)
@@ -55,7 +57,7 @@ var jigsawGame = cc.Layer.extend({
         var sprites = this._node.getChildren()
         for (var key in sprites) {
             var spt = sprites[key]
-            if (spt.name == "BG" || spt.tag == 0){
+            if (spt.tag == 0){
                 continue;
             }
             if(key == "0")
@@ -225,26 +227,27 @@ var jigsawGame = cc.Layer.extend({
                                 this._isGameEnd = true
                                 //selfLayer._commonUI.GameConfirm(4)
                                 function onPlayAnimation() {
-                                    //--播放找到物品的效果
-                                    //local finishAnimation,finishAction = cfun.createAnimation(selfLayer._sceneFilePath.."clue4_faguangtexiao.csb")
-                                    //finishAnimation.setPosition(vsize.width/2,vsize.height/2)
-                                    //selfLayer._uiLayer.addChild(finishAnimation,1)
-                                    //finishAction.gotoFrameAndPlay(0,false)
-                                }
+                                    this._node.getChildByName("Sprite_14").setLocalZOrder(100001)
+                                    this._action.gotoFrameAndPlay(0, false)
+                                    this._node.runAction(this._action)
 
+                                    //完成任务
+                                    //this.finishGame()
+                                    function onFinish() {
+                                        this.finishGame();
+                                    }
+                                    this.runAction(cc.sequence(cc.delayTime(1.5),cc.callFunc(onFinish.bind(this))))
+                                }
                                 //先移到中间
                                 for (var key in this._currentContents) {
                                     var contentPiece = this._currentContents[key]
-                                    var move = cc.MoveTo.create(1, this._pieceInitPos[contentPiece.tag])
+                                    var move = cc.moveTo(1, this._pieceInitPos[contentPiece.tag])
                                     if (key == this._pieceCount) {
-                                        contentPiece.sprite.runAction(new cc.Sequence(move.clone(), new cc.CallFunc(onPlayAnimation)))
+                                        contentPiece.sprite.runAction(cc.sequence(move.clone(), cc.callFunc(onPlayAnimation.bind(this))))
                                     } else {
                                         contentPiece.sprite.runAction(move.clone())
                                     }
                                 }
-
-                                //完成任务
-                                this.finishGame()
                             }
                         }
 
@@ -332,6 +335,8 @@ var jigsawGame = cc.Layer.extend({
      * @param {Number} sdIdx 静态数据的索引ID
      * */
     analysisAdjacentData:function(){
+        this._pieceInitPos = []
+        this._adjacent = []
         var adjacentStr = GAME_CONFIG["g"+this._index].adjacent
         var adjacentPositionStr = GAME_CONFIG["g"+this._index].com_pos
         var adjacent = adjacentStr.split("_")
@@ -349,10 +354,14 @@ var jigsawGame = cc.Layer.extend({
                 tempArr.push(Number(adj))
             }
             this._pieceInitPos.push(cc.p(Number(adjacentPositionsArray[0]),Number(adjacentPositionsArray[1])))
+            // this._pieceInitPos.push(cc.p(Number(adjacentPositionsArray[0])+vsize.width/2,Number(adjacentPositionsArray[1])+vsize.height/2))
             this._adjacent.push(tempArr)
         }
     },
-
+    cleanup:function(){
+        this._super()
+        this._action.release()
+    },
     finishGame:function(){
         trace("完成拼图")
         this.parent.finishGame();

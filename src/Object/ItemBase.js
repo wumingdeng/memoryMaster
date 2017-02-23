@@ -11,19 +11,18 @@ var itemBase = cc.Class.extend({
     _action:null,       //编辑好的物品动作
     _originalPos:null,  //物品的原始位置   可以拖动的物品才用到
     _isSelected:false,  //是否被选中
-
+    _haveBaseAction:false,  //是否有初始动画
+    _hint:null, //物品点击的文本提示
     ctor:function(id,node,action){
         this._id = id;
         this._source = node;
         this._action = action;
-
         this.init(id);
-
-
     },
     init:function(id){
         this._info = itemManager.getItemState(id);
         this._source.onEnter = this.onEnter.bind(this);
+        this._info.actionIndex = this._info.actionIndex || 1;
         if (this._info.visible == false) {
             this._source.visible = false;
             //return false;
@@ -31,20 +30,29 @@ var itemBase = cc.Class.extend({
 
         //初始化点击区域
         if (this._source._className == "Node"){
-            var click = (this._source.getChildByName("click") || this._source.getChildren()[0])
+            //获取点击区域
+            var click = (this._source.getChildByName("click" + this._info.actionIndex) || this._source.getChildren()[0])
             var pos = click.convertToWorldSpace(cc.p(0,0));
             this._clickArea = cc.rect();
             this._clickArea.x = pos.x;
             this._clickArea.y = pos.y;
-            this._clickArea.width = click.width;
-            this._clickArea.height = click.height;
+            this._clickArea.width = click.width * click.scaleX;
+            this._clickArea.height = click.height * click.scaleY;
 
             this._source.runAction(this._action);
+            //设置到相应的帧数
+            var nowIndex = this._info.actionIndex || 1;
+            if (this._action) {
+                if (this._action.isAnimationInfoExists("action" + nowIndex)) {
+                    var action = this._action.getAnimationInfo("action" + nowIndex);
+                    var frame = action.startIndex;
+                    this._action.gotoFrameAndPause(frame);
+                }
+            }
             //让有默认动画的物品开始播放默认动画
-            if (this._action.getAnimationInfo("base")) {
+            if (this._action.isAnimationInfoExists("base") && nowIndex == 1) {
+                this._haveBaseAction = true;
                 this._action.play("base",true);
-            } else {
-                this._action.gotoFrameAndPause(0);
             }
         } else {
             this._clickArea = this._source.getBoundingBox();
@@ -54,6 +62,7 @@ var itemBase = cc.Class.extend({
         }
 
         this._originalPos = this._source.getPosition();
+
         return true;
     },
 
@@ -65,6 +74,17 @@ var itemBase = cc.Class.extend({
         }
     },
 
+    setActionNodeClickArea:function(){
+        var click = (this._source.getChildByName("click" + this._info.actionIndex || 1) || this._source.getChildren()[0])
+        var pos = click.convertToWorldSpace(cc.p(0,0));
+        pos = sceneManager.scene._ui.convertToNodeSpace(pos);
+        this._clickArea = cc.rect();
+        this._clickArea.x = pos.x;
+        this._clickArea.y = pos.y;
+        this._clickArea.width = click.width * click.scaleX;
+        this._clickArea.height = click.height * click.scaleY;
+    },
+
     /***检测有没完成任务
     */
     checkTask:function(isWait){
@@ -74,7 +94,6 @@ var itemBase = cc.Class.extend({
 
     onTouchBegan:function(touch,event){
         if (!this.haveBehavior(ITEM_BEHAVIOR.move)) {
-
         }
 
         return true
@@ -87,6 +106,7 @@ var itemBase = cc.Class.extend({
         }
     },
     onTouchEnded:function(touch,event){
+        var loc = touch.getLocation();
         if (this.haveBehavior(ITEM_BEHAVIOR.wait)){
             //判断是不是选择好要组合的物品了
             if (g_nowSelectItem) {
@@ -108,7 +128,7 @@ var itemBase = cc.Class.extend({
         }
 
         if (this.haveBehavior(ITEM_BEHAVIOR.hint)){
-            this.onHint();
+            this.onHint(loc);
         }
         if (this.haveBehavior(ITEM_BEHAVIOR.action)){
             this.onAction();
@@ -117,7 +137,6 @@ var itemBase = cc.Class.extend({
             this.onTalk();
         }
         if (this.haveBehavior(ITEM_BEHAVIOR.goto)){
-            var loc = touch.getLocation();
             this.onGotoNextScene(loc);
         }
         if (this.haveBehavior(ITEM_BEHAVIOR.global)){
@@ -132,7 +151,6 @@ var itemBase = cc.Class.extend({
         return cc.rectContainsPoint(this._clickArea,location)
     },
 
-
     //返回物品是否有传入的交互行为
     haveBehavior:function(behavior){
         var behaviors = this._info.behavior;
@@ -146,28 +164,67 @@ var itemBase = cc.Class.extend({
     },
 
     //调用提示
-    onHint:function(next) {
+    onHint:function(loc,next) {
         next = next ||this.checkTask.bind(this);
-        var hid = this._info.hint;
-        var hint = new hintLayer(hid,next);
-        cc.director.getRunningScene().addChild(hint,100);
-
+        //判断当前场景是否有文本
+        if(!this._hint || this._hint._isRemove) {
+            var hid = this._info.hint;
+            this._hint = new hintLayer(hid, next);
+            cc.director.getRunningScene().addChild(this._hint, 100);
+            //弹出问号
+            sfun.addInterrogation(loc);
+        }
     },
     onAction:function(next){
         next = next ||this.checkTask.bind(this);
-        if (this._action == null || this._action.getAnimationInfo("doAction") == null) {
+        sceneManager.scene.setSceneTouch(false);
+        var nowIndex = this._info.actionIndex || 1;
+        var action = null;
+        if (this._action && this._action.isAnimationInfoExists("action" + nowIndex)) {
+            action = this._action.getAnimationInfo("action" + nowIndex);
+        }else{
             trace1("没有编辑物品动画..")
             next();
             return;
-            //return new Error("没有编辑物品动画.." + this._id)
         }
-        this._action.play("doAction",false)
+        // if (this._action == null || action == null) {   
+        //     trace1("没有编辑物品动画..")
+        //     next();
+        //     return;
+        //     //return new Error("没有编辑物品动画.." + this._id)
+        // }
+        if (nowIndex == 1) {
+            if (this._haveBaseAction) {
+                this._action.gotoFrameAndPlay(this._action.getCurrentFrame(),action.endIndex,false); //有初始动画的接着播放
+            } else {
+                this._action.gotoFrameAndPlay(0,action.endIndex,false); //action2播放完会停在最后一帧..
+            }
+        } else {
+            this._action.gotoFrameAndPlay(this._action.getCurrentFrame(),action.endIndex,false);
+        }
+        //this._action.play("action" + nowIndex,false);
 
         function onEndAction(frame){
             var event = frame.getEvent();
-            if (event == "end") {
+            if (nowIndex == 1) {    //UI里帧事件名称不能一样~!
+                endEvent = "end"
+            } else {
+                endEvent = "end" + nowIndex
+            }
+            if (event == endEvent) {
+                //记录物品播放到的帧数
+                var index = this._info.actionIndex || 1;
+                var info = {actionIndex:index + 1};
+                itemManager.setItemState(this._id,info);
+                next();
+            } else if (event == 'finish') {
+                var info = {actionIndex:1};
+                itemManager.setItemState(this._id,info);
                 next();
             }
+            this.setActionNodeClickArea();
+            this._action.clearFrameEventCallFunc(); //多次播放的动画需要清除监听
+            sceneManager.scene.setSceneTouch(true);
         }
         this._action.setFrameEventCallFunc(onEndAction.bind(this))
 
@@ -185,7 +242,12 @@ var itemBase = cc.Class.extend({
     //获取全局物品
     onGetGlobalItem:function(next){
         next = next || this.checkTask.bind(this);
-        GAME_BAR.addGlobalItem(this._info.global,next);
+        function onAddGlobalItem() {
+            sceneManager.scene.setSceneTouch(true);
+            next();
+        }
+        sceneManager.scene.setSceneTouch(false);
+        GAME_BAR.addGlobalItem(this._info.global,this._source,onAddGlobalItem);
     },
 
     //物品触发等待动作
@@ -199,20 +261,47 @@ var itemBase = cc.Class.extend({
 
     //移动到..
     onMoveTo:function(pos){
-        var target = itemManager.getItem(this._info.move);
-        if (target.isTouchItem(pos)){
+        var self = this;
+        function success(target) {
             //完成组合
             trace("完成组合 Congratulations...")
-            target.onWait(); //播放动作 并且检测任务
-            this._source.visible = false;    //隐藏
+            if (target) {
+                target.onWait(); //播放动作 并且检测任务
+                self._source.visible = false;    //隐藏
+            } else {
+                var move = cc.moveTo(0.2,self._info.move);
+                function onMove() {
+                    self.checkTask.bind(self)();
+                    self._source.visible = false;
+                }
+                self._source.runAction(cc.sequence(move,cc.callFunc(onMove)))
+            }
+        }
 
+        function back() {
+            var back = new cc.MoveTo(0.3, self._originalPos);
+            self._source.runAction(back);
+            var dis = cc.pDistance(self._originalPos, self._source.getPosition())
+            if (dis < 10 || self._isSelected == false) {
+                self.onSelectItem();
+            }
+        }
+        pos = this._source.convertToWorldSpace(cc.p(this._source.width * this._source.anchorX, this._source.height * this._source.anchorY));
+        pos = sceneManager.scene._ui.convertToNodeSpace(pos);
+        if (this._info.move.x) { //配置是坐标
+            var distance = cc.pDistance(pos,this._info.move);
+            if (distance < 200) {
+                success();
+            } else {
+                back();
+            }
         } else {
-            //回到原点
-            var back = new cc.MoveTo(0.3,this._originalPos);
-            this._source.runAction(back);
-            var dis = cc.pDistance(this._originalPos,this._source.getPosition())
-            if (dis < 10  || this._isSelected == false){
-                this.onSelectItem();
+            var target = itemManager.getItem(this._info.move);
+            if (target.isTouchItem(pos)){
+                success(target);
+            } else {
+                //回到原点
+                back();
             }
         }
     },

@@ -82,7 +82,7 @@ taskManager.checkTask = function(item,isDone){
     var tasks = taskManager.getSceneTask(PLAYER_STATE.scene);
     for (var id in tasks) {
         var taskState = this.getTaskState(id);
-        if (tasks[id].target == item._id && taskState.isOpen) {
+        if (tasks[id].target == item._id && taskState.isOpen && !taskState.isFinish) {
 
             if (item.haveBehavior(ITEM_BEHAVIOR.wait)){
                 if (isDone){
@@ -100,6 +100,11 @@ taskManager.checkTask = function(item,isDone){
 //完成任务
 taskManager.completeTask = function(tid){
     //把任务状态变成已完成
+    var state = taskManager.getTaskState(tid);
+    if (state.isFinish) {
+        trace(tid + "任务已完成");
+        return true;
+    }
     var info = {};
     info.isFinish = true;
     this.setTaskState(tid,info);
@@ -135,6 +140,47 @@ taskManager.completeTask = function(tid){
             var globalId = result[key];
             trace("突然获得全局物品:" + globalId);
             GAME_BAR.addGlobalItem(globalId);
+        }
+
+        //消耗全局物品
+        if (key == 'use') {
+            var globalId = result[key];
+            GAME_BAR.deleteMyGlobalItems(globalId);
+        }
+
+        //关闭场景
+        if (key == "close") {
+            if (sceneManager.scene._id == result[key]) {
+                if (sceneManager.scene.closeScene) {
+                    sceneManager.scene.closeScene();
+                    continue;
+                }
+                if (sceneManager.scene.backTo) {
+                    sceneManager.scene.backTo();
+                    continue;
+                }
+            }
+        }
+
+        if (key == "open") {
+            var sceneId = result[key];
+            sceneManager.createScene(sceneId,cc.p(vsize.width / 2, vsize.height / 2));
+        }
+
+        if (key == "hint") {
+            var hid = result[key];
+            var hint = new hintLayer(hid);
+            cc.director.getRunningScene().addChild(hint,100);
+        }
+
+        if (key == "memory") {
+            memoryManager.openMemory();
+            GAME_BAR.tipMemory();
+        }
+
+        if (key == "completeTask") {
+            var taskId = result[key];
+            this.completeTask(taskId);
         }
 
     }

@@ -5,9 +5,8 @@
   "Content": {
     "Content": {
       "Animation": {
-        "Duration": 20,
+        "Duration": 15,
         "Speed": 1.0,
-        "ActivedAnimationName": "doAction",
         "Timelines": [
           {
             "ActionTag": 1735842038,
@@ -23,9 +22,9 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": 335.1501,
-                "Y": 109.6089,
-                "FrameIndex": 20,
+                "X": 201.991,
+                "Y": 24.968,
+                "FrameIndex": 15,
                 "EasingData": {
                   "Type": 0
                 },
@@ -64,9 +63,9 @@
                 "ctype": "ScaleValueFrameData"
               },
               {
-                "X": 21.484,
-                "Y": 21.4803,
-                "FrameIndex": 20,
+                "X": 0.0,
+                "Y": 0.0026,
+                "FrameIndex": 15,
                 "EasingData": {
                   "Type": 0
                 },
@@ -112,8 +111,8 @@
             "Property": "FrameEvent",
             "Frames": [
               {
-                "Value": "end",
-                "FrameIndex": 20,
+                "Value": "finish",
+                "FrameIndex": 15,
                 "Tween": false,
                 "ctype": "EventFrameData"
               }
@@ -126,8 +125,8 @@
       "AnimationList": [
         {
           "StartIndex": 0,
-          "EndIndex": 20,
-          "Name": "doAction",
+          "EndIndex": 15,
+          "Name": "action1",
           "ctype": "AnimationInfoData"
         }
       ],
@@ -149,15 +148,13 @@
               "ScaleY": 0.5
             },
             "Position": {
-              "X": 335.1501,
-              "Y": 109.6089
+              "X": 0.0,
+              "Y": 0.0
             },
             "Scale": {
               "ScaleX": 1.0,
               "ScaleY": 1.0
             },
-            "RotationSkewX": 21.484,
-            "RotationSkewY": 21.4803,
             "CColor": {},
             "IconVisible": false,
             "PrePosition": {
@@ -168,10 +165,10 @@
               "X": 0.0,
               "Y": 0.0
             },
-            "LeftMargin": 200.1501,
-            "RightMargin": -470.1501,
-            "TopMargin": -229.6089,
-            "BottomMargin": -10.3911,
+            "LeftMargin": -135.0,
+            "RightMargin": -135.0,
+            "TopMargin": -120.0,
+            "BottomMargin": -120.0,
             "Tag": 363,
             "ActionTag": 1735842038,
             "Size": {
@@ -198,7 +195,6 @@
             },
             "Scale9Width": 1,
             "Scale9Height": 1,
-            "TouchEnable": true,
             "AnchorPoint": {},
             "Position": {
               "X": -118.0559,
@@ -228,7 +224,7 @@
               "X": 200.0,
               "Y": 200.0
             },
-            "Name": "click",
+            "Name": "click1",
             "ctype": "PanelObjectData"
           },
           {
@@ -256,7 +252,6 @@
             "TopMargin": 71.6706,
             "BottomMargin": -71.6706,
             "Tag": 381,
-            "FrameEvent": "end",
             "ActionTag": 482850767,
             "Size": {
               "X": 0.0,

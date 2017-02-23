@@ -5,9 +5,8 @@
   "Content": {
     "Content": {
       "Animation": {
-        "Duration": 18,
+        "Duration": 35,
         "Speed": 1.0,
-        "ActivedAnimationName": "doAction",
         "Timelines": [
           {
             "ActionTag": -1243071037,
@@ -23,9 +22,9 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": 0.0,
-                "Y": 0.0,
-                "FrameIndex": 3,
+                "X": -0.0017,
+                "Y": -0.0013,
+                "FrameIndex": 20,
                 "EasingData": {
                   "Type": 0
                 },
@@ -34,34 +33,7 @@
               {
                 "X": 0.0,
                 "Y": 0.0,
-                "FrameIndex": 7,
-                "EasingData": {
-                  "Type": 0
-                },
-                "ctype": "PointFrameData"
-              },
-              {
-                "X": 0.0,
-                "Y": 0.0,
-                "FrameIndex": 11,
-                "EasingData": {
-                  "Type": 0
-                },
-                "ctype": "PointFrameData"
-              },
-              {
-                "X": 0.0,
-                "Y": 0.0,
-                "FrameIndex": 15,
-                "EasingData": {
-                  "Type": 0
-                },
-                "ctype": "PointFrameData"
-              },
-              {
-                "X": 0.0,
-                "Y": 0.0,
-                "FrameIndex": 18,
+                "FrameIndex": 35,
                 "EasingData": {
                   "Type": 0
                 },
@@ -84,36 +56,9 @@
                 "ctype": "ScaleValueFrameData"
               },
               {
-                "X": 0.8805,
+                "X": 0.1418,
                 "Y": 1.0,
-                "FrameIndex": 3,
-                "EasingData": {
-                  "Type": 0
-                },
-                "ctype": "ScaleValueFrameData"
-              },
-              {
-                "X": 0.5924,
-                "Y": 1.0,
-                "FrameIndex": 7,
-                "EasingData": {
-                  "Type": 0
-                },
-                "ctype": "ScaleValueFrameData"
-              },
-              {
-                "X": 0.5327,
-                "Y": 1.0,
-                "FrameIndex": 11,
-                "EasingData": {
-                  "Type": 0
-                },
-                "ctype": "ScaleValueFrameData"
-              },
-              {
-                "X": 0.3838,
-                "Y": 1.0,
-                "FrameIndex": 15,
+                "FrameIndex": 20,
                 "EasingData": {
                   "Type": 0
                 },
@@ -122,7 +67,7 @@
               {
                 "X": 1.0,
                 "Y": 1.0,
-                "FrameIndex": 18,
+                "FrameIndex": 35,
                 "EasingData": {
                   "Type": 0
                 },
@@ -147,7 +92,7 @@
               {
                 "X": 0.0,
                 "Y": 0.0,
-                "FrameIndex": 3,
+                "FrameIndex": 20,
                 "EasingData": {
                   "Type": 0
                 },
@@ -156,34 +101,7 @@
               {
                 "X": 0.0,
                 "Y": 0.0,
-                "FrameIndex": 7,
-                "EasingData": {
-                  "Type": 0
-                },
-                "ctype": "ScaleValueFrameData"
-              },
-              {
-                "X": 0.0,
-                "Y": 0.0,
-                "FrameIndex": 11,
-                "EasingData": {
-                  "Type": 0
-                },
-                "ctype": "ScaleValueFrameData"
-              },
-              {
-                "X": 0.0,
-                "Y": 0.0,
-                "FrameIndex": 15,
-                "EasingData": {
-                  "Type": 0
-                },
-                "ctype": "ScaleValueFrameData"
-              },
-              {
-                "X": 0.0,
-                "Y": 0.0,
-                "FrameIndex": 18,
+                "FrameIndex": 35,
                 "EasingData": {
                   "Type": 0
                 },
@@ -212,7 +130,7 @@
                   "Path": "room/CJ1_lianzi.png",
                   "Plist": ""
                 },
-                "FrameIndex": 3,
+                "FrameIndex": 20,
                 "Tween": false,
                 "ctype": "TextureFrameData"
               },
@@ -222,37 +140,7 @@
                   "Path": "room/CJ1_lianzi.png",
                   "Plist": ""
                 },
-                "FrameIndex": 7,
-                "Tween": false,
-                "ctype": "TextureFrameData"
-              },
-              {
-                "TextureFile": {
-                  "Type": "Normal",
-                  "Path": "room/CJ1_lianzi.png",
-                  "Plist": ""
-                },
-                "FrameIndex": 11,
-                "Tween": false,
-                "ctype": "TextureFrameData"
-              },
-              {
-                "TextureFile": {
-                  "Type": "Normal",
-                  "Path": "room/CJ1_lianzi.png",
-                  "Plist": ""
-                },
-                "FrameIndex": 15,
-                "Tween": false,
-                "ctype": "TextureFrameData"
-              },
-              {
-                "TextureFile": {
-                  "Type": "Normal",
-                  "Path": "room/CJ1_lianzi1.png",
-                  "Plist": ""
-                },
-                "FrameIndex": 18,
+                "FrameIndex": 35,
                 "Tween": false,
                 "ctype": "TextureFrameData"
               }
@@ -273,35 +161,14 @@
               {
                 "Src": 1,
                 "Dst": 771,
-                "FrameIndex": 3,
+                "FrameIndex": 20,
                 "Tween": false,
                 "ctype": "BlendFuncFrameData"
               },
               {
                 "Src": 1,
                 "Dst": 771,
-                "FrameIndex": 7,
-                "Tween": false,
-                "ctype": "BlendFuncFrameData"
-              },
-              {
-                "Src": 1,
-                "Dst": 771,
-                "FrameIndex": 11,
-                "Tween": false,
-                "ctype": "BlendFuncFrameData"
-              },
-              {
-                "Src": 1,
-                "Dst": 771,
-                "FrameIndex": 15,
-                "Tween": false,
-                "ctype": "BlendFuncFrameData"
-              },
-              {
-                "Src": 1,
-                "Dst": 771,
-                "FrameIndex": 18,
+                "FrameIndex": 35,
                 "Tween": false,
                 "ctype": "BlendFuncFrameData"
               }
@@ -324,7 +191,7 @@
               {
                 "X": 1.0,
                 "Y": 0.5,
-                "FrameIndex": 3,
+                "FrameIndex": 20,
                 "EasingData": {
                   "Type": 0
                 },
@@ -333,34 +200,7 @@
               {
                 "X": 1.0,
                 "Y": 0.5,
-                "FrameIndex": 7,
-                "EasingData": {
-                  "Type": 0
-                },
-                "ctype": "ScaleValueFrameData"
-              },
-              {
-                "X": 1.0,
-                "Y": 0.5,
-                "FrameIndex": 11,
-                "EasingData": {
-                  "Type": 0
-                },
-                "ctype": "ScaleValueFrameData"
-              },
-              {
-                "X": 1.0,
-                "Y": 0.5,
-                "FrameIndex": 15,
-                "EasingData": {
-                  "Type": 0
-                },
-                "ctype": "ScaleValueFrameData"
-              },
-              {
-                "X": 1.0,
-                "Y": 0.5,
-                "FrameIndex": 18,
+                "FrameIndex": 35,
                 "EasingData": {
                   "Type": 0
                 },
@@ -374,7 +214,7 @@
             "Property": "Position",
             "Frames": [
               {
-                "X": -916.4501,
+                "X": -916.4507,
                 "Y": -509.7181,
                 "FrameIndex": 0,
                 "EasingData": {
@@ -390,7 +230,7 @@
             "Property": "Scale",
             "Frames": [
               {
-                "X": 1.0,
+                "X": 1.0977,
                 "Y": 1.0,
                 "FrameIndex": 0,
                 "EasingData": {
@@ -423,9 +263,63 @@
             "Frames": [
               {
                 "Value": "end",
-                "FrameIndex": 18,
+                "FrameIndex": 20,
                 "Tween": false,
                 "ctype": "EventFrameData"
+              },
+              {
+                "Value": "finish",
+                "FrameIndex": 35,
+                "Tween": false,
+                "ctype": "EventFrameData"
+              }
+            ],
+            "ctype": "TimelineData"
+          },
+          {
+            "ActionTag": -398488000,
+            "Property": "Position",
+            "Frames": [
+              {
+                "X": -37.0121,
+                "Y": -604.5284,
+                "FrameIndex": 20,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "PointFrameData"
+              }
+            ],
+            "ctype": "TimelineData"
+          },
+          {
+            "ActionTag": -398488000,
+            "Property": "Scale",
+            "Frames": [
+              {
+                "X": 1.0,
+                "Y": 1.0,
+                "FrameIndex": 20,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "ScaleValueFrameData"
+              }
+            ],
+            "ctype": "TimelineData"
+          },
+          {
+            "ActionTag": -398488000,
+            "Property": "RotationSkew",
+            "Frames": [
+              {
+                "X": 0.0,
+                "Y": 0.0,
+                "FrameIndex": 20,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "ScaleValueFrameData"
               }
             ],
             "ctype": "TimelineData"
@@ -436,8 +330,14 @@
       "AnimationList": [
         {
           "StartIndex": 0,
-          "EndIndex": 18,
-          "Name": "doAction",
+          "EndIndex": 20,
+          "Name": "action1",
+          "ctype": "AnimationInfoData"
+        },
+        {
+          "StartIndex": 20,
+          "EndIndex": 35,
+          "Name": "action2",
           "ctype": "AnimationInfoData"
         }
       ],
@@ -447,7 +347,7 @@
           {
             "FileData": {
               "Type": "Normal",
-              "Path": "room/CJ1_lianzi1.png",
+              "Path": "room/CJ1_lianzi.png",
               "Plist": ""
             },
             "BlendFunc": {
@@ -476,14 +376,14 @@
               "X": 0.0,
               "Y": 0.0
             },
-            "LeftMargin": -140.0,
-            "TopMargin": -503.0,
-            "BottomMargin": -503.0,
+            "LeftMargin": -945.0,
+            "TopMargin": -503.5,
+            "BottomMargin": -503.5,
             "Tag": 201,
             "ActionTag": -1243071037,
             "Size": {
-              "X": 140.0,
-              "Y": 1006.0
+              "X": 945.0,
+              "Y": 1007.0
             },
             "Name": "CJ1_lianzi1_1",
             "ctype": "SpriteObjectData"
@@ -505,14 +405,13 @@
             },
             "Scale9Width": 1,
             "Scale9Height": 1,
-            "TouchEnable": true,
             "AnchorPoint": {},
             "Position": {
-              "X": -916.4501,
+              "X": -916.4507,
               "Y": -509.7181
             },
             "Scale": {
-              "ScaleX": 1.0,
+              "ScaleX": 1.0977,
               "ScaleY": 1.0
             },
             "CColor": {},
@@ -525,8 +424,8 @@
               "X": 0.0,
               "Y": 0.0
             },
-            "LeftMargin": -916.4501,
-            "RightMargin": 76.4501,
+            "LeftMargin": -916.4507,
+            "RightMargin": 76.4507,
             "TopMargin": -490.2819,
             "BottomMargin": -509.7181,
             "Tag": 211,
@@ -535,7 +434,7 @@
               "X": 840.0,
               "Y": 1000.0
             },
-            "Name": "click",
+            "Name": "click1",
             "ctype": "PanelObjectData"
           },
           {
@@ -570,6 +469,55 @@
             },
             "Name": "endEvent",
             "ctype": "SingleNodeObjectData"
+          },
+          {
+            "ClipAble": false,
+            "BackColorAlpha": 102,
+            "SingleColor": {
+              "R": 150,
+              "G": 200
+            },
+            "FirstColor": {
+              "R": 150,
+              "G": 200
+            },
+            "EndColor": {},
+            "ColorVector": {
+              "ScaleY": 1.0
+            },
+            "Scale9Width": 1,
+            "Scale9Height": 1,
+            "AnchorPoint": {},
+            "Position": {
+              "X": -137.76,
+              "Y": -490.7302
+            },
+            "Scale": {
+              "ScaleX": 0.7177,
+              "ScaleY": 5.018
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "PreSize": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "LeftMargin": -137.76,
+            "RightMargin": -62.24,
+            "TopMargin": 290.7302,
+            "BottomMargin": -490.7302,
+            "Tag": 97,
+            "ActionTag": -824900277,
+            "Size": {
+              "X": 200.0,
+              "Y": 200.0
+            },
+            "Name": "click2",
+            "ctype": "PanelObjectData"
           }
         ],
         "Size": {
@@ -580,8 +528,7 @@
         "ctype": "SingleNodeObjectData"
       },
       "UsedResources": [
-        "CJ1_lianzi.png",
-        "CJ1_lianzi1.png"
+        "CJ1_lianzi.png"
       ],
       "ctype": "GameFileData"
     }

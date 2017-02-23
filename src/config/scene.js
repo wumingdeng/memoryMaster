@@ -32,8 +32,9 @@ SCENE_CONFIG.data = {
     "s1": {
         name:"房间",
         type: SCENE_Type.full,  //场景类型
-        item: [101,103,104],   //场景中可点击的物品
-        ui: "res/room/gameScene_1.json" //场景对应的UI
+        item: [101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,198,199],   //场景中可点击的物品
+        ui: "res/room/gameScene_1.json", //场景对应的UI
+        animation:res.romm_open_animation_json
     },
     "s2": {
         name:"抽屉",
@@ -42,42 +43,92 @@ SCENE_CONFIG.data = {
         ui: "res/room/chouti/CJ1_chouti.json", //场景对应的UI
         back:1
     },
+    "s3": {
+        name:"窗口",
+        type: SCENE_Type.embed,  //场景类型
+        item: [301],   //场景中可点击的物品
+        ui: res.room_chuangkou_json, //场景对应的UI
+        back:1
+    },
+
     "s4":{
-        name:"掖庭",
-        type: SCENE_Type.full,  //场景类型
-        item: [301, 302],   //场景中可点击的物品
-        ui: "res/yeting/yeting.json", //场景对应的UI
+        name:"木质拼图",
+        type: SCENE_Type.embed,  //场景类型
+        item: [401, 402, 411, 412],   //场景中可点击的物品
+        ui: "res/room/pintu/pintu.json", //场景对应的UI
         back:1          //返回哪个场景
     },
-    "s3":{
-        name:"纸团拼图",
-        type: SCENE_Type.game,  //小游戏场景
-        gameId:1,               //对应玩法的详细配置
-        item: [],   //玩法中可以加入各种可以交互的主玩法物品 只跟玩法本身有关的物品不用配置进来
-        ui:"res/gameScene/gameScene_4/gameScene4_1.json",       //玩法对应的UI
-        back:4
-    },
+
     "s5":{
-        name:"花园",
-        type: SCENE_Type.full,  //场景类型
-        item: [501, 502],   //场景中可点击的物品
-        ui: "res/huayuan/huayuan.json", //场景对应的UI
+        name:"空抽屉",
+        type: SCENE_Type.embed,  //场景类型
+        item: [],   //场景中可点击的物品
+        ui: "res/room/chouti/CJ1_chouti_0.json", //场景对应的UI
         back:1
     },
     "s6":{
         name:"找线索",
         type: SCENE_Type.game,  //小游戏场景
+        et:EMBED_Type.embed,
         gameId:2,               //对应玩法的详细配置
-        ui:"res/gameScene/gameScene_7/gameScene7_1.json"
+        ui:"res/embedgame/findclue/gameScene7_1.json"
     },
     "s7":{
         name:"手机",
         type: SCENE_Type.game,  //小游戏场景
         et:EMBED_Type.embed,
+        item:[],
         gameId:3,
-        item: [],   //场景中可点击的物品
-        ui:"res/phone/shoujidonghua_mimajiesuo.json",
+        ui:"res/phone/mimajiesuo.json"
+    },
+    "s8":{
+        name:"拼图",
+        type: SCENE_Type.game,  //小游戏场景
+        et:EMBED_Type.embed,
+        gameId:5,               //对应玩法的详细配置
+        ui:"res/wupinwanfa_pintu/wupinwanfa_pintu.json",       //玩法对应的UI
+    },
+    "s9":{
+        name:'盒子',
+        type: SCENE_Type.embed,
+        item: [901,902,911],
+        ui: res.room_hezi_json,
         back:1
+    },
+    "s10":{
+        name:'小桌子',
+        type: SCENE_Type.embed,
+        item: [1001,1002],
+        ui: res.room_desk_json,
+        back:1
+    },
+    "s11":{
+        name:'电脑',
+        type: SCENE_Type.embed,
+        item: [1101],
+        ui: res.room_compute_json,
+        back:1
+    },
+    "s12":{
+        name:'纸团',
+        type: SCENE_Type.game,
+        et:EMBED_Type.embed,
+        gameId:1,
+        ui: res.zhituan_json
+    },
+    "s13":{
+        name:'擦除',
+        type: SCENE_Type.game,
+        // et:EMBED_Type.embed,
+        gameId:6,
+        ui: res.scratch_json
+    },
+    "s14":{
+        name:'整理地图',
+        type: SCENE_Type.game,
+        // et:EMBED_Type.embed,
+        gameId:7,
+        ui: res.gameScene8_json
     }
 };
 

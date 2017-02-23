@@ -155,7 +155,6 @@ shaderHelper.setSurroundingAreaLight = function(spt,color){
     }
     shaderHelper.createShaderFullColorEffect(filterNode,color)
     var bgTxtr = new cc.RenderTexture(filterNode.width,filterNode.height,cc.Texture2D.PIXEL_FORMAT_RGBA8888)
-    console.log("xxxxxx")
     bgTxtr.begin()
     filterNode.visit()
     bgTxtr.end()
@@ -171,6 +170,51 @@ shaderHelper.setSurroundingAreaLight = function(spt,color){
     _maskSpt.setName("_maskSpt")
     return _maskSpt
 }
+
+shaderHelper.setColorHSL = function(spArr,h,s,l) {
+    if( 'opengl' in cc.sys.capabilities ) {
+        var shader = new cc.GLProgram(res.shader_public, res.color_HSL);
+        if(cc.sys.isNative){
+            shader.link();
+            shader.updateUniforms();
+        } else {
+            shader.addAttribute(cc.ATTRIBUTE_NAME_POSITION, cc.VERTEX_ATTRIB_POSITION);
+            shader.addAttribute(cc.ATTRIBUTE_NAME_TEX_COORD, cc.VERTEX_ATTRIB_TEX_COORDS);
+            shader.addAttribute(cc.ATTRIBUTE_NAME_COLOR, cc.VERTEX_ATTRIB_COLOR);
+            shader.link();
+            shader.updateUniforms();
+            shader.use();
+
+        }
+
+    }
+
+    if(cc.sys.isNative) {
+        var glProgram_state = cc.GLProgramState.getOrCreateWithGLProgram(shader);
+        glProgram_state.setUniformFloat("u_dH", h);
+        glProgram_state.setUniformFloat("u_dS", s);
+        glProgram_state.setUniformFloat("u_dL", l);
+        for (var i in spArr) {
+            spArr[i].setBlendFunc(gl.SRC_ALPHA, gl.ONE_MINUS_SRC_ALPHA);
+            spArr[i].shaderProgram = shader;
+        }
+    } else {
+        var  m_dHlocation = gl.getUniformLocation(shader.getProgram(), "u_dH");
+        var m_dSlocation = gl.getUniformLocation(shader.getProgram(), "u_dS");
+        var m_dLlocation = gl.getUniformLocation(shader.getProgram(), "u_dL");
+        shader.setUniformLocationWith1f(m_dHlocation, h);
+        shader.setUniformLocationWith1f(m_dSlocation, s);
+        shader.setUniformLocationWith1f(m_dLlocation, l);
+        for (var i in spArr) {
+            spArr[i].setBlendFunc(gl.SRC_ALPHA, gl.ONE_MINUS_SRC_ALPHA);
+            spArr[i].shaderProgram = shader;
+            spArr[i].$Hloc = m_dHlocation;
+            spArr[i].$Sloc = m_dSlocation;
+            spArr[i].$Lloc = m_dLlocation;
+        }
+    }
+}
+
 /**
  * remove shader
  * @param {cc.Node} source*/

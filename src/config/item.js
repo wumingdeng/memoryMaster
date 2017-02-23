@@ -39,40 +39,28 @@ ITEM_CONFIG.data = {
         name: "抽屉",
         state:{
             "0":{
-                visible: true,     //初始的显示状态
-                behavior: ITEM_BEHAVIOR.goto,  //初始行为
-                goto:2
+                visible:true,
+                hint:1,
+                wait:["g5"],
+                behavior: [ITEM_BEHAVIOR.wait,ITEM_BEHAVIOR.hint],
             },
             "1":{
-                visible:false   //杜鹃动画播完就可以隐藏了
+                behavior: ITEM_BEHAVIOR.goto,  //初始行为
+                goto:2
             }
         }
     },
 
     "i102": {
-        name: "窗帘",
+        name: "无人机",
         state:{
             "0":{
-                visible: false     //初始的显示状态
+                visible: true,     //初始的显示状态
+                behavior: ITEM_BEHAVIOR.goto,  //初始行为
+                goto:3
             },
             "1":{
-                talk:1,
-                action:true,
-                visible:true,   //右侧杜鹃出现
-                behavior: [ITEM_BEHAVIOR.talk,ITEM_BEHAVIOR.action],  //初始行为 点击触发多个行为
-            },
-            "2":{
-                visible:false   //右侧杜鹃消失
-            },
-            "3":{    //右侧的杜鹃又有对话了
-                talk:4,
-                visible:true,
-                wait:["g1"],
-                behavior:[ITEM_BEHAVIOR.talk,ITEM_BEHAVIOR.wait]    //杜鹃这时有两个行为 点击对话 和 等着组合纸条
-            },
-            "4":{
-                visible:false,
-                behavior:ITEM_BEHAVIOR.none
+                visible:false
             }
         }
     },
@@ -81,6 +69,7 @@ ITEM_CONFIG.data = {
         state:{
             "0":{
                 visible: true,     //初始的显示状态
+                actionIndex:1,  //播放第几个动画 默认1
                 behavior:ITEM_BEHAVIOR.action   //蜡烛变成点击可熄灭
             },
             "1":{
@@ -88,18 +77,240 @@ ITEM_CONFIG.data = {
             }
         }
     },
-    "i104":{
-        name:"拉开的窗帘",
+    "i104": {
+        name:"小桌子",
+        state:{
+            "0":{
+                visible:true,
+                goto:10,
+                behavior:ITEM_BEHAVIOR.goto
+            },
+            "1":{
+                visible:true,
+                behavior:ITEM_BEHAVIOR.none
+            }
+        }
+    },
+    "i105": {
+        name:"凌乱的拼图",
+        state:{
+            "0":{
+                visible:true,
+                hint:2,
+                behavior:ITEM_BEHAVIOR.hint
+            },
+            "1":{
+                visible:true,
+                goto:8,
+                behavior:ITEM_BEHAVIOR.goto
+            },
+            "2":{
+                visible:false,
+                behavior:ITEM_BEHAVIOR.none
+            }
+        }
+    },
+    "i106": {
+        name:"拼好的拼图",
         state:{
             "0":{
                 visible:false,
             },
             "1":{
-                visible:true, //熄灭的蜡烛变成可见
+                visible:true,
+                hint:16,
+                behavior:ITEM_BEHAVIOR.hint
+            }
+        }
+    },
+    "i107": {
+        name:"凳子",
+        state:{
+            "0":{
+                visible:true,
+                move:cc.p(-562,196),
+                behavior:ITEM_BEHAVIOR.move
+            },
+            "1":{
+                visible:false,
                 behavior:ITEM_BEHAVIOR.none
             }
         }
     },
+    "i108": {
+        name:"凳子就位",
+        state:{
+            "0":{
+                visible:false,
+                wait:107,
+                behavior:ITEM_BEHAVIOR.wait
+            },
+            "1":{
+                visible:true,
+                behavior:ITEM_BEHAVIOR.none
+            }
+        }
+    },
+    "i109": {
+        name: "空抽屉1",
+        state:{
+            "0":{
+                visible: true,     //初始的显示状态
+                behavior: ITEM_BEHAVIOR.goto,  //初始行为
+                goto:5
+            },
+            "1":{
+                visible:false   //杜鹃动画播完就可以隐藏了
+            }
+        }
+    },
+    "i110": {
+        name: "空抽屉2",
+        state:{
+            "0":{
+                visible: true,     //初始的显示状态
+                behavior: ITEM_BEHAVIOR.goto,  //初始行为
+                goto:5
+            },
+            "1":{
+                visible:false   //杜鹃动画播完就可以隐藏了
+            }
+        }
+    },
+    "i111": {
+        name: "空抽屉3",
+        state:{
+            "0":{
+                visible: true,     //初始的显示状态
+                behavior: ITEM_BEHAVIOR.goto,  //初始行为
+                goto:5
+            },
+            "1":{
+                visible:false   //杜鹃动画播完就可以隐藏了
+            }
+        }
+    },
+    "i112":{
+        name: "藏钥匙的盒子",
+        state:{
+            "0":{
+                visible: true,     //初始的显示状态
+                behavior: ITEM_BEHAVIOR.goto,  //初始行为
+                goto:9
+            },
+            "1":{
+                behavior: ITEM_BEHAVIOR.none,  //初始行为
+                visible:true   //杜鹃动画播完就可以隐藏了
+            }
+        }
+    },
+    "i113":{
+        name: "电脑",
+        state:{
+            "0":{
+                visible: true,     //初始的显示状态
+                behavior: ITEM_BEHAVIOR.goto,  //初始行为
+                goto:11
+            },
+            "1":{
+                behavior: ITEM_BEHAVIOR.none,  //初始行为
+                visible:true   //杜鹃动画播完就可以隐藏了
+            }
+        }
+    },
+
+    "i114":{
+        name: "手帕",
+        state:{
+            "0":{
+                visible: true,     //初始的显示状态
+                behavior: ITEM_BEHAVIOR.goto,  //初始行为
+                goto:6
+            },
+            "1":{
+                behavior: ITEM_BEHAVIOR.none,  //初始行为
+                visible:true   //杜鹃动画播完就可以隐藏了
+            }
+        }
+    },
+
+    "i115":{
+        name: "罗盘",
+        state:{
+            "0":{
+                visible: true,     //初始的显示状态
+                behavior: ITEM_BEHAVIOR.global,  //初始行为
+                global:3
+            },
+            "1":{
+                behavior: ITEM_BEHAVIOR.none,  //初始行为
+                visible:false   //杜鹃动画播完就可以隐藏了
+            }
+        }
+    },
+    "i116":{
+        name: "暗门",
+        state:{
+            "0":{
+                visible: true,     //初始的显示状态
+                behavior: ITEM_BEHAVIOR.none,  //初始行为
+            },
+            "1":{
+                behavior: [ITEM_BEHAVIOR.wait,ITEM_BEHAVIOR.hint],  //初始行为
+                hint:7,   //杜鹃动画播完就可以隐藏了
+                wait:["g3"]
+            },
+            "2":{
+                visible:false,
+                behavior:ITEM_BEHAVIOR.none
+            }
+        }
+    },
+    "i117":{
+        name: "打开的暗门",
+        state:{
+            "0":{
+                visible: false,     //初始的显示状态
+                behavior: ITEM_BEHAVIOR.none,  //初始行为
+            },
+            "1":{
+                visible:true,
+                behavior: ITEM_BEHAVIOR.hint,  //初始行为
+                hint:8
+            }
+        }
+    },
+    "i118":{
+        name:"桌上的纸团",
+        state:{
+            "0":{
+                visible:true,
+                behavior:ITEM_BEHAVIOR.none,
+            },
+            "1":{
+                visible:false
+            }
+        }
+    },
+    "i198":{
+        name: "云朵移动",
+        state:{
+            "0":{
+                visible: true,     //初始的显示状态
+                behavior: ITEM_BEHAVIOR.none,  //初始行为
+            }
+        }
+    },
+    "i199":{
+        name: "场景光晕",
+        state:{
+            "0":{
+                visible: true,     //初始的显示状态
+                behavior: ITEM_BEHAVIOR.none,  //初始行为
+            }
+        }
+    },
+
     //s2抽屉
     "i201":{
         name:"娃娃",
@@ -286,63 +497,171 @@ ITEM_CONFIG.data = {
             }
         }
     },
-    //s3掖庭
+    //s3窗口
     "i301":{
-        name:"纸团",
+        name:"无人机",
         state:{
             "0":{
-                goto:4,     //进入拼图玩法
                 visible:true,
-                behavior:ITEM_BEHAVIOR.goto,
+                behavior:ITEM_BEHAVIOR.action,
             },
             "1":{
-                visible:false,   //纸条消失
+                visible:false,   //飞机消失
                 behavior:ITEM_BEHAVIOR.none,
             }
         }
     },
-    "i302":{
-        name:"佛像",
+   //s4木质拼图
+    "i401":{
+        name:"拼图1",
         state:{
             "0":{
-                action:true,    //有一个消失的动画
-                hint:null,      //等待被其他物品组合
-                wait:["g2"],         //配置等待的物品
-                behavior:ITEM_BEHAVIOR.wait,     //佛像刚开始没有交互
-            },
-            "1":{
-                visible:false   //完成组合后佛像消失
-            }
-        }
-    },
-    "i501":{
-        name:"关闭的门",
-        state:{
-            "0":{
-                hint:5,
-                wait:["g3"],    //需要一把钥匙
-                action:true,    //门有一个打开动画
                 visible:true,
-                behavior:[ITEM_BEHAVIOR.hint,ITEM_BEHAVIOR.wait],
+                wait:["g3"],
+                hint:1,
+                behavior:[ITEM_BEHAVIOR.wait,ITEM_BEHAVIOR.hint]
             },
             "1":{
-                visible:false   //关闭的门组合后播放打开动画 下回就不显示了
+                visible:false
             }
         }
     },
-    "i502":{
+    //s4木质拼图
+    "i411":{
+        name:"完成的拼图1",
         state:{
-            name:"打开的门",
             "0":{
-                goto:6, //到下一个场景
+                visible:false,
+            },
+            "1":{
+                visible:true,
+                behavior:ITEM_BEHAVIOR.none
+            }
+        }
+    },
+    "i402":{
+        name:"拼图2",
+        state:{
+            "0":{
+                visible:true,
+                wait:["g4"],
+                hint:1,
+                behavior:[ITEM_BEHAVIOR.wait,ITEM_BEHAVIOR.hint]
+            },
+            "1":{
+                visible:false
+            }
+        }
+    },
+    //s4木质拼图
+    "i412":{
+        name:"完成的拼图2",
+        state:{
+            "0":{
+                visible:false,
+            },
+            "1":{
+                visible:true,
+                behavior:ITEM_BEHAVIOR.none
+            }
+        }
+    },
+
+    //S9盒子场景
+    "i901":{
+        name:"盖子",
+        state:{
+            "0":{
+                visible:true,
+                behavior:ITEM_BEHAVIOR.action
+            },
+            "1":{
+                visible:false,
+                behavior:ITEM_BEHAVIOR.none,
+            }
+        }
+    },
+    "i911":{
+        name:"打开的盖子",
+        state:{
+            "0":{
                 visible:false,
                 behavior:ITEM_BEHAVIOR.none,
             },
             "1":{
-                visible:true    //动画播放完后显示打开的门
+                visible:true
             }
         }
     },
+    "i902":{
+        name:"钥匙",
+        state:{
+            "0":{
+                visible:false,
+                behavior:ITEM_BEHAVIOR.none
+            },
+            "1":{
+                visible:true,
+                global:5,
+                behavior:ITEM_BEHAVIOR.global,
+            },
+            "2":{
+                visible:false,
+                behavior:ITEM_BEHAVIOR.none
+            }
+        }
+    },
+    //小桌子
+    "i1001":{
+        name:"纸团",
+        state:{
+            "0":{
+                visible:true,
+                global:6,
+                behavior:ITEM_BEHAVIOR.global,
+            },
+            "1":{
+                visible:false,
+                behavior:ITEM_BEHAVIOR.none
+            }
+        }
+    },
+    "i1002":{
+        name:"电话",
+        state:{
+            "0":{
+                visible:true,
+                hint:4,
+                behavior:ITEM_BEHAVIOR.hint,
+            }
+        }
+    },
+
+    "i1101":{
+        name:"没解锁的电脑",
+        state:{
+            "0":{
+                visible:true,
+                actionIndex:1,
+                behavior:ITEM_BEHAVIOR.action
+            },
+            "1":{
+                hint:3,
+                behavior:ITEM_BEHAVIOR.hint,
+            },
+            "2":{
+                hint:15,
+                actionIndex:2,
+                wait:["g7"],
+                behavior:[ITEM_BEHAVIOR.wait,ITEM_BEHAVIOR.hint]
+            },
+            "3":{
+                actionIndex:3,
+                behavior:ITEM_BEHAVIOR.none
+            }
+        }
+    }
+
 };
 
 

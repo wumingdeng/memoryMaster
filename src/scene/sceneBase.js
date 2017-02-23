@@ -8,7 +8,6 @@ var sceneBase = cc.Layer.extend({
     _type:null,     //场景的类型
     _info:null,     //场景信息
     _ui:null,
-    _action:null,
     _clickItem:null,    //当前点击的物品
     _isTouch:false,     //鼠标事件的时候需要判断
     _path:"",       //场景文件路径
@@ -17,23 +16,29 @@ var sceneBase = cc.Layer.extend({
     _bg:null,   //背景图
     _minX:null, //场景的最小X坐标
     _maxX:null, //最大X坐标
-
+    _isBegin:false,
+    _action:null,
+    _touchMoveItem:false,   //是否点击到了可移动物品
+    _touchMoveCount:0,  //判断是否在移动地图
     //_scrollView:null,
 
     ctor:function(id,info){
         this._super();
         this._id = id;
         this._info = info;
+        sceneManager.openScene(this);
         this.init();
     },
-
+    update:function() {
+        this._super()
+    },
     init:function(){
         if (this._info.ui){
             var json = ccs.load(this._info.ui,"res/")
             this._ui = json.node;
             this._action = json.action;
-            // action.gotoFrameAndPlay(-1,true)
-            // this._ui.runAction(action)
+            //action.gotoFrameAndPlay(-1,true)
+            //this._ui.runAction(action)
             this.addChild(this._ui);
             this._path = cc.path.dirname(this._info.ui); //保存路径
 
@@ -49,6 +54,9 @@ var sceneBase = cc.Layer.extend({
 
         this._initSceneItem();
 
+        //初始化记忆模式物品
+        memoryManager.initItem(this._id);
+
     },
 
     //初始化场景中可交互的物品
@@ -56,24 +64,31 @@ var sceneBase = cc.Layer.extend({
         var items = this._info.item;
         this._itemArr = [];     //不能把数组初始化放在属性定义里~! 否则子类会继承到这个数组
         for (var i in items) {
-            var node = ccui.helper.seekWidgetByTag(this._ui,items[i]);
+            var node = cfun.seekWidgetByTag(this._ui,items[i]);
             if (!node) cc.error("没有找到物品" + items[i]);
-            else{
-                if (node._className == "Node") {
-                    //如果是节点 必须把动画帧存起来
-                    var jsonName = this._path + "/" + node.getName() + ".json";
-                    var itemAction = ccs.load(jsonName,"res/").action
-                    var item = itemManager.createItem(items[i],node,itemAction);   //创建物品
-                } else {
-                    item = itemManager.createItem(items[i],node);   //创建物品
-                }
-                this._itemArr.push(item);
+            if (node._className == "Node") {
+                //如果是节点 必须把动画帧存起来
+                var jsonName = this._path + "/" + node.getName() + ".json";
+                var itemAction = ccs.load(jsonName,"res/").action
+                var item = itemManager.createItem(items[i],node,itemAction);   //创建物品
+            } else {
+                item = itemManager.createItem(items[i],node);   //创建物品
             }
+            this._itemArr.push(item);
         }
     },
 
+    getItem:function(id) {
+        for (var i = 0; i < this._itemArr.length; ++i) {
+            if (this._itemArr[i]._id == id) {
+                return this._itemArr[i];
+            }
+        }
+        return false;
+    },
 
     onTouchBegan:function(touch,event){
+        if (!this._isBegin) return false;
         var loc = touch.getLocation();
         loc = this._ui.convertToNodeSpace(loc);
         for (var i = 0; i < this._itemArr.length; ++i){
@@ -82,16 +97,22 @@ var sceneBase = cc.Layer.extend({
                 this._clickItem.onTouchBegan()
                 this._isTouch = true;
                 //return true;
+                if (this._clickItem.haveBehavior(ITEM_BEHAVIOR.move)) {
+                    this._touchMoveItem = true; //点击到可以移动物品 场景不移动
+                }
                 break;
             }
         }
         this._touchBegin = true;
-        touch.stopPropagation();     //停止向下传递事件
+        this._touchMoveCount = 0;
+        if(!cc.sys.isNative){
+            touch.stopPropagation();     //停止向下传递事件
+        }
         return true
     },
 
     onTouchMoved:function(touch,event){
-        if (this._touchBegin && this._canMove) {
+        if (this._touchBegin && this._canMove && !this._touchMoveItem) {
             var delta = touch.getDelta();
             this._ui.x += delta.x;
             //边界判断
@@ -101,6 +122,7 @@ var sceneBase = cc.Layer.extend({
             if (this._ui.x > this._maxX) {
                 this._ui.x = this._maxX;
             }
+            this._touchMoveCount++;
             //return;
         }
         if (this._isTouch) {
@@ -111,10 +133,13 @@ var sceneBase = cc.Layer.extend({
 
     onTouchEnded:function(touch,event){
         this._touchBegin = false;
+        this._touchMoveItem = false;
         if (!this._isTouch) return false;
         this._isTouch = false;
         var loc = touch.getLocation();
-        this._clickItem.onTouchEnded(touch,event);
+        if (this._touchMoveCount < 10) {
+            this._clickItem.onTouchEnded(touch,event);
+        }
 
         return true;
     },
@@ -136,7 +161,12 @@ var sceneBase = cc.Layer.extend({
         this._super();
         this._destroyScene();
     },
-
+    setSceneTouch:function(bool) {
+        this._isBegin = bool;
+    },
+    isTouchEnabled:function() {
+        return this._isBegin;
+    },
     //销毁场景
     _destroyScene:function(){
 

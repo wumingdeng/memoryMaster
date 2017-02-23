@@ -55,3 +55,4 @@ timerHelper.removeAllTimer = function(){
 timerHelper.TALK_TIME=10001 //手机通话时间的定时器
 timerHelper.SILDE_TIME=10002 //手机滑动的文本的闪光定时器
 timerHelper.NUMBER_BTN_TIME=10003 //手机输入数字按钮的定时器
+timerHelper.TIMER_KEY_GAMESCENE7_loadingTimer = 20001

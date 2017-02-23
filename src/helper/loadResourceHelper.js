@@ -32,7 +32,6 @@ function plistAsyncLoading(plistName,pngName,loadingCallBack,num) {
 
 var spriteFrameUITable = [] //存放精灵帧的数组，以便于在方便清理
 var textureUITable = [] //存放纹理的数组，以便于在方便清理
-
 /**
  * 对载入的资源做一次引用计数，防止进入场景中，把还没有使用的但是是需要的资源给清理掉
  * @param {cc.Texture2D} texture
@@ -43,7 +42,7 @@ function addUITableManagement(texture,plist) {
         var spriteFramestable = jsb.fileUtils.getValueMapFromFile(plist)
         for (var key in  spriteFramestable["frames"]) {
             if (key) {
-                var sptFrame = cc.spriteFrameCache.getSpriteFrame(key) 
+                var sptFrame = cc.spriteFrameCache.getSpriteFrame(key)
                 if (!sptFrame) {
 
                 }else{

@@ -8,16 +8,39 @@ GLOBAL_ITEM_CONFIG = {
     g1:{
         name:"手机",
         img:"res/globalItem/zhitiao.png",
+        imgMove:"res/globalItem/zhitiao.png",
         target:[102]        //全局物品交互的目标 可以是多个  全局物品使用后判断还有没有其他目标 如果没有了 就从物品栏中消失
     },
     g2:{
-        name:"眉笔",
+        name:"破损的画",
         img:"res/globalItem/meibi.png",
-        target:[302]        //目标是佛像
+        imgMove:"res/globalItem/meibi.png",
+        target:[],
+        scene:2       //从全局物品打开一个场景
     },
     g3:{
-        name:"钥匙",
-        img:"res/globalItem/yaoshi.png",
-        target:[501]        //目标是花园的门
+        name:"罗盘",
+        img:"res/globalItem/item_lunpan.png",
+        imgMove:"res/globalItem/item_lunpan2.png",
+        target:[116],
+    },
+    g5:{
+        name:"抽屉钥匙",
+        img:"res/globalItem/item_yaoshi.png",
+        imgMove:"res/globalItem/item_yaoshi2.png",
+        target:[101]
+    },
+    g6:{
+        name:"纸团",
+        img:"res/globalItem/item_zhituan.png",
+        imgMove:"res/globalItem/item_zhituan2.png",
+        target:[1001],
+        scene:12
+    },
+    g7:{
+        name:"纸片",
+        img:"res/globalItem/item_zhipian.png",
+        imgMove:"res/globalItem/item_zhipian2.png",
+        target:[1101]
     }
 };

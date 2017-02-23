@@ -24,10 +24,14 @@ var findSomethingLayer = cc.Layer.extend({
     _index:0,//game's index
     _taskId:0,
     _pt:null,
-    ctor: function (index, ui ,tid) {
+    _findOne:false,
+    _isCg:false,  //是否为完整的游戏
+    _par:null,
+    ctor: function (index, parent ,tid) {
         this._super();
         this._index = index;
-        this._node = ui;
+        this._par = parent
+        this._node = parent._ui;
         this._taskId = tid;
         this.initScene()
     },
@@ -43,45 +47,41 @@ var findSomethingLayer = cc.Layer.extend({
     },
     initScene: function () {
         this.initGameData()
-        // jsb.fileUtils.addSearchPath("res")
-        // this._node = ccs.load(res.gameScene7_json).node
         this.drawWidget()
         this._node.getChildByName("imgSource").setVisible(false)
-        var txtTitle = this._node.getChildByName("txtTitle")
-        txtTitle.setString("按住并移动来收集线索")
-        //txtTitle.fontName(res.custom_ttf)
-        //TODO setTextBold
-        //cfun.setTextBold(this._clueCountText)
+//        var txtTitle = this._node.getChildByName("txtTitle")
+//        txtTitle.setString("按住并移动来收集线索")
         this._clueCountText = this._node.getChildByName("txtProgess")
         this._clueCountText.setString("0/" + this._allClueCount)
-        // this.addChild(this._node)
 
         /*放大镜的遮罩效果*/
         var holesClipper = new cc.ClippingNode() //--剪裁节点
         holesClipper.setInverted(true)
         holesClipper.addChild(this._maskSpt)
         this._draw = new cc.DrawNode()
-        var points = [cc.p(0, 0), cc.p(130, 0), cc.p(130, 130), cc.p(0, 130)]
+        var points = [cc.p(0, 0), cc.p(230, 0), cc.p(230, 230), cc.p(0, 230)]
         this._draw.drawPoly(points, cc.color(1, 0, 0, 0.5), 4, cc.color(0, 0, 1, 1))
 
-        this._holeUI = sptExt.createSprite("yidongqu.png","gameScene7_1.plist")
-        var sptYes = sptExt.createSprite("gg.png", "gameScene7_1.plist")
-        sptYes.setName("yes")
-        sptYes.setOpacity(0)
-        var sptNo = sptExt.createSprite("XX.png", "gameScene7_1.plist")
-        sptNo.setName("no")
-        sptNo.setOpacity(0)
-        sptNo.setPosition(125, 25)
-        sptYes.setPosition(125, 25)
-        this._holeUI.addChild(sptYes)
-        this._holeUI.addChild(sptNo)
+        this._holeUI = sptExt.createSprite("02.png","findSome.plist")
+        if(this._isCg) {
+            var sptYes = sptExt.createSprite("gg.png", "gameScene7_1.plist")
+            sptYes.setName("yes")
+            sptYes.setOpacity(0)
+            var sptNo = sptExt.createSprite("XX.png", "gameScene7_1.plist")
+            sptNo.setName("no")
+            sptNo.setOpacity(0)
+            sptNo.setPosition(125, 25)
+            sptYes.setPosition(125, 25)
+            this._holeUI.addChild(sptYes)
+            this._holeUI.addChild(sptNo)
+        }
         holesClipper.setStencil(this._draw)
         this._draw.setVisible(false)
         this._holeUI.setVisible(false)
         holesClipper.setRotation(180)
         holesClipper.setScaleX(-1)
         this._node.addChild(holesClipper)
-        for (var i = 1; i <= 5; i++) {
+        for (var i = 1; i <= 8; i++) {
             this._node.getChildByName("bian_" + i).setLocalZOrder(10 + i)
         }
         var maskW = this._maskSpt.width
@@ -90,22 +90,23 @@ var findSomethingLayer = cc.Layer.extend({
         this.addChild(this._holeUI, 100)
         holesClipper.setPosition(Number(this._rectArr[0]) + maskW / 2, Number(this._rectArr[1]) + maskH / 2)
 
-        var spt = sptExt.createSprite("jindutiao.png", "gameScene7_1.plist")
-        this._loadingbarTimer = sptExt.createSprite("jindutiaodi.png", "gameScene7_1.plist")
-        this._pt = new cc.ProgressTimer(spt)
-        this._pt.setPosition(this._loadingbarTimer.width / 2,this._loadingbarTimer.height/ 2)
-        this._pt.setMidpoint(cc.p(0, 0))
-        this._pt.setBarChangeRate(cc.p(1, 0))
-        this._pt.setType(cc.ProgressTimer.TYPE_BAR)
-        this.addChild(this._loadingbarTimer)
-        this._loadingbarTimer.addChild(this._pt)
-        this._loadingbarTimerText = new cc.LabelTTF()
-        this._loadingbarTimerText.setFontSize(27)
-        this._loadingbarTimerText.setPosition(this._pt.getPosition())
-        this._loadingbarTimer.addChild(this._loadingbarTimerText)
-        this._loadingbarTimer.setVisible(false)
-
-        cc.eventManager.addListener({
+        if(this._isCg) {
+            var spt = sptExt.createSprite("jindutiao.png", "gameScene7_1.plist")
+            this._loadingbarTimer = sptExt.createSprite("jindutiaodi.png", "gameScene7_1.plist")
+            this._pt = new cc.ProgressTimer(spt)
+            this._pt.setPosition(this._loadingbarTimer.width / 2, this._loadingbarTimer.height / 2)
+            this._pt.setMidpoint(cc.p(0, 0))
+            this._pt.setBarChangeRate(cc.p(1, 0))
+            this._pt.setType(cc.ProgressTimer.TYPE_BAR)
+            this.addChild(this._loadingbarTimer)
+            this._loadingbarTimer.addChild(this._pt)
+            this._loadingbarTimerText = new cc.LabelTTF()
+            this._loadingbarTimerText.setFontSize(27)
+            this._loadingbarTimerText.setPosition(this._pt.getPosition())
+            this._loadingbarTimer.addChild(this._loadingbarTimerText)
+            this._loadingbarTimer.setVisible(false)
+        }
+        this._listener = cc.eventManager.addListener({
             prevTouchId: -1,
             swallowTouches:false,
             event: cc.EventListener.TOUCH_ONE_BY_ONE,
@@ -113,12 +114,13 @@ var findSomethingLayer = cc.Layer.extend({
             onTouchMoved: this.TouchMoved.bind(this),
             onTouchEnded: this.TouchEnded.bind(this),
             onTouchCancelled: this.TouchCancelled.bind(this)
-        }, this);
+        }, this._node);
     },
-    TouchBegan: function (event) {
-        var location = event.getLocation()
+    TouchBegan: function (touch,event) {
+        if(this._findOne) return false
+        var location = touch.getLocation()
         var innerPos = this._maskSpt.convertToNodeSpace(location)
-        this._draw.setPosition(innerPos.x - 65 - this._rectArr[2] / 2, innerPos.y - 65 - this._rectArr[3] / 2)
+        this._draw.setPosition(innerPos.x - 115 - this._rectArr[2] / 2, innerPos.y - 115 - this._rectArr[3] / 2)
         this._holeUI.setPosition(location)
         this._progress = 0
         var isInner = this.isInner(innerPos)
@@ -128,30 +130,33 @@ var findSomethingLayer = cc.Layer.extend({
             this.checkFindClue(location)
         return true
     },
-    TouchMoved: function (event) {
-        var location = event.getLocation()
+    TouchMoved: function (touch,event) {
+        var location = touch.getLocation()
         var innerPos = this._maskSpt.convertToNodeSpace(location)
-        this._draw.setPosition(innerPos.x - 65 - this._rectArr[2] / 2, innerPos.y - 65 - this._rectArr[3] / 2)
+        this._draw.setPosition(innerPos.x - 115 - this._rectArr[2] / 2, innerPos.y - 115 - this._rectArr[3] / 2)
         this._holeUI.setPosition(location)
         var isInner = this.isInner(innerPos)
         if (isInner)
             this.checkFindClue(location)
         this._draw.setVisible(isInner)
         this._holeUI.setVisible(isInner)
+
     },
-    TouchEnded: function (event) {
+    TouchEnded: function (touch,event) {
         this._draw.setVisible(false)
         this._holeUI.setVisible(false)
         this._progress = -1
-        this.updateClue()
+        if(this._isCg)
+            this.updateClue()
     },
     TouchCancelled: function (event) {
 
     },
 //-- 首先获取静态数据取到当前需要找的点
 //-- 然后检索当前的可视区域里手否有存在静态数据里的点
-//-- 如果存在的话。读条信息，
+//-- 如果存在的话。读条信息，d
     checkFindClue: function (pos) {
+        if(this._findOne) return
         for (var i in this._checkPos) {
             var idx = Number(i)+1
             var v = this._checkPos[i]
@@ -161,12 +166,19 @@ var findSomethingLayer = cc.Layer.extend({
             var customRect = cc.rect(this._holeUI.getPositionX(), this._holeUI.getPositionY(), 30, 30)
             if (cc.rectIntersectsRect(rect, customRect)) {
                 this._curTag = idx
-                if (this._progress == 1) {
-                    this._yesOrNo = yesOrNot == "1"
-                    this.updateClue(pos)
-                } else {
-                    this._progress = 0
-                    this.updateClue(pos)
+                this._yesOrNo = yesOrNot
+                if(this._isCg){
+                    if (this._progress == 1) {
+                        this.updateClue(pos)
+                    } else {
+                        this._progress = 0
+                        this.updateClue(pos)
+                    }
+                }else{
+                    this._findOne = true
+                    var cur = this._node.getChildByTag(this._curTag)
+                    cur.setVisible(true)
+                    ActionHelper.twinkleAction(cur, 2,this.onSuccess.bind(this))
                 }
                 return;
             } else {
@@ -175,7 +187,8 @@ var findSomethingLayer = cc.Layer.extend({
         }
         this._curTag = 0
         this._progress = -1
-        this.updateClue(pos)
+        if(this._isCg)
+            this.updateClue(pos)
     },
     /*做检查线索的检测状态*/
     updateClue: function (positon) {
@@ -184,13 +197,13 @@ var findSomethingLayer = cc.Layer.extend({
             self._progress = 1
             self._node.getChildByTag(self._curTag).setVisible(true)
             function loadEndFun() {
-                timerHelper.removeTimer(gc.TIMER_KEY_GAMESCENE7_loadingTimer)
+                timerHelper.removeTimer(timerHelper.TIMER_KEY_GAMESCENE7_loadingTimer)
                 self._loadingbarTimer.setVisible(false)
 
                 //--把成功找到的数组设置为"", 以方便后续的遍历数组的优化过滤
                 //--由于数组的下标跟资源的tag值想对应，所以不能直接清理数组，会导致数组跟对应的资源数据对不上
                 self._checkPos[self._curTag-1] = ""
-                if (self._yesOrNo) {
+                if (self._yesOrNo=="1") {
                     self.onSuccess()
                 } else {
                     self.onFail()
@@ -210,13 +223,14 @@ var findSomethingLayer = cc.Layer.extend({
                     tempPecent = tempPecent + 1
                     this._loadingbarTimerText.setString(tempPecent + "%")
                 }else{
+                    this._findOne=true
                     loadEndFun()
                 }
             }
-            timerHelper.createTimer(onReadLoading,this,0,gc.TIMER_KEY_GAMESCENE7_loadingTimer)
+            timerHelper.createTimer(onReadLoading,this,0,timerHelper.TIMER_KEY_GAMESCENE7_loadingTimer)
         } else if (self._progress == -1) {
             if (self._loadingbarTimer.isVisible()) {
-                timerHelper.removeTimer(gc.TIMER_KEY_GAMESCENE7_loadingTimer)
+                timerHelper.removeTimer(timerHelper.TIMER_KEY_GAMESCENE7_loadingTimer)
                 self._loadingbarTimer.setVisible(false)
             }
 
@@ -265,29 +279,39 @@ var findSomethingLayer = cc.Layer.extend({
     onSuccess:function() {
         self = this
         function runFailedAction(){
-            var evidence = self._node.getChildByName("evidence")
             var cur = self._node.getChildByTag(self._curTag)
             cur.setLocalZOrder(1000)
             //--根据两个坐标点求距离
             //--以每秒300像素的速度
-            function moveEndFun(){
 
+            var evidence = self._node.getChildByName("evidence")
+            var spt = sptExt.createSprite("CJ1_chouti_yuankuang.png", "gameScene_1_chouti.plist")
+            spt.setScale(0.5)
+            spt.setPosition(evidence.getPosition())
+            spt.setVisible(false)
+            self._node.addChild(spt,100)
+            console.log("dddd")
+            var distance = Math.sqrt(Math.pow(cur.getPositionX() - evidence.getPositionX(), 2) + Math.pow(cur.getPositionY() - evidence.getPositionY(), 2))
+            var moveTo = new cc.MoveTo(distance / 300, evidence.getPosition())
+            function moveEndFun() {
                 evidence.setVisible(true)
-                cur.setVisible(false)
+                spt.setVisible(true)
+                this._findOne = false
             }
-            var distance = Math.sqrt(Math.pow(cur.getPositionX()-evidence.getPositionX() ,2) + Math.pow(cur.getPositionY()-evidence.getPositionY(),2))
-            var moveTo = new cc.MoveTo(distance/500,evidence.getPosition())
-            cur.runAction(new cc.Sequence(moveTo,new cc.CallFunc(moveEndFun)))
+            cur.runAction(new cc.Sequence(moveTo, new cc.CallFunc(moveEndFun.bind(self))))
             self._clueCount++;
             self._clueCountText.setString(self._clueCount+"/"+self._allClueCount)
             if (self._clueCount == self._allClueCount) {
-                self.getEventDispatcher().removeEventListener(self._listener)
+                self._listener.setEnabled(false)
                 self._draw.setVisible(false)
                 self._holeUI.setVisible(false)
-                //self._commonUI.GameConfirm(4) TODO
+                self._par.finishGame()
             }
         }
-        self.failed(self._holeUI.getChildByName("yes"),runFailedAction)
+        if(this._isCg)
+            self.failed(self._holeUI.getChildByName("yes"),runFailedAction)
+        else
+            runFailedAction()
     },
     onFail:function(){
         this.failed(this._holeUI.getChildByName("no"))

@@ -22,8 +22,8 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": -219.2311,
-                "Y": 18.968,
+                "X": 318.3042,
+                "Y": 56.8944,
                 "FrameIndex": 20,
                 "EasingData": {
                   "Type": 0
@@ -102,7 +102,7 @@
             "Property": "FrameEvent",
             "Frames": [
               {
-                "Value": "end",
+                "Value": "finish",
                 "FrameIndex": 20,
                 "Tween": false,
                 "ctype": "EventFrameData"
@@ -117,7 +117,7 @@
         {
           "StartIndex": 0,
           "EndIndex": 20,
-          "Name": "doAction",
+          "Name": "action1",
           "ctype": "AnimationInfoData"
         }
       ],
@@ -139,8 +139,8 @@
               "ScaleY": 0.5
             },
             "Position": {
-              "X": -219.2311,
-              "Y": 18.968
+              "X": 0.0,
+              "Y": 0.0
             },
             "Scale": {
               "ScaleX": 1.0,
@@ -156,10 +156,10 @@
               "X": 0.0,
               "Y": 0.0
             },
-            "LeftMargin": -255.7311,
-            "RightMargin": 182.7311,
-            "TopMargin": -64.468,
-            "BottomMargin": -26.532,
+            "LeftMargin": -36.5,
+            "RightMargin": -36.5,
+            "TopMargin": -45.5,
+            "BottomMargin": -45.5,
             "Tag": 235,
             "ActionTag": 831348637,
             "Size": {
@@ -184,7 +184,8 @@
             "ColorVector": {
               "ScaleY": 1.0
             },
-            "TouchEnable": true,
+            "Scale9Width": 1,
+            "Scale9Height": 1,
             "AnchorPoint": {},
             "Position": {
               "X": -37.9457,
@@ -214,7 +215,7 @@
               "X": 200.0,
               "Y": 200.0
             },
-            "Name": "click",
+            "Name": "click1",
             "ctype": "PanelObjectData"
           },
           {
@@ -242,7 +243,6 @@
             "TopMargin": 16.8637,
             "BottomMargin": -16.8637,
             "Tag": 237,
-            "FrameEvent": "end",
             "ActionTag": -2082392807,
             "Size": {
               "X": 0.0,

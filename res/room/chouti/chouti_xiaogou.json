@@ -22,8 +22,8 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": 2.1086,
-                "Y": -2.1084,
+                "X": -20.5228,
+                "Y": -10.9094,
                 "FrameIndex": 5,
                 "EasingData": {
                   "Type": 0
@@ -31,8 +31,8 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": 191.808,
-                "Y": 69.5558,
+                "X": 39.9572,
+                "Y": 209.0837,
                 "FrameIndex": 20,
                 "EasingData": {
                   "Type": 0
@@ -183,7 +183,7 @@
                 "ctype": "EventFrameData"
               },
               {
-                "Value": "end",
+                "Value": "finish",
                 "FrameIndex": 20,
                 "Tween": false,
                 "ctype": "EventFrameData"
@@ -198,7 +198,7 @@
         {
           "StartIndex": 0,
           "EndIndex": 20,
-          "Name": "doAction",
+          "Name": "action1",
           "ctype": "AnimationInfoData"
         }
       ],
@@ -220,11 +220,11 @@
               "ScaleY": 0.5
             },
             "Position": {
-              "X": 191.808,
-              "Y": 69.5558
+              "X": 2.1078,
+              "Y": -2.1086
             },
             "Scale": {
-              "ScaleX": -1.0,
+              "ScaleX": 1.0,
               "ScaleY": 1.0
             },
             "CColor": {},
@@ -237,10 +237,10 @@
               "X": 0.0,
               "Y": 0.0
             },
-            "LeftMargin": 133.308,
-            "RightMargin": -250.308,
-            "TopMargin": -135.0558,
-            "BottomMargin": 4.0558,
+            "LeftMargin": -56.3922,
+            "RightMargin": -60.6078,
+            "TopMargin": -63.3914,
+            "BottomMargin": -67.6086,
             "Tag": 224,
             "ActionTag": 426792769,
             "Size": {
@@ -267,7 +267,6 @@
             },
             "Scale9Width": 1,
             "Scale9Height": 1,
-            "TouchEnable": true,
             "AnchorPoint": {},
             "Position": {
               "X": -65.3547,
@@ -297,7 +296,7 @@
               "X": 200.0,
               "Y": 200.0
             },
-            "Name": "click",
+            "Name": "click1",
             "ctype": "PanelObjectData"
           },
           {
@@ -325,7 +324,6 @@
             "TopMargin": 73.7786,
             "BottomMargin": -73.7786,
             "Tag": 229,
-            "FrameEvent": "end",
             "ActionTag": 405676214,
             "Size": {
               "X": 0.0,

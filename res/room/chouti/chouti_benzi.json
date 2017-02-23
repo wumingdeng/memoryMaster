@@ -7,7 +7,7 @@
       "Animation": {
         "Duration": 20,
         "Speed": 1.0,
-        "ActivedAnimationName": "doAction",
+        "ActivedAnimationName": "action1",
         "Timelines": [
           {
             "ActionTag": 1883120603,
@@ -23,8 +23,8 @@
                 "ctype": "PointFrameData"
               },
               {
-                "X": -261.3911,
-                "Y": 99.0705,
+                "X": -203.8572,
+                "Y": -35.6354,
                 "FrameIndex": 20,
                 "EasingData": {
                   "Type": 0
@@ -103,7 +103,7 @@
             "Property": "FrameEvent",
             "Frames": [
               {
-                "Value": "end",
+                "Value": "finish",
                 "FrameIndex": 20,
                 "Tween": false,
                 "ctype": "EventFrameData"
@@ -118,7 +118,7 @@
         {
           "StartIndex": 0,
           "EndIndex": 20,
-          "Name": "doAction",
+          "Name": "action1",
           "ctype": "AnimationInfoData"
         }
       ],
@@ -185,7 +185,8 @@
             "ColorVector": {
               "ScaleY": 1.0
             },
-            "TouchEnable": true,
+            "Scale9Width": 1,
+            "Scale9Height": 1,
             "AnchorPoint": {},
             "Position": {
               "X": -96.9712,
@@ -215,7 +216,7 @@
               "X": 200.0,
               "Y": 200.0
             },
-            "Name": "click",
+            "Name": "click1",
             "ctype": "PanelObjectData"
           },
           {

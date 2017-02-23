@@ -45,7 +45,7 @@ cfun.eventListener = function(eventName,handler){
 
 cfun.addEventListener = function(target,began,moved,ended,cancelled) {
     if ('mouse' in cc.sys.capabilities) {
-        var listener = {
+         var listener = {
             event: cc.EventListener.MOUSE
         };
         if (began) {
@@ -158,15 +158,9 @@ cfun.addFullScreen = function(name,listener,isPropagate) {
     name = String(name);
     if (!cc.director.getRunningScene().getChildByName(name)) {
         var parclose = new ccui.Layout();
-//        var function onClickFullScreen(sender,eventType)
-//            if eventType == ccui.TouchEventType.began then
-//                print("全屏遮挡began")
-//            elseif eventType == ccui.TouchEventType.moved then
-//                print("全屏遮挡moved")
-//            elseif eventType == ccui.TouchEventType.ended then
-//                print("全屏遮挡ended")
-//            end
-//        end
+        //function onClickFullScreen(sender,eventType) {
+        //    trace("touch full")
+        //}
         parclose.setPropagateTouchEvents(false);
         parclose.setSwallowTouches(true);
         parclose.setContentSize(vsize);
@@ -175,16 +169,18 @@ cfun.addFullScreen = function(name,listener,isPropagate) {
         //parclose.setBackGroundColorType(2)
         //parclose.setBackGroundColor(cc.color(0,0,0));
 //      parclose.setGlobalZOrder(100)
-//      parclose:addTouchEventListener(onClickFullScreen)
+//        parclose.addTouchEventListener(onClickFullScreen);
 //      调整遮挡层位置
-        cc.director.getRunningScene().addChild(parclose);
+        parclose.setPropagateTouchEvents(false);
+        //parclose.setSwallowTouches(true)
+        cc.director.getRunningScene().addChild(parclose,10000);
         if (listener) {
             isPropagate = isPropagate || false;
             parclose.setPropagateTouchEvents(isPropagate);
 //            parclose.setSwallowTouches(true)
             parclose.addTouchEventListener(listener);
         }
-        trace1("添加全屏遮挡:" + name);
+        trace("添加全屏遮挡:" + name);
     }
 };
 
@@ -197,7 +193,7 @@ cfun.removeFullScreen = function(name) {
     var screen = cc.director.getRunningScene().getChildByName(name)
     if (screen) {
         cc.director.getRunningScene().removeChild(screen);
-        trace1("移除全屏遮挡:" + name);
+        trace("移除全屏遮挡:" + name);
     }
 };
 
@@ -212,24 +208,30 @@ cfun.addTouchParclose = function(target){
         }
     }
 
-
-
-    function onBegan(touch){
+    function onBegan(touch,event){
         var pos = touch.getLocation();
         if (isInTarget(pos)){
-            touch.stopPropagation()
+            if(!cc.sys.isNative){
+                touch.stopPropagation();     //停止向下传递事件
+            }
+            return false
+        }
+        return true
+    }
+    function onMoved(touch,event){
+        var pos = touch.getLocation();
+        if (isInTarget(pos)){
+            if(!cc.sys.isNative){
+                touch.stopPropagation();     //停止向下传递事件
+            }
         }
     }
-    function onMoved(touch){
+    function onEnded(touch,event){
         var pos = touch.getLocation();
         if (isInTarget(pos)){
-            touch.stopPropagation()
-        }
-    }
-    function onEnded(touch){
-        var pos = touch.getLocation();
-        if (isInTarget(pos)){
-            touch.stopPropagation()
+            if(!cc.sys.isNative){
+                touch.stopPropagation();     //停止向下传递事件
+            }
         }
     }
 
@@ -332,3 +334,61 @@ cfun.getNum = function(arr) {
     });
     return len;
 };
+
+/**
+ * Finds a widget whose tag equals to param tag from root widget.
+ * @param {ccui.Widget} root
+ * @param {number} tag
+ * @returns {ccui.Widget}
+ */
+cfun.seekWidgetByTag = function (root, tag) {
+    if (!root)
+        return null;
+    if (root.getTag() === tag)
+        return root;
+
+    var arrayRootChildren = root.getChildren();
+    var length = arrayRootChildren.length;
+    for (var i = 0; i < length; i++) {
+        var child = arrayRootChildren[i];
+        var res = cfun.seekWidgetByTag(child, tag);
+        if (res !== null)
+            return res;
+    }
+    return null;
+};
+
+/**
+ * Finds a widget whose name equals to param name from root widget.
+ * @param {cc.Node} root
+ * @param {String} name
+ * @returns {ccui.Widget}
+ */
+cfun.seekWidgetByName = function (root, name) {
+    if (!root)
+        return null;
+    if (root.getName() === name)
+        return root;
+    var arrayRootChildren = root.getChildren();
+    var length = arrayRootChildren.length;
+    for (var i = 0; i < length; i++) {
+        var child = arrayRootChildren[i];
+        var res = cfun.seekWidgetByName(child, name);
+        if (res !== null)
+            return res;
+    }
+    return null;
+};
+
+//创建动画
+cfun.getAnimation = function(json,loop,callback,node) {
+    var animation = ccs.load(json,"res/");
+    node = node || animation.node;
+    var action = animation.action;
+    node.runAction(action);
+    action.gotoFrameAndPlay(0,loop);
+    if (callback) {
+        action.setFrameEventCallFunc(callback);
+    }
+    return {node:node,action:action};
+}

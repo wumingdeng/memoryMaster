@@ -25,98 +25,73 @@ TASK_CONFIG.data = {
         nextTask:1002,
         isOpen:true,
         result:{
-            i103:1,
-            i104:1
         }
 
     },
 
     1002: {
-        description: "和右侧杜鹃对话",
+        description: "椅子移动到位",
         scene: 1,    //任务发生的场景
         type: TASK_TYPE.click,     //任务类型
-        target: 102,   //任务的目标物品
-        nextTask:[1003,1005],
+        target: 107,   //任务的目标物品
+        nextTask:[],
+        isOpen:true,
         result: {
-            i101:2,
-            i102:2,
-            i103:1,
-            i105:1
-
-        }
-    },
-
-    1003:{
-        description: "让蜡烛熄灭",
-        scene:1,
-        type:TASK_TYPE.click,
-        target:103,   //目标是蜡烛
-        nextTask:1008,
-        result:{
-            i103:2,
-            i104:1
-        }
-    },
-    1004:{
-        description: "点击化妆盒 并且和左侧对娟对话",
-        scene:1,
-        type:TASK_TYPE.multi,
-        target:[1005,2001],       //配置前置任务
-        nextTask:4001,
-        isOpen:true,
-        result:{
-            talk:3,     //播放对话
-            i106:1
-        }
-    },
-    1005:{
-        description:"和左侧杜鹃说话",
-        scene:1,
-        type:TASK_TYPE.click,
-        target:101,
-        nextTask:null,
-        completeTask:1004,
-        result:{
-            //没有改变状态 但会影响10004任务
-        }
-    },
-    1006:{
-        description:"得到眉笔",
-        scene:1,
-        type:TASK_TYPE.click,
-        target:107,
-        nextTask:3001,
-        isOpen:true,
-        result:{
-            //global:2,   //这个配置应该可以省略
-            i107:1
-        }
-    },
-    1007:{
-        description:"把纸条交给杜鹃",
-        scene:1,
-        type:TASK_TYPE.combination,
-        target:102,
-        nextTask:2002,
-        result:{
-            talk:5,     //任务完成后会播放一段对话
-            i102:4,
-            i201:1
-        }
-    },
-
-    1008:{
-        description:"点亮熄灭的蜡烛",
-        scene:1,
-        type:TASK_TYPE.combination,
-        target:104,
-        nextTask:null,
-        result:{
-            i103:3,
-            i104:2,
+            i105:1,
+            i107:1,
             i108:1
         }
     },
+
+    1003: {
+        description: "找到拼图碎片2",
+        scene: 1,    //任务发生的场景
+        type: TASK_TYPE.click,     //任务类型
+        target: 106,   //任务的目标物品
+        nextTask:[4002],
+        isOpen:true,
+        result: {
+            i106:1
+        }
+    },
+
+    1004: {
+        description:"打开抽屉",
+        scene:1,
+        type:TASK_TYPE.combination,
+        target:101,
+        result:{
+            i101:1,
+            open:2
+        }
+    },
+
+
+    1005: {
+        description:"找到罗盘",
+        scene:1,
+        type:TASK_TYPE.click,
+        isOpen:true,
+        target:115,
+        result:{
+            i115:1,
+            hint:12
+        }
+    },
+
+    1006:{
+        description:"打开密道",
+        scene:1,
+        type:TASK_TYPE.combination,
+        target:116,
+        result:{
+            i116:2,
+            i117:1,
+            hint:9
+        }
+    },
+
+
 
     2001:{
         description:"拨开娃娃",
@@ -228,44 +203,162 @@ TASK_CONFIG.data = {
         nextTask:null,
         isOpen:true,
         result:{
-            i208:2
+            i208:2,
+            hint:14,
+            close:2
         }
     },
 
     3001:{
-        description:"等待眉笔的佛像?",
+        description:"赶走无人机",
         scene:3,
-        type:TASK_TYPE.combination, //这是一个组合物品的任务
-        target:302,
+        type:TASK_TYPE.click,
+        target:301,
         nextTask:null,
+        isOpen:true,
         result:{
-            i302:1
-        }
-    },
-    4001:{
-        description:"完成纸团拼图",
-        scene:4,
-        type:TASK_TYPE.game,    //完成游戏就完成的任务
-        nextTask:1007,
-        result:{
-            global:1,        //完成后获得全局物品 纸条
             i301:1,
-            i101:3,
-            i102:3
+            i102:1,  //场景1的无人机消失
+            close:3,
+            hint:11
         }
+
     },
-    5001:{
-        description:"用钥匙开门",
-        scene:5,
-        type:TASK_TYPE.combination, //完成钥匙和门的组合
-        target:501,
-        nextTask:null,
+
+    4001:{
+        description:"完成拼图1",
+        scene:4,
+        type:TASK_TYPE.combination,
+        target:401,
+        completeTask:[4003],
         result:{
-            i501:1,
-            i502:1
+            i107:1,
+            i401:1,
+            i411:1
         }
     },
 
+    4002:{
+        description:"完成拼图2",
+        scene:4,
+        type:TASK_TYPE.combination,
+        target:402,
+        completeTask:[4003],
+        result:{
+            i108:1,
+            i402:1,
+            i412:1
+        }
+    },
+    4003:{
+        description:"完成所有拼图",
+        scene:4,
+        type:TASK_TYPE.multi,
+        target:[4001,4002],
+        nextTask:[],
+        isOpen:true,
+        result:{
+            i104:1,
+            close:4
+        }
+    },
+    8001:{
+        description:"完成记忆拼图",
+        scene:8,
+        type:TASK_TYPE.game,    //完成游戏就完成的任务
+        result:{
+            i105:2,
+            i106:1,
+            hint:16
+        }
+    },
+    9001:{
+        description:"打开盒子",
+        scene:9,
+        type:TASK_TYPE.click,
+        target:901,
+        nextTask:[9002],
+        isOpen:true,
+        result:{
+            i901:1,
+            i911:1,
+            i902:1
+        }
+    },
+    9002:{
+        description:"找到抽屉钥匙",
+        scene:9,
+        type:TASK_TYPE.click,
+        target:902,
+        nextTask:[1004],
+        result:{
+            i902:2,
+            i112:1,
+            close:9
+        }
+    },
+
+    //小桌子场景的任务
+    10001:{
+        description:"找到纸团",
+        scene:10,
+        type:TASK_TYPE.click,
+        target:1001,
+        nextTask:[],
+        isOpen:true,
+        result:{
+            i1001:1,
+            i118:1,
+            hint:13
+        }
+    },
+    11001:{
+        description:"打开电脑",
+        scene:11,
+        type:TASK_TYPE.click,
+        target:1101,
+        isOpen:true,
+        result:{
+            i1101:1
+        }
+    },
+    11002:{
+        description:"解锁电脑",
+        scene:11,
+        type:TASK_TYPE.click,
+        target:1101,
+        nextTask:1006,
+        result:{
+            i116:1,
+            i1101:3,
+            use:7,
+            memory:true
+        }
+    },
+
+    12001:{
+        description:"完成纸团拼图",
+        scene:12,
+        type:TASK_TYPE.game,    //完成游戏就完成的任务
+        nextTask:11002,
+        result:{
+            completeTask:11001,
+            use:6,
+            hint:5,
+            i1101:2,
+            global:7
+        }
+    },
+    6001:{
+        description:"完成找线索任务",
+        scene:6,
+        type:TASK_TYPE.game,    //完成游戏就完成的任务
+        nextTask:[],
+        result:{
+            i114:1,
+            hint:17
+        }
+    }
 };
 
 //任务状态
@@ -274,4 +367,3 @@ TASK_STATE = {
         isFinish:false
     }
 };
-

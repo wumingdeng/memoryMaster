@@ -17,7 +17,7 @@
           {
             "FileData": {
               "Type": "Normal",
-              "Path": "background/SceneUI_bg.jpg",
+              "Path": "background/ClueUI_bg.jpg",
               "Plist": ""
             },
             "BlendFunc": {
@@ -973,9 +973,9 @@
         "ctype": "SingleNodeObjectData"
       },
       "UsedResources": [
-        "../../background/SceneUI_bg.jpg",
+        "../../background/ClueUI_bg.jpg",
         "../../background/shoupa.png",
-        "../../font/customFont.ttf",
+        "../../fonts/customFont.ttf",
         "gameScene7_1.plist",
         "gameScene7_1.png"
       ],

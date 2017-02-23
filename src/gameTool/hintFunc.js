@@ -37,6 +37,7 @@ hintFun.refresh = function() {
 
 hintFun.beginHint = function(){
     trace("点击提示");
+    var hintItem = null;
     var nowPath = this.isOnTheWay();
     if (!nowPath) {
         this.search();
@@ -52,6 +53,7 @@ hintFun.beginHint = function(){
         var taskInfo = this._tasks[taskArr[Math.floor(Math.random() * taskArr.length)]];     //随机取任务
         var targetItem = taskInfo.target;
 
+        hintItem = itemManager.getItem(targetItem);
         //消耗次数 并且提示物品
         trace("请点击物品.." + targetItem);
     } else {
@@ -64,7 +66,10 @@ hintFun.beginHint = function(){
             //不消耗次数 提示进入下一个场景
             trace("任务要先进入下个场景中..." + nowPath[1]);
         }
+        hintItem = sceneManager.getSceneEntrance(nowPath[1])
     }
+
+    return hintItem;
 
 };
 

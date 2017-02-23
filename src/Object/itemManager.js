@@ -51,10 +51,25 @@ itemManager.setItemState = function(id,info){
         if (info.visible && this.itemsArr[id]._action){
             //如果是从隐藏到出现 就把物品变成没播放过动画的状态
             //让有默认动画的物品开始播放默认动画
-            if (this.itemsArr[id]._action.getAnimationInfo("base")) {
-                this.itemsArr[id]._action.play("base",true);
-            } else {
-                this.itemsArr[id]._action.gotoFrameAndPause(0);
+            //if (this.itemsArr[id]._action.getAnimationInfo("base")) {
+            //    this.itemsArr[id]._action.play("base",true);
+            //} else {
+            //    this.itemsArr[id]._action.gotoFrameAndPause(0);
+            //}
+            //设置到相应的帧数
+            var item = this.itemsArr[id]
+            var nowIndex = item._info.actionIndex || 1;
+            if (item._action) {
+                if (item._action.isAnimationInfoExists("action" + nowIndex)) {
+                    var action = item._action.getAnimationInfo("action" + nowIndex);
+                    var frame = action.startIndex;
+                    item._action.gotoFrameAndPause(frame);
+                }
+            }
+            //让有默认动画的物品开始播放默认动画
+            if (item._action.isAnimationInfoExists("base") && nowIndex == 1) {
+                item._haveBaseAction = true;
+                item._action.play("base",true);
             }
         }
     }
@@ -65,7 +80,9 @@ itemManager.setItemState = function(id,info){
         oldState[key] = info[key];
     }
     //更新物品里面的信息
-    this.itemsArr[id]._info = oldState;
+    if (this.itemsArr[id]) {
+        this.itemsArr[id]._info = oldState;
+    }
     oldState = JSON.stringify(oldState);
     //把改变后的状态写到本地或服务端
     cc.sys.localStorage.setItem("i" + id,oldState);

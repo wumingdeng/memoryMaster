@@ -31,14 +31,73 @@ var fullScene = sceneBase.extend({
         trace("进入寝宫",this._id)
         //添加底层工具栏
         GAME_BAR = new gameBar();
-        cc.director.getRunningScene().addChild(GAME_BAR,1000);
-        function onView() {
-            cfun.removeFullScreen("view");
-        }
-        //cfun.addFullScreen("view");
-        //sfun.viewScene(this,onView);
-    },
+        this.addChild(GAME_BAR,2000);
 
+        //播放开场动画
+        this.setSceneTouch(true);
+//        this.onActionConnectPhone()
+    },
+    /**TODO
+     * 未调整成配置方式,
+     * demo版本后需要调整
+     * 目前为拼接动画,在播放手机动画后调用地图动画
+    * */
+    onActionConnectPhone:function(){
+        this.setSceneTouch(false)
+        GAME_BAR.visible = false
+        this.addChild(new phoneLayer(0,this),2000)
+    },
+    onMapAction:function(){
+        if(this._info.animation) {
+            var json = ccs.load(this._info.animation,"res/")
+            var animation = json.node;
+            var action = json.action;
+            animation.x = vsize.width / 2;
+            animation.y = vsize.height / 2;
+
+            animation.runAction(action);
+            cfun.addFullScreen("openScene");
+
+            this.addChild(animation,2000)
+            action.play('action1',false);
+            function onFinish(frame) {
+               if (frame.getEvent() == 'finish') {
+                   cfun.removeFullScreen("openScene");
+                   this.onEndOpenSceneActionfun()
+                   animation.removeFromParent();
+               } else if (frame.getEvent() == 'move') {
+                   function onView() {
+                       MEMORY_CONFIG.s1.show = []
+                       memoryManager.memory(true);
+                       GAME_BAR.setTouchEnabled(false);
+                       function onIntroFinish(frame) {
+                           if(frame.getEvent() == 'finish') {
+                               intro.node.removeFromParent();
+                               cfun.removeFullScreen("view");
+                               this.setSceneTouch(true);
+                               GAME_BAR.setTouchEnabled(true);
+                               memoryManager.memory(true);
+                               MEMORY_CONFIG.s1.show = [-1]
+                               GAME_BAR.showGameBar();
+                               var hint = new hintLayer(10);
+                               sceneManager.scene.addChild(hint,100);
+                           }
+                       }
+                       var intro = cfun.getAnimation(res.memory_intro_json,false,onIntroFinish.bind(this));
+                       // intro.node.x = vsize.width / 2
+                       // intro.node.y = vsize.height / 2;
+                       this.addChild(intro.node,2000);
+                   }
+                   sfun.viewScene(this,onView.bind(this))
+               }
+            }
+            action.setFrameEventCallFunc(onFinish.bind(this))
+        }
+    },
+    onEndOpenSceneActionfun:function(){
+        GAME_BAR.visible = true
+        //this.setSceneTouch(true)
+    },
     onTouchEnded:function(touch,event){
         var isTouchItem = this._super(touch,event);
         if (!isTouchItem) {

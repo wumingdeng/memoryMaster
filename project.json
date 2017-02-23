@@ -19,6 +19,9 @@
         "src/helper/globalVariable.js",
         "src/helper/sceneFunction.js",
         "src/helper/timerHelper.js",
+        "src/helper/ActionHelper.js",
+        "src/helper/shaderHelper.js",
+        "src/helper/loadResourceHelper.js",
 
         "src/config/item.js",
         "src/config/task.js",
@@ -27,6 +30,7 @@
         "src/config/globalItem.js",
         "src/config/hint.js",
         "src/config/talk.js",
+        "src/config/memory.js",
 
         "src/scene/sceneBase.js",
         "src/scene/embedScene.js",
@@ -34,13 +38,18 @@
         "src/scene/selectScene.js",
         "src/scene/sceneManager.js",
         "src/scene/gameScene.js",
+        "src/scene/loadingScene.js",
+                
 
         "src/scene/game/jigsawGame.js",
         "src/scene/game/findSomethingScene.js",
         "src/scene/game/phone.js",
-      
+        "src/scene/game/scratchScene.js",
+        "src/scene/game/sortMapScene.js",
+
         "src/gameTool/gameBar.js",
         "src/gameTool/hintFunc.js",
+        "src/gameTool/memoryManager.js",
 
         "src/playerStateManger.js",
         "src/login/loginScene.js",
@@ -52,5 +61,5 @@
         "src/task/taskManager.js",
         "src/hint/hintLayer.js",
         "src/dialogue/dialogueLayer.js"
-                ]
+    ]
 }

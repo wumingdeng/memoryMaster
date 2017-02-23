@@ -16,11 +16,13 @@ var sortMapLayer = cc.Layer.extend({
     _isOutline:false,
     _gameId:0,
     _sceneId:0,
-    ctor:function () {
+    ctor:function (gid,par) {
         this._super();
-        this._checkPos = [{x:529.21,y:401.30,r:2},{x:229.03,y:512.39,r:2},{x:118.82,y:322.84,r:1},{x:433.78,y:517.38,r:2},{x:180.44,y:177.04,r:3},{x:439.94,y:267.28,r:2}];
-        var sortMap = ccs.load(res.gameScene8_json).node;
-        this.addChild(sortMap);
+        this._gameId = gid
+        this._checkPos = GAME_CONFIG["g"+gid].checkPos;
+        var sortMap = par._ui;
+        
+        // this.addChild(sortMap);
         for (var i = 1; i <= this._checkPos.length; i++) {
             var image = sortMap.getChildByName("Image_" + i);
             var txtName = image.getChildByName("txtName")
@@ -133,11 +135,4 @@ var sortMapLayer = cc.Layer.extend({
     }
 });
 
-var sortMapScene = cc.Scene.extend({
-    onEnter:function () {
-        this._super();
-        var layer = new sortMapLayer();
-        this.addChild(layer);
-    }
-});
 

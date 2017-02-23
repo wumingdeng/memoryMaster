@@ -2,16 +2,11 @@
  * Created by chenzhaowen on 16-4-18.
  */
 
-//require("gameview.ClueCommonLayer")
-
-var g_sharedScratchScene;
-scratchScene = cc.Layer.extend({
+var scratchScene = cc.Layer.extend({
     _uiLayer: null,
     _commonUI: null,
     _dialog: null,
-    _caseid: 0,
-    _sceneid: 0,
-    _taskid: 0,
+    _node:null,
     _sceneFilePath: null, //文件路径
     _sceneFileName: null, //文件名
     eventDispatcher: null,
@@ -35,29 +30,13 @@ scratchScene = cc.Layer.extend({
     osTime: null, //用来看运行时间
     isDebug: true, //是否调试
     
-    init: function(caseid, sceneid, taskid, gameId) {
-        this._caseid = caseid;
-        this._sceneid = sceneid;
-        this._taskid = taskid;
+    init: function(gameId) {
+        this._super()
         this.isFind = false;
-
-        winSize = cc.director.getWinSize();
-        var json = ccs.load("res/gameScene/scratch/scratch1.json","res/");
-        
-        var game = json.node, action = json.action;
-        this.addChild(game);
-        console.log(game.getContentSize());
-        console.log(cc.view.getCanvasSize());
+        var winSize = cc.director.getWinSize();
+        var game = this._node
         game.x = (winSize.width - game.width) / 2;
-        var bg = new cc.Sprite("res/background/ClueUI_bg.jpg");
-        this.addChild(bg, -1);
-        bg.attr({
-            x: (winSize.width - game.width) / 2,
-            y: 0,
-            anchorX: 0,
-            anchorY: 0
-        });
-        
+
         this.find = game.getChildByName("find")
         //初始化遮罩
         this.mask = new cc.DrawNode();
@@ -100,34 +79,21 @@ scratchScene = cc.Layer.extend({
         
         this.addChild(this.renderTexture);
 
-        //载入公共UI
-        //var taskstatic = gfun.findTaskstaticByTaskid(taskid)
-        //var png = taskstatic[CaseHubData.Taskinfo.TASK_LOGO2]
-        //self._commonUI = ClueCommonLayer.create(png,onFinish,self._caseid,taskid,gameId)
-        //self.addChild(self._commonUI)
-
-
         //注册事件
-        if ('touches' in cc.sys.capabilities) {
-            cc.eventManager.addListener({
-                prevTouchId: -1,
-                event: cc.EventListener.TOUCH_ONE_BY_ONE,
-                onTouchBegan: this.TouchBegan,
-                onTouchMoved: this.TouchMoved,
-                onTouchEnded: this.TouchEnded,
-                onTouchCancelled: this.TouchCancelled
-            }, this);
-        } else {
-            cc.log("MOUSE Not supported");
-        }
-        
-        return true;
+        cc.eventManager.addListener({
+            prevTouchId: -1,
+            event: cc.EventListener.TOUCH_ONE_BY_ONE,
+            onTouchBegan: this.TouchBegan,
+            onTouchMoved: this.TouchMoved,
+            onTouchEnded: this.TouchEnded,
+            onTouchCancelled: this.TouchCancelled
+        }, this);
     },
-    TouchBegan: function(event) {
+    TouchBegan: function(touch,event) {
         var self = event.getCurrentTarget();
         if (!self.isBegin) {
             cc.log("Let's begin...");
-            self.beginPoint = cc.p(event.getLocation());
+            self.beginPoint = cc.p(touch.getLocation());
             self.drawPoint = [self.beginPoint];
             self.isBegin = true;
             return true;
@@ -136,22 +102,20 @@ scratchScene = cc.Layer.extend({
         }
     },
     moveCount: 0, //移动计数
-    TouchMoved: function(event) {
-        if (event.getButton() == cc.EventMouse.BUTTON_LEFT) {
-            var self = event.getCurrentTarget();
-            if (self.isBegin) {
-                self.moveCount++;
-                self.endPoint = cc.p(event.getLocation()) //获取当前的点
-                self.calcPoint(self.beginPoint, self.endPoint);
-                self.drawPoint.push(self.endPoint);
-                if (self.moveCount % 5 == 0) { //每5次
-                    self.drawMask();
-                }
-                self.beginPoint = self.endPoint;
+    TouchMoved: function(touch,event) {
+        var self = event.getCurrentTarget();
+        if (self.isBegin) {
+            self.moveCount++;
+            self.endPoint = cc.p(touch.getLocation()) //获取当前的点
+            self.calcPoint(self.beginPoint, self.endPoint);
+            self.drawPoint.push(self.endPoint);
+            if (self.moveCount % 5 == 0) { //每5次
+                self.drawMask();
             }
+            self.beginPoint = self.endPoint;
         }
     },
-    TouchEnded: function(event) {
+    TouchEnded: function(touch,event) {
         var self = event.getCurrentTarget();
         cc.log("ended");
         self.drawMask();
@@ -187,7 +151,6 @@ scratchScene = cc.Layer.extend({
         }
 
         this.drawPoint = [drawBegin];
-        //    mask:setBlendFunc(0,GL_ONE_MINUS_SRC_ALPHA) //设置颜色混合模式
         this.mask.setBlendFunc(0,gl.ONE_MINUS_SRC_ALPHA); //设置颜色混合模式
         this.renderTexture.begin();
         this.mask.visit();
@@ -328,38 +291,12 @@ scratchScene = cc.Layer.extend({
             if (this.drawCount > this.targetCount*0.6) {
                 cc.log("you win.......................");
                 this.isFind = true;
-                this.backToMenu();
-                //            selfLayer._commonUI:GameEnd()
-                //selfLayer._commonUI:GameConfirm()
-                //播放兰花动画
-                //var finishAnimation,finishAction = cfun.createAnimation(selfLayer._sceneFilePath.."finishEffect.csb")
-                //finishAnimation:setPosition(find:getPosition())
-                //find:getParent():addChild(finishAnimation)
-                //find:setVisible(true)
-                //finishAction:gotoFrameAndPlay(0,false)
             }
-
         }
     },
-
-    backToMenu:function() {
-        var scene = new cc.Scene();
-        scene.addChild(new SysMenu());
-        cc.director.runScene(new cc.TransitionFade(1.2, scene));
-    },
-
-    ctor: function() {
+    ctor: function(index,par) {
         this._super();
-        this.init(1, 1, 1, 1);
+        this._node = par._ui
+        this.init(index);
     }
-
 });
-
-scratchScene.scene = function() {
-    var scene = new cc.Scene();
-    var layer = new scratchScene();
-    scene.addChild(layer);
-    return scene;
-};
-
-
