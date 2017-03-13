@@ -9,7 +9,9 @@ GAME_TYPE = {
     search:3,
     phone:4,
     scratch:5,
-    sortmap:6
+    sortmap:6,
+    gyro:7,
+    machine:8
 };
 
 GAME_CONFIG = {
@@ -46,7 +48,7 @@ GAME_CONFIG = {
         com_pos:"_616`785_962`785_1308`785_616`536_962`536_1308`536_616`287_962`287_1308`287",
         index:0
     },
-    "g6":{
+    "g6": {
         description:"擦除",
         type:GAME_TYPE.scratch,
         index:0
@@ -56,5 +58,20 @@ GAME_CONFIG = {
         type:GAME_TYPE.sortmap,
         checkPos:[{x:529.21,y:401.30,r:2},{x:229.03,y:512.39,r:2},{x:118.82,y:322.84,r:1},{x:433.78,y:517.38,r:2},{x:180.44,y:177.04,r:3},{x:439.94,y:267.28,r:2}],
         index:0
+    },
+    "g8":{
+        description:"柜子场景",
+        type:GAME_TYPE.search,
+        index:1
+    },
+    "g9":{
+        description:"操作台",
+        type:GAME_TYPE.machine,
+        index:1
+    },
+    "g10":{
+        description:"莲花",
+        type:GAME_TYPE.gyro,
+        index:1
     }
 };

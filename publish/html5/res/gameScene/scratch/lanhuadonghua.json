@@ -278,7 +278,7 @@
                 "TextureFile": {
                   "Type": "PlistSubImage",
                   "Path": "ClueUI_scratch_find1.png",
-                  "Plist": "scratch1.plist"
+                  "Plist": "gameScene/scratch/scratch1.plist"
                 },
                 "FrameIndex": 0,
                 "Tween": false,
@@ -288,7 +288,7 @@
                 "TextureFile": {
                   "Type": "PlistSubImage",
                   "Path": "ClueUI_scratch_find1_02.png",
-                  "Plist": "scratch1.plist"
+                  "Plist": "gameScene/scratch/scratch1.plist"
                 },
                 "FrameIndex": 4,
                 "ctype": "TextureFrameData"
@@ -297,7 +297,7 @@
                 "TextureFile": {
                   "Type": "PlistSubImage",
                   "Path": "ClueUI_scratch_find1_03.png",
-                  "Plist": "scratch1.plist"
+                  "Plist": "gameScene/scratch/scratch1.plist"
                 },
                 "FrameIndex": 8,
                 "ctype": "TextureFrameData"
@@ -306,7 +306,7 @@
                 "TextureFile": {
                   "Type": "PlistSubImage",
                   "Path": "ClueUI_scratch_find1_04.png",
-                  "Plist": "scratch1.plist"
+                  "Plist": "gameScene/scratch/scratch1.plist"
                 },
                 "FrameIndex": 12,
                 "ctype": "TextureFrameData"
@@ -315,7 +315,7 @@
                 "TextureFile": {
                   "Type": "PlistSubImage",
                   "Path": "ClueUI_scratch_find1_05.png",
-                  "Plist": "scratch1.plist"
+                  "Plist": "gameScene/scratch/scratch1.plist"
                 },
                 "FrameIndex": 16,
                 "ctype": "TextureFrameData"
@@ -324,7 +324,7 @@
                 "TextureFile": {
                   "Type": "PlistSubImage",
                   "Path": "ClueUI_scratch_find1_06.png",
-                  "Plist": "scratch1.plist"
+                  "Plist": "gameScene/scratch/scratch1.plist"
                 },
                 "FrameIndex": 20,
                 "ctype": "TextureFrameData"
@@ -333,7 +333,7 @@
                 "TextureFile": {
                   "Type": "PlistSubImage",
                   "Path": "ClueUI_scratch_find1_07.png",
-                  "Plist": "scratch1.plist"
+                  "Plist": "gameScene/scratch/scratch1.plist"
                 },
                 "FrameIndex": 24,
                 "ctype": "TextureFrameData"
@@ -342,7 +342,7 @@
                 "TextureFile": {
                   "Type": "PlistSubImage",
                   "Path": "ClueUI_scratch_find1_08.png",
-                  "Plist": "scratch1.plist"
+                  "Plist": "gameScene/scratch/scratch1.plist"
                 },
                 "FrameIndex": 30,
                 "ctype": "TextureFrameData"
@@ -351,7 +351,7 @@
                 "TextureFile": {
                   "Type": "PlistSubImage",
                   "Path": "ClueUI_scratch_find1_09.png",
-                  "Plist": "scratch1.plist"
+                  "Plist": "gameScene/scratch/scratch1.plist"
                 },
                 "FrameIndex": 35,
                 "ctype": "TextureFrameData"
@@ -360,7 +360,7 @@
                 "TextureFile": {
                   "Type": "PlistSubImage",
                   "Path": "ClueUI_scratch_find1_10.png",
-                  "Plist": "scratch1.plist"
+                  "Plist": "gameScene/scratch/scratch1.plist"
                 },
                 "FrameIndex": 40,
                 "ctype": "TextureFrameData"
@@ -369,7 +369,7 @@
                 "TextureFile": {
                   "Type": "PlistSubImage",
                   "Path": "ClueUI_scratch_find1_11.png",
-                  "Plist": "scratch1.plist"
+                  "Plist": "gameScene/scratch/scratch1.plist"
                 },
                 "FrameIndex": 46,
                 "ctype": "TextureFrameData"
@@ -378,7 +378,7 @@
                 "TextureFile": {
                   "Type": "PlistSubImage",
                   "Path": "ClueUI_scratch_find1_12.png",
-                  "Plist": "scratch1.plist"
+                  "Plist": "gameScene/scratch/scratch1.plist"
                 },
                 "FrameIndex": 65,
                 "ctype": "TextureFrameData"
@@ -387,7 +387,7 @@
                 "TextureFile": {
                   "Type": "PlistSubImage",
                   "Path": "ClueUI_scratch_find1.png",
-                  "Plist": "scratch1.plist"
+                  "Plist": "gameScene/scratch/scratch1.plist"
                 },
                 "FrameIndex": 68,
                 "ctype": "TextureFrameData"
@@ -466,7 +466,7 @@
             "FileData": {
               "Type": "PlistSubImage",
               "Path": "ClueUI_scratch_find1.png",
-              "Plist": "scratch1.plist"
+              "Plist": "gameScene/scratch/scratch1.plist"
             },
             "BlendFunc": {
               "Src": 1,

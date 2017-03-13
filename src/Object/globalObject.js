@@ -18,7 +18,7 @@ var globalObject = cc.Node.extend({
     ctor:function(id){
         this._super();
         this._id = id;
-        this.tag = id;
+        this.tag = Number(id);
         this.init();
 
 
@@ -135,6 +135,7 @@ var globalObject = cc.Node.extend({
         var target = this.checkTarget(loc)
         if(target) {
             trace("找到目标")
+            GAME_BAR.onCancelHint(target);
             target.onWait(); //播放动作 并且检测任务
             this.useGlobalItem();
         } else {

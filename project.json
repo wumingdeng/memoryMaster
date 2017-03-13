@@ -44,6 +44,12 @@
         "src/scene/game/jigsawGame.js",
         "src/scene/game/findSomethingScene.js",
         "src/scene/game/phone.js",
+        "src/scene/game/gyro.js",
+        "src/scene/game/searchGame/searchScene.js",
+        "src/scene/game/searchGame/searchBottom.js",
+        "src/scene/game/searchGame/itemConfig/item1.js",
+        "src/scene/game/machine/machineGame.js",
+
         "src/scene/game/scratchScene.js",
         "src/scene/game/sortMapScene.js",
 

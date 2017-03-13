@@ -12,7 +12,6 @@ var loginScene = cc.Scene.extend({
         this.init();
         taskManager.initTask();
         memoryManager.init();
-        trace("hehe");
     },
     init:function(){
         this._super()
@@ -45,11 +44,7 @@ var loginScene = cc.Scene.extend({
             } else if (type == ccui.Widget.TOUCH_MOVED) {
             } else if (type == ccui.Widget.TOUCH_ENDED) {
                 onStartCancel();
-                if(cc.sys.isNative){
-                    new loadingScene()
-                }else{
-                    this.onStartGame();
-                }
+                this.onStartGame();
             } else if (type == ccui.Widget.TOUCH_CANCELED) {
                 onStartCancel()
             }
@@ -84,18 +79,10 @@ var loginScene = cc.Scene.extend({
     },
     onStartGame:function(event){
         trace("开始游戏");
+        //sceneManager.getSceneInfo(PLAYER_STATE.scene);
         sceneManager.createScene(PLAYER_STATE.mainScene);
     },
     cleanup:function(){
         this._super()
-        console.log("login.cleanup")
-        if(cc.sys.isNative){
-            // cc.loader.releaseAll()
-            cc.textureCache.removeUnusedTextures()
-            cc.spriteFrameCache.removeUnusedSpriteFrames()
-
-        }else{
-
-        }
     }
 });

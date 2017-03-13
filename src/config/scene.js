@@ -32,7 +32,7 @@ SCENE_CONFIG.data = {
     "s1": {
         name:"房间",
         type: SCENE_Type.full,  //场景类型
-        item: [101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,198,199],   //场景中可点击的物品
+        item: [101,102,103,119,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,198,199],   //场景中可点击的物品
         ui: "res/room/gameScene_1.json", //场景对应的UI
         animation:res.romm_open_animation_json
     },
@@ -107,7 +107,6 @@ SCENE_CONFIG.data = {
         type: SCENE_Type.embed,
         item: [1101],
         ui: res.room_compute_json,
-        back:1
     },
     "s12":{
         name:'纸团',
@@ -116,6 +115,7 @@ SCENE_CONFIG.data = {
         gameId:1,
         ui: res.zhituan_json
     },
+
     "s13":{
         name:'擦除',
         type: SCENE_Type.game,
@@ -129,7 +129,37 @@ SCENE_CONFIG.data = {
         // et:EMBED_Type.embed,
         gameId:7,
         ui: res.gameScene8_json
-    }
+    },
+
+    "s15": {
+        name: "柜子",
+        type: SCENE_Type.game,
+        gameId: 8,
+        item: [1301, 1302, 1303, 1304, 1305, 1306, 1307],
+        ui: res.guizi_json,
+        back: 1
+    },
+    "s16": {
+        name: "操作台",
+        type: SCENE_Type.game,
+        gameId: 9,
+        item:[],
+        ui: res.oprateMachin_json,
+        back:1
+    },
+    "s17":{
+        name: "莲花",
+        type: SCENE_Type.game,
+        gameId: 10,
+        ui: res.lianhua_json
+    },
+    "s18": {
+        name: "隧道",
+        type: SCENE_Type.full,
+        item:[1801,1898,1899],
+        ui: res.suidao_json,
+        back:1
+    },
 };
 
 //存在服务端的场景状态

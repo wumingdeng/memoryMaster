@@ -5,6 +5,7 @@
 
 var GAME_BAR = null;
 var gameBar = cc.Layer.extend({
+    _isOpen:false,
     _touchEnabled:true,
     _ui:null,
     _globalArea:null,
@@ -21,19 +22,21 @@ var gameBar = cc.Layer.extend({
     _callingNode:null,  //来电电话节点
     _callingAction:null,    //来电动画
     _isFindPhone:false, //是否有手机
-    _isDown:false,
+    _isDown:0,//0:显示状态,1:隐藏状态,-1:动作播放过程中状态
     _isInHint:false,    //提示中
+    _hintItem:null, //提示的物品
     ctor:function(){
         this._super();
         this.init();
     },
     get isDown(){
-        return this._isDown
+        return this._isDown==1
     },
     setTouchEnabled:function(bool) {
         this._touchEnabled = bool;
     },
     init:function(){
+        this._isOpen = true;
         this._ui = ccs.load(res.gameBar_json,"res/").node;
         this._ui.setContentSize(vsize.width,this._ui.height);
         this.addChild(this._ui);
@@ -70,6 +73,7 @@ var gameBar = cc.Layer.extend({
         hintFun.init(this._hintBtn);
         function onHint(sender,type){
             if (type != ccui.Widget.TOUCH_ENDED) return;
+            if (!this._touchEnabled) return;
             this.onHint();
         }
         this._hintBtn.addTouchEventListener(onHint.bind(this))
@@ -81,6 +85,7 @@ var gameBar = cc.Layer.extend({
         var memoryBtn = cfun.seekWidgetByName(this._ui,"memoryBtn");
         function onMemory(sender,type){
             if (type != ccui.Widget.TOUCH_ENDED) return;
+            if (!this._touchEnabled) return;
             this.onEnterMemory();
 
         }
@@ -188,8 +193,8 @@ var gameBar = cc.Layer.extend({
 
     //添加全局物品
     addGlobalItem:function(id,source,callback){
-
         this.setMyGlobalItems(id);
+        if (!this._isOpen) return;  //物品栏不存在的
         var item = new globalObject(id);
         item.showMoveImg();
         this._globalArea.addChild(item);
@@ -329,7 +334,7 @@ var gameBar = cc.Layer.extend({
 
         //后面的物品往前移动
         for (;delIndex < this._items.length; ++delIndex){
-            this._items[delIndex].x -= 100;
+            this._items[delIndex].x -= 180;
         }
     },
 
@@ -342,18 +347,22 @@ var gameBar = cc.Layer.extend({
     //打开设置
     onSet:function(sender,type){
         if (type != ccui.Widget.TOUCH_ENDED) return;
+        if (!this._touchEnabled) return;
         this.nonOpen(this._setBtn,true);
     },
     onHelp:function(sender,type) {
         if (type != ccui.Widget.TOUCH_ENDED) return;
+        if (!this._touchEnabled) return;
         this.nonOpen(this._helpBtn,true);
     },
     onMap:function(sender,type) {
         if (type != ccui.Widget.TOUCH_ENDED) return;
+        if (!this._touchEnabled) return;
         this.nonOpen(this._mapBtn);
     },
     onNote:function(sender,type) {
         if (type != ccui.Widget.TOUCH_ENDED) return;
+        if (!this._touchEnabled) return;
         this.nonOpen(this._noteBtn);
     },
 
@@ -375,29 +384,37 @@ var gameBar = cc.Layer.extend({
             //sceneManager.scene._ui.removeChildByName("rollTip");
             //return;
         } else {
-            this._isInHint = true;
             sceneManager.scene.setSceneTouch(false);
             var item = hintFun.beginHint();
+            this._hintItem = item;
             if (!item) {
                 //没有任务了 或者在手机之类的不在场景树中的界面
+                sceneManager.scene.setSceneTouch(true);
                 return;
             }
             //播放提示效果
-            var img = item._source;
-            var pos = img.convertToWorldSpace(cc.p(img.width*img.anchorX,img.height*img.anchorY));
+            this._isInHint = true;
+            var img;
+            if (item == "back") {
+                img = this._returnBtn;
+            } else {
+                img = item._source;
+            }
+            var pos = img.convertToWorldSpace(cc.p(img.width*0.5,img.height*0.5));
             var targetPos = this._mainBar.convertToNodeSpace(pos);
 
+            var speed = 1500
             //移动场景
             var moveX = 0;
             var ox = 0;
             if (pos.x > vsize.width) {
                 ox = pos.x - vsize.width;
                 ox = ox > vsize.width ? ox : vsize.width; //至少移动一个屏幕大小
-                moveX = sfun.moveScene(-ox);
+                moveX = sfun.moveScene(-ox,speed);
             } else if (pos.x < 0) {
                 ox = -pos.x;
                 ox = ox > vsize.width ? ox : vsize.width;
-                moveX = sfun.moveScene(ox);
+                moveX = sfun.moveScene(ox,speed);
             }
             targetPos.x += moveX;     //改变粒子效果的移动位置
             pos.x += moveX;
@@ -413,8 +430,8 @@ var gameBar = cc.Layer.extend({
             batch.setPosition(this._hintBtn.getPosition());
             this._mainBar.addChild(batch);
 
-            var speed = 1200
-            var move = cc.moveTo(cc.pDistance(batch.getPosition(),targetPos) / speed,targetPos);
+            var parTime = Math.abs(moveX) / speed || cc.pDistance(batch.getPosition(),targetPos) / speed
+            var move = cc.moveTo(parTime,targetPos);
             function onFinish() {
                 sceneManager.scene.setSceneTouch(true);
                 var newPos = sceneManager.scene._ui.convertToNodeSpace(pos);
@@ -422,7 +439,7 @@ var gameBar = cc.Layer.extend({
                 //移动到目标后 添加转圈效果
                 var effect = cfun.getAnimation(res.game_tip_roll_json,true,onShow);
                 effect.node.setPosition(newPos);
-                effect.node.setName("rollTip");
+                effect.node.setTag(1989);
                 function onShow(frame) {
                     if (frame.getEvent() == "show") {
                         effect.action.play("action",true);
@@ -436,9 +453,19 @@ var gameBar = cc.Layer.extend({
 
     },
 
+    onCancelHint:function(item,force) {
+        if ((this._isInHint && item == this._hintItem) || force) {
+            if(cfun.seekWidgetByTag(sceneManager.scene._ui,1989)){
+                sceneManager.scene._ui.removeChildByTag(1989);
+            }
+            this._isInHint = false;
+        }
+    },
+
     //手机界面
     onOpenPhone:function(){
         if(!this._isFindPhone) return;
+        if(this._isDown!=0) return;
         if(this._phoneScene){
             // this._phoneScene.game.onCusExit()
             // this._phoneScene.backTo();
@@ -476,10 +503,14 @@ var gameBar = cc.Layer.extend({
 
     //提示记忆开启
     tipMemory:function(){
-        this._memoryAction.gotoFrameAndPlay(0,true);
+        if (this._memoryAction) {
+            this._memoryAction.gotoFrameAndPlay(0,true);
+        }
     },
     stopTipMemory:function(){
-        this._memoryAction.gotoFrameAndPause(0);
+        if (this._memoryAction) {
+            this._memoryAction.gotoFrameAndPause(0);
+        }
     },
 
     //来电
@@ -497,21 +528,26 @@ var gameBar = cc.Layer.extend({
         } else {
             this._mReturnBtn.visible = false;
         }
-        if(this._isDown) return
+        if(this._isDown!=0) return
+        this._isDown = -1
+        console.log("hide game bar ........")
+        this.setTouchEnabled(false)
         var down = cc.moveTo(1,cc.p(0,-350));
         function onDown() {
-            this._isDown = true;
+            this._isDown = 1;
+            this.setTouchEnabled(true)
         }
-        //this._returnBtn.visible = false;
-        //cfun.seekWidgetByName(this._ui,"jineng1_52").visible = false;
         this._mainBar.runAction(cc.sequence(down,cc.callFunc(onDown.bind(this))));
     },
 
     showGameBar:function() {
-        if(!this._isDown) return
+        if(this._isDown!=1) return
+        this._isDown = -1
         var up = cc.moveTo(0.7,cc.p(0,0));
+        this.setTouchEnabled(false)
         function onUp() {
-            this._isDown = false;
+            this._isDown = 0;
+            this.setTouchEnabled(true)
         }
         this._mReturnBtn.visible = false;
         this._returnBtn.visible = true;
@@ -538,7 +574,10 @@ var gameBar = cc.Layer.extend({
         }
         btn.addChild(nonOpen.node);
 
+    },
+
+    onExit:function() {
+        this._super();
+        this._isOpen = false;
     }
-
-
 });

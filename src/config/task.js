@@ -22,7 +22,7 @@ TASK_CONFIG.data = {
         scene:1,
         type:TASK_TYPE.click,
         target:103,
-        nextTask:1002,
+        nextTask:[1002,1005],
         isOpen:true,
         result:{
         }
@@ -35,23 +35,10 @@ TASK_CONFIG.data = {
         type: TASK_TYPE.click,     //任务类型
         target: 107,   //任务的目标物品
         nextTask:[],
-        isOpen:true,
         result: {
             i105:1,
             i107:1,
             i108:1
-        }
-    },
-
-    1003: {
-        description: "找到拼图碎片2",
-        scene: 1,    //任务发生的场景
-        type: TASK_TYPE.click,     //任务类型
-        target: 106,   //任务的目标物品
-        nextTask:[4002],
-        isOpen:true,
-        result: {
-            i106:1
         }
     },
 
@@ -71,7 +58,6 @@ TASK_CONFIG.data = {
         description:"找到罗盘",
         scene:1,
         type:TASK_TYPE.click,
-        isOpen:true,
         target:115,
         result:{
             i115:1,
@@ -87,7 +73,8 @@ TASK_CONFIG.data = {
         result:{
             i116:2,
             i117:1,
-            hint:9
+            hint:9,
+            memory:false
         }
     },
 
@@ -188,7 +175,7 @@ TASK_CONFIG.data = {
         description:"拨开所有杂物",
         scene:2,
         type:TASK_TYPE.multi,
-        target:[2001,2003,2004,2005,2006,2007],
+        target:[2001,2003,2005,2006,2007],
         nextTask:2009,
         isOpen:true,
         result:{
@@ -317,7 +304,6 @@ TASK_CONFIG.data = {
         scene:11,
         type:TASK_TYPE.click,
         target:1101,
-        isOpen:true,
         result:{
             i1101:1
         }
@@ -325,13 +311,23 @@ TASK_CONFIG.data = {
     11002:{
         description:"解锁电脑",
         scene:11,
+        type:TASK_TYPE.combination,
+        target:1101,
+        nextTask:11003,
+        result:{
+            i1101:3,
+            use:7
+        }
+    },
+    11003:{
+        description:"查看电脑内容",
+        scene:11,
         type:TASK_TYPE.click,
         target:1101,
         nextTask:1006,
         result:{
+            i1101:4,
             i116:1,
-            i1101:3,
-            use:7,
             memory:true
         }
     },
@@ -343,9 +339,9 @@ TASK_CONFIG.data = {
         nextTask:11002,
         result:{
             completeTask:11001,
+            i1101:2,
             use:6,
             hint:5,
-            i1101:2,
             global:7
         }
     },
@@ -358,7 +354,21 @@ TASK_CONFIG.data = {
             i114:1,
             hint:17
         }
-    }
+    },
+
+    //柜子找物品
+    15001:{
+        description:"完成柜子找物品",
+        scene:15,
+        type:TASK_TYPE.game,    //完成游戏就完成的任务
+        nextTask:11001,
+        result:{
+            i113:1,
+            i119:1,
+            hint:18,
+            global:8
+        }
+    },
 };
 
 //任务状态

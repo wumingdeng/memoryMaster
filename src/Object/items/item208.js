@@ -11,15 +11,13 @@ ITEMS[208] = itemBase.extend({
     },
     onTouchEnded:function(touch,event){
         //手机直接飞到工具栏
-        //this._super(touch,event);
-        //if (this._info.nowState == 1) {
-        //    this.onTalk(this.onAction.bind(this));
-        //} else {
-        //}
-        if(!this._isAction)
+        if(!this._isAction && this.haveBehavior(ITEM_BEHAVIOR.action)) {
             this.onFindPhone();
+        }
     },
     onFindPhone:function(){
+        sceneManager.scene.setSceneTouch(false);
+        GAME_BAR.setTouchEnabled(false);
         this._isAction = true
         trace("找到手机")
         //螺旋走位 飞入工具栏
@@ -75,6 +73,8 @@ ITEMS[208] = itemBase.extend({
         }
 
         function onFinish() {
+            sceneManager.scene.setSceneTouch(true);
+            GAME_BAR.setTouchEnabled(true);
             //batch.removeFromParent();
             cc.sys.localStorage.setItem("isFindPhone","true");
             GAME_BAR.findPhoneAction();

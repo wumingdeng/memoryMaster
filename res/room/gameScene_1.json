@@ -400,17 +400,17 @@
                   "Y": 0.514
                 },
                 "PreSize": {
-                  "X": 0.5016,
+                  "X": 0.5032,
                   "Y": 0.948
                 },
-                "LeftMargin": -166.523,
-                "RightMargin": 482.523,
+                "LeftMargin": -167.023,
+                "RightMargin": 482.023,
                 "TopMargin": 6.0,
                 "BottomMargin": 20.0,
                 "Tag": 420,
                 "ActionTag": 2008986525,
                 "Size": {
-                  "X": 318.0,
+                  "X": 319.0,
                   "Y": 474.0
                 },
                 "Name": "CJ1_an01men_6",
@@ -445,17 +445,17 @@
                   "Y": 0.514
                 },
                 "PreSize": {
-                  "X": 0.4968,
+                  "X": 0.4953,
                   "Y": 0.948
                 },
-                "LeftMargin": 485.6274,
-                "RightMargin": -166.6274,
+                "LeftMargin": 486.1274,
+                "RightMargin": -166.1274,
                 "TopMargin": 6.0,
                 "BottomMargin": 20.0,
                 "Tag": 421,
                 "ActionTag": 539863028,
                 "Size": {
-                  "X": 315.0,
+                  "X": 314.0,
                   "Y": 474.0
                 },
                 "Name": "CJ1_an02men_7",
@@ -2703,7 +2703,7 @@
               "Plist": "room/gameScene_1.plist"
             },
             "BlendFunc": {
-              "Src": 1,
+              "Src": 770,
               "Dst": 771
             },
             "AnchorPoint": {
@@ -2711,14 +2711,18 @@
               "ScaleY": 0.5
             },
             "Position": {
-              "X": 791.8273,
+              "X": 791.8265,
               "Y": 382.269
             },
             "Scale": {
               "ScaleX": 1.0,
               "ScaleY": 1.0
             },
-            "CColor": {},
+            "CColor": {
+              "R": 115,
+              "G": 115,
+              "B": 115
+            },
             "IconVisible": false,
             "PrePosition": {
               "X": 0.4124,
@@ -2728,8 +2732,8 @@
               "X": 0.1026,
               "Y": 0.162
             },
-            "LeftMargin": 693.3273,
-            "RightMargin": 1029.6727,
+            "LeftMargin": 693.3265,
+            "RightMargin": 1029.6736,
             "TopMargin": 610.231,
             "BottomMargin": 294.769,
             "Tag": -2,
@@ -2738,8 +2742,58 @@
               "X": 197.0,
               "Y": 175.0
             },
+            "Alpha": 229,
             "Name": "CJ1_lunzi_71_0",
             "ctype": "SpriteObjectData"
+          },
+          {
+            "ClipAble": false,
+            "BackColorAlpha": 102,
+            "SingleColor": {
+              "R": 150,
+              "G": 200
+            },
+            "FirstColor": {
+              "R": 150,
+              "G": 200
+            },
+            "EndColor": {},
+            "ColorVector": {
+              "ScaleY": 1.0
+            },
+            "Scale9Width": 1,
+            "Scale9Height": 1,
+            "AnchorPoint": {},
+            "Position": {
+              "X": -733.6456,
+              "Y": 442.1755
+            },
+            "Scale": {
+              "ScaleX": 4.1292,
+              "ScaleY": 2.0271
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": -0.3821,
+              "Y": 0.4094
+            },
+            "PreSize": {
+              "X": 0.1042,
+              "Y": 0.1852
+            },
+            "LeftMargin": -733.6456,
+            "RightMargin": 2453.6455,
+            "TopMargin": 437.8245,
+            "BottomMargin": 442.1755,
+            "Tag": 119,
+            "ActionTag": 835686902,
+            "Size": {
+              "X": 200.0,
+              "Y": 200.0
+            },
+            "Name": "guizi",
+            "ctype": "PanelObjectData"
           }
         ],
         "Size": {

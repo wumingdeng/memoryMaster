@@ -81,6 +81,7 @@ var embedScene = sceneBase.extend({
 
     closeScene:function(callback){
         //this.setTouchEnabled(false);
+        GAME_BAR.onCancelHint(null,true);
         var small = cc.scaleTo(0.3,0);
         var move = cc.moveTo(0.3,cc.p(this._clickLoc.x,this._clickLoc.y));
         var hide = cc.fadeTo(0.3,0);
@@ -97,6 +98,10 @@ var embedScene = sceneBase.extend({
         sfun.lookOrigin(sceneManager._scene[0]);
         this._window.runAction(cc.sequence(cc.spawn(small,move),cc.callFunc(onRemove,this)))
         this._bg.runAction(hide);
+    },
+
+    backTo:function() {
+        this.closeScene();
     }
 
 });

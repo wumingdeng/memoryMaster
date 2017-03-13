@@ -49,8 +49,6 @@ var findSomethingLayer = cc.Layer.extend({
         this.initGameData()
         this.drawWidget()
         this._node.getChildByName("imgSource").setVisible(false)
-//        var txtTitle = this._node.getChildByName("txtTitle")
-//        txtTitle.setString("按住并移动来收集线索")
         this._clueCountText = this._node.getChildByName("txtProgess")
         this._clueCountText.setString("0/" + this._allClueCount)
 
@@ -81,9 +79,7 @@ var findSomethingLayer = cc.Layer.extend({
         holesClipper.setRotation(180)
         holesClipper.setScaleX(-1)
         this._node.addChild(holesClipper)
-        for (var i = 1; i <= 8; i++) {
-            this._node.getChildByName("bian_" + i).setLocalZOrder(10 + i)
-        }
+
         var maskW = this._maskSpt.width
         var maskH = this._maskSpt.height
 
@@ -285,20 +281,20 @@ var findSomethingLayer = cc.Layer.extend({
             //--以每秒300像素的速度
 
             var evidence = self._node.getChildByName("evidence")
-            var spt = sptExt.createSprite("CJ1_chouti_yuankuang.png", "gameScene_1_chouti.plist")
-            spt.setScale(0.5)
-            spt.setPosition(evidence.getPosition())
-            spt.setVisible(false)
+            var spt = sptExt.createSprite("CJ1_chouti_yuankuang1.png", res.findSome_plist)
+            spt.setPosition(cur.getPosition())
+            spt.setVisible(true)
             self._node.addChild(spt,100)
-            console.log("dddd")
             var distance = Math.sqrt(Math.pow(cur.getPositionX() - evidence.getPositionX(), 2) + Math.pow(cur.getPositionY() - evidence.getPositionY(), 2))
             var moveTo = new cc.MoveTo(distance / 300, evidence.getPosition())
+            var big = cc.scaleTo(0.5,1.5).easing(cc.easeInOut(2.0));
+            var moveToClone = moveTo.clone()
             function moveEndFun() {
-                evidence.setVisible(true)
                 spt.setVisible(true)
                 this._findOne = false
             }
-            cur.runAction(new cc.Sequence(moveTo, new cc.CallFunc(moveEndFun.bind(self))))
+            cur.runAction(cc.sequence(cc.spawn(moveTo,big),cc.callFunc(moveEndFun.bind(self))))
+            spt.runAction(moveToClone)
             self._clueCount++;
             self._clueCountText.setString(self._clueCount+"/"+self._allClueCount)
             if (self._clueCount == self._allClueCount) {

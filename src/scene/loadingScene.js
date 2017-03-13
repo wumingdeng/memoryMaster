@@ -3,32 +3,35 @@
  */
 
 var loadingScene = cc.Layer.extend({
-    ctor:function(){
+    _cbfun:null,
+    _sid:null,
+    ctor:function(cbfun,sid){
         this._super();
+        this._cbfun = cbfun
+        this._sid = sid
+        self = this
         this.init()
     },
     init:function(){
         this._super()
-        var newScene = new cc.Scene();
-        newScene.addChild(this);
-        cc.director.runScene(newScene);
-
         var json = ccs.load(res.loading_json,"res/")
         this._ui = json.node;
         this._action = json.action;
         this._action.gotoFrameAndPlay(0,true)
         this._ui.runAction(this._action)
         this.addChild(this._ui)
-        this.onLoadingCallfun()
+        var newScene = new cc.Scene();
+        newScene.addChild(this);
+        cc.director.runScene(newScene);
+
     },
     onLoadingCallfun:function(){
-        var gRes = s_ResNative["s1"]
-        console.log("enter scene :"+PLAYER_STATE.mainScene)
-        //var gRes = s_ResNative["s"+PLAYER_STATE.mainScene]
+        console.log("enter scene id:"+this._sid)
+        var gRes = s_ResNative["s"+this._sid]
         function loadingFun(num)
         {
            if(num>=gRes.length){
-               sceneManager.createScene(PLAYER_STATE.mainScene)
+               self._cbfun()
             }else{
                 var idx = num++
                 plistAsyncLoading(gRes[idx].plist,gRes[idx].png,loadingFun,num)
@@ -38,18 +41,28 @@ var loadingScene = cc.Layer.extend({
     },
     cleanup:function(){
         this._super();
+        if(cc.sys.isNative){
+            // cc.textureCache.removeUnusedTextures()
+            // cc.spriteFrameCache.removeUnusedSpriteFrames()
+        }
     },
     onEnter:function(){
         this._super();
+        console.log("onEnter")
+
     },
     onExit:function(){
         this._super();
+        console.log("onExit")
     },
     onEnterTransitionDidFinish:function(){
         this._super();
+        console.log("onEnterTransitionDidFinish")
+        this.onLoadingCallfun()
     },
     onExitTransitionDidStart: function () {
         this._super();
+        console.log("onExitTransitionDidStart")
     },
 
 });

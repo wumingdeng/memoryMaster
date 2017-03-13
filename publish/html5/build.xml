@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<project name="Javascript compress project" basedir="/Users/Fizzo/Desktop/customJsv2" default="compile">
+<project name="Javascript compress project" basedir="/Users/Fizzo/Documents/workspace-js/memoryMaster" default="compile">
 
     <taskdef name="jscomp" classname="com.google.javascript.jscomp.ant.CompileTask"
              classpath="/Users/Fizzo/Documents/cocos2d-x-3.11/tools/cocos2d-console/plugins/plugin_compile/build_web/bin/compiler-1.7.jar"/>
@@ -8,11 +8,11 @@
         <jscomp compilationLevel="simple" 
                 warning="quiet"
                 debug="false" 
-                output="/Users/Fizzo/Desktop/customJsv2/publish/html5/game.min.js"
+                output="/Users/Fizzo/Documents/workspace-js/memoryMaster/publish/html5/game.min.js"
                 languagein="ECMASCRIPT5"
                 
                 >
-            <sources dir="/Users/Fizzo/Desktop/customJsv2/frameworks/cocos2d-html5">
+            <sources dir="/Users/Fizzo/Documents/workspace-js/memoryMaster/frameworks/cocos2d-html5">
                 <file name="CCBoot.js"/>
                 <file name="cocos2d/core/event-manager/CCEventHelper.js"/>
                 <file name="CCDebugger.js"/>
@@ -331,36 +331,50 @@
             </sources>
             <sources dir="${basedir}">
                 <file name="src/resource.js"/>
-                <file name="src/until/loadResourceHelper.js"/>
-                <file name="src/until/audioHelper.js"/>
-                <file name="src/until/timerHelper.js"/>
-                <file name="src/staticdata/task.js"/>
-                <file name="src/staticdata/textSimplifiedStyle.js"/>
-                <file name="src/until/taskTraceHelper.js"/>
-                <file name="src/scene/loadingProgressScene.js"/>
-                <file name="src/scene/loginScene.js"/>
-                <file name="src/globalVar.js"/>
-                <file name="src/app.js"/>
-                <file name="src/until/crypto.js"/>
-                <file name="src/until/cryptoExtra.js"/>
-                <file name="src/globalConst.js"/>
-                <file name="src/until/alertHelper.js"/>
-                <file name="src/until/extraFunc.js"/>
-                <file name="src/config/GameConfig.js"/>
-                <file name="src/gameview/scratchScene.js"/>
-                <file name="src/SysMenu.js"/>
-                <file name="src/gameview/gameTopLayer.js"/>
-                <file name="src/gameview/searchBottomLayer.js"/>
-                <file name="src/gameview/searchItemLayer.js"/>
-                <file name="src/gameview/searchScene.js"/>
-                <file name="src/config/item/item1.js"/>
-                <file name="src/customFunction.js"/>
-                <file name="src/gameFunctions.js"/>
-                <file name="src/tableFunction.js"/>
+                <file name="src/helper/customFunction.js"/>
+                <file name="src/helper/extraFunction.js"/>
+                <file name="src/helper/globalConst.js"/>
+                <file name="src/helper/globalVariable.js"/>
+                <file name="src/helper/sceneFunction.js"/>
+                <file name="src/helper/timerHelper.js"/>
                 <file name="src/helper/ActionHelper.js"/>
-                <file name="src/gameview/PauseLayer.js"/>
-                <file name="src/gameview/Tip.js"/>
-                <file name="src/network/httpRequest.js"/>
+                <file name="src/helper/shaderHelper.js"/>
+                <file name="src/helper/loadResourceHelper.js"/>
+                <file name="src/config/item.js"/>
+                <file name="src/config/task.js"/>
+                <file name="src/config/scene.js"/>
+                <file name="src/config/game.js"/>
+                <file name="src/config/globalItem.js"/>
+                <file name="src/config/hint.js"/>
+                <file name="src/config/talk.js"/>
+                <file name="src/config/memory.js"/>
+                <file name="src/scene/sceneBase.js"/>
+                <file name="src/scene/embedScene.js"/>
+                <file name="src/scene/fullScene.js"/>
+                <file name="src/scene/selectScene.js"/>
+                <file name="src/scene/sceneManager.js"/>
+                <file name="src/scene/gameScene.js"/>
+                <file name="src/scene/loadingScene.js"/>
+                <file name="src/scene/game/jigsawGame.js"/>
+                <file name="src/scene/game/findSomethingScene.js"/>
+                <file name="src/scene/game/phone.js"/>
+                <file name="src/scene/game/searchGame/searchScene.js"/>
+                <file name="src/scene/game/searchGame/searchBottom.js"/>
+                <file name="src/scene/game/searchGame/itemConfig/item1.js"/>
+                <file name="src/scene/game/scratchScene.js"/>
+                <file name="src/scene/game/sortMapScene.js"/>
+                <file name="src/gameTool/gameBar.js"/>
+                <file name="src/gameTool/hintFunc.js"/>
+                <file name="src/gameTool/memoryManager.js"/>
+                <file name="src/playerStateManger.js"/>
+                <file name="src/login/loginScene.js"/>
+                <file name="src/Object/globalObject.js"/>
+                <file name="src/Object/ItemBase.js"/>
+                <file name="src/Object/itemManager.js"/>
+                <file name="src/Object/items/item208.js"/>
+                <file name="src/task/taskManager.js"/>
+                <file name="src/hint/hintLayer.js"/>
+                <file name="src/dialogue/dialogueLayer.js"/>
                 <file name="main.js"/>
 
             </sources>

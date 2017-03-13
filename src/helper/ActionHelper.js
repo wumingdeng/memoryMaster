@@ -179,7 +179,7 @@ ActionHelper.twinkleAction = function(source,times,callBackFun) {
     function reset() {
         shaderHelper.removeShaderEffect(source)
     }
-    var seq = new cc.Sequence(new cc.CallFunc(bright), new cc.DelayTime(.1), new cc.CallFunc(reset), new cc.DelayTime(.1))
+    var seq = new cc.Sequence(new cc.CallFunc(bright), new cc.DelayTime(.2), new cc.CallFunc(reset), new cc.DelayTime(.1))
     if (times == null || times == 0) {
         source.runAction(new cc.RepeatForever(seq)
         )

@@ -33,6 +33,11 @@ var sceneBase = cc.Layer.extend({
         this._super()
     },
     init:function(){
+        //清除上个场景的物品
+        if (this._info.type == SCENE_Type.full || (this._info.type == SCENE_Type.game && this._info.et != EMBED_Type.embed)) {
+            itemManager.destroyItems();
+        }
+
         if (this._info.ui){
             var json = ccs.load(this._info.ui,"res/")
             this._ui = json.node;
@@ -94,6 +99,7 @@ var sceneBase = cc.Layer.extend({
         for (var i = 0; i < this._itemArr.length; ++i){
             if (this._itemArr[i].isTouchItem(loc)) {
                 this._clickItem = this._itemArr[i];
+                GAME_BAR.onCancelHint(this._clickItem);
                 this._clickItem.onTouchBegan()
                 this._isTouch = true;
                 //return true;

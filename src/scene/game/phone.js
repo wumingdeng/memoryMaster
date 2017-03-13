@@ -198,7 +198,7 @@ var phoneLayer = cc.Layer.extend({
     onTouchCanceledFun:function(touch, event){
     },
     backTo:function(callback){
-        if(this._isEnd) return
+        if(this._isEnd||GAME_BAR._isDown!=1) return
         this._isEnd = true
         GAME_BAR.showGameBar()
         function onEndAction(frame) {
@@ -215,8 +215,8 @@ var phoneLayer = cc.Layer.extend({
         GAME_BAR._phoneScene = null
     },
     onSildeLight:function(){
-        this._silde = sptExt.createSprite("res/phone/dianhuajieting05.png")
-        this._highLight = sptExt.createSprite("res/phone/dianhuajieting04_gaoguang.png")
+        this._silde = sptExt.createSprite("dianhuajieting05.png",res.phone_plist)
+        this._highLight = sptExt.createSprite("dianhuajieting04_gaoguang.png",res.phone_plist)
         var holesClipper = new cc.ClippingNode() //--剪裁节点
         holesClipper.setAnchorPoint(0.5,0.5)
         holesClipper.addChild(this._silde)
@@ -266,17 +266,19 @@ var phoneLayer = cc.Layer.extend({
         extfun.seekWidgetByName(this._node,"tonghuajiemian").opacity = 100
     },
     onGoto:function(){
+        
         this._json_02.action.release();
         this._that.onMapAction()
         this.removeFromParent()
     },
     onGoHell:function(){
+        if(this._isEnd) return
+        this._isEnd = true
         function onEndAction(frame) {
             var event = frame.getEvent();
             if (event == "end") {
                 this._json_02.action.release();
                 cc.eventManager.addListener(this._listener.clone(), this);
-                this._isEnd = true
             }
         }
         this._action.setFrameEventCallFunc(onEndAction.bind(this))

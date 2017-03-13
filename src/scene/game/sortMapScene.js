@@ -94,13 +94,13 @@ var sortMapLayer = cc.Layer.extend({
         }
     },
     isInnerSide:function(sourcePos) {
-        if( sourcePos.x + sourcePos.width / 4 > vSize.width)
+        if( sourcePos.x + sourcePos.width / 4 > vsize.width)
             return false
         else if(sourcePos.x - sourcePos.width / 4 < 0)
             return false
         else if(sourcePos.y - sourcePos.height / 4 < 0)
             return false
-        else if(sourcePos.y + sourcePos.height/ 4 > vSize.height)
+        else if(sourcePos.y + sourcePos.height/ 4 > vsize.height)
             return false
         else
             return true

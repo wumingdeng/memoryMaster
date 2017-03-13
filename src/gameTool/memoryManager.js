@@ -17,6 +17,13 @@ memoryManager = {
         cc.sys.localStorage.setItem("openMemory","true");
     },
 
+    //关闭记忆模式功能
+    closeMemory:function() {
+        this._isOpen = false;
+        cc.sys.localStorage.setItem("openMemory","false");
+    },
+
+
     isInMemory:function() {
         return this._inMemoryModel;
     },
@@ -42,7 +49,6 @@ memoryManager = {
                 }
             }
         }
-
     },
     memory:function(force) {
         if (!this._isOpen && !force) {
@@ -51,13 +57,15 @@ memoryManager = {
         if (sceneManager.scene._info.type != SCENE_Type.full) {
             return;
         }
-        if (!this._inMemoryModel) {
+
+        if (!this._inMemoryModel && GAME_BAR._isDown==0) {
             this._inMemoryModel = true;
+            console.log("enter memory")
             this.enterMemory();
             GAME_BAR.tipMemory()
             sceneManager.scene.setSceneTouch(false);
             GAME_BAR.hideGameBar(true);
-        } else {
+        } else if(GAME_BAR._isDown==1) {
             this._inMemoryModel = false;
             //推出记忆模式
             this.exitMemory()

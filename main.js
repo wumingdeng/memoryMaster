@@ -71,12 +71,13 @@ cc.game.onStart = function(){
 
     vsize = cc.director.getVisibleSize();
     //load resources
-
-
+    if (cc.sys.isNative) {
+        cc.Texture2D.setNeedGetAlpha(true)
+    }
     cc.LoaderScene.preload(g_resources, function () {
-         cc.director.runScene(new loginScene());
+        cc.sys.localStorage.clear()
+        cc.director.runScene(new loginScene());
     }, this);
     //读取玩家数据 根据玩家的记录选择进入的场景
-
 };
 cc.game.run();

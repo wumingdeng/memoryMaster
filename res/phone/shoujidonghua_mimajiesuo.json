@@ -689,9 +689,9 @@
             "Frames": [
               {
                 "TextureFile": {
-                  "Type": "Normal",
-                  "Path": "phone/dianhuajieting01.png",
-                  "Plist": ""
+                  "Type": "PlistSubImage",
+                  "Path": "dianhuajieting01.png",
+                  "Plist": "phone/kaichang_shouji.plist"
                 },
                 "FrameIndex": 0,
                 "Tween": false,
@@ -699,9 +699,9 @@
               },
               {
                 "TextureFile": {
-                  "Type": "Normal",
-                  "Path": "phone/dianhuajieting01.png",
-                  "Plist": ""
+                  "Type": "PlistSubImage",
+                  "Path": "dianhuajieting01.png",
+                  "Plist": "phone/kaichang_shouji.plist"
                 },
                 "FrameIndex": 10,
                 "Tween": false,
@@ -709,9 +709,9 @@
               },
               {
                 "TextureFile": {
-                  "Type": "Normal",
-                  "Path": "phone/dianhuajieting01.png",
-                  "Plist": ""
+                  "Type": "PlistSubImage",
+                  "Path": "dianhuajieting01.png",
+                  "Plist": "phone/kaichang_shouji.plist"
                 },
                 "FrameIndex": 20,
                 "Tween": false,
@@ -719,9 +719,9 @@
               },
               {
                 "TextureFile": {
-                  "Type": "Normal",
-                  "Path": "phone/dianhuajieting01.png",
-                  "Plist": ""
+                  "Type": "PlistSubImage",
+                  "Path": "dianhuajieting01.png",
+                  "Plist": "phone/kaichang_shouji.plist"
                 },
                 "FrameIndex": 90,
                 "Tween": false,
@@ -729,9 +729,9 @@
               },
               {
                 "TextureFile": {
-                  "Type": "Normal",
-                  "Path": "phone/dianhuajieting02.png",
-                  "Plist": ""
+                  "Type": "PlistSubImage",
+                  "Path": "dianhuajieting02.png",
+                  "Plist": "phone/kaichang_shouji.plist"
                 },
                 "FrameIndex": 107,
                 "Tween": false,
@@ -739,9 +739,9 @@
               },
               {
                 "TextureFile": {
-                  "Type": "Normal",
-                  "Path": "phone/dianhuajieting02.png",
-                  "Plist": ""
+                  "Type": "PlistSubImage",
+                  "Path": "dianhuajieting02.png",
+                  "Plist": "phone/kaichang_shouji.plist"
                 },
                 "FrameIndex": 115,
                 "Tween": false,
@@ -1698,9 +1698,9 @@
         "Children": [
           {
             "FileData": {
-              "Type": "Normal",
-              "Path": "phone/shounashouji_01.png",
-              "Plist": ""
+              "Type": "PlistSubImage",
+              "Path": "shounashouji_01.png",
+              "Plist": "phone/kaichang_shouji.plist"
             },
             "BlendFunc": {
               "Src": 1,
@@ -1817,9 +1817,9 @@
                 "Children": [
                   {
                     "FileData": {
-                      "Type": "Normal",
-                      "Path": "phone/dianhuajieting03.png",
-                      "Plist": ""
+                      "Type": "PlistSubImage",
+                      "Path": "dianhuajieting03.png",
+                      "Plist": "phone/kaichang_shouji.plist"
                     },
                     "BlendFunc": {
                       "Src": 1,
@@ -1872,9 +1872,9 @@
               },
               {
                 "FileData": {
-                  "Type": "Normal",
-                  "Path": "phone/dianhuajieting01.png",
-                  "Plist": ""
+                  "Type": "PlistSubImage",
+                  "Path": "dianhuajieting01.png",
+                  "Plist": "phone/kaichang_shouji.plist"
                 },
                 "BlendFunc": {
                   "Src": 1,
@@ -1919,9 +1919,9 @@
               },
               {
                 "FileData": {
-                  "Type": "Normal",
-                  "Path": "phone/dianhuajieting04.png",
-                  "Plist": ""
+                  "Type": "PlistSubImage",
+                  "Path": "dianhuajieting04.png",
+                  "Plist": "phone/kaichang_shouji.plist"
                 },
                 "BlendFunc": {
                   "Src": 1,
@@ -1966,9 +1966,9 @@
               },
               {
                 "FileData": {
-                  "Type": "Normal",
-                  "Path": "phone/shoujitixing.png",
-                  "Plist": ""
+                  "Type": "PlistSubImage",
+                  "Path": "shoujitixing.png",
+                  "Plist": "phone/kaichang_shouji.plist"
                 },
                 "BlendFunc": {
                   "Src": 1,
@@ -2013,9 +2013,9 @@
               },
               {
                 "FileData": {
-                  "Type": "Normal",
-                  "Path": "phone/xinxi.png",
-                  "Plist": ""
+                  "Type": "PlistSubImage",
+                  "Path": "xinxi.png",
+                  "Plist": "phone/kaichang_shouji.plist"
                 },
                 "BlendFunc": {
                   "Src": 1,
@@ -2334,13 +2334,8 @@
       },
       "UsedResources": [
         "../font/SIMHEI.TTF",
-        "dianhuajieting01.png",
-        "dianhuajieting02.png",
-        "dianhuajieting03.png",
-        "dianhuajieting04.png",
-        "shoujitixing.png",
-        "shounashouji_01.png",
-        "xinxi.png"
+        "kaichang_shouji.plist",
+        "kaichang_shouji.png"
       ],
       "ctype": "GameFileData"
     }

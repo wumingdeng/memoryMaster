@@ -3,16 +3,16 @@
  * 全屏场景
  */
 var fullScene = sceneBase.extend({
-    _isReadyBack:false,
+    _isReadyBack:true,
     _arrow:null,    //场景切换箭头
     ctor:function(id,info){
         this._super(id,info);
         // this.changeScene();
-        var gRes = scene_resources["s"+id]
-        cc.LoaderScene.preload(gRes, function () {
+        // var gRes = scene_resources["s" + id]
+        // cc.LoaderScene.preload(gRes, function () {
             this.initFullScene();
             this.changeScene()
-        }, this);
+        // }, this);
     },
     initFullScene:function(){
 
@@ -23,7 +23,7 @@ var fullScene = sceneBase.extend({
     changeScene:function(){
         var newScene = new cc.Scene();
         newScene.addChild(this);
-        cc.director.runScene(newScene);
+        cc.director.runScene(new cc.TransitionCrossFade(1, newScene));
     },
 
     onEnter:function(){
@@ -35,7 +35,13 @@ var fullScene = sceneBase.extend({
 
         //播放开场动画
         this.setSceneTouch(true);
-//        this.onActionConnectPhone()
+        if(!cc.sys.localStorage.getItem("hasPlay"+this._id)){
+            switch(this._id) {
+                case 1:
+                    this.onActionConnectPhone()
+                    break;
+            }
+        }
     },
     /**TODO
      * 未调整成配置方式,
@@ -56,39 +62,46 @@ var fullScene = sceneBase.extend({
             animation.y = vsize.height / 2;
 
             animation.runAction(action);
-            cfun.addFullScreen("openScene");
-
             this.addChild(animation,2000)
             action.play('action1',false);
             function onFinish(frame) {
                if (frame.getEvent() == 'finish') {
-                   cfun.removeFullScreen("openScene");
-                   this.onEndOpenSceneActionfun()
-                   animation.removeFromParent();
-               } else if (frame.getEvent() == 'move') {
-                   function onView() {
-                       MEMORY_CONFIG.s1.show = []
-                       memoryManager.memory(true);
-                       GAME_BAR.setTouchEnabled(false);
-                       function onIntroFinish(frame) {
-                           if(frame.getEvent() == 'finish') {
-                               intro.node.removeFromParent();
-                               cfun.removeFullScreen("view");
-                               this.setSceneTouch(true);
-                               GAME_BAR.setTouchEnabled(true);
+                   var door = cfun.seekWidgetByName(animation,"door")
+                   function onEnterDoor(sender,type){
+                       if(type==ccui.Widget.TOUCH_ENDED){
+                           cc.sys.localStorage.setItem("hasPlay"+this._id,"true")
+                           this.onEndOpenSceneActionfun()
+                           animation.removeFromParent();
+                           cfun.addFullScreen("view");
+                           function onView() {
+                               MEMORY_CONFIG.s1.show = []
                                memoryManager.memory(true);
-                               MEMORY_CONFIG.s1.show = [-1]
-                               GAME_BAR.showGameBar();
-                               var hint = new hintLayer(10);
-                               sceneManager.scene.addChild(hint,100);
+                               GAME_BAR.setTouchEnabled(false);
+                               function onIntroFinish(frame) {
+                                   if(frame.getEvent() == 'finish') {
+                                       intro.node.removeFromParent();
+                                       cfun.removeFullScreen("view");
+                                       this.setSceneTouch(true);
+                                       GAME_BAR.setTouchEnabled(true);
+                                       memoryManager.memory(true);
+                                       MEMORY_CONFIG.s1.show = [-2]
+                                       GAME_BAR.showGameBar();
+                                       var hint = new hintLayer(10);
+                                       sceneManager.scene.addChild(hint,100);
+                                   }
+                               }
+                               var intro = cfun.getAnimation(res.memory_intro_json,false,onIntroFinish.bind(this));
+                               this.addChild(intro.node,2000);
                            }
+                           sfun.viewScene(this,onView.bind(this))
                        }
-                       var intro = cfun.getAnimation(res.memory_intro_json,false,onIntroFinish.bind(this));
-                       // intro.node.x = vsize.width / 2
-                       // intro.node.y = vsize.height / 2;
-                       this.addChild(intro.node,2000);
                    }
-                   sfun.viewScene(this,onView.bind(this))
+                   door.addTouchEventListener(onEnterDoor.bind(this))
+                }else if(frame.getEvent() == 'move'){
+                   var jiantou = cfun.seekWidgetByName(animation,"jinruchangjingjiantou");
+                   var jiantouAction = ccs.load(res.romm_open_animation_jinruchangjingjiantou_json,"res/").action;
+                   jiantou.runAction(jiantouAction)
+                   jiantouAction.gotoFrameAndPlay(0,true);
                }
             }
             action.setFrameEventCallFunc(onFinish.bind(this))
@@ -102,12 +115,12 @@ var fullScene = sceneBase.extend({
         var isTouchItem = this._super(touch,event);
         if (!isTouchItem) {
             var location = touch.getLocation();
-            if (location.y < 200) {
-                this.backTo()
-            } else if (this._isReadyBack) {
-                this._isReadyBack = false;
-                this._arrow.removeFromParent()
-            }
+            //if (location.y < 200) {
+            //    this.backTo()
+            //} else if (this._isReadyBack) {
+            //    this._isReadyBack = false;
+            //    this._arrow.removeFromParent()
+            //}
         }
     },
 
@@ -121,21 +134,20 @@ var fullScene = sceneBase.extend({
             trace('返回上一个场景:' + sid);
             sceneManager.createScene(sid);
         } else {
-            this._isReadyBack = true;
-            this._arrow = new cc.Sprite("res/common/jiantou.png");
-            var sname = sceneManager.getSceneInfo(sid).name;
-            var nameText = new ccui.Text(sname,"customFont",30);
-            nameText.x = 37;
-            nameText.y = 80;
-            this._arrow.addChild(nameText);
-            this.addChild(this._arrow);
-            this._arrow.x = vsize.width/2;
-            this._arrow.y = 100;
-            var jump = cc.jumpBy(3, cc.p(0, 0), 30, 3);
-            jump = cc.repeatForever(jump);
-            this._arrow.runAction(jump);
+            //this._isReadyBack = true;
+            //this._arrow = new cc.Sprite("res/common/jiantou.png");
+            //var sname = sceneManager.getSceneInfo(sid).name;
+            //var nameText = new ccui.Text(sname,"customFont",30);
+            //nameText.x = 37;
+            //nameText.y = 80;
+            //this._arrow.addChild(nameText);
+            //this.addChild(this._arrow);
+            //this._arrow.x = vsize.width/2;
+            //this._arrow.y = 100;
+            //var jump = cc.jumpBy(3, cc.p(0, 0), 30, 3);
+            //jump = cc.repeatForever(jump);
+            //this._arrow.runAction(jump);
         }
     }
-
 
 });

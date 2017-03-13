@@ -209,12 +209,10 @@ ITEM_CONFIG.data = {
         state:{
             "0":{
                 visible: true,     //初始的显示状态
-                behavior: ITEM_BEHAVIOR.goto,  //初始行为
-                goto:11
+                behavior: ITEM_BEHAVIOR.none
             },
             "1":{
-                behavior: ITEM_BEHAVIOR.none,  //初始行为
-                visible:true   //杜鹃动画播完就可以隐藏了
+                visible:false
             }
         }
     },
@@ -274,9 +272,9 @@ ITEM_CONFIG.data = {
                 behavior: ITEM_BEHAVIOR.none,  //初始行为
             },
             "1":{
-                visible:true,
-                behavior: ITEM_BEHAVIOR.hint,  //初始行为
-                hint:8
+                visible: true,     //初始的显示状态
+                goto:18,
+                behavior: ITEM_BEHAVIOR.goto  //初始行为
             }
         }
     },
@@ -289,6 +287,19 @@ ITEM_CONFIG.data = {
             },
             "1":{
                 visible:false
+            }
+        }
+    },
+    "i119":{
+        name:"柜子",
+        state:{
+            "0":{
+                visible:true,
+                goto:15,
+                behavior:ITEM_BEHAVIOR.goto,
+            },
+            "1":{
+                behavior:ITEM_BEHAVIOR.none
             }
         }
     },
@@ -488,9 +499,8 @@ ITEM_CONFIG.data = {
                 behavior:ITEM_BEHAVIOR.none
             },
             "1":{
-                global:1,   //全局物品1
                 visible:true,
-                behavior:ITEM_BEHAVIOR.global
+                behavior:ITEM_BEHAVIOR.action
             },
             "2":{
                 visible:false
@@ -657,7 +667,109 @@ ITEM_CONFIG.data = {
             },
             "3":{
                 actionIndex:3,
+                behavior:ITEM_BEHAVIOR.action
+            },
+            "4":{
+                actionIndex:4,
                 behavior:ITEM_BEHAVIOR.none
+            }
+        }
+    },
+    "i1301":{
+        name:"柜子1",
+        state:{
+            "0":{
+                visible:true,
+                actionIndex:1,
+                behavior:ITEM_BEHAVIOR.action
+            }
+        }
+    },
+    "i1302":{
+        name:"柜子2",
+        state:{
+            "0":{
+                visible:true,
+                actionIndex:1,
+                behavior:ITEM_BEHAVIOR.action
+            }
+        }
+    },
+    "i1303":{
+        name:"柜子3",
+        state:{
+            "0":{
+                visible:true,
+                actionIndex:1,
+                behavior:ITEM_BEHAVIOR.action
+            }
+        }
+    },
+    "i1304":{
+        name:"柜子4",
+        state:{
+            "0":{
+                visible:true,
+                actionIndex:1,
+                behavior:ITEM_BEHAVIOR.action
+            }
+        }
+    },
+    "i1305":{
+        name:"柜子5",
+        state:{
+            "0":{
+                visible:true,
+                actionIndex:1,
+                behavior:ITEM_BEHAVIOR.action
+            }
+        }
+    },
+    "i1306":{
+        name:"柜子6",
+        state:{
+            "0":{
+                visible:true,
+                actionIndex:1,
+                behavior:ITEM_BEHAVIOR.action
+            }
+        }
+    },
+    "i1307":{
+        name:"柜子7",
+        state:{
+            "0":{
+                visible:true,
+                actionIndex:1,
+                behavior:ITEM_BEHAVIOR.action
+            }
+        }
+    },
+    "i1801":{
+        name:"操作台",
+        state:{
+            "0":{
+                visible: true,     //初始的显示状态
+                goto:16,
+                behavior: ITEM_BEHAVIOR.goto,  //初始行为
+            }
+        }
+    },
+    "i1898":{
+        name:"屏幕",
+        state:{
+            "0":{
+                visible: true,     //初始的显示状态
+                behavior: ITEM_BEHAVIOR.none,  //初始行为
+            }
+        }
+    },
+    "i1899":{
+        name:"线光",
+        state:{
+            "0":{
+                visible: true,     //初始的显示状态
+                behavior: ITEM_BEHAVIOR.none,  //初始行为
             }
         }
     }

@@ -24,8 +24,27 @@ sceneManager.createScene = function(sid,loc){
     }
     if (this.scene && this.scene._info.type == SCENE_Type.embed) {
         this.scene.closeScene(create.bind(this))
+    } else if (this.scene && this.scene._info.type == SCENE_Type.game && this.scene._info.et == EMBED_Type.embed) {
+        this.scene.backTo(create.bind(this));
     } else {
-        create.bind(this)();
+        //直接进入场景
+        var info = this.getSceneInfo(sid);
+        if (cc.sys.isNative) {
+            if (info.type == SCENE_Type.full || (info.type == SCENE_Type.game && (!info.et || info.et == EMBED_Type.full))) {
+                console.log("run new scene")
+                new loadingScene(create.bind(this), sid)
+            } else {
+                if (GAME_BAR) {
+                    GAME_BAR.onCancelHint(null,true);
+                }
+                create.bind(this)();
+            }
+        } else {
+            if (GAME_BAR) {
+                GAME_BAR.onCancelHint(null,true);
+            }
+            create.bind(this)();
+        }
     }
     function create() {
         var newScene;
@@ -34,7 +53,6 @@ sceneManager.createScene = function(sid,loc){
             var select = new selectScene(sid);
             cc.director.getRunningScene().addChild(select,1000)
         } else {
-            //直接进入场景
             var info = this.getSceneInfo(sid);
             switch (info.type) {
                 case SCENE_Type.full:   //创建全屏的场景
@@ -90,7 +108,7 @@ sceneManager.sceneHaveTask = function(sid){
 //获得相邻的场景
 sceneManager.getNearScene = function(sid) {
     var info = this.getSceneInfo(sid);
-    var items = info.item;  //场景中的物品
+    var items = info.item || [];  //场景中的物品
     var sceneArr = [];  //存结果的数组
     //检查这些物品是否是其他场景的入口
     for (var i = 0; i < items.length; ++i){

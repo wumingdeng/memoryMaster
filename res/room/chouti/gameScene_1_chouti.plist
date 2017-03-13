@@ -4,27 +4,14 @@
     <dict>
         <key>frames</key>
         <dict>
-            <key>CJ1_chouti_Ipad.png</key>
-            <dict>
-                <key>frame</key>
-                <string>{{846,1834},{232,109}}</string>
-                <key>offset</key>
-                <string>{0,0}</string>
-                <key>rotated</key>
-                <false/>
-                <key>sourceColorRect</key>
-                <string>{{0,0},{232,109}}</string>
-                <key>sourceSize</key>
-                <string>{232,109}</string>
-            </dict>
             <key>CJ1_chouti_benzi.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{568,1571},{201,253}}</string>
+                <string>{{2,1553},{201,253}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
-                <false/>
+                <true/>
                 <key>sourceColorRect</key>
                 <string>{{0,0},{201,253}}</string>
                 <key>sourceSize</key>
@@ -37,7 +24,7 @@
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
-                <false/>
+                <true/>
                 <key>sourceColorRect</key>
                 <string>{{0,0},{1077,686}}</string>
                 <key>sourceSize</key>
@@ -46,7 +33,7 @@
             <key>CJ1_chouti_dingshuji.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{2,1831},{185,97}}</string>
+                <string>{{590,1081},{185,97}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -56,23 +43,10 @@
                 <key>sourceSize</key>
                 <string>{185,97}</string>
             </dict>
-            <key>CJ1_chouti_guizichouti_ZD.png</key>
-            <dict>
-                <key>frame</key>
-                <string>{{657,690},{338,88}}</string>
-                <key>offset</key>
-                <string>{0,0}</string>
-                <key>rotated</key>
-                <false/>
-                <key>sourceColorRect</key>
-                <string>{{0,0},{338,88}}</string>
-                <key>sourceSize</key>
-                <string>{338,88}</string>
-            </dict>
             <key>CJ1_chouti_laoshu.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{408,1831},{156,128}}</string>
+                <string>{{558,1361},{156,128}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -85,37 +59,24 @@
             <key>CJ1_chouti_qianbi.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{953,1047},{263,117}}</string>
+                <string>{{373,1550},{263,117}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
-                <true/>
+                <false/>
                 <key>sourceColorRect</key>
                 <string>{{0,0},{263,117}}</string>
                 <key>sourceSize</key>
                 <string>{263,117}</string>
             </dict>
-            <key>CJ1_chouti_shexiangtoumoxing.png</key>
-            <dict>
-                <key>frame</key>
-                <string>{{101,1831},{116,184}}</string>
-                <key>offset</key>
-                <string>{3,4}</string>
-                <key>rotated</key>
-                <false/>
-                <key>sourceColorRect</key>
-                <string>{{33,9},{116,184}}</string>
-                <key>sourceSize</key>
-                <string>{176,210}</string>
-            </dict>
             <key>CJ1_chouti_shouji.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{219,1831},{157,187}}</string>
+                <string>{{274,1361},{157,187}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
-                <true/>
+                <false/>
                 <key>sourceColorRect</key>
                 <string>{{0,0},{157,187}}</string>
                 <key>sourceSize</key>
@@ -124,11 +85,11 @@
             <key>CJ1_chouti_shubiao.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{997,690},{73,91}}</string>
+                <string>{{590,1268},{73,91}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
-                <false/>
+                <true/>
                 <key>sourceColorRect</key>
                 <string>{{0,0},{73,91}}</string>
                 <key>sourceSize</key>
@@ -137,11 +98,11 @@
             <key>CJ1_chouti_tongbei.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{648,1834},{196,114}}</string>
+                <string>{{257,1553},{196,114}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
-                <false/>
+                <true/>
                 <key>sourceColorRect</key>
                 <string>{{0,0},{196,114}}</string>
                 <key>sourceSize</key>
@@ -150,7 +111,7 @@
             <key>CJ1_chouti_wano.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{954,783},{123,162}}</string>
+                <string>{{433,1361},{123,162}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -163,7 +124,7 @@
             <key>CJ1_chouti_xiaogou.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{771,1473},{117,131}}</string>
+                <string>{{373,1669},{117,131}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -173,27 +134,14 @@
                 <key>sourceSize</key>
                 <string>{117,131}</string>
             </dict>
-            <key>CJ1_chouti_yuankuang.png</key>
+            <key>CJ1_chouti_yuanpan.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{2,1265},{564,564}}</string>
+                <string>{{506,1669},{139,108}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
                 <false/>
-                <key>sourceColorRect</key>
-                <string>{{0,0},{564,564}}</string>
-                <key>sourceSize</key>
-                <string>{564,564}</string>
-            </dict>
-            <key>CJ1_chouti_yuanpan.png</key>
-            <dict>
-                <key>frame</key>
-                <string>{{538,1831},{139,108}}</string>
-                <key>offset</key>
-                <string>{0,0}</string>
-                <key>rotated</key>
-                <true/>
                 <key>sourceColorRect</key>
                 <string>{{0,0},{139,108}}</string>
                 <key>sourceSize</key>
@@ -202,7 +150,7 @@
             <key>CJ1_chouti_zhizhang1.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{771,1592},{270,240}}</string>
+                <string>{{2,1311},{270,240}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -215,7 +163,7 @@
             <key>CJ1_chouti_zhizhang2.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{627,1193},{289,278}}</string>
+                <string>{{299,1081},{289,278}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -228,7 +176,7 @@
             <key>CJ1_chouti_zhizhang3.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{657,780},{295,228}}</string>
+                <string>{{2,1081},{295,228}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -238,84 +186,6 @@
                 <key>sourceSize</key>
                 <string>{295,228}</string>
             </dict>
-            <key>GZ_choutiZD_01.png</key>
-            <dict>
-                <key>frame</key>
-                <string>{{2,1109},{623,154}}</string>
-                <key>offset</key>
-                <string>{0,0}</string>
-                <key>rotated</key>
-                <false/>
-                <key>sourceColorRect</key>
-                <string>{{0,0},{623,154}}</string>
-                <key>sourceSize</key>
-                <string>{623,154}</string>
-            </dict>
-            <key>GZ_chouti_01.png</key>
-            <dict>
-                <key>frame</key>
-                <string>{{2,690},{653,417}}</string>
-                <key>offset</key>
-                <string>{0,0}</string>
-                <key>rotated</key>
-                <false/>
-                <key>sourceColorRect</key>
-                <string>{{0,0},{653,417}}</string>
-                <key>sourceSize</key>
-                <string>{653,417}</string>
-            </dict>
-            <key>GZ_choutiwupin_01.png</key>
-            <dict>
-                <key>frame</key>
-                <string>{{568,1473},{113,90}}</string>
-                <key>offset</key>
-                <string>{0,0}</string>
-                <key>rotated</key>
-                <false/>
-                <key>sourceColorRect</key>
-                <string>{{0,0},{113,90}}</string>
-                <key>sourceSize</key>
-                <string>{113,90}</string>
-            </dict>
-            <key>GZ_choutiwupin_02.png</key>
-            <dict>
-                <key>frame</key>
-                <string>{{657,1010},{294,181}}</string>
-                <key>offset</key>
-                <string>{0,0}</string>
-                <key>rotated</key>
-                <false/>
-                <key>sourceColorRect</key>
-                <string>{{0,0},{294,181}}</string>
-                <key>sourceSize</key>
-                <string>{294,181}</string>
-            </dict>
-            <key>GZ_choutiwupin_03.png</key>
-            <dict>
-                <key>frame</key>
-                <string>{{954,947},{119,98}}</string>
-                <key>offset</key>
-                <string>{0,0}</string>
-                <key>rotated</key>
-                <false/>
-                <key>sourceColorRect</key>
-                <string>{{0,0},{119,98}}</string>
-                <key>sourceSize</key>
-                <string>{119,98}</string>
-            </dict>
-            <key>GZ_choutiwupin_04.png</key>
-            <dict>
-                <key>frame</key>
-                <string>{{918,1312},{257,157}}</string>
-                <key>offset</key>
-                <string>{0,0}</string>
-                <key>rotated</key>
-                <true/>
-                <key>sourceColorRect</key>
-                <string>{{0,0},{257,157}}</string>
-                <key>sourceSize</key>
-                <string>{257,157}</string>
-            </dict>
         </dict>
         <key>metadata</key>
         <dict>
@@ -324,9 +194,9 @@
             <key>realTextureFileName</key>
             <string>gameScene_1_chouti.png</string>
             <key>size</key>
-            <string>{1081,2018}</string>
+            <string>{690,1788}</string>
             <key>smartupdate</key>
-            <string>$TexturePacker:SmartUpdate:82800d629ed61b235d56536cd9af1167$</string>
+            <string>$TexturePacker:SmartUpdate:4574c415c5339eb88454a6523be81c50$</string>
             <key>textureFileName</key>
             <string>gameScene_1_chouti.png</string>
         </dict>

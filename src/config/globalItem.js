@@ -42,5 +42,12 @@ GLOBAL_ITEM_CONFIG = {
         img:"res/globalItem/item_zhipian.png",
         imgMove:"res/globalItem/item_zhipian2.png",
         target:[1101]
+    },
+    g8:{
+        name:"电脑",
+        img:"res/globalItem/item_diannao.png",
+        imgMove:"res/globalItem/item_diannao2.png",
+        target:[],
+        scene:11
     }
 };

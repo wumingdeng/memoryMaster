@@ -24,22 +24,16 @@ var PLAYER_STATE = {
         cc.sys.localStorage.setItem("mainScene",value);
         trace1("设置mainScene",this._mainscene);
     },
-    
+
     get mainScene(){
          if (!this._mainscene){
              this._mainscene = cc.sys.localStorage.getItem("mainScene") || 1;
              this._mainscene = Number(this._mainscene);
          }
-         // return 14;
-         console.log("enter"+this._mainscene + "场景")
-         return this._mainscene;
+          // return this._mainscene;
+        return 17;
     },
     getItem:function(id){
 
     }
-
-
 };
-
-
-

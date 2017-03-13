@@ -182,6 +182,7 @@ var itemBase = cc.Class.extend({
         var action = null;
         if (this._action && this._action.isAnimationInfoExists("action" + nowIndex)) {
             action = this._action.getAnimationInfo("action" + nowIndex);
+            GAME_BAR && GAME_BAR.setTouchEnabled(false)
         }else{
             trace1("没有编辑物品动画..")
             next();
@@ -225,6 +226,7 @@ var itemBase = cc.Class.extend({
             this.setActionNodeClickArea();
             this._action.clearFrameEventCallFunc(); //多次播放的动画需要清除监听
             sceneManager.scene.setSceneTouch(true);
+            GAME_BAR.setTouchEnabled(true);
         }
         this._action.setFrameEventCallFunc(onEndAction.bind(this))
 
@@ -244,9 +246,11 @@ var itemBase = cc.Class.extend({
         next = next || this.checkTask.bind(this);
         function onAddGlobalItem() {
             sceneManager.scene.setSceneTouch(true);
+            GAME_BAR && GAME_BAR.setTouchEnabled(true)
             next();
         }
         sceneManager.scene.setSceneTouch(false);
+        GAME_BAR && GAME_BAR.setTouchEnabled(false)
         GAME_BAR.addGlobalItem(this._info.global,this._source,onAddGlobalItem);
     },
 

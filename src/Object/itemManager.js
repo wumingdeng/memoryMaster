@@ -98,5 +98,5 @@ itemManager.getItem = function(id) {
 };
 
 itemManager.destroyItems = function(){
-
+    return this.itemsArr = [];
 };

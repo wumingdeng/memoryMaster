@@ -19,17 +19,17 @@ sfun.viewScene = function(scene,callback) {
     scene._ui.runAction(cc.sequence(cc.spawn(big,left),cc.delayTime(0.5),cc.spawn(back,small),new cc.CallFunc(callback)));
 };
 
-sfun.moveScene = function(ox,callback) {
+sfun.moveScene = function(ox,speed,callback) {
     var scene = sceneManager.scene;
     if (!scene._ui) return 0;
     var nowX = scene._ui.x;
     if (nowX + ox < scene._minX) {
-        ox = scene._minX;
+        ox = scene._minX - nowX;
     } else if (nowX + ox > scene._maxX) {
-        ox = scene._maxX;
+        ox = scene._maxX - nowX;
     }
-    var speed = 1500;
-    var move = cc.moveBy(ox / speed,cc.p(ox,0));
+    speed = speed || 1500;
+    var move = cc.moveBy(Math.abs(ox) / speed,cc.p(ox,0));
     function onFinish() {
         if (callback) {
             callback();

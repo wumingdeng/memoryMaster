@@ -18,7 +18,7 @@
             "FileData": {
               "Type": "PlistSubImage",
               "Path": "ClueUI_scratch_background1.png",
-              "Plist": "scratch1.plist"
+              "Plist": "gameScene/scratch/scratch1.plist"
             },
             "BlendFunc": {
               "Src": 1,
@@ -59,7 +59,7 @@
             "FileData": {
               "Type": "PlistSubImage",
               "Path": "ClueUI_scratch_find1.png",
-              "Plist": "scratch1.plist"
+              "Plist": "gameScene/scratch/scratch1.plist"
             },
             "BlendFunc": {
               "Src": 1,
@@ -101,7 +101,7 @@
             "FileData": {
               "Type": "PlistSubImage",
               "Path": "ClueUI_scratch_mask1.png",
-              "Plist": "scratch1.plist"
+              "Plist": "gameScene/scratch/scratch1.plist"
             },
             "BlendFunc": {
               "Src": 1,

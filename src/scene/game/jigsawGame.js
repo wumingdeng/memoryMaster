@@ -36,9 +36,9 @@ var jigsawGame = cc.Layer.extend({
     initLayer: function () {
         this._current_drag = null
         this._vsizeRect.width = cc.winSize.width
-        this._vsizeRect.height = cc.winSize.height
+        this._vsizeRect.height = cc.winSize.height-200
         this._vsizeRect.x = 0
-        this._vsizeRect.y = 0
+        this._vsizeRect.y = 200
 
         this._node.setPosition(0, 100)
 

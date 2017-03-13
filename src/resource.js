@@ -1,4 +1,8 @@
 var res = {
+
+    //字体文具
+    search_font:"res/font/FZ27.TTF",
+
     //登录界面
     login_json: "res/qidongjiemian/qidongjingmian_donghua.json",
     login_begin_json: "res/qidongjiemian/qidong_anniudonghua.json",
@@ -17,6 +21,8 @@ var res = {
     gameBar_json: "res/gameBar/gameBar.json",
     game_why_json: "res/Animation/dianjitishi/dianji_tishi01.json",
     game_why_png: "res/Animation/dianjitishi/dianji_tishi.png",
+    gameBar_png:"res/gameBar/gameScene_1_zhucaidan.png",
+    gameBar_plist:"res/gameBar/gameScene_1_zhucaidan.plist",
 
     // 找线索
     findSome_json: "res/embedgame/findclue/gameScene7_1.json",
@@ -44,6 +50,7 @@ var res = {
     room_chouti_zhi_json: "res/room/chouti/chouti_zhi.json",
     room_chouti_zhi2_json: "res/room/chouti/chouti_zhi2.json",
     romm_open_animation_json: 'res/room/ditu/ditu_donghua.json',
+    romm_open_animation_jinruchangjingjiantou_json: 'res/room/ditu/jinruchangjingjiantou.json',
     room_kongchouti_json: 'res/room/chouti/CJ1_chouti_0.json',
 
     room_chuangkou_json: 'res/room/chuangkou/WRJ_chuangkou.json',
@@ -90,6 +97,8 @@ var res = {
     phone_mimajiesuo_json: "res/phone/mimajiesuo.json",
     phone_duihua01_json: "res/phone/duihua01.json",
     phone_tonghuajieting_json: "res/phone/shoujidonghua_mimajiesuo.json",
+    phone_png:"res/phone/kaichang_shouji.png",
+    phone_plist:"res/phone/kaichang_shouji.plist",
 
     //工具栏动画
     gameBar_memory_light_json: "res/gameBar/jiyiDH.json",
@@ -127,13 +136,39 @@ var res = {
     loading_png: "res/loading/loading.png",
     loading_plist: "res/loading/loading.plist",
 
+    //柜子场景
+    guizi_json:"res/searchGame/guizizaozuo/guiziCJ.json",
+    guizi_png:"res/searchGame/guizizaozuo/guizi_wupin.png",
+    guizi_plist:"res/searchGame/guizizaozuo/guizi_wupin.plist",
+
+    search_bottom_json:"res/searchGame/searchBottom.json",
+    search_delete_text_json:"res/Game/search/wenzixiaochu.json",
+    search_find_object_json:"res/searchGame/wupintishi/huodewupintishi.json",
+
     scratch_json: "res/gameScene/scratch/scratch1.json",
     scratch_png: "res/gameScene/scratch/scratch1.png",
     scratch_plist: "res/gameScene/scratch/scratch1.plist",
 
     gameScene8_json:"res/gameScene/sortMapGame/gameScene_8.json",
     gameScene8_png:"res/gameScene/sortMapGame/gameScene_8.png",
-    gameScene8_plist:"res/gameScene/sortMapGame/gameScene_8.plist"
+    gameScene8_plist:"res/gameScene/sortMapGame/gameScene_8.plist",
+
+    //操作台
+    oprateMachin_json:"res/Game/caozuotai/caozuotai.json",
+    machin_game_png:"res/Game/caozuotai/caozoutai.png",
+    machin_game_plist:"res/Game/caozuotai/caozoutai.plist",
+    machin_game_bg_jpg:"res/Game/caozuotai/caozoutaibeijing.jpg",
+
+    //莲花
+    lianhua_json:"res/lianhuachi/lianhuachi.json",
+
+    machin_game_tip:"res/Game/caozuotai/tipPic.json",
+
+    //隧道
+    suidao_json:"res/suidao/suidao.json",
+    suidao_bg_jpg:"res/suidao/caozoutai_midao.jpg",
+    suidao_caozuotai_plist:"res/suidao/tongdao_caozoutai.plist",
+    suidao_caozuotai_png:"res/suidao/tongdao_caozoutai.png"
 };
 
 var public_res = [
@@ -155,6 +190,7 @@ var scene_resources = {
     "s1":[
         res.gameBar_json
         ],
+    "s2": [],
     "s3": [
         res.gameBg_png
     ],
@@ -163,7 +199,8 @@ var scene_resources = {
         res.foXiang_json,
         res.gameBar_json
     ],
-    "s2": [],
+    "s5": [],
+    "s6": [],
     "s7": []
 };
 
@@ -178,9 +215,24 @@ var s_ResNative = {
         {png: res.romm_desk_png, plist: res.room_desk_plist},
         {png: res.room_hezi_png, plist: res.room_hezi_plist},
         {png: res.room_chouti_png, plist: res.room_chouti_plist},
+        {png: res.findSome_png,plist:res.findSome_plist},
+        {png: res.phone_png,plist:res.phone_plist},
+        {png: res.loading_png,plist:res.loading_plist},
+        {png: res.gameBar_png,plist:res.gameBar_plist},
         {png: res.ronm_bg1_jpg, plist: ""},
         {png: res.ronm_bg2_jpg, plist: ""},
         {png: res.ronm_bg3_jpg, plist: ""},
         {png: res.ronm_bg4_jpg, plist: ""}
+    ],
+    "s15": [
+        {png: res.guizi_png, plist: res.guizi_plist}
+    ],
+    "s16": [
+        {png: res.machin_game_png, plist: res.machin_game_plist},
+        {png: res.machin_game_bg_jpg, plist:""}
+    ],
+    "s18": [
+        {png: res.suidao_caozuotai_png, plist: res.suidao_caozuotai_plist},
+        {png: res.suidao_bg_jpg, plist:""}
     ]
 }

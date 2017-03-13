@@ -112,6 +112,8 @@ taskManager.completeTask = function(tid){
     //重置提示功能
     hintFun.refresh();
 
+    var taskScene = PLAYER_STATE.scene; //先保存下 回调里会改变当前场景....
+
     //根据配置 改变状态
     var taskInfo = taskManager.getTaskInfoById(tid);
     var result = taskInfo.result;
@@ -174,8 +176,14 @@ taskManager.completeTask = function(tid){
         }
 
         if (key == "memory") {
-            memoryManager.openMemory();
-            GAME_BAR.tipMemory();
+            var open = result[key];
+            if (open) {
+                memoryManager.openMemory();
+                GAME_BAR.tipMemory();
+            } else {
+                memoryManager.closeMemory();
+                GAME_BAR.stopTipMemory();
+            }
         }
 
         if (key == "completeTask") {
@@ -202,7 +210,7 @@ taskManager.completeTask = function(tid){
 
 
     //删除完成的任务
-    delete TASKS[PLAYER_STATE.scene][tid];
+    delete TASKS[taskScene][tid];
     //delete MULTI_TASKS[tid];
 
     //判断有没有复合的任务已经完成了
